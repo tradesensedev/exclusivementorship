@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ | Exclusive Mentorship by NLT</title>
+  <meta name="description" content="Exclusive Mentorship সম্পর্কে সকল প্রশ্নের উত্তর — Payment, Package, Content, Access এবং আরও অনেক কিছু।"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+
+    /* EID BANNER */
+    .eid-banner{background:linear-gradient(90deg,#0a3d20,#14652e,#0a3d20);padding:10px 20px;text-align:center;position:relative;overflow:hidden}
+    .eid-inner{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center}
+    .eid-title{font-family:var(--mono);font-size:12px;font-weight:700;color:#fde68a;letter-spacing:.1em;text-transform:uppercase}
+    .eid-dot{width:4px;height:4px;background:rgba(253,230,138,.4);border-radius:50%}
+    .eid-desc{font-size:12.5px;color:rgba(255,255,255,.85);font-weight:500}
+    .eid-badge{background:#fde68a;color:#0a3d20;font-family:var(--mono);font-size:10px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:.06em}
+    .eid-timer{display:inline-flex;align-items:center;gap:4px;background:rgba(0,0,0,.25);border:1px solid rgba(253,230,138,.3);border-radius:8px;padding:4px 10px;font-family:var(--mono);font-size:13px;font-weight:700;color:#fde68a}
+    .eid-timer-label{font-size:9px;color:rgba(253,230,138,.55);text-transform:uppercase;margin-right:4px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fff;--bg2:#f8faff;--ink:#0d0d0d;--ink-2:#444;--ink-3:#888;--line:#eaeaea;
+      --blue:#2563eb;--blue-light:#eff6ff;--blue-border:#bfdbfe;
+      --featured:#1d4ed8;--serif:'Plus Jakarta Sans',sans-serif;--mono:'Space Grotesk',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased}
+    /* ═══ GLOBAL MOBILE UX ═══ */
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    *{-webkit-tap-highlight-color:transparent}
+    a,button{touch-action:manipulation}
+    input,button,select,textarea{font-family:inherit}
+    img{max-width:100%;height:auto}
+
+    
+    /* ═══ HAMBURGER MOBILE MENU ═══ */
+    .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;padding:8px;flex-shrink:0}
+    .nav-hamburger span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}
+    .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .nav-hamburger.open span:nth-child(2){opacity:0}
+    .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;pointer-events:none}
+    .mobile-menu-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .25s;pointer-events:none}
+    .mobile-menu-drawer{position:absolute;top:0;right:-280px;width:272px;height:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);transition:right .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
+    .mobile-menu.open{pointer-events:all}
+    .mobile-menu.open .mobile-menu-overlay{background:rgba(0,0,0,.35);pointer-events:all}
+    .mobile-menu.open .mobile-menu-drawer{right:0}
+    .mobile-menu-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+    .mobile-menu-logo{font-size:14px;font-weight:800;color:var(--ink)}
+    .mobile-menu-close{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:18px;color:var(--ink-2);line-height:1}
+    .mobile-menu-links{padding:12px 0;flex:1}
+    .mobile-menu-section{font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;padding:8px 20px 4px}
+    .mobile-menu-link{display:flex;align-items:center;gap:10px;padding:12px 20px;font-size:14px;font-weight:600;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s}
+    .mobile-menu-link:hover{background:var(--bg2);color:var(--ink)}
+    .mobile-menu-link.active{color:var(--blue);background:var(--blue-light)}
+    .mobile-menu-link-icon{width:18px;height:18px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
+    .mobile-menu-footer{padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+    .mobile-menu-cta{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:14px;font-weight:700;padding:13px;border-radius:10px;text-decoration:none}
+    .mobile-menu-yt{display:flex;align-items:center;justify-content:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:13px;font-weight:700;padding:11px;border-radius:10px;text-decoration:none}
+    .mobile-menu-yt svg{width:14px;height:14px;fill:currentColor}
+    @media(max-width:768px){.nav-hamburger{display:flex}}
+    /* NAVBAR */
+    .navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:0 24px;transition:box-shadow .2s}
+    .navbar.scrolled{box-shadow:0 2px 16px rgba(0,0,0,.08)}
+    .nav-inner{max-width:1080px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#4f46e5,#2563eb);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
+    .nav-logo-text{display:flex;flex-direction:column;line-height:1.15}
+    .nav-logo-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+    .nav-logo-sub{font-size:10px;color:var(--ink-3);font-family:var(--mono);font-weight:500;letter-spacing:.04em}
+    .nav-links{display:flex;align-items:center;gap:4px;flex:1;justify-content:center}
+    .nav-link{font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 12px;border-radius:8px;transition:background .15s,color .15s;white-space:nowrap}
+    .nav-link:hover{background:var(--bg2);color:var(--ink)}
+    .nav-link.active{color:var(--blue)}
+    .nav-actions{display:flex;align-items:center;gap:8px}
+    .nav-yt{display:inline-flex;align-items:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:12px;font-weight:700;padding:7px 14px;border-radius:8px;text-decoration:none;transition:background .15s;font-family:var(--mono)}
+    .nav-yt svg{width:14px;height:14px;fill:currentColor}
+    .nav-yt:hover{background:#fecaca}
+    .nav-cta{display:inline-flex;align-items:center;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:8px 18px;border-radius:9px;text-decoration:none;transition:opacity .15s;white-space:nowrap}
+    .nav-cta:hover{opacity:.9}
+    @media(max-width:768px){.nav-link-hide{display:none}.nav-logo-sub{display:none}}
+
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(135deg,#0f172a,#1e1b4b);padding:52px 24px 48px;text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(99,102,241,.25),transparent 70%);pointer-events:none}
+    .page-hero-inner{max-width:600px;margin:0 auto;position:relative;z-index:1}
+    .page-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:20px}
+    .page-hero h1{font-size:clamp(26px,5vw,44px);font-weight:800;color:#fff;letter-spacing:-.03em;margin-bottom:14px;line-height:1.1}
+    .page-hero h1 span{background:linear-gradient(90deg,#818cf8,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .page-hero p{font-size:16px;color:rgba(255,255,255,.5);line-height:1.7}
+
+    /* MAIN */
+    .faq-page{max-width:800px;margin:0 auto;padding:56px 24px 80px}
+
+    /* CATEGORY */
+    .faq-cat{margin-bottom:44px}
+    .faq-cat-title{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--blue);font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--blue-light)}
+    .faq-cat-icon{width:32px;height:32px;border-radius:9px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:15px}
+    .faq-list{display:flex;flex-direction:column;gap:10px}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+    .faq-item:hover{border-color:var(--blue-border);box-shadow:0 4px 14px rgba(37,99,235,.06)}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;cursor:pointer;user-select:none}
+    .faq-q-text{font-size:15px;font-weight:700;color:var(--ink);line-height:1.4}
+    .faq-icon{width:26px;height:26px;border-radius:50%;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;transition:transform .25s,background .2s}
+    .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--blue);color:#fff}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .faq-item.open .faq-a{max-height:500px}
+    .faq-a-inner{padding:0 20px 20px;padding-top:14px;font-size:14px;color:var(--ink-2);line-height:1.75;border-top:1px solid var(--line)}
+    .faq-a-inner strong{color:var(--ink);font-weight:700}
+    .faq-a-inner a{color:var(--blue);text-decoration:none;font-weight:600}
+    .faq-a-inner a:hover{text-decoration:underline}
+
+    /* STILL NEED HELP */
+    .help-box{background:linear-gradient(135deg,#0f172a,#1e1b4b);border-radius:20px;padding:40px;text-align:center;margin-top:56px;position:relative;overflow:hidden}
+    .help-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(99,102,241,.2),transparent 70%);pointer-events:none}
+    .help-box-inner{position:relative;z-index:1}
+    .help-box h2{font-size:24px;font-weight:800;color:#fff;letter-spacing:-.025em;margin-bottom:10px}
+    .help-box p{font-size:14.5px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:24px}
+    .help-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .help-btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:14px;font-weight:700;padding:13px 26px;border-radius:10px;text-decoration:none;box-shadow:0 4px 16px rgba(79,70,229,.4);transition:opacity .15s,transform .15s}
+    .help-btn-primary:hover{opacity:.9;transform:translateY(-1px)}
+    .help-btn-secondary{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.85);font-size:14px;font-weight:600;padding:13px 22px;border-radius:10px;text-decoration:none;transition:background .2s}
+    .help-btn-secondary:hover{background:rgba(255,255,255,.13)}
+
+    /* FOOTER */
+    .site-footer{border-top:1px solid var(--line);padding:28px 24px}
+    .footer-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .footer-brand{font-size:13px;color:var(--ink-3)}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{font-size:13px;color:var(--ink-3);text-decoration:none;transition:color .15s}
+    .footer-links a:hover{color:var(--ink)}
+      /* FLOAT CTA */
+    .float-cta{position:fixed;bottom:20px;right:20px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:12px 22px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(79,70,229,.4);transition:transform .2s,box-shadow .2s;z-index:200}
+    .float-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.45)}
+    @media(max-width:480px){
+      /* EID Banner mobile */
+      .eid-inner{flex-wrap:wrap;gap:6px;justify-content:center}
+      .eid-desc{display:none}
+      .eid-dot{display:none}
+      .float-cta{bottom:16px;right:16px;font-size:12px;padding:10px 16px}}
+  
+    /* BACK BUTTON */
+    .back-bar{background:var(--bg2);border-bottom:1px solid var(--line);padding:10px 24px}
+    .back-bar-inner{max-width:1080px;margin:0 auto}
+    .back-btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;transition:border-color .15s,color .15s,background .15s}
+    .back-btn:hover{border-color:var(--blue-border);color:var(--blue);background:var(--blue-light)}
+    .back-btn svg{width:14px;height:14px;flex-shrink:0}
+  
+    /* ═══ MOBILE OPTIMIZATION ═══ */
+    @media(max-width:480px){
+      .nav-inner{padding:0 16px}
+      .nav-logo-name{font-size:13px}
+      .nav-yt{display:none}
+      .nav-cta{font-size:12px;padding:7px 14px}
+      .back-bar{padding:8px 16px}
+      .page-hero{padding:40px 16px 36px}
+      .page-hero h1{font-size:clamp(24px,8vw,36px)}
+      .page-hero p{font-size:14px}
+      .faq-wrap{padding:36px 16px 60px}
+      .faq-cat{margin-bottom:32px}
+      .faq-cat-title{font-size:11.5px}
+      .faq-q{padding:14px 16px}
+      .faq-q-text{font-size:13.5px}
+      .faq-icon{width:22px;height:22px;font-size:13px}
+      .faq-a-inner{padding:0 16px 16px;font-size:13px;line-height:1.7}
+      .float-cta{bottom:12px;right:12px;font-size:12px;padding:10px 14px}
+    }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>
+  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E"/>
+  <!-- OG / Social -->
+  <meta property="og:title" content="FAQ | NLT Exclusive Mentorship"/>
+  <meta property="og:description" content="সব প্রশ্নের উত্তর — Payment, Package, Content, Access এবং আরও। NLT Exclusive Mentorship FAQ।"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://exclusivementorship.pages.dev/faq.html"/>
+  <meta property="og:image" content="https://exclusivementorship.pages.dev/og-cover.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://exclusivementorship.pages.dev/faq.html"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">NLT</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Exclusive Mentorship</span>
+        <span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="nav-yt">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="index.html#packages" class="nav-cta">Enroll Now →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-chip">FAQ</div>
+    <h1>সকল <span>প্রশ্নের উত্তর</span></h1>
+    <p>Mentorship সম্পর্কে যে প্রশ্নগুলো মাথায় আসে — সব কিছু এখানে পরিষ্কারভাবে বলা আছে।</p>
+  </div>
+</div>
+
+<div class="faq-page">
+
+  <!-- GENERAL -->
+  <div class="faq-cat">
+    <div class="faq-cat-title"><div class="faq-cat-icon">📌</div>সাধারণ প্রশ্ন</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">আমি একদম beginner, এই mentorship কি আমার জন্য?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ, অবশ্যই। আমাদের curriculum একদম Basic থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, Candlestick কী, সব কিছু ধাপে ধাপে শেখানো হয়। কোনো পূর্ব অভিজ্ঞতা দরকার নেই। শুধু শেখার ইচ্ছা থাকলেই যথেষ্ট।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">এই mentorship কতদিন চলবে? কোনো মেয়াদ আছে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Package 01 ও 02 — Course সম্পূর্ণ করা পর্যন্ত (7টি Chapter, নিজের গতিতে)। Package 03 (Pro) ও Package 04 (Elite) — ১ বছরের মেয়াদ, যার মধ্যে সব সুবিধা পাবেন। Investment Package-এর কোনো নির্দিষ্ট মেয়াদ নেই।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">এটা কি Forex trading, নাকি Crypto?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">আমাদের ICT-ভিত্তিক curriculum মূলত <strong>Forex (Indices, Currency Pairs)</strong> এর উপর ফোকাস করে। তবে ICT-এর concept গুলো Universal — Crypto market-এও একইভাবে apply হয়। আপনি দুটোতেই use করতে পারবেন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">ICT কী? কেন ICT শিখব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">ICT মানে <strong>Inner Circle Trader</strong> — Michael Huddleston-এর তৈরি একটি proven trading methodology যা Smart Money-র সাথে align করে trade করতে শেখায়। ICT হলো বর্তমানে সবচেয়ে popular ও effective trading framework, যা Institutional traders-রাও follow করেন। Price Action, Supply-Demand, Support-Resistance-এর মতো concept-এর চেয়ে ICT অনেক বেশি accurate ও logical।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Class কখন হয়? Live না Recorded?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Course content Recorded format-এ পাবেন — যখন সময় পাবেন তখন দেখতে পারবেন, নিজের গতিতে শিখতে পারবেন। Pro ও Elite package-এ <strong>Live 1v1 Session</strong> আলাদাভাবে schedule করা হয়। Daily market analysis Telegram channel-এ live share করা হয়।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="faq-cat">
+    <div class="faq-cat-title"><div class="faq-cat-icon">💳</div>Payment ও Enrollment</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Payment কীভাবে করব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Payment <strong>Binance</strong>-এর মাধ্যমে করতে হবে — আমাদের <strong>Binance User ID (UID)</strong>-তে সরাসরি পাঠান।<br/><br/><strong>ধাপ:</strong> ১) Binance app খুলুন → Pay → Send → আমাদের UID লিখুন → Amount পাঠান → ২) Transaction screenshot নিন → ৩) Telegram-এ screenshot পাঠান → ৪) ২৪ ঘণ্টার মধ্যে access পাবেন।<br/><br/><strong>গুরুত্বপূর্ণ:</strong> আমরা কোনো wallet address শেয়ার করি না — শুধুমাত্র Binance UID-তে payment গ্রহণ করা হয়। অন্য কোনো payment method নেই।<br/><br/>Telegram: <a href="https://t.me/AskNLT" target="_blank">t.me/AskNLT</a></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Bangladeshi Taka (BDT) বা bKash/Nagad-এ payment করা যাবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">এই মুহূর্তে <strong>BDT, bKash বা Nagad-এ payment সম্ভব নয়</strong>। আমরা শুধুমাত্র Binance UID-এর মাধ্যমে payment গ্রহণ করি। bKash, Nagad বা অন্য কোনো method সম্ভব নয়। Binance account খুলতে সমস্যা হলে Telegram-এ যোগাযোগ করুন — আমরা সাহায্য করব।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Binance account নেই, কীভাবে করব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Binance.com থেকে সহজেই account খুলতে পারবেন — NID দিয়ে KYC complete করুন, তারপর বিভিন্ন P2P trader-দের কাছ থেকে BDT দিয়ে USDT কিনতে পারবেন। যেকোনো সমস্যায় <a href="https://t.me/AskNLT" target="_blank">Telegram-এ</a> সরাসরি জিজ্ঞেস করুন — সাহায্য করব।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Payment করার পর কতক্ষণে access পাব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">সাধারণত <strong>২৪ ঘণ্টার মধ্যে</strong> access দেওয়া হয়। Telegram-এ screenshot পাঠানোর পর confirmation পাবেন। অনেক সময় আরও দ্রুত হয়।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Refund policy কী?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">সম্পূর্ণ details জানতে আমাদের <a href="terms.html">Terms &amp; Conditions</a> পড়ুন। যেকোনো সমস্যায় Telegram-এ যোগাযোগ করুন — সবসময় সমাধানের চেষ্টা করব।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PACKAGE COMPARISON -->
+  <div class="faq-cat">
+    <div class="faq-cat-title"><div class="faq-cat-icon">📦</div>Package সম্পর্কে</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Package 01 আর Package 02-এর পার্থক্য কী?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner"><strong>Content একই।</strong><br/><br/>Package 01 — Installment: প্রতিটি Chapter শেষ করার পর পরের Chapter-এর জন্য pay করুন। Total cost বেশি হবে ($300)।<br/><br/>Package 02 — One-time: একবারেই সব pay করুন ($99)। অনেক সাশ্রয়ী এবং সাথে $10,000 Funded Account Giveaway-এর সুযোগ থাকবে।<br/><br/>যদি এখন $99 দিতে পারেন, Package 02-ই বেছে নিন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Pro (03) vs Elite (04) — আমার জন্য কোনটা সঠিক?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">
+          <strong>Pro Package ($299/year):</strong> প্রতিদিন Fundamental + Technical Outlook, সপ্তাহে ১টি Trade Review, প্রতি ২ সপ্তাহে 1v1 Session, ৩টি Personal Setup।<br/><br/>
+          <strong>Elite Package ($499/year):</strong> সব কিছু Pro-এর মতো + Daily Bias, প্রায় প্রতিটি Trade Review, সপ্তাহে ২টি 1v1 Session, ৫টি Personal Setup।<br/><br/>
+          যদি maximum attention ও daily guidance চান — Elite নিন। Budget constraint থাকলে Pro একটি excellent choice।
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Funded Account Giveaway কী? কীভাবে পাব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Course শেষে performance-এর ভিত্তিতে top traders-দের Funded Account দেওয়া হবে:<br/><br/>• Package 02 — Top 5 পাবেন $10,000 Funded Account<br/>• Pro Package — Top 3 পাবেন $25,000 Funded Account<br/>• Elite Package — Top 2 পাবেন $50,000 Funded Account<br/><br/>এটা Prop Firm-এর মাধ্যমে দেওয়া হবে। Details পরবর্তীতে জানানো হবে।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">পরে কি Pro থেকে Elite-এ upgrade করা যাবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ, upgrade সম্ভব। Difference amount pay করে upgrade করা যাবে। Details-এর জন্য <a href="https://t.me/AskNLT" target="_blank">Telegram-এ</a> যোগাযোগ করুন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Investment Package-এ কি শুধু fund দিলেই হবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। Investment Package-এ আপনি শুধু fund দেবেন, আমাদের team সেটি trade করবে। Profit-এর ৭৫% আপনার, ২৫% management fee। তবে <strong>প্রথম profit পাওয়ার পর যেকোনো একটি mentorship package নেওয়া বাধ্যতামূলক</strong>।<br/><br/>Join করতে কোনো fee নেই — শুধু profit হলেই ২৫% কাটা হবে।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">সব Package-এর পূর্ণ তুলনা কোথায় দেখব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">আমাদের <a href="compare.html">Package Comparison Page</a>-এ সব package-এর features side-by-side দেখতে পারবেন। এটি আপনাকে সিদ্ধান্ত নিতে সাহায্য করবে।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="faq-cat">
+    <div class="faq-cat-title"><div class="faq-cat-icon">📚</div>Content ও Curriculum</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Course-এ মোট কতটি Class আছে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">মোট <strong>৯৯+ Class</strong> আছে, ৭টি Chapter-এ বিভক্ত। Chapter গুলো হলো: Trading Basics → Market Structure → ICT Concepts (Order Blocks, FVG, Liquidity) → Fundamental Analysis → Risk Management → Trading Psychology → Personal Setup & Live Trade।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Personal Trade Setup কী?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Personal Trade Setup হলো আমাদের নিজস্ব trading setup যা আমরা নিজেরা use করি। Package 01/02-এ ১টি, Pro-এ ৩টি এবং Elite-এ ৫টি setup Backtest সহ শেখানো হবে। এগুলো real market-এ tested ও proven।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Course শেষ করতে কত সময় লাগবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">নিজের গতির উপর নির্ভর করে। সাধারণত ৩-৬ মাসের মধ্যে সম্পূর্ণ করা সম্ভব। তবে শুধু video দেখলেই হবে না — নিয়মিত practice ও backtest করতে হবে। আমরা encourage করি ধীরে ধীরে, ভালোভাবে শিখতে।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Course material কি download করা যাবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Video content streaming format-এ থাকবে। Notes ও resources download করার সুবিধা থাকবে। Details enrollment-এর পরে জানানো হবে।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENTOR -->
+  <div class="faq-cat">
+    <div class="faq-cat-title"><div class="faq-cat-icon">👤</div>Mentor সম্পর্কে</div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">NLT কে? তার experience কী?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">NLT ২০২০ সাল থেকে trading করছেন। শুরুতে নিজে বিভিন্ন scam ও fake strategy-র শিকার হয়েছেন। পরবর্তীতে ICT (Michael Huddleston)-এর ৬০০+ YouTube video দেখে, নোট করে এবং backtest করে authentic ICT শিখেছেন। এখন সেই knowledge বাংলাদেশে ছড়িয়ে দিতে চান।<br/><br/>YouTube: <a href="https://www.youtube.com/@WeAreNLT" target="_blank">@WeAreNLT</a></div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">আমি কি সরাসরি NLT-এর সাথে কথা বলতে পারব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ। Pro Package-এ প্রতি ২ সপ্তাহে এবং Elite Package-এ সপ্তাহে ২বার <strong>সরাসরি 1v1 session</strong> পাবেন। এছাড়া সাধারণ প্রশ্নের জন্য Telegram-এ যোগাযোগ করতে পারবেন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">এটা কি সত্যিকারের mentorship, নাকি শুধু video course?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Package 01 ও 02 মূলত <strong>structured video course</strong> + trade setup শেখানো। Package 03 (Pro) ও 04 (Elite)-এ <strong>real mentorship</strong> পাবেন — daily guidance, trade review, 1v1 session সব কিছু নিয়ে। আমরা চাই আপনি শুধু শিখবেন না, consistent trader হিসেবে নিজেকে গড়বেন।</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HELP BOX -->
+  <div class="help-box">
+    <div class="help-box-inner">
+      <h2>এখনও প্রশ্ন আছে?</h2>
+      <p>উপরে উত্তর না পেলে সরাসরি Telegram-এ যোগাযোগ করুন — আমরা সাহায্য করব।</p>
+      <div class="help-btns">
+        <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" class="help-btn-primary">💬 Telegram-এ জিজ্ঞেস করুন</a>
+        <a href="index.html#packages" class="help-btn-secondary">Package দেখুন →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Exclusive Mentorship by NLT &copy; 2026</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="https://t.me/AskNLT" target="_blank">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', scrollY > 20));
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement, open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+</script>
+  <script>
+
+  // EID TIMER — ends March 26, 2026
+  const eidEnd = new Date('2026-03-26T23:59:59').getTime();
+  function tick() {
+    const diff = eidEnd - Date.now();
+    if (diff <= 0) { const b = document.getElementById('eidBanner'); if(b) b.style.display='none'; return; }
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor((diff%86400000)/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    const pad = n => String(n).padStart(2,'0');
+    const eD = document.getElementById('eidD'); if(eD) eD.textContent = pad(d);
+    const eH = document.getElementById('eidH'); if(eH) eH.textContent = pad(h);
+    const eM = document.getElementById('eidM'); if(eM) eM.textContent = pad(m);
+    const eS = document.getElementById('eidS'); if(eS) eS.textContent = pad(s);
+  }
+  tick(); setInterval(tick, 1000);
+  // HAMBURGER MENU
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.getElementById('menuClose');
+  const menuOverlay = document.getElementById('menuOverlay');
+  function openMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow=''; }
+  if(hamburger) hamburger.addEventListener('click', openMenu);
+  if(menuClose)  menuClose.addEventListener('click', closeMenu);
+  if(menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
+  // Close mobile menu on internal link click
+  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => {
+    if(!a.href.startsWith('http')) a.addEventListener('click', closeMenu);
+  });
+    window.addEventListener('scroll',()=>{
+      document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exclusive Mentorship by NLT | Real Trading শিখুন ICT দিয়ে</title>
+  <meta name="description" content="ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়। NLT-এর Exclusive Mentorship-এ যোগ দিন।"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#ffffff;--bg2:#f8faff;--ink:#0d0d0d;--ink-2:#444;--ink-3:#888;--line:#eaeaea;
+      --blue:#2563eb;--blue-light:#eff6ff;--blue-border:#bfdbfe;
+      --green:#059669;--green-light:#ecfdf5;
+      --orange:#ea580c;--orange-light:#fff7ed;--orange-border:#fed7aa;
+      --featured:#1d4ed8;--featured-glow:rgba(37,99,235,0.15);
+      --serif:'Plus Jakarta Sans',sans-serif;--mono:'Space Grotesk',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased}
+    /* ═══ GLOBAL MOBILE UX ═══ */
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    *{-webkit-tap-highlight-color:transparent}
+    a,button{touch-action:manipulation}
+    input,button,select,textarea{font-family:inherit}
+    img{max-width:100%;height:auto}
+
+    /* EID BANNER */
+    .eid-banner{background:linear-gradient(90deg,#0a3d20,#14652e,#0a3d20);padding:10px 20px;text-align:center;position:relative;overflow:hidden}
+    .eid-inner{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center}
+    .eid-title{font-family:var(--mono);font-size:12px;font-weight:700;color:#fde68a;letter-spacing:.1em;text-transform:uppercase}
+    .eid-dot{width:4px;height:4px;background:rgba(253,230,138,.4);border-radius:50%}
+    .eid-desc{font-size:12.5px;color:rgba(255,255,255,.85);font-weight:500}
+    .eid-badge{background:#fde68a;color:#0a3d20;font-family:var(--mono);font-size:10px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:.06em}
+    .eid-timer{display:inline-flex;align-items:center;gap:4px;background:rgba(0,0,0,.25);border:1px solid rgba(253,230,138,.3);border-radius:8px;padding:4px 10px;font-family:var(--mono);font-size:13px;font-weight:700;color:#fde68a}
+    .eid-timer-label{font-size:9px;color:rgba(253,230,138,.55);text-transform:uppercase;margin-right:4px}
+
+    
+    /* ═══ HAMBURGER MOBILE MENU ═══ */
+    .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;padding:8px;flex-shrink:0}
+    .nav-hamburger span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}
+    .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .nav-hamburger.open span:nth-child(2){opacity:0}
+    .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;pointer-events:none}
+    .mobile-menu-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .25s;pointer-events:none}
+    .mobile-menu-drawer{position:absolute;top:0;right:-280px;width:272px;height:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);transition:right .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
+    .mobile-menu.open{pointer-events:all}
+    .mobile-menu.open .mobile-menu-overlay{background:rgba(0,0,0,.35);pointer-events:all}
+    .mobile-menu.open .mobile-menu-drawer{right:0}
+    .mobile-menu-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+    .mobile-menu-logo{font-size:14px;font-weight:800;color:var(--ink)}
+    .mobile-menu-close{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:18px;color:var(--ink-2);line-height:1}
+    .mobile-menu-links{padding:12px 0;flex:1}
+    .mobile-menu-section{font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;padding:8px 20px 4px}
+    .mobile-menu-link{display:flex;align-items:center;gap:10px;padding:12px 20px;font-size:14px;font-weight:600;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s}
+    .mobile-menu-link:hover{background:var(--bg2);color:var(--ink)}
+    .mobile-menu-link.active{color:var(--blue);background:var(--blue-light)}
+    .mobile-menu-link-icon{width:18px;height:18px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
+    .mobile-menu-footer{padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+    .mobile-menu-cta{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:14px;font-weight:700;padding:13px;border-radius:10px;text-decoration:none}
+    .mobile-menu-yt{display:flex;align-items:center;justify-content:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:13px;font-weight:700;padding:11px;border-radius:10px;text-decoration:none}
+    .mobile-menu-yt svg{width:14px;height:14px;fill:currentColor}
+    @media(max-width:768px){.nav-hamburger{display:flex}}
+    /* NAVBAR */
+    .navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:0 24px;transition:box-shadow .2s}
+    .navbar.scrolled{box-shadow:0 2px 16px rgba(0,0,0,.08)}
+    .nav-inner{max-width:1080px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#4f46e5,#2563eb);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
+    .nav-logo-text{display:flex;flex-direction:column;line-height:1.15}
+    .nav-logo-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+    .nav-logo-sub{font-size:10px;color:var(--ink-3);font-family:var(--mono);font-weight:500;letter-spacing:.04em}
+    .nav-links{display:flex;align-items:center;gap:4px;flex:1;justify-content:center}
+    .nav-link{font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 12px;border-radius:8px;transition:background .15s,color .15s;white-space:nowrap}
+    .nav-link:hover{background:var(--bg2);color:var(--ink)}
+    .nav-link.active{color:var(--blue)}
+    .nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .nav-yt{display:inline-flex;align-items:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:12px;font-weight:700;padding:7px 14px;border-radius:8px;text-decoration:none;transition:background .15s;font-family:var(--mono)}
+    .nav-yt:hover{background:#fecaca}
+    .nav-yt svg{width:14px;height:14px;fill:currentColor}
+    .nav-cta{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:8px 18px;border-radius:8px;text-decoration:none;transition:opacity .15s,transform .15s;box-shadow:0 2px 10px rgba(79,70,229,.3)}
+    .nav-cta:hover{opacity:.88;transform:translateY(-1px)}
+    @media(max-width:768px){.nav-link-hide{display:none}.nav-logo-sub{display:none}}
+    @media(max-width:480px){.nav-yt{display:none}}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#0f172a,#1e1b4b);padding:80px 24px 72px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(99,102,241,.25),transparent 70%);pointer-events:none}
+    .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+    .hero-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+    .hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:28px}
+    .hero-chip::before{content:'';width:6px;height:6px;background:#34d399;border-radius:50%;animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(52,211,153,.5)}50%{box-shadow:0 0 0 5px rgba(52,211,153,0)}}
+    .hero h1{font-size:clamp(38px,6.5vw,68px);font-weight:800;color:#fff;line-height:1.08;letter-spacing:-.03em;margin-bottom:20px}
+    .hero h1 span{background:linear-gradient(90deg,#818cf8,#38bdf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero-sub{font-size:17px;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:44px}
+    .hero-pills{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+    .hero-pill{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:14px 28px;text-align:center;transition:background .2s,border-color .2s}
+    .hero-pill:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+    .hero-pill-val{font-size:28px;font-weight:800;color:#fff;line-height:1;margin-bottom:5px}
+    .hero-pill-label{font-size:11px;color:rgba(255,255,255,.35);font-family:var(--mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+    .hero-cta-wrap{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+    .hero-btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-family:var(--serif);font-size:15px;font-weight:700;padding:15px 32px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(79,70,229,.4)}
+    .hero-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.5)}
+    .hero-btn-primary svg{width:16px;height:16px}
+    .hero-btn-secondary{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.85);font-family:var(--serif);font-size:15px;font-weight:600;padding:15px 28px;border-radius:12px;text-decoration:none;transition:background .2s,border-color .2s}
+    .hero-btn-secondary:hover{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.28)}
+
+    /* WHY US */
+    .why-section{background:var(--bg2);border-bottom:1px solid var(--line);padding:14px 0 0}
+    .why-bar-header{text-align:center;margin-bottom:10px}
+    .why-bar-label{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--blue);font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--blue-light);border:1px solid var(--blue-border);padding:5px 14px;border-radius:100px}
+    .why-bar-label::before{content:'✦';font-size:9px}
+    .why-bar-scroll{overflow:hidden;position:relative}
+    .why-bar-scroll::before,.why-bar-scroll::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
+    .why-bar-scroll::before{left:0;background:linear-gradient(to right,var(--bg2),transparent)}
+    .why-bar-scroll::after{right:0;background:linear-gradient(to left,var(--bg2),transparent)}
+    .why-bar-track{display:flex;align-items:center;width:max-content;animation:whyScroll 28s linear infinite}
+    .why-bar-track.reverse{animation:whyScrollRev 24s linear infinite}
+    .why-bar-track:hover{animation-play-state:paused}
+    .why-bar-set{display:flex;align-items:center;padding:6px 0}
+    .why-tag{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:6px;font-size:12px;font-weight:600;color:var(--ink-2);padding:6px 14px;white-space:nowrap;flex-shrink:0;margin:0 6px}
+    .why-tag::before{content:'✦';font-size:9px;color:var(--blue)}
+    .why-tag.accent{background:var(--blue-light);border-color:var(--blue-border);color:var(--blue)}
+    .why-tag.accent::before{color:var(--blue)}
+    .why-divider{width:1px;height:20px;background:var(--line);margin:0 8px;flex-shrink:0}
+    @keyframes whyScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @keyframes whyScrollRev{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+
+    /* SECTION */
+    .section{max-width:1080px;margin:0 auto;padding:64px 24px 88px}
+    .section-top{text-align:center;margin-bottom:52px}
+    .section-top h2{font-size:34px;font-weight:800;color:var(--ink);letter-spacing:-.025em;margin-bottom:10px}
+    .section-top p{font-size:15px;color:var(--ink-3);line-height:1.6}
+
+    /* PKG COMPARE STRIP */
+    .pkg-compare{display:flex;align-items:center;background:var(--bg2);border:1px solid var(--line);border-radius:12px;margin-bottom:28px;overflow:hidden}
+    .pkg-compare-item{flex:1;padding:14px 18px;display:flex;flex-direction:column;gap:4px}
+    .pkg-compare-label{font-size:11px;color:var(--ink-3);font-family:var(--mono);font-weight:600;letter-spacing:.04em}
+    .pkg-compare-val{font-size:13px;font-weight:700;color:var(--featured)}
+    .pkg-compare-divider{width:1px;height:40px;background:var(--line);flex-shrink:0}
+    .pkg-compare-cta{background:var(--blue);border-left:none}
+    .pkg-compare-cta .pkg-compare-label{color:rgba(255,255,255,.65)}
+    .pkg-compare-cta .pkg-compare-val{color:#fff}
+    @media(max-width:768px){.pkg-compare{display:grid;grid-template-columns:1fr 1fr}.pkg-compare-divider{display:none}.pkg-compare-item{border-bottom:1px solid var(--line)}.pkg-compare-item:nth-child(odd){border-right:1px solid var(--line)}.pkg-compare-item:nth-last-child(-n+2){border-bottom:none}}
+
+    /* CARDS */
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:20px;align-items:stretch}
+    .card{border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:#fff;transition:transform .22s,box-shadow .22s;animation:up .5s ease both}
+    .card:hover{transform:translateY(-5px);box-shadow:0 16px 44px rgba(0,0,0,.09)}
+    .card:nth-child(1){animation-delay:.05s}.card:nth-child(2){animation-delay:.15s}.card:nth-child(3){animation-delay:.25s}
+    .card.featured{border:2px solid var(--featured);box-shadow:0 0 0 4px var(--featured-glow)}
+    .card.featured:hover{box-shadow:0 0 0 4px var(--featured-glow),0 16px 48px rgba(29,78,216,.15)}
+    .card.elite{border:2px solid #a16207;box-shadow:0 0 0 4px rgba(161,98,7,.1)}
+    .card.elite:hover{box-shadow:0 0 0 4px rgba(161,98,7,.12),0 16px 48px rgba(161,98,7,.15)}
+    .card-band{padding:8px 20px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;justify-content:space-between}
+    .c1 .card-band{background:var(--blue-light);color:var(--blue)}.c2 .card-band{background:var(--featured);color:#fff}.c3 .card-band{background:#f5f3ff;color:#6d28d9}.c4 .card-band{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#f0c040}
+    .band-tag{background:rgba(255,255,255,.25);padding:2px 8px;border-radius:100px;font-size:10px}
+    .c1 .band-tag{background:rgba(37,99,235,.1)}.c3 .band-tag{background:rgba(109,40,217,.1)}.c4 .band-tag{background:rgba(240,192,64,.15);color:#f0c040}
+    .card-body{padding:24px 24px 0;flex:1;display:flex;flex-direction:column}
+    .card-title{font-size:21px;font-weight:800;color:var(--ink);margin-bottom:6px;letter-spacing:-.015em}
+    .card-for{font-size:13px;color:var(--ink-3);margin-bottom:14px;line-height:1.5;font-style:italic}
+    .card-feats{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1;margin-bottom:20px}
+    .card-feats li{display:flex;gap:10px;font-size:13.5px;color:var(--ink-2);line-height:1.5;align-items:flex-start}
+    .feat-icon{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:9px}
+    .c1 .feat-icon{background:var(--blue-light);color:var(--blue)}.c2 .feat-icon{background:#dbeafe;color:var(--featured)}.c3 .feat-icon{background:#f5f3ff;color:#6d28d9}.c4 .feat-icon{background:#fefce8;color:#a16207}
+    .card-highlight{border-radius:8px;padding:10px 14px;font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:8px;margin-bottom:20px}
+    .c2 .card-highlight{background:#eff6ff;border:1px solid var(--blue-border);color:var(--featured)}.c3 .card-highlight{background:#f5f3ff;border:1px solid #ddd6fe;color:#5b21b6}.c4 .card-highlight{background:#fefce8;border:1px solid #fde68a;color:#a16207}
+    .card-price{border-top:1px solid var(--line);padding:20px 24px 24px;margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+    .price-orig{font-size:14px;font-weight:600;color:#888;text-decoration:line-through;text-decoration-color:#ef4444;text-decoration-thickness:2px;font-family:var(--mono);display:block;margin-bottom:4px}
+    .price-num{font-size:44px;font-weight:800;color:var(--ink);line-height:1;letter-spacing:-.03em}
+    .price-num .cur{font-size:20px;font-weight:500;color:var(--ink-3);vertical-align:super;letter-spacing:0}
+    .price-note{font-size:11.5px;color:var(--ink-3);margin-top:5px;line-height:1.4;max-width:160px}
+    .price-badge{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-top:5px}
+    .c1 .price-badge{background:var(--blue-light);color:var(--blue)}.c2 .price-badge{background:#dbeafe;color:var(--featured)}.c3 .price-badge{background:#f5f3ff;color:#6d28d9}.c4 .price-badge{background:#fefce8;color:#a16207}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--serif);font-size:13px;font-weight:700;padding:13px 22px;border-radius:10px;border:none;cursor:pointer;text-decoration:none;transition:opacity .15s,transform .15s;white-space:nowrap;flex-shrink:0}
+    .cta:hover{opacity:.88;transform:translateY(-1px)}.cta svg{width:13px;height:13px}
+    .c1 .cta{background:var(--blue);color:#fff}.c2 .cta{background:var(--featured);color:#fff}.c3 .cta{background:#6d28d9;color:#fff}.c4 .cta{background:linear-gradient(135deg,#1a1a2e,#2d2d5e);color:#f0c040}
+
+    /* INVEST CARD */
+    .invest-card{border:1px solid var(--orange-border);border-radius:16px;background:var(--orange-light);overflow:hidden;animation:up .5s ease .35s both}
+    .invest-band{background:var(--orange);color:#fff;padding:8px 24px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+    .invest-band::before{content:'◆';font-size:8px;opacity:.7}
+    .invest-inner{display:grid;grid-template-columns:1fr 280px;gap:0}
+    .invest-body{padding:28px 32px;border-right:1px solid var(--orange-border)}
+    .invest-title{font-size:22px;font-weight:800;color:var(--ink);margin-bottom:6px;letter-spacing:-.015em}
+    .invest-for{font-size:13px;color:var(--ink-3);margin-bottom:20px;font-style:italic}
+    .invest-feats{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}
+    .invest-feats li{display:flex;gap:9px;font-size:13px;color:var(--ink-2);align-items:flex-start;line-height:1.5}
+    .invest-icon{width:17px;height:17px;border-radius:50%;background:var(--orange-light);border:1px solid var(--orange-border);color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:9px;flex-shrink:0;margin-top:1px}
+    .invest-side{padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+    .invest-warning{background:#fff;border:1px solid var(--orange-border);border-radius:8px;padding:10px 14px;font-size:12px;font-weight:600;color:var(--orange);display:flex;gap:8px;align-items:flex-start;margin-bottom:20px}
+    .invest-price-num{font-size:48px;font-weight:800;color:var(--orange);line-height:1;letter-spacing:-.03em;margin-bottom:4px}
+    .invest-price-note{font-size:12px;color:var(--ink-3);line-height:1.4;margin-bottom:20px}
+    .invest-cta{display:flex;align-items:center;justify-content:center;gap:6px;background:var(--orange);color:#fff;font-family:var(--serif);font-size:13px;font-weight:700;padding:14px 20px;border-radius:10px;text-decoration:none;transition:opacity .15s,transform .15s}
+    .invest-cta:hover{opacity:.9;transform:translateY(-1px)}.invest-cta svg{width:13px;height:13px}
+
+    /* YOUTUBE SECTION */
+    .yt-section{background:#0f0f0f;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:64px 24px}
+    .yt-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .yt-chip{display:inline-flex;align-items:center;gap:7px;background:rgba(220,38,38,.15);border:1px solid rgba(220,38,38,.3);color:#fca5a5;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:20px}
+    .yt-chip-dot{width:8px;height:8px;background:#dc2626;border-radius:50%}
+    .yt-title{font-size:26px;font-weight:800;color:#fff;letter-spacing:-.025em;line-height:1.2;margin-bottom:14px}
+    .yt-title span{color:#fca5a5}
+    .yt-body{font-size:14px;color:rgba(255,255,255,.5);line-height:1.75;margin-bottom:24px}
+    .yt-btn{display:inline-flex;align-items:center;gap:10px;background:#dc2626;color:#fff;font-family:var(--serif);font-size:14px;font-weight:700;padding:13px 24px;border-radius:10px;text-decoration:none;transition:background .2s,transform .2s;box-shadow:0 4px 16px rgba(220,38,38,.35)}
+    .yt-btn:hover{background:#b91c1c;transform:translateY(-2px)}.yt-btn svg{width:16px;height:16px;fill:currentColor}
+    .yt-right{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:14px}
+    .yt-stat-row{display:flex;gap:12px}
+    .yt-stat{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:16px;text-align:center}
+    .yt-stat-val{font-size:22px;font-weight:800;color:#fff;line-height:1;margin-bottom:4px}
+    .yt-stat-label{font-size:10px;color:rgba(255,255,255,.3);font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .yt-topics{display:flex;flex-wrap:wrap;gap:7px}
+    .yt-topic{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.55);font-family:var(--mono);font-size:11px;font-weight:600;padding:5px 11px;border-radius:6px}
+    .yt-cta-row{display:flex;align-items:center;gap:10px;background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.2);border-radius:10px;padding:14px 16px;text-decoration:none;transition:background .2s}
+    .yt-cta-row:hover{background:rgba(220,38,38,.17)}
+    .yt-cta-text{flex:1}
+    .yt-cta-title{font-size:13px;font-weight:700;color:#fca5a5}
+    .yt-cta-sub{font-size:11px;color:rgba(252,165,165,.5);font-family:var(--mono)}
+    @media(max-width:768px){.yt-inner{grid-template-columns:1fr;gap:32px}}
+
+    /* FAQ TEASER */
+    .faq-teaser{background:var(--bg2);border-bottom:1px solid var(--line);padding:64px 24px}
+    .faq-inner{max-width:760px;margin:0 auto}
+    .faq-top{text-align:center;margin-bottom:36px}
+    .faq-top h2{font-size:28px;font-weight:800;color:var(--ink);letter-spacing:-.025em;margin-bottom:10px}
+    .faq-top p{font-size:14.5px;color:var(--ink-3);line-height:1.6}
+    .faq-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .2s}
+    .faq-item:hover{border-color:var(--blue-border)}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;cursor:pointer;user-select:none}
+    .faq-q-text{font-size:14.5px;font-weight:700;color:var(--ink);line-height:1.4}
+    .faq-icon{width:24px;height:24px;border-radius:50%;background:var(--blue-light);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;transition:transform .2s,background .2s}
+    .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--blue);color:#fff}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+    .faq-item.open .faq-a{max-height:300px}
+    .faq-a-inner{padding:0 20px 18px;padding-top:14px;font-size:13.5px;color:var(--ink-2);line-height:1.7;border-top:1px solid var(--line)}
+    .faq-more-btn{display:block;text-align:center;background:var(--blue);color:#fff;font-family:var(--serif);font-size:14px;font-weight:700;padding:14px 32px;border-radius:10px;text-decoration:none;transition:opacity .15s,transform .15s;box-shadow:0 4px 14px rgba(37,99,235,.3);max-width:280px;margin:0 auto}
+    .faq-more-btn:hover{opacity:.9;transform:translateY(-1px)}
+
+    /* CTA STRIP */
+    .cta-strip{background:linear-gradient(135deg,#0f172a,#1e1b4b);padding:56px 24px;text-align:center;position:relative;overflow:hidden}
+    .cta-strip::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(99,102,241,.18),transparent 70%);pointer-events:none}
+    .cta-strip-inner{max-width:600px;margin:0 auto;position:relative;z-index:1}
+    .cta-strip h2{font-size:30px;font-weight:800;color:#fff;letter-spacing:-.025em;margin-bottom:12px}
+    .cta-strip p{font-size:15px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:28px}
+    .cta-strip-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+    /* FOOTER */
+    .site-footer{border-top:1px solid var(--line);padding:28px 24px}
+    .footer-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .footer-brand{font-size:13px;color:var(--ink-3)}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{font-size:13px;color:var(--ink-3);text-decoration:none;transition:color .15s}
+    .footer-links a:hover{color:var(--ink)}
+    @media(max-width:480px){.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{gap:14px}}
+
+    /* ANIMATIONS */
+    @keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes countPop{0%{transform:scale(.85);opacity:0}60%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
+    .hero-pill.animated .hero-pill-val{animation:countPop .5s cubic-bezier(.34,1.56,.64,1) both}
+    .hero-pill:nth-child(1).animated .hero-pill-val{animation-delay:.1s}
+    .hero-pill:nth-child(2).animated .hero-pill-val{animation-delay:.22s}
+    .hero-pill:nth-child(3).animated .hero-pill-val{animation-delay:.34s}
+
+    /* FLOAT CTA */
+    .float-cta{display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:200;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-family:var(--serif);font-size:14px;font-weight:700;padding:14px 32px;border-radius:100px;text-decoration:none;box-shadow:0 8px 28px rgba(79,70,229,.45);white-space:nowrap;transition:transform .2s,box-shadow .2s}
+    .float-cta:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 12px 32px rgba(79,70,229,.55)}
+
+    @media(max-width:768px){
+      .cards{grid-template-columns:1fr}.invest-inner{grid-template-columns:1fr}.invest-body{border-right:none;border-bottom:1px solid var(--orange-border)}.invest-feats{grid-template-columns:1fr}
+      .float-cta{display:inline-flex;align-items:center;gap:8px}
+      .card-price{flex-direction:column;align-items:stretch;gap:16px}.cta{width:100%;padding:14px;font-size:14px}
+      .hero-cta-wrap{flex-direction:column;align-items:stretch}.hero-btn-primary{justify-content:center}
+    }
+  
+    /* ═══ MOBILE OPTIMIZATION ═══ */
+    @media(max-width:480px){
+      /* EID Banner */
+      .eid-inner{flex-wrap:wrap;gap:6px;justify-content:center}
+      .eid-desc{display:none}
+      .eid-dot{display:none}
+      /* Navbar */
+      .nav-inner{padding:0 16px}
+      .nav-logo-name{font-size:13px}
+      .nav-yt{display:none}
+      .nav-cta{font-size:12px;padding:7px 14px}
+      /* Hero */
+      .hero{padding:52px 20px 48px}
+      .hero h1{font-size:clamp(30px,9vw,44px);letter-spacing:-.025em}
+      .hero-sub{font-size:15px;margin-bottom:32px}
+      .hero-chip{font-size:10px;padding:5px 12px;margin-bottom:20px}
+      .hero-pills{gap:8px;justify-content:center}
+      .hero-pill{padding:12px 18px;min-width:90px}
+      .hero-pill-val{font-size:22px}
+      .hero-cta-wrap{margin-top:28px}
+      .hero-btn-primary{padding:14px 24px;font-size:14px;width:100%;justify-content:center}
+      /* Ticker */
+      .why-bar-scroll::before,.why-bar-scroll::after{width:30px}
+      .learn-bar-scroll::before,.learn-bar-scroll::after{width:30px}
+      /* Packages */
+      .section{padding:40px 16px 60px}
+      .section-top h2{font-size:26px}
+      .section-top p{font-size:14px}
+      .pkg-compare{font-size:12px}
+      .pkg-compare-item{padding:10px 14px}
+      .cards{gap:16px}
+      .card-body{padding:20px 18px}
+      .card-title{font-size:18px}
+      .card-price{padding:16px 18px 18px}
+      .price-num{font-size:36px}
+      .cta{padding:12px;font-size:13px}
+      /* Why section */
+      .why-tag,.learn-tag{font-size:11px;padding:5px 10px}
+      /* FAQ */
+      .faq-q{padding:14px 16px}
+      .faq-q-text{font-size:13.5px}
+      .faq-a-inner{padding:0 16px 16px;font-size:13px}
+      /* CTA section */
+      .cta-section-inner{padding:40px 20px}
+      .cta-section-inner h2{font-size:24px}
+      .cta-section-inner p{font-size:14px}
+      /* Footer */
+      .footer-inner{padding:0 16px}
+      .float-cta{bottom:12px;right:12px;font-size:12px;padding:10px 16px}
+      /* Invest section */
+      .invest-section{padding:0 16px}
+    }
+    @media(min-width:481px) and (max-width:768px){
+      .hero{padding:64px 24px 56px}
+      .hero h1{font-size:clamp(34px,7vw,52px)}
+      .section{padding:48px 20px 72px}
+      .cards{gap:20px}
+    }
+  </style>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>
+  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E"/>
+  <!-- OG / Social -->
+  <meta property="og:title" content="Exclusive Mentorship by NLT | Real Trading শিখুন ICT দিয়ে"/>
+  <meta property="og:description" content="ICT-ভিত্তিক authentic trading mentorship — scam নয়, real শিক্ষা। $8 থেকে শুরু। ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology।"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://exclusivementorship.pages.dev/"/>
+  <meta property="og:image" content="https://exclusivementorship.pages.dev/og-cover.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://exclusivementorship.pages.dev/"/>
+</head>
+<body>
+
+<!-- EID BANNER -->
+<div class="eid-banner" id="eidBanner">
+  <div class="eid-inner">
+    <span class="eid-title">🌙 Eid Mubarak Deal</span>
+    <span class="eid-dot"></span>
+    <span class="eid-desc">সকল Package-এ বিশেষ Eid ছাড় চলছে — সীমিত সময়ের অফার!</span>
+    <span class="eid-badge">EID SPECIAL</span>
+    <span class="eid-dot"></span>
+    <div class="eid-timer">
+      <span class="eid-timer-label">শেষ হবে</span>
+      <span id="eidD">07</span>d <span id="eidH">00</span>h <span id="eidM">00</span>m <span id="eidS">00</span>s
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">NLT</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Exclusive Mentorship</span>
+        <span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="nav-yt">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <a href="#packages" class="nav-cta">Enroll Now →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-chip">Exclusive Mentorship Program</div>
+    <h1>Real Trading শিখুন,<br/><span>Real Trader হন।</span></h1>
+    <p class="hero-sub">ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — সব কিছু Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়। শুধু শেখা নয় — guided হয়ে একজন consistent trader হওয়ার পথে এগিয়ে যান।</p>
+    <div class="hero-pills" id="heroPills">
+      <div class="hero-pill"><div class="hero-pill-val" data-target="99" data-suffix="+">0</div><div class="hero-pill-label">মোট Class</div></div>
+      <div class="hero-pill"><div class="hero-pill-val">৭টি</div><div class="hero-pill-label">Chapter</div></div>
+      <div class="hero-pill"><div class="hero-pill-val">4<sup style="font-size:13px;color:rgba(255,255,255,0.35)">+1</sup></div><div class="hero-pill-label">Package</div></div>
+      <div class="hero-pill"><div class="hero-pill-val">$8</div><div class="hero-pill-label">থেকে শুরু</div></div>
+    </div>
+    <div class="hero-cta-wrap">
+      <a href="#packages" class="hero-btn-primary">এখনই Enroll করুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE TICKER -->
+<div class="why-section">
+  <div class="why-bar-header">
+    <span class="why-bar-label">আপনি যা পাবেন</span>
+  </div>
+  <!-- Row 1: শিখবেন — left scroll -->
+  <div class="why-bar-scroll">
+    <div class="why-bar-track">
+      <div class="why-bar-set">
+        <span class="why-tag">Basic of Trading</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">ICT Concept</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Fundamental Analysis</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Risk Management</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Trading Psychology</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Personal Trade Setup</span>
+      </div>
+      <div class="why-bar-set">
+        <span class="why-tag">Basic of Trading</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">ICT Concept</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Fundamental Analysis</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Risk Management</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Trading Psychology</span>
+        <span class="why-divider"></span>
+        <span class="why-tag">Personal Trade Setup</span>
+      </div>
+    </div>
+  </div>
+  <!-- Row 2: আলাদা — right scroll (reverse), accent style -->
+  <div class="why-bar-scroll">
+    <div class="why-bar-track reverse">
+      <div class="why-bar-set">
+        <span class="why-tag accent">ICT Superior — A to Z</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">Advanced Fundamental Analysis</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">সকাল ৮টা–রাত ১০টা Chat Support</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">Complete Trading Plan</span>
+      </div>
+      <div class="why-bar-set">
+        <span class="why-tag accent">ICT Superior — A to Z</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">Advanced Fundamental Analysis</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">সকাল ৮টা–রাত ১০টা Chat Support</span>
+        <span class="why-divider"></span>
+        <span class="why-tag accent">Complete Trading Plan</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PACKAGES -->
+<div class="section" id="packages">
+  <div class="section-top">
+    <h2>আপনার Package বেছে নিন</h2>
+    <p>Budget ও লক্ষ্য অনুযায়ী আপনার জন্য সঠিক package — প্রতিটিতে আলাদা সুবিধা ও মূল্য</p>
+  </div>
+
+  <div class="pkg-compare">
+    <div class="pkg-compare-item"><span class="pkg-compare-label">শুরু করতে চান?</span><span class="pkg-compare-val">Package 01 বা 02</span></div>
+    <div class="pkg-compare-divider"></div>
+    <div class="pkg-compare-item"><span class="pkg-compare-label">Daily guidance চান?</span><span class="pkg-compare-val">Pro Package (03)</span></div>
+    <div class="pkg-compare-divider"></div>
+    <div class="pkg-compare-item"><span class="pkg-compare-label">সর্বোচ্চ attention চান?</span><span class="pkg-compare-val">Elite Package (04)</span></div>
+    <div class="pkg-compare-divider"></div>
+    <div class="pkg-compare-item pkg-compare-cta"><span class="pkg-compare-label">📊 Side-by-side তুলনা</span><a href="compare.html" style="color:#fff;font-weight:700;font-size:13px;text-decoration:none">→ Full Comparison Table</a></div>
+  </div>
+
+  <div class="cards">
+    <div class="card c1">
+      <div class="card-band">Package 01<span class="band-tag">Chapter by Chapter</span></div>
+      <div class="card-body">
+        <div class="card-title">Easy Installment</div>
+        <div class="card-for">যারা একটু একটু করে শুরু করতে চান</div>
+        <ul class="card-feats">
+          <li><span class="feat-icon">✓</span>একসাথে পুরো payment দিতে হবে না — chapter শেষে পরেরটার payment করুন</li>
+          <li><span class="feat-icon">✓</span>চাপ ছাড়াই নিজের গতিতে শেখার সুযোগ</li>
+          <li><span class="feat-icon">✓</span>যাদের এখন বড় budget নেই তাদের জন্য সবচেয়ে সহজ উপায়</li>
+          <li><span class="feat-icon">✓</span>আমাদের <strong>১টি Personal Trade Setup</strong> শেখানো হবে</li>
+        </ul>
+      </div>
+      <div class="card-price">
+        <div class="price-left">
+          <span class="price-orig">সম্পূর্ণ $300</span>
+          <div class="price-num"><span class="cur">$</span>8</div>
+          <span class="price-badge">First Chapter 50% OFF</span>
+          <div class="price-note">বাকি $141 chapter by chapter ভাগ করে দেওয়া হবে</div>
+        </div>
+        <a href="package-01.html" class="cta">Details দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="card c2 featured">
+      <div class="card-band">⭐ Most Popular<span class="band-tag" style="background:rgba(255,255,255,.2)">Best Value</span></div>
+      <div class="card-body">
+        <div class="card-title">Best Value + Giveaway</div>
+        <div class="card-for">যারা একবারেই সব নিতে চান</div>
+        <ul class="card-feats">
+          <li><span class="feat-icon">✓</span>একবার payment — সঙ্গে সঙ্গে সব chapter unlock</li>
+          <li><span class="feat-icon">✓</span>Package 01-এর একই content, মূল্য অনেক কম</li>
+          <li><span class="feat-icon">✓</span>আমাদের <strong>১টি Personal Trade Setup</strong> শেখানো হবে</li>
+          <li><span class="feat-icon">✓</span>Course শেষে Top 5 পাবেন $10,000 Funded Account</li>
+        </ul>
+        <div class="card-highlight">🏆 শুধুমাত্র Top 5 — $10,000 Funded Trading Account</div>
+      </div>
+      <div class="card-price">
+        <div class="price-left">
+          <span class="price-orig">$300</span>
+          <div class="price-num"><span class="cur">$</span>99</div>
+          <span class="price-badge">67% OFF</span>
+          <div class="price-note">One-time — সম্পূর্ণ course access</div>
+        </div>
+        <a href="package-02.html" class="cta">Details দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="card c3">
+      <div class="card-band">Package 03<span class="band-tag">Pro · Yearly</span></div>
+      <div class="card-body">
+        <div class="card-title">Pro Package</div>
+        <div class="card-for">যারা professional level-এ নিজেকে গড়তে চান — ১ বছরের জন্য</div>
+        <ul class="card-feats">
+          <li><span class="feat-icon">✓</span>Package 02-এর সব সুবিধা অন্তর্ভুক্ত</li>
+          <li><span class="feat-icon">✓</span>আলাদা Pro Telegram Channel-এ add করা হবে</li>
+          <li><span class="feat-icon">✓</span>প্রতিদিন Fundamental ও Technical Outlook পাবেন</li>
+          <li><span class="feat-icon">✓</span>আমাদের ৩টি ব্যক্তিগত Setup Backtest সহ শেখানো হবে</li>
+          <li><span class="feat-icon">✓</span>সপ্তাহে ৫টির মধ্যে ১টি Trade Review করা হবে</li>
+          <li><span class="feat-icon">✓</span>প্রতি দুই সপ্তাহে সরাসরি 1v1 সেশন পাবেন</li>
+          <li><span class="feat-icon">✓</span>শীর্ষ ৩ জন পাবেন $25,000 Funded Account</li>
+        </ul>
+        <div class="card-highlight">🏆 Top 3 Traders — $25,000 Funded Account Giveaway</div>
+      </div>
+      <div class="card-price">
+        <div class="price-left">
+          <span class="price-orig">$500 / year</span>
+          <div class="price-num"><span class="cur">$</span>299</div>
+          <span class="price-badge">40% OFF</span>
+          <div class="price-note">১ বছরের সব সুবিধা — একবার payment</div>
+        </div>
+        <a href="package-03.html" class="cta">Details দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+
+    <div class="card c4 elite">
+      <div class="card-band">Package 04<span class="band-tag">Elite · Yearly</span></div>
+      <div class="card-body">
+        <div class="card-title">Elite Package</div>
+        <div class="card-for">সর্বোচ্চ personal attention — ১ বছরের জন্য সম্পূর্ণ package</div>
+        <ul class="card-feats">
+          <li><span class="feat-icon">✓</span>Package 02-এর সব সুবিধা অন্তর্ভুক্ত</li>
+          <li><span class="feat-icon">✓</span>আলাদা Elite Telegram Channel-এ add করা হবে</li>
+          <li><span class="feat-icon">✓</span>প্রতিদিন Fundamental, Technical Outlook ও Daily Bias পাবেন</li>
+          <li><span class="feat-icon">✓</span>আমাদের ৫টি ব্যক্তিগত Setup Backtest সহ শেখানো হবে</li>
+          <li><span class="feat-icon">✓</span>প্রায় প্রতিটি Trade Review করা হবে</li>
+          <li><span class="feat-icon">✓</span>সপ্তাহে দুইবার সরাসরি 1v1 সেশন পাবেন</li>
+          <li><span class="feat-icon">✓</span>শীর্ষ ২ জন পাবেন $50,000 Funded Account</li>
+        </ul>
+        <div class="card-highlight">👑 Top 2 Traders — $50,000 Funded Account Giveaway</div>
+      </div>
+      <div class="card-price">
+        <div class="price-left">
+          <span class="price-orig">$700 / year</span>
+          <div class="price-num"><span class="cur">$</span>499</div>
+          <span class="price-badge">29% OFF</span>
+          <div class="price-note">১ বছরের সর্বোচ্চ guidance — একবার payment</div>
+        </div>
+        <a href="package-04.html" class="cta">Details দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-bottom:24px">
+    <a href="compare.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--line);color:var(--ink-2);font-size:13px;font-weight:600;padding:11px 22px;border-radius:10px;text-decoration:none;transition:border-color .15s,color .15s">
+      📊 সব Package একসাথে তুলনা করুন →
+    </a>
+  </div>
+
+  <div class="invest-card">
+    <div class="invest-band">Investment Package — Fund Management</div>
+    <div class="invest-inner">
+      <div class="invest-body">
+        <div class="invest-title">Fund Management</div>
+        <div class="invest-for">যারা শিখতে শিখতেই income শুরু করতে চান — তাদের জন্য</div>
+        <ul class="invest-feats">
+          <li><span class="invest-icon">✓</span>আপনি শুধু fund দেবেন — বাকি সব আমাদের team করবে</li>
+          <li><span class="invest-icon">✓</span>Profit-এর ৭৫% আপনার, মাত্র ২৫% management fee</li>
+          <li><span class="invest-icon">✓</span>চাকরি বা ব্যবসার পাশাপাশি passive income</li>
+          <li><span class="invest-icon">✓</span>প্রতি মাস শেষে হিসাব দিয়ে profit পাঠানো হবে</li>
+          <li><span class="invest-icon">⚠</span>প্রথম profit-এর পর যেকোনো একটি package নেওয়া বাধ্যতামূলক</li>
+        </ul>
+      </div>
+      <div class="invest-side">
+        <div class="invest-warning">⚠️ প্রথম profit থেকে যেকোনো একটি package নেওয়া mandatory</div>
+        <div>
+          <div class="invest-price-num">FREE</div>
+          <div class="invest-price-note">Join করতে কোনো fee নেই — profit হলেই কেবল ২৫% কাটা হবে</div>
+        </div>
+        <a href="investment.html" class="invest-cta">Details দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- YOUTUBE SECTION -->
+<div class="yt-section">
+  <div class="yt-inner">
+    <div>
+      <div class="yt-chip"><div class="yt-chip-dot"></div>Free Content on YouTube</div>
+      <div class="yt-title">আগে দেখুন,<br/>তারপর <span>সিদ্ধান্ত নিন</span></div>
+      <p class="yt-body">Enroll করার আগে আমার YouTube channel-এ free ICT content দেখুন — আমার teaching style, depth এবং authenticity নিজে judge করুন। আমি চাই আপনি নিজে বিচার করে সিদ্ধান্ত নিন।</p>
+      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="yt-btn">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        @WeAreNLT দেখুন
+      </a>
+    </div>
+    <div class="yt-right">
+      <div class="yt-stat-row">
+        <div class="yt-stat"><div class="yt-stat-val">Free</div><div class="yt-stat-label">ICT Content</div></div>
+        <div class="yt-stat"><div class="yt-stat-val">বাংলা</div><div class="yt-stat-label">ভাষায়</div></div>
+      </div>
+      <div class="yt-topics">
+        <span class="yt-topic">ICT Basics</span><span class="yt-topic">Market Structure</span><span class="yt-topic">Order Blocks</span><span class="yt-topic">FVG</span><span class="yt-topic">Liquidity</span><span class="yt-topic">Silver Bullet</span><span class="yt-topic">Fundamental Analysis</span><span class="yt-topic">Trade Review</span>
+      </div>
+      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="yt-cta-row">
+        <span style="font-size:22px">📺</span>
+        <div class="yt-cta-text"><div class="yt-cta-title">YouTube Channel Visit করুন</div><div class="yt-cta-sub">youtube.com/@WeAreNLT</div></div>
+        <span style="color:rgba(252,165,165,.4)">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ TEASER -->
+<div class="faq-teaser">
+  <div class="faq-inner">
+    <div class="faq-top">
+      <h2>সাধারণ প্রশ্নোত্তর</h2>
+      <p>আপনার মনে যে প্রশ্নগুলো আসছে — এখানে উত্তর পাবেন</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">আমি একদম beginner, আমি কি এই mentorship নিতে পারব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">হ্যাঁ, অবশ্যই। আমাদের curriculum একদম Basic থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব কিছু ধাপে ধাপে শেখানো হয়। কোনো পূর্ব অভিজ্ঞতা দরকার নেই।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Payment কীভাবে করব? Bangladeshi Taka-তে করা যাবে?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Payment শুধুমাত্র <strong>Binance UID</strong>-এর মাধ্যমে গ্রহণ করা হয়। Binance app থেকে আমাদের UID-তে সরাসরি পাঠান — আমরা কোনো wallet address বা অন্য কোনো payment method ব্যবহার করি না। Payment-এর পরে Telegram-এ screenshot পাঠালে ২৪ ঘণ্টার মধ্যে access দেওয়া হবে।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">Package 01 vs Package 02 — কোনটা নেব?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Content একই। Package 01 হলো installment — chapter by chapter pay করতে হবে। Package 02-এ একসাথে pay করলে মোট খরচ অনেক কম ($99 vs $149+) এবং $10,000 Funded Account Giveaway-এর সুযোগও পাবেন।</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">এটা কি Forex trading, নাকি Crypto?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">আমাদের ICT-ভিত্তিক curriculum মূলত Forex (Indices, Pairs) এর উপর ফোকাস করে, তবে এই same concept Crypto market-এও apply হয়। আপনি দুটোতেই use করতে পারবেন।</div></div>
+      </div>
+    </div>
+    <a href="faq.html" class="faq-more-btn">সব প্রশ্নোত্তর দেখুন →</a>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <h2>শুরু করতে প্রস্তুত?</h2>
+    <p>আজই আপনার package বেছে নিন এবং trading-এর সঠিক পথে যাত্রা শুরু করুন। কোনো প্রশ্ন থাকলে Telegram-এ সরাসরি কথা বলুন।</p>
+    <div class="cta-strip-btns">
+      <a href="#packages" class="hero-btn-primary">Package দেখুন <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="compare.html" class="hero-btn-secondary">📊 Package Compare করুন</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">Exclusive Mentorship by NLT &copy; 2026</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="https://t.me/AskNLT" target="_blank">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#packages" class="float-cta">Package দেখুন <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+
+<script>
+
+  // HAMBURGER MENU
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.getElementById('menuClose');
+  const menuOverlay = document.getElementById('menuOverlay');
+  function openMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow=''; }
+  if(hamburger) hamburger.addEventListener('click', openMenu);
+  if(menuClose)  menuClose.addEventListener('click', closeMenu);
+  if(menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
+  // Close mobile menu on internal link click
+  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => {
+    if(!a.href.startsWith('http')) a.addEventListener('click', closeMenu);
+  });
+  // EID TIMER — ends March 26, 2026
+  const eidEnd = new Date('2026-03-26T23:59:59').getTime();
+  function tick() {
+    const diff = eidEnd - Date.now();
+    if (diff <= 0) { document.getElementById('eidBanner').style.display='none'; return; }
+    const d = Math.floor(diff/86400000);
+    const h = Math.floor((diff%86400000)/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    document.getElementById('eidD').textContent = String(d).padStart(2,'0');
+    document.getElementById('eidH').textContent = String(h).padStart(2,'0');
+    document.getElementById('eidM').textContent = String(m).padStart(2,'0');
+    document.getElementById('eidS').textContent = String(s).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 1000);
+
+  // NAVBAR
+  const nb = document.getElementById('navbar');
+  window.addEventListener('scroll', () => nb.classList.toggle('scrolled', scrollY > 20));
+
+  // COUNTER
+  function animateCounter(el, target, suffix, duration) {
+    let start = 0, step = target / (duration/16);
+    const t = setInterval(() => { start += step; if(start>=target){el.innerHTML=target+(suffix||'');clearInterval(t)}else{el.textContent=Math.floor(start)+(suffix||'')} }, 16);
+  }
+  const ps = document.getElementById('heroPills');
+  new IntersectionObserver((e) => {
+    if(e[0].isIntersecting){
+      document.querySelectorAll('.hero-pill-val[data-target]').forEach(el=>animateCounter(el,parseInt(el.dataset.target),el.dataset.suffix||'',1200));
+      document.querySelectorAll('.hero-pill').forEach(p=>p.classList.add('animated'));
+    }
+  },{threshold:.3}).observe(ps);
+
+  // FLOAT CTA
+  const pkg = document.getElementById('packages'), fc = document.querySelector('.float-cta');
+  if(pkg&&fc) new IntersectionObserver(e=>{fc.style.opacity=e[0].isIntersecting?'0':'1';fc.style.pointerEvents=e[0].isIntersecting?'none':'auto'},{threshold:.1}).observe(pkg);
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement, open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!open) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
