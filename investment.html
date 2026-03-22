@@ -1,579 +1,257 @@
 <!DOCTYPE html>
+
 <html lang="bn">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="description" content="NLT-এর professional fund management service — expert traders আপনার investment manage করবে। বিস্তারিত জানতে Telegram-এ যোগাযোগ করুন।"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Investment Package — Fund Management | Exclusive Mentorship</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <style>
+<meta charset="utf-8"/>
+<meta content="NLT-এর professional fund management service — expert traders আপনার investment manage করবে। বিস্তারিত জানতে Telegram-এ যোগাযোগ করুন।" name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Investment Package — Fund Management | Exclusive Mentorship</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
-    /* EID BANNER */
-    .eid-banner{background:linear-gradient(90deg,#0a3d20,#14652e,#0a3d20);padding:10px 20px;text-align:center;position:relative;overflow:hidden}
-    .eid-inner{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center}
-    .eid-title{font-family:var(--mono);font-size:12px;font-weight:700;color:#fde68a;letter-spacing:.1em;text-transform:uppercase}
-    .eid-dot{width:4px;height:4px;background:rgba(253,230,138,.4);border-radius:50%}
-    .eid-desc{font-size:12.5px;color:rgba(255,255,255,.85);font-weight:500}
-    .eid-badge{background:#fde68a;color:#0a3d20;font-family:var(--mono);font-size:10px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:.06em}
-    .eid-timer{display:inline-flex;align-items:center;gap:4px;background:rgba(0,0,0,.25);border:1px solid rgba(253,230,138,.3);border-radius:8px;padding:4px 10px;font-family:var(--mono);font-size:13px;font-weight:700;color:#fde68a}
-    .eid-timer-label{font-size:9px;color:rgba(253,230,138,.55);text-transform:uppercase;margin-right:4px}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-      --bg:#ffffff;--bg2:#f8faff;--ink:#0d0d0d;--ink-2:#444;--ink-3:#888;
-      --line:#eaeaea;
-      --inv:#059669;--inv-dark:#047857;--inv-light:#ecfdf5;--inv-border:#a7f3d0;--inv-glow:rgba(5,150,105,0.12);
-      --orange:#ea580c;--orange-light:#fff7ed;--orange-border:#fed7aa;
-      --serif:'Plus Jakarta Sans',sans-serif;--mono:'Space Grotesk',sans-serif;
-    }
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;}
-    /* ═══ GLOBAL MOBILE UX ═══ */
-    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-    *{-webkit-tap-highlight-color:transparent}
-    a,button{touch-action:manipulation}
-    input,button,select,textarea{font-family:inherit}
-    img{max-width:100%;height:auto}
-
-    /* NAV */
-    .nav{position:sticky;top:0;z-index:100;background:rgba(2,44,34,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(167,243,208,0.1);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
-    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(52,211,153,0.5)}50%{box-shadow:0 0 0 5px rgba(52,211,153,0)}}
-    .nav-back{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;}
-    .nav-back:hover{color:rgba(255,255,255,0.9)}
-    .nav-back svg{width:14px;height:14px}
-
-    /* HERO */
-    .hero{background:linear-gradient(135deg,#022c22 0%,#064e3b 60%,#065f46 100%);padding:68px 24px 60px;position:relative;overflow:hidden;}
-    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 0%,rgba(52,211,153,0.2) 0%,transparent 70%);pointer-events:none;}
-    .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(52,211,153,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(52,211,153,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;}
-    .hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;}
-
-    .hero-top-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
-    .hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(52,211,153,0.15);border:1px solid rgba(52,211,153,0.3);color:#34d399;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px;}
-    .hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.45);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:5px 13px;border-radius:100px;}
-
-    .hero h1{font-size:clamp(30px,5vw,52px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-0.03em;margin-bottom:16px;}
-    .hero h1 span{background:linear-gradient(90deg,#34d399,#6ee7b7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-    .hero-sub{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:16px;max-width:580px;}
-    .hero-for{display:inline-flex;align-items:center;gap:7px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.2);color:#6ee7b7;font-size:12.5px;font-weight:600;padding:6px 14px;border-radius:8px;margin-bottom:32px;}
-    .hero-stats{display:flex;flex-wrap:wrap;gap:10px;}
-    .hero-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(52,211,153,0.15);border-radius:10px;padding:12px 20px;display:flex;flex-direction:column;gap:4px;transition:background 0.2s,border-color 0.2s;}
-    .hero-stat:hover{background:rgba(52,211,153,0.08);border-color:rgba(52,211,153,0.3);}
-    .stat-val{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1;}
-    .stat-label{font-size:10.5px;color:rgba(255,255,255,0.3);font-family:var(--mono);font-weight:500;letter-spacing:0.08em;text-transform:uppercase;}
-
-    /* CONTAINER */
-    .container{max-width:760px;margin:0 auto;padding:60px 24px 80px;}
-
-    /* SECTION TITLE */
-    .sec-title{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-0.02em;margin-bottom:20px;display:flex;align-items:center;gap:10px;}
-    .sec-title::before{content:'';width:4px;height:22px;background:var(--inv);border-radius:2px;flex-shrink:0;}
-
-    /* FOR WHOM */
-    .for-whom{background:var(--inv-light);border:1px solid var(--inv-border);border-radius:14px;padding:24px 28px;margin-bottom:48px;}
-    .for-whom-title{font-size:11px;font-weight:700;color:var(--inv);font-family:var(--mono);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;}
-    .for-whom-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-    .for-whom-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--ink-2);line-height:1.55;}
-    .for-whom-list li::before{content:'✓';width:20px;height:20px;background:#d1fae5;color:var(--inv);border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-
-    /* FREE BANNER */
-    .free-banner{background:linear-gradient(135deg,#022c22,#065f46);border:1px solid rgba(52,211,153,0.2);border-radius:16px;padding:32px;margin-bottom:48px;text-align:center;position:relative;overflow:hidden;}
-    .free-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 30%,rgba(52,211,153,0.12) 0%,transparent 70%);pointer-events:none;}
-    .free-banner-inner{position:relative;z-index:1;}
-    .free-banner-tag{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:10px;}
-    .free-banner-price{font-size:64px;font-weight:800;color:#34d399;font-family:var(--mono);line-height:1;letter-spacing:-0.03em;margin-bottom:8px;}
-    .free-banner-sub{font-size:15px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:420px;margin:0 auto;}
-
-    /* FEATURES */
-    .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:48px;}
-    .feat-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;}
-    .feat-card:hover{border-color:var(--inv-border);box-shadow:0 4px 16px var(--inv-glow);transform:translateY(-2px);}
-    .feat-icon-box{width:38px;height:38px;border-radius:10px;background:var(--inv-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:17px;}
-    .feat-text h4{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.3;}
-    .feat-text p{font-size:12.5px;color:var(--ink-3);line-height:1.55;}
-
-    /* HOW IT WORKS */
-    .how-box{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:48px;}
-    .how-item{display:flex;align-items:flex-start;gap:16px;padding:18px 22px;border-bottom:1px solid var(--line);transition:background 0.15s;}
-    .how-item:last-child{border-bottom:none}
-    .how-item:hover{background:var(--inv-light)}
-    .how-num{width:34px;height:34px;border-radius:50%;background:var(--inv);color:#fff;font-family:var(--mono);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .how-body{flex:1;}
-    .how-title{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:3px;}
-    .how-desc{font-size:13px;color:var(--ink-3);line-height:1.55;}
-
-    /* PROFIT SPLIT */
-    .profit-card{background:linear-gradient(135deg,#022c22,#065f46);border-radius:14px;padding:28px 32px;margin-bottom:48px;position:relative;overflow:hidden;}
-    .profit-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 50%,rgba(52,211,153,0.08) 0%,transparent 70%);pointer-events:none;}
-    .profit-inner{position:relative;z-index:1;display:flex;align-items:center;gap:32px;}
-    .profit-label{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;}
-    .profit-split{display:flex;gap:24px;flex:1;}
-    .profit-side{flex:1;text-align:center;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px 16px;}
-    .profit-side.yours{border-color:rgba(52,211,153,0.3);background:rgba(52,211,153,0.07);}
-    .profit-pct{font-size:44px;font-weight:800;font-family:var(--mono);line-height:1;letter-spacing:-0.02em;margin-bottom:4px;}
-    .profit-side.yours .profit-pct{color:#34d399;}
-    .profit-side.ours .profit-pct{color:rgba(255,255,255,0.4);}
-    .profit-who{font-size:12px;font-weight:600;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase;}
-    .profit-side.yours .profit-who{color:rgba(52,211,153,0.7);}
-    .profit-side.ours .profit-who{color:rgba(255,255,255,0.3);}
-    .profit-note{font-size:12.5px;color:rgba(255,255,255,0.4);line-height:1.6;max-width:160px;}
-
-    /* WARNING BOX */
-    .warning-box{background:var(--orange-light);border:1px solid var(--orange-border);border-radius:12px;padding:18px 22px;margin-bottom:48px;display:flex;gap:14px;align-items:flex-start;}
-    .warning-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
-    .warning-body h4{font-size:14px;font-weight:700;color:var(--orange);margin-bottom:5px;}
-    .warning-body p{font-size:13px;color:#9a3412;line-height:1.6;}
-
-    /* DIVIDER */
-    .divider{border:none;border-top:1px solid var(--line);margin:48px 0;}
-
-    /* STEPS */
-    .steps{display:flex;flex-direction:column;gap:0;margin-bottom:48px;position:relative;}
-    .steps::before{content:'';position:absolute;left:19px;top:44px;bottom:44px;width:2px;background:linear-gradient(to bottom,var(--inv-border),transparent);}
-    .step{display:flex;gap:20px;align-items:flex-start;padding:0 0 28px 0;}
-    .step:last-child{padding-bottom:0}
-    .step-num{width:40px;height:40px;border-radius:50%;background:var(--inv);color:#fff;font-family:var(--mono);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1;box-shadow:0 0 0 4px var(--inv-light);}
-    .step-body{padding-top:8px;flex:1;}
-    .step-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:5px;}
-    .step-desc{font-size:13.5px;color:var(--ink-2);line-height:1.65;}
-
-    /* FAQ */
-    .faq-list{display:flex;flex-direction:column;gap:10px;margin-bottom:48px;}
-    .faq-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;}
-    .faq-q{width:100%;background:none;border:none;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;text-align:left;font-family:var(--serif);font-size:14px;font-weight:700;color:var(--ink);transition:background 0.15s;}
-    .faq-q:hover{background:var(--inv-light)}
-    .faq-q.open{background:var(--inv-light);color:var(--inv)}
-    .faq-icon{width:22px;height:22px;border-radius:50%;background:var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;font-weight:700;transition:background 0.15s,transform 0.2s;color:var(--ink-2);}
-    .faq-q.open .faq-icon{background:var(--inv);color:#fff;transform:rotate(45deg);}
-    .faq-a{display:none;padding:14px 20px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.7;border-top:1px solid var(--inv-border);background:var(--inv-light);}
-    .faq-a.open{display:block}
-
-    /* CTA */
-    .cta-block{background:linear-gradient(135deg,#022c22,#065f46);border:1px solid rgba(52,211,153,0.15);border-radius:16px;padding:40px 36px;text-align:center;position:relative;overflow:hidden;}
-    .cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(52,211,153,0.12) 0%,transparent 70%);pointer-events:none;}
-    .cta-block-inner{position:relative;z-index:1;}
-    .cta-block h3{font-size:24px;font-weight:800;color:#fff;margin-bottom:10px;letter-spacing:-0.02em;}
-    .cta-block p{font-size:14.5px;color:rgba(255,255,255,0.45);margin-bottom:28px;line-height:1.65;max-width:460px;margin-left:auto;margin-right:auto;}
-    .cta-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#059669,#047857);color:#fff;font-family:var(--serif);font-size:15px;font-weight:700;padding:17px 38px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(5,150,105,0.4);}
-    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(5,150,105,0.55);}
-    .cta-btn svg{width:16px;height:16px}
-    .cta-trust{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;margin-top:20px;}
-    .cta-trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);}
-    .cta-trust-item::before{content:'✓';width:16px;height:16px;background:rgba(52,211,153,0.15);color:#34d399;border-radius:50%;font-size:9px;display:flex;align-items:center;justify-content:center;}
-
-    /* SCROLL REVEAL */
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.5s ease,transform 0.5s ease;}
-    .reveal.visible{opacity:1;transform:translateY(0);}
-
-    @keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    .anim{animation:up 0.5s ease both;}
-    .anim-d1{animation-delay:0.05s}.anim-d2{animation-delay:0.12s}.anim-d3{animation-delay:0.2s}.anim-d4{animation-delay:0.28s}
-
-    footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--ink-3);}
-
-    @media(max-width:600px){
-      .features-grid{grid-template-columns:1fr}
-      .profit-inner{flex-direction:column;gap:20px}
-      .profit-note{max-width:100%}
-      .profit-split{gap:12px}
-      .cta-block{padding:28px 20px}
-    }
-
-    /* SITE FOOTER */
-    .site-footer{border-top:1px solid var(--line);padding:28px 24px;}
-    .footer-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-    .footer-brand{font-size:13px;color:var(--ink-3);}
-    .footer-links{display:flex;gap:20px;flex-wrap:wrap;}
-    .footer-links a{font-size:13px;color:var(--ink-3);text-decoration:none;transition:color 0.15s;}
-    .footer-links a:hover{color:var(--ink);}
-    @media(max-width:480px){
-      /* EID Banner mobile */
-      .eid-inner{flex-wrap:wrap;gap:6px;justify-content:center}
-      .eid-desc{display:none}
-      .eid-dot{display:none}
-      .footer-inner{flex-direction:column;align-items:flex-start;}.footer-links{gap:14px;}}
-      
-    /* ═══ HAMBURGER MOBILE MENU ═══ */
-    .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;padding:8px;flex-shrink:0}
-    .nav-hamburger span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}
-    .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .nav-hamburger.open span:nth-child(2){opacity:0}
-    .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;pointer-events:none}
-    .mobile-menu-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .25s;pointer-events:none}
-    .mobile-menu-drawer{position:absolute;top:0;right:-280px;width:272px;height:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);transition:right .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
-    .mobile-menu.open{pointer-events:all}
-    .mobile-menu.open .mobile-menu-overlay{background:rgba(0,0,0,.35);pointer-events:all}
-    .mobile-menu.open .mobile-menu-drawer{right:0}
-    .mobile-menu-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
-    .mobile-menu-logo{font-size:14px;font-weight:800;color:var(--ink)}
-    .mobile-menu-close{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:18px;color:var(--ink-2);line-height:1}
-    .mobile-menu-links{padding:12px 0;flex:1}
-    .mobile-menu-section{font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;padding:8px 20px 4px}
-    .mobile-menu-link{display:flex;align-items:center;gap:10px;padding:12px 20px;font-size:14px;font-weight:600;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s}
-    .mobile-menu-link:hover{background:var(--bg2);color:var(--ink)}
-    .mobile-menu-link.active{color:var(--blue);background:var(--blue-light)}
-    .mobile-menu-link-icon{width:18px;height:18px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
-    .mobile-menu-footer{padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
-    .mobile-menu-cta{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:14px;font-weight:700;padding:13px;border-radius:10px;text-decoration:none}
-    .mobile-menu-yt{display:flex;align-items:center;justify-content:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:13px;font-weight:700;padding:11px;border-radius:10px;text-decoration:none}
-    .mobile-menu-yt svg{width:14px;height:14px;fill:currentColor}
-    @media(max-width:768px){.nav-hamburger{display:flex}}
-    /* NAVBAR */
-    .navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:0 24px;transition:box-shadow .2s}
-    .navbar.scrolled{box-shadow:0 2px 16px rgba(0,0,0,.08)}
-    .nav-inner{max-width:1080px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#4f46e5,#2563eb);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
-    .nav-logo-text{display:flex;flex-direction:column;line-height:1.15}
-    .nav-logo-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
-    .nav-logo-sub{font-size:10px;color:var(--ink-3);font-family:var(--mono);font-weight:500;letter-spacing:.04em}
-    .nav-links{display:flex;align-items:center;gap:4px;flex:1;justify-content:center}
-    .nav-link{font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 12px;border-radius:8px;transition:background .15s,color .15s;white-space:nowrap}
-    .nav-link:hover{background:var(--bg2);color:var(--ink)}
-    .nav-link.active{color:var(--blue)}
-    .nav-actions{display:flex;align-items:center;gap:8px}
-    .nav-yt{display:inline-flex;align-items:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:12px;font-weight:700;padding:7px 14px;border-radius:8px;text-decoration:none;transition:background .15s;font-family:var(--mono)}
-    .nav-yt svg{width:14px;height:14px;fill:currentColor}
-    .nav-yt:hover{background:#fecaca}
-    .nav-cta{display:inline-flex;align-items:center;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:8px 18px;border-radius:9px;text-decoration:none;transition:opacity .15s;white-space:nowrap}
-    .nav-cta:hover{opacity:.9}
-    @media(max-width:768px){.nav-link-hide{display:none}.nav-logo-sub{display:none}}
-      /* FLOAT CTA */
-    .float-cta{position:fixed;bottom:20px;right:20px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:12px 22px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(79,70,229,.4);transition:transform .2s,box-shadow .2s;z-index:200}
-    .float-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.45)}
-    @media(max-width:480px){.float-cta{bottom:16px;right:16px;font-size:12px;padding:10px 16px}}
-  
-    /* BACK BUTTON */
-    .back-bar{background:var(--bg2);border-bottom:1px solid var(--line);padding:10px 24px}
-    .back-bar-inner{max-width:1080px;margin:0 auto}
-    .back-btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;transition:border-color .15s,color .15s,background .15s}
-    .back-btn:hover{border-color:var(--blue-border);color:var(--blue);background:var(--blue-light)}
-    .back-btn svg{width:14px;height:14px;flex-shrink:0}
-  
-    /* ═══ MOBILE OPTIMIZATION ═══ */
-    @media(max-width:480px){
-      .nav-inner{padding:0 16px}
-      .nav-logo-name{font-size:13px}
-      .nav-yt{display:none}
-      .nav-cta{font-size:12px;padding:7px 14px}
-      .back-bar{padding:8px 16px}
-      .float-cta{bottom:12px;right:12px;font-size:12px;padding:10px 14px}
-    }
-  </style>
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>
-  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E"/>
-  <!-- OG / Social -->
-  <meta property="og:title" content="Investment Package — Fund Management | NLT"/>
-  <meta property="og:description" content="Professional fund management service — আপনার fund NLT-এর expert traders manage করবে।"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://exclusivementorship.pages.dev/investment.html"/>
-  <meta property="og:image" content="https://exclusivementorship.pages.dev/og-cover.png"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <!-- Canonical -->
-  <link rel="canonical" href="https://exclusivementorship.pages.dev/investment.html"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="shortcut icon"/>
+<!-- OG / Social -->
+<meta content="Investment Package — Fund Management | NLT" property="og:title"/>
+<meta content="Professional fund management service — আপনার fund NLT-এর expert traders manage করবে।" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://exclusivementorship.pages.dev/investment.html" property="og:url"/>
+<meta content="https://exclusivementorship.pages.dev/og-cover.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- Canonical -->
+<link href="https://exclusivementorship.pages.dev/investment.html" rel="canonical"/><link href="css/investment.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <div class="nav-logo-mark">NLT</div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">Exclusive Mentorship</span>
-        <span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
-      </div>
-    </a>
-    <div class="nav-actions">
-      <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="nav-yt">
-        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+<div class="nav-inner">
+<a class="nav-logo" href="index.html">
+<div class="nav-logo-mark">NLT</div>
+<div class="nav-logo-text">
+<span class="nav-logo-name">Exclusive Mentorship</span>
+<span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
+</div>
+</a>
+<div class="nav-actions">
+<button aria-label="Menu" class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+<a class="nav-yt" href="https://www.youtube.com/@WeAreNLT" rel="noopener noreferrer" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
         YouTube
       </a>
-      <a href="index.html#packages" class="nav-cta">Enroll Now →</a>
-    </div>
-  </div>
+<a class="nav-cta" href="index.html#packages">Enroll Now →</a>
+</div>
+</div>
 </nav>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-top-row anim anim-d1">
-        <div class="hero-badge">💰 Investment Package</div>
-        <div class="hero-chip">Fund Management</div>
-      </div>
-      <h1 class="anim anim-d2">আপনার fund,<br/><span>আমাদের দায়িত্ব।</span></h1>
-      <p class="hero-sub anim anim-d3">আপনাকে trading শিখতে হবে না, বাজার বুঝতে হবে না — শুধু fund দিন, বাকিটা আমাদের team সামলাবে। Profit হলে ৭৫% সরাসরি আপনার।</p>
-      <div class="hero-for anim anim-d3">✦ চাকরি বা ব্যবসার পাশাপাশি যারা passive income চান তাদের জন্য</div>
-      <div class="hero-stats anim anim-d4">
-        <div class="hero-stat"><div class="stat-val">FREE</div><div class="stat-label">Join করতে কোনো fee নেই</div></div>
-        <div class="hero-stat"><div class="stat-val">৭৫%</div><div class="stat-label">Profit আপনার</div></div>
-        <div class="hero-stat"><div class="stat-val">২৫%</div><div class="stat-label">Management Fee</div></div>
-        <div class="hero-stat"><div class="stat-val">মাসিক</div><div class="stat-label">Profit Report</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-
-    <!-- FOR WHOM -->
-    <h2 class="sec-title reveal">এই Package কার জন্য?</h2>
-    <div class="for-whom reveal">
-      <div class="for-whom-title">আপনি যদি...</div>
-      <ul class="for-whom-list">
-        <li>নিজে trading না করেও income করতে চান</li>
-        <li>চাকরি, ব্যবসা বা পড়াশোনার পাশাপাশি টাকা grow করতে চান</li>
-        <li>Trading-এর জন্য সময় বা দক্ষতা নেই, কিন্তু বাজার থেকে profit নিতে চান</li>
-        <li>একটি trusted team-এর হাতে fund দিয়ে নিশ্চিন্তে থাকতে চান</li>
-      </ul>
-    </div>
-
-    <!-- FREE BANNER -->
-    <div class="free-banner reveal">
-      <div class="free-banner-inner">
-        <div class="free-banner-tag">Join করতে কোনো charge নেই</div>
-        <div class="free-banner-price">FREE</div>
-        <div class="free-banner-sub">Profit হলেই কেবল ২৫% management fee কাটা হবে — এর আগে কোনো payment নেই, কোনো hidden charge নেই।</div>
-      </div>
-    </div>
-
-    <!-- HOW IT WORKS -->
-    <h2 class="sec-title reveal">কীভাবে কাজ করে?</h2>
-    <div class="how-box reveal">
-      <div class="how-item">
-        <div class="how-num">১</div>
-        <div class="how-body">
-          <div class="how-title">Telegram-এ আমাদের সাথে যোগাযোগ করুন</div>
-          <div class="how-desc">নিচের button-এ click করে Telegram-এ message করুন — আপনার fund size ও পরিকল্পনা নিয়ে আলোচনা করা হবে।</div>
-        </div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">২</div>
-        <div class="how-body">
-          <div class="how-title">Fund হস্তান্তর করুন</div>
-          <div class="how-desc">আলোচনা শেষে Binance-এর মাধ্যমে fund পাঠান। সম্পূর্ণ transaction record রাখা হবে।</div>
-        </div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">৩</div>
-        <div class="how-body">
-          <div class="how-title">আমাদের team trading শুরু করে</div>
-          <div class="how-desc">আপনার fund নিয়ে আমাদের team market-এ কাজ করবে — আপনাকে কিছুই করতে হবে না।</div>
-        </div>
-      </div>
-      <div class="how-item">
-        <div class="how-num">৪</div>
-        <div class="how-body">
-          <div class="how-title">প্রতি মাসে Profit Report ও Payment</div>
-          <div class="how-desc">প্রতি মাসে সম্পূর্ণ হিসাব দেওয়া হবে — কত profit হয়েছে, কত fee কাটা হয়েছে। বাকি ৭৫% আপনার কাছে পাঠানো হবে।</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROFIT SPLIT -->
-    <h2 class="sec-title reveal">Profit ভাগাভাগির হিসাব</h2>
-    <div class="profit-card reveal">
-      <div class="profit-inner">
-        <div class="profit-split">
-          <div class="profit-side yours">
-            <div class="profit-pct">৭৫%</div>
-            <div class="profit-who">আপনার Profit</div>
-          </div>
-          <div class="profit-side ours">
-            <div class="profit-pct">২৫%</div>
-            <div class="profit-who">Management Fee</div>
-          </div>
-        </div>
-        <div class="profit-note">Profit না হলে fee নেই। শুধু profit হলেই ২৫% কাটা হবে।</div>
-      </div>
-    </div>
-
-    <!-- FEATURES -->
-    <h2 class="sec-title reveal">এই Package-এ যা পাবেন</h2>
-    <div class="features-grid">
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">💸</div>
-        <div class="feat-text">
-          <h4>Join করতে কোনো fee নেই</h4>
-          <p>শুধু fund দিন — শুরু করতে আলাদা কোনো charge লাগবে না</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">📈</div>
-        <div class="feat-text">
-          <h4>Profit-এর ৭৫% আপনার</h4>
-          <p>Profit হলে ৭৫% সরাসরি আপনার — মাত্র ২৫% management fee</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">🛌</div>
-        <div class="feat-text">
-          <h4>আপনার কিছু করতে হবে না</h4>
-          <p>Trading, analysis, market monitoring — সব কিছু আমাদের team সামলাবে</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">📋</div>
-        <div class="feat-text">
-          <h4>মাসিক Transparent Report</h4>
-          <p>প্রতি মাসে সম্পূর্ণ হিসাব — কোনো কিছু লুকানো নেই, সব তথ্য স্পষ্টভাবে দেওয়া হবে</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- WARNING -->
-    <div class="warning-box reveal">
-      <div class="warning-icon">⚠️</div>
-      <div class="warning-body">
-        <h4>গুরুত্বপূর্ণ শর্ত</h4>
-        <p>প্রথম profit পাওয়ার পর যেকোনো একটি mentorship package (Package 01–04) নেওয়া বাধ্যতামূলক। এটি investment-এর সাথে learning-এর সংযোগ তৈরি করে — যাতে আপনি নিজেও ধীরে ধীরে বুঝতে পারেন কীভাবে আপনার টাকা কাজ করছে।</p>
-      </div>
-    </div>
-
-    <hr class="divider"/>
-
-    <!-- HOW TO START -->
-    <h2 class="sec-title reveal">কীভাবে শুরু করবেন?</h2>
-    <div class="steps reveal">
-      <div class="step">
-        <div class="step-num">১</div>
-        <div class="step-body">
-          <div class="step-title">Telegram-এ আমাদের সাথে কথা বলুন</div>
-          <div class="step-desc">নিচের button-এ click করুন — Telegram automatically খুলবে। আপনার fund নিয়ে বিস্তারিত আলোচনা করব, সব প্রশ্নের উত্তর দেব।</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">২</div>
-        <div class="step-body">
-          <div class="step-title">Agreement ও Fund পাঠান</div>
-          <div class="step-desc">আলোচনা শেষে terms নিশ্চিত করে Binance-এর মাধ্যমে fund পাঠান। পুরো process transparent রাখা হয়।</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">৩</div>
-        <div class="step-body">
-          <div class="step-title">নিশ্চিন্তে অপেক্ষা করুন</div>
-          <div class="step-desc">এরপর আর কিছু করতে হবে না। প্রতি মাসে আপনার কাছে report ও profit পাঠানো হবে।</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <h2 class="sec-title reveal">সাধারণ প্রশ্ন</h2>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">সর্বনিম্ন কত টাকা invest করা যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">সর্বনিম্ন investment amount নিয়ে Telegram-এ আলোচনা করা হবে — এটি পরিস্থিতিভেদে পরিবর্তন হতে পারে। আমাদের সাথে যোগাযোগ করলে বিস্তারিত জানানো হবে।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Profit না হলে কী হবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Profit না হলে কোনো management fee নেওয়া হবে না। শুধুমাত্র profit হলেই ২৫% কাটা হয়। তবে trading-এ loss-এর risk সম্পর্কে সচেতন থাকুন — এটি একটি market-based activity।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">যেকোনো সময় fund তুলে নেওয়া যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">হ্যাঁ, fund withdrawal নিয়ে Telegram-এ আমাদের জানান — আলোচনার পর process করা হবে। withdrawal-এর সময়সীমা ও শর্ত শুরুতেই আলোচনা করে নির্ধারণ করা হয়।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Profit কীভাবে পাঠানো হবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">প্রতি মাসে সম্পূর্ণ হিসাব দেওয়ার পর Binance-এর মাধ্যমে profit পাঠানো হবে। Transaction সম্পূর্ণ transparent ও traceable থাকবে।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">প্রথম profit-এর পর package নেওয়া কেন mandatory?<span class="faq-icon">+</span></button>
-        <div class="faq-a">এই শর্তটি আপনার নিজের উপকারের জন্য। আপনার টাকা কোথায় কীভাবে invest হচ্ছে সেটা বোঝার জন্য basic trading knowledge থাকা জরুরি। একটি package নিলে আপনি নিজেও informed investor হয়ে উঠবেন।</div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="cta-block reveal">
-      <div class="cta-block-inner">
-        <h3>শুরু করতে প্রস্তুত?</h3>
-        <p>কোনো upfront fee নেই। Telegram-এ message করুন — fund size, process ও সব প্রশ্নের উত্তর নিয়ে আলোচনা করা যাবে।</p>
-        <a href="https://t.me/AskNLT?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%21%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20Investment%20Package%20(Fund%20Management)%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4%20Fund%20size%2C%20process%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20details%20%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8B%E0%A6%9A%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4%20%E0%A6%A7%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%BE%E0%A6%A6!" target="_blank" rel="noopener noreferrer" class="cta-btn">
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-top-row anim anim-d1">
+<div class="hero-badge">💰 Investment Package</div>
+<div class="hero-chip">Fund Management</div>
+</div>
+<h1 class="anim anim-d2">আপনার fund,<br/><span>আমাদের দায়িত্ব।</span></h1>
+<p class="hero-sub anim anim-d3">আপনাকে trading শিখতে হবে না, বাজার বুঝতে হবে না — শুধু fund দিন, বাকিটা আমাদের team সামলাবে। Profit হলে ৭৫% সরাসরি আপনার।</p>
+<div class="hero-for anim anim-d3">✦ চাকরি বা ব্যবসার পাশাপাশি যারা passive income চান তাদের জন্য</div>
+<div class="hero-stats anim anim-d4">
+<div class="hero-stat"><div class="stat-val">FREE</div><div class="stat-label">Join করতে কোনো fee নেই</div></div>
+<div class="hero-stat"><div class="stat-val">৭৫%</div><div class="stat-label">Profit আপনার</div></div>
+<div class="hero-stat"><div class="stat-val">২৫%</div><div class="stat-label">Management Fee</div></div>
+<div class="hero-stat"><div class="stat-val">মাসিক</div><div class="stat-label">Profit Report</div></div>
+</div>
+</div>
+</section>
+<div class="container">
+<!-- FOR WHOM -->
+<h2 class="sec-title reveal">এই Package কার জন্য?</h2>
+<div class="for-whom reveal">
+<div class="for-whom-title">আপনি যদি...</div>
+<ul class="for-whom-list">
+<li>নিজে trading না করেও income করতে চান</li>
+<li>চাকরি, ব্যবসা বা পড়াশোনার পাশাপাশি টাকা grow করতে চান</li>
+<li>Trading-এর জন্য সময় বা দক্ষতা নেই, কিন্তু বাজার থেকে profit নিতে চান</li>
+<li>একটি trusted team-এর হাতে fund দিয়ে নিশ্চিন্তে থাকতে চান</li>
+</ul>
+</div>
+<!-- FREE BANNER -->
+<div class="free-banner reveal">
+<div class="free-banner-inner">
+<div class="free-banner-tag">Join করতে কোনো charge নেই</div>
+<div class="free-banner-price">FREE</div>
+<div class="free-banner-sub">Profit হলেই কেবল ২৫% management fee কাটা হবে — এর আগে কোনো payment নেই, কোনো hidden charge নেই।</div>
+</div>
+</div>
+<!-- HOW IT WORKS -->
+<h2 class="sec-title reveal">কীভাবে কাজ করে?</h2>
+<div class="how-box reveal">
+<div class="how-item">
+<div class="how-num">১</div>
+<div class="how-body">
+<div class="how-title">Telegram-এ আমাদের সাথে যোগাযোগ করুন</div>
+<div class="how-desc">নিচের button-এ click করে Telegram-এ message করুন — আপনার fund size ও পরিকল্পনা নিয়ে আলোচনা করা হবে।</div>
+</div>
+</div>
+<div class="how-item">
+<div class="how-num">২</div>
+<div class="how-body">
+<div class="how-title">Fund হস্তান্তর করুন</div>
+<div class="how-desc">আলোচনা শেষে Binance-এর মাধ্যমে fund পাঠান। সম্পূর্ণ transaction record রাখা হবে।</div>
+</div>
+</div>
+<div class="how-item">
+<div class="how-num">৩</div>
+<div class="how-body">
+<div class="how-title">আমাদের team trading শুরু করে</div>
+<div class="how-desc">আপনার fund নিয়ে আমাদের team market-এ কাজ করবে — আপনাকে কিছুই করতে হবে না।</div>
+</div>
+</div>
+<div class="how-item">
+<div class="how-num">৪</div>
+<div class="how-body">
+<div class="how-title">প্রতি মাসে Profit Report ও Payment</div>
+<div class="how-desc">প্রতি মাসে সম্পূর্ণ হিসাব দেওয়া হবে — কত profit হয়েছে, কত fee কাটা হয়েছে। বাকি ৭৫% আপনার কাছে পাঠানো হবে।</div>
+</div>
+</div>
+</div>
+<!-- PROFIT SPLIT -->
+<h2 class="sec-title reveal">Profit ভাগাভাগির হিসাব</h2>
+<div class="profit-card reveal">
+<div class="profit-inner">
+<div class="profit-split">
+<div class="profit-side yours">
+<div class="profit-pct">৭৫%</div>
+<div class="profit-who">আপনার Profit</div>
+</div>
+<div class="profit-side ours">
+<div class="profit-pct">২৫%</div>
+<div class="profit-who">Management Fee</div>
+</div>
+</div>
+<div class="profit-note">Profit না হলে fee নেই। শুধু profit হলেই ২৫% কাটা হবে।</div>
+</div>
+</div>
+<!-- FEATURES -->
+<h2 class="sec-title reveal">এই Package-এ যা পাবেন</h2>
+<div class="features-grid">
+<div class="feat-card reveal">
+<div class="feat-icon-box">💸</div>
+<div class="feat-text">
+<h4>Join করতে কোনো fee নেই</h4>
+<p>শুধু fund দিন — শুরু করতে আলাদা কোনো charge লাগবে না</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">📈</div>
+<div class="feat-text">
+<h4>Profit-এর ৭৫% আপনার</h4>
+<p>Profit হলে ৭৫% সরাসরি আপনার — মাত্র ২৫% management fee</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">🛌</div>
+<div class="feat-text">
+<h4>আপনার কিছু করতে হবে না</h4>
+<p>Trading, analysis, market monitoring — সব কিছু আমাদের team সামলাবে</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">📋</div>
+<div class="feat-text">
+<h4>মাসিক Transparent Report</h4>
+<p>প্রতি মাসে সম্পূর্ণ হিসাব — কোনো কিছু লুকানো নেই, সব তথ্য স্পষ্টভাবে দেওয়া হবে</p>
+</div>
+</div>
+</div>
+<!-- WARNING -->
+<div class="warning-box reveal">
+<div class="warning-icon">⚠️</div>
+<div class="warning-body">
+<h4>গুরুত্বপূর্ণ শর্ত</h4>
+<p>প্রথম profit পাওয়ার পর যেকোনো একটি mentorship package (Package 01–04) নেওয়া বাধ্যতামূলক। এটি investment-এর সাথে learning-এর সংযোগ তৈরি করে — যাতে আপনি নিজেও ধীরে ধীরে বুঝতে পারেন কীভাবে আপনার টাকা কাজ করছে।</p>
+</div>
+</div>
+<hr class="divider"/>
+<!-- HOW TO START -->
+<h2 class="sec-title reveal">কীভাবে শুরু করবেন?</h2>
+<div class="steps reveal">
+<div class="step">
+<div class="step-num">১</div>
+<div class="step-body">
+<div class="step-title">Telegram-এ আমাদের সাথে কথা বলুন</div>
+<div class="step-desc">নিচের button-এ click করুন — Telegram automatically খুলবে। আপনার fund নিয়ে বিস্তারিত আলোচনা করব, সব প্রশ্নের উত্তর দেব।</div>
+</div>
+</div>
+<div class="step">
+<div class="step-num">২</div>
+<div class="step-body">
+<div class="step-title">Agreement ও Fund পাঠান</div>
+<div class="step-desc">আলোচনা শেষে terms নিশ্চিত করে Binance-এর মাধ্যমে fund পাঠান। পুরো process transparent রাখা হয়।</div>
+</div>
+</div>
+<div class="step">
+<div class="step-num">৩</div>
+<div class="step-body">
+<div class="step-title">নিশ্চিন্তে অপেক্ষা করুন</div>
+<div class="step-desc">এরপর আর কিছু করতে হবে না। প্রতি মাসে আপনার কাছে report ও profit পাঠানো হবে।</div>
+</div>
+</div>
+</div>
+<!-- FAQ -->
+<h2 class="sec-title reveal">সাধারণ প্রশ্ন</h2>
+<div class="faq-list reveal">
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">সর্বনিম্ন কত টাকা invest করা যাবে?<span class="faq-icon">+</span></button>
+<div class="faq-a">সর্বনিম্ন investment amount নিয়ে Telegram-এ আলোচনা করা হবে — এটি পরিস্থিতিভেদে পরিবর্তন হতে পারে। আমাদের সাথে যোগাযোগ করলে বিস্তারিত জানানো হবে।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">Profit না হলে কী হবে?<span class="faq-icon">+</span></button>
+<div class="faq-a">Profit না হলে কোনো management fee নেওয়া হবে না। শুধুমাত্র profit হলেই ২৫% কাটা হয়। তবে trading-এ loss-এর risk সম্পর্কে সচেতন থাকুন — এটি একটি market-based activity।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">যেকোনো সময় fund তুলে নেওয়া যাবে?<span class="faq-icon">+</span></button>
+<div class="faq-a">হ্যাঁ, fund withdrawal নিয়ে Telegram-এ আমাদের জানান — আলোচনার পর process করা হবে। withdrawal-এর সময়সীমা ও শর্ত শুরুতেই আলোচনা করে নির্ধারণ করা হয়।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">Profit কীভাবে পাঠানো হবে?<span class="faq-icon">+</span></button>
+<div class="faq-a">প্রতি মাসে সম্পূর্ণ হিসাব দেওয়ার পর Binance-এর মাধ্যমে profit পাঠানো হবে। Transaction সম্পূর্ণ transparent ও traceable থাকবে।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">প্রথম profit-এর পর package নেওয়া কেন mandatory?<span class="faq-icon">+</span></button>
+<div class="faq-a">এই শর্তটি আপনার নিজের উপকারের জন্য। আপনার টাকা কোথায় কীভাবে invest হচ্ছে সেটা বোঝার জন্য basic trading knowledge থাকা জরুরি। একটি package নিলে আপনি নিজেও informed investor হয়ে উঠবেন।</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="cta-block reveal">
+<div class="cta-block-inner">
+<h3>শুরু করতে প্রস্তুত?</h3>
+<p>কোনো upfront fee নেই। Telegram-এ message করুন — fund size, process ও সব প্রশ্নের উত্তর নিয়ে আলোচনা করা যাবে।</p>
+<a class="cta-btn" href="https://t.me/AskNLT?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%21%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20Investment%20Package%20(Fund%20Management)%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4%20Fund%20size%2C%20process%20%E0%A6%8F%E0%A6%AC%E0%A6%82%20details%20%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8B%E0%A6%9A%E0%A6%A8%E0%A6%BE%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4%20%E0%A6%A7%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%BE%E0%A6%A6!" rel="noopener noreferrer" target="_blank">
           Telegram-এ কথা বলুন
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="cta-trust">
-          <span class="cta-trust-item">Join করতে কোনো fee নেই</span>
-          <span class="cta-trust-item">Profit-এর ৭৫% আপনার</span>
-          <span class="cta-trust-item">মাসিক transparent report</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-    <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">Exclusive Mentorship by NLT &copy; 2026</div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="faq.html">FAQ</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="https://t.me/AskNLT" target="_blank">Contact</a>
-    </div>
-  </div>
+          <svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</a>
+<div class="cta-trust">
+<span class="cta-trust-item">Join করতে কোনো fee নেই</span>
+<span class="cta-trust-item">Profit-এর ৭৫% আপনার</span>
+<span class="cta-trust-item">মাসিক transparent report</span>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">Exclusive Mentorship by NLT © 2026</div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="faq.html">FAQ</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="terms.html">Terms &amp; Conditions</a>
+<a href="https://t.me/AskNLT" target="_blank">Contact</a>
+</div>
+</div>
 </footer>
 
-  <script>
-    function toggleFaq(btn) {
-      const answer = btn.nextElementSibling;
-      const isOpen = btn.classList.contains('open');
-      document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('open'));
-      document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
-      if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
-    }
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach((el, i) => {
-      el.style.transitionDelay = (i % 4) * 0.07 + 's';
-      observer.observe(el);
-    });
-  </script>
 
-  <script>
-
-  // EID TIMER — ends March 26, 2026
-  const eidEnd = new Date('2026-03-26T23:59:59').getTime();
-  function tick() {
-    const diff = eidEnd - Date.now();
-    if (diff <= 0) { const b = document.getElementById('eidBanner'); if(b) b.style.display='none'; return; }
-    const d = Math.floor(diff/86400000);
-    const h = Math.floor((diff%86400000)/3600000);
-    const m = Math.floor((diff%3600000)/60000);
-    const s = Math.floor((diff%60000)/1000);
-    const pad = n => String(n).padStart(2,'0');
-    const eD = document.getElementById('eidD'); if(eD) eD.textContent = pad(d);
-    const eH = document.getElementById('eidH'); if(eH) eH.textContent = pad(h);
-    const eM = document.getElementById('eidM'); if(eM) eM.textContent = pad(m);
-    const eS = document.getElementById('eidS'); if(eS) eS.textContent = pad(s);
-  }
-  tick(); setInterval(tick, 1000);
-  // HAMBURGER MENU
-  const hamburger = document.getElementById('navHamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuClose = document.getElementById('menuClose');
-  const menuOverlay = document.getElementById('menuOverlay');
-  function openMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('open'); document.body.style.overflow='hidden'; }
-  function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow=''; }
-  if(hamburger) hamburger.addEventListener('click', openMenu);
-  if(menuClose)  menuClose.addEventListener('click', closeMenu);
-  if(menuOverlay) menuOverlay.addEventListener('click', closeMenu);
-  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-  // Close mobile menu on internal link click
-  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => {
-    if(!a.href.startsWith('http')) a.addEventListener('click', closeMenu);
-  });
-    window.addEventListener('scroll',()=>{
-      document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10);
-    });
-  </script>
-</body>
+<script src="js/eid-timer.js"></script><script src="js/investment.js"></script></body>
 </html>

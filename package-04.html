@@ -1,797 +1,310 @@
 <!DOCTYPE html>
+
 <html lang="bn">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="description" content="Elite-level mentorship — $499-এ 1-on-1 guidance, priority support এবং সব exclusive features। NLT Exclusive Mentorship Package 04 Elite।"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Package — Package 04 | Exclusive Mentorship</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <style>
+<meta charset="utf-8"/>
+<meta content="Elite-level mentorship — $499-এ 1-on-1 guidance, priority support এবং সব exclusive features। NLT Exclusive Mentorship Package 04 Elite।" name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Elite Package — Package 04 | Exclusive Mentorship</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 
-    /* EID BANNER */
-    .eid-banner{background:linear-gradient(90deg,#0a3d20,#14652e,#0a3d20);padding:10px 20px;text-align:center;position:relative;overflow:hidden}
-    .eid-inner{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center}
-    .eid-title{font-family:var(--mono);font-size:12px;font-weight:700;color:#fde68a;letter-spacing:.1em;text-transform:uppercase}
-    .eid-dot{width:4px;height:4px;background:rgba(253,230,138,.4);border-radius:50%}
-    .eid-desc{font-size:12.5px;color:rgba(255,255,255,.85);font-weight:500}
-    .eid-badge{background:#fde68a;color:#0a3d20;font-family:var(--mono);font-size:10px;font-weight:800;padding:3px 10px;border-radius:100px;letter-spacing:.06em}
-    .eid-timer{display:inline-flex;align-items:center;gap:4px;background:rgba(0,0,0,.25);border:1px solid rgba(253,230,138,.3);border-radius:8px;padding:4px 10px;font-family:var(--mono);font-size:13px;font-weight:700;color:#fde68a}
-    .eid-timer-label{font-size:9px;color:rgba(253,230,138,.55);text-transform:uppercase;margin-right:4px}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-      --bg:#ffffff;--bg2:#f8faff;--ink:#0d0d0d;--ink-2:#444;--ink-3:#888;
-      --line:#eaeaea;
-      --elite:#a16207;--elite-dark:#78350f;--elite-light:#fefce8;--elite-border:#fde68a;--elite-glow:rgba(161,98,7,0.12);
-      --gold:#F0B90B;
-      --green:#059669;--green-light:#ecfdf5;
-      --serif:'Plus Jakarta Sans',sans-serif;--mono:'Space Grotesk',sans-serif;
-    }
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;}
-    /* ═══ GLOBAL MOBILE UX ═══ */
-    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-    *{-webkit-tap-highlight-color:transparent}
-    a,button{touch-action:manipulation}
-    input,button,select,textarea{font-family:inherit}
-    img{max-width:100%;height:auto}
-
-    /* NAV */
-    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(52,211,153,0.5)}50%{box-shadow:0 0 0 5px rgba(52,211,153,0)}}
-    .nav-back:hover{color:rgba(255,255,255,0.9)}
-    .nav-back svg{width:14px;height:14px}
-
-    /* HERO */
-    .hero{background:linear-gradient(135deg,#0a0a0a 0%,#1a1200 60%,#2d1f00 100%);padding:68px 24px 60px;position:relative;overflow:hidden;}
-    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 0%,rgba(240,185,11,0.18) 0%,transparent 70%);pointer-events:none;}
-    .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(240,185,11,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(240,185,11,0.025) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;}
-    .hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;}
-
-    .hero-top-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
-    .hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(240,185,11,0.12);border:1px solid rgba(240,185,11,0.3);color:#F0B90B;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px;}
-    .hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.45);font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:5px 13px;border-radius:100px;}
-
-    .hero h1{font-size:clamp(30px,5vw,52px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-0.03em;margin-bottom:16px;}
-    .hero h1 span{background:linear-gradient(90deg,#F0B90B,#fcd34d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-    .hero-sub{font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:16px;max-width:580px;}
-    .hero-for{display:inline-flex;align-items:center;gap:7px;background:rgba(240,185,11,0.08);border:1px solid rgba(240,185,11,0.2);color:#fcd34d;font-size:12.5px;font-weight:600;padding:6px 14px;border-radius:8px;margin-bottom:32px;}
-    .hero-stats{display:flex;flex-wrap:wrap;gap:10px;}
-    .hero-stat{background:rgba(255,255,255,0.05);border:1px solid rgba(240,185,11,0.15);border-radius:10px;padding:12px 20px;display:flex;flex-direction:column;gap:4px;transition:background 0.2s,border-color 0.2s;}
-    .hero-stat:hover{background:rgba(240,185,11,0.08);border-color:rgba(240,185,11,0.3);}
-    .stat-val{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.02em;line-height:1;}
-    .stat-label{font-size:10.5px;color:rgba(255,255,255,0.3);font-family:var(--mono);font-weight:500;letter-spacing:0.08em;text-transform:uppercase;}
-
-    /* CONTAINER */
-    .container{max-width:760px;margin:0 auto;padding:60px 24px 80px;}
-
-    /* SECTION TITLE */
-    .sec-title{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-0.02em;margin-bottom:20px;display:flex;align-items:center;gap:10px;}
-    .sec-title::before{content:'';width:4px;height:22px;background:var(--elite);border-radius:2px;flex-shrink:0;}
-
-    /* FOR WHOM */
-    .for-whom{background:var(--elite-light);border:1px solid var(--elite-border);border-radius:14px;padding:24px 28px;margin-bottom:48px;}
-    .for-whom-title{font-size:11px;font-weight:700;color:var(--elite);font-family:var(--mono);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;}
-    .for-whom-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-    .for-whom-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--ink-2);line-height:1.55;}
-    .for-whom-list li::before{content:'✓';width:20px;height:20px;background:#fef9c3;color:var(--elite);border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-
-    /* FEATURES */
-    .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:48px;}
-    .feat-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;transition:border-color 0.2s,box-shadow 0.2s,transform 0.2s;}
-    .feat-card:hover{border-color:var(--elite-border);box-shadow:0 4px 16px var(--elite-glow);transform:translateY(-2px);}
-    .feat-icon-box{width:38px;height:38px;border-radius:10px;background:var(--elite-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:17px;}
-    .feat-text h4{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.3;}
-    .feat-text p{font-size:12.5px;color:var(--ink-3);line-height:1.55;}
-
-    /* VS PRO COMPARISON */
-    .compare-box{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:48px;}
-    .compare-head{display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--bg2);border-bottom:1px solid var(--line);}
-    .compare-head-cell{padding:12px 18px;font-size:11px;font-weight:700;font-family:var(--mono);letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-3);}
-    .compare-head-cell.pro{color:#6d28d9;background:#f5f3ff;}
-    .compare-head-cell.elite{color:var(--elite);background:var(--elite-light);}
-    .compare-row{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--line);transition:background 0.15s;}
-    .compare-row:last-child{border-bottom:none}
-    .compare-row:hover{background:var(--bg2)}
-    .compare-cell{padding:13px 18px;font-size:13px;color:var(--ink-2);line-height:1.4;}
-    .compare-cell.feature{font-weight:600;color:var(--ink);}
-    .compare-cell.pro-val{color:#6d28d9;font-weight:600;}
-    .compare-cell.elite-val{color:var(--elite);font-weight:700;}
-    .compare-cell .badge{display:inline-block;background:var(--elite-light);color:var(--elite);font-family:var(--mono);font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:0.04em;}
-
-    /* GIVEAWAY BANNER */
-    .giveaway-banner{background:linear-gradient(135deg,#0a0a0a,#1a1200);border:1px solid rgba(240,185,11,0.2);border-radius:14px;padding:28px 32px;margin-bottom:48px;position:relative;overflow:hidden;display:flex;align-items:center;gap:24px;}
-    .giveaway-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(240,185,11,0.07) 0%,transparent 70%);pointer-events:none;}
-    .giveaway-icon{font-size:48px;flex-shrink:0;position:relative;z-index:1;}
-    .giveaway-body{position:relative;z-index:1;}
-    .giveaway-tag{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px;}
-    .giveaway-title{font-size:20px;font-weight:800;color:#fff;margin-bottom:4px;letter-spacing:-0.02em;}
-    .giveaway-amount{font-size:30px;font-weight:800;color:#F0B90B;font-family:var(--mono);letter-spacing:-0.02em;}
-    .giveaway-desc{font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.55;margin-top:6px;}
-
-    /* DIVIDER */
-    .divider{border:none;border-top:1px solid var(--line);margin:48px 0;}
-
-    /* STEPS */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    /* BINANCE UID */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    /* PRICE CARD */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    /* FAQ */
-    .faq-list{display:flex;flex-direction:column;gap:10px;margin-bottom:48px;}
-    .faq-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;}
-    .faq-q{width:100%;background:none;border:none;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;text-align:left;font-family:var(--serif);font-size:14px;font-weight:700;color:var(--ink);transition:background 0.15s;}
-    .faq-q:hover{background:var(--elite-light)}
-    .faq-q.open{background:var(--elite-light);color:var(--elite)}
-    .faq-icon{width:22px;height:22px;border-radius:50%;background:var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px;font-weight:700;transition:background 0.15s,transform 0.2s;color:var(--ink-2);}
-    .faq-q.open .faq-icon{background:var(--elite);color:#fff;transform:rotate(45deg);}
-    .faq-a{display:none;padding:14px 20px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.7;border-top:1px solid var(--elite-border);background:var(--elite-light);}
-    .faq-a.open{display:block}
-
-    /* CTA */
-    .cta-block{background:linear-gradient(135deg,#0a0a0a,#1a1200);border:1px solid rgba(240,185,11,0.15);border-radius:16px;padding:40px 36px;text-align:center;position:relative;overflow:hidden;}
-    .cta-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(240,185,11,0.1) 0%,transparent 70%);pointer-events:none;}
-    .cta-block-inner{position:relative;z-index:1;}
-    .cta-block h3{font-size:24px;font-weight:800;color:#fff;margin-bottom:10px;letter-spacing:-0.02em;}
-    .cta-block p{font-size:14.5px;color:rgba(255,255,255,0.45);margin-bottom:28px;line-height:1.65;max-width:460px;margin-left:auto;margin-right:auto;}
-    .cta-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:4px;}
-    .cta-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#a16207,#78350f);color:#fff;font-family:var(--serif);font-size:15px;font-weight:700;padding:17px 38px;border-radius:12px;text-decoration:none;border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(161,98,7,0.4);}
-    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(161,98,7,0.55);}
-    .cta-btn svg{width:16px;height:16px}
-    .cta-btn-alt{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);font-family:var(--serif);font-size:14px;font-weight:600;padding:15px 28px;border-radius:12px;text-decoration:none;cursor:pointer;transition:background 0.2s,transform 0.2s;}
-    .cta-btn-alt:hover{background:rgba(255,255,255,0.1);transform:translateY(-2px);}
-    .cta-btn-alt svg{width:15px;height:15px;flex-shrink:0;}
-    .cta-trust{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;margin-top:20px;}
-    .cta-trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);}
-    .cta-trust-item::before{content:'✓';width:16px;height:16px;background:rgba(240,185,11,0.12);color:#F0B90B;border-radius:50%;font-size:9px;display:flex;align-items:center;justify-content:center;}
-
-    /* SCROLL REVEAL */
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.55s ease,transform 0.55s ease;}
-    .reveal.visible{opacity:1;transform:translateY(0);}
-
-    @keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    .anim{animation:up 0.5s ease both;}
-    .anim-d1{animation-delay:0.05s}.anim-d2{animation-delay:0.12s}.anim-d3{animation-delay:0.2s}.anim-d4{animation-delay:0.28s}
-
-    footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--ink-3);}
-
-    @media(max-width:600px){
-      .features-grid{grid-template-columns:1fr}
-      .giveaway-banner{flex-direction:column;gap:16px;padding:22px}
-      .compare-head,.compare-row{grid-template-columns:1fr 1fr}
-      .compare-head-cell.feature,.compare-cell.feature{display:none}
-      
-      
-      
-      .cta-block{padding:28px 20px}
-    }
-
-    /* SITE FOOTER */
-    .site-footer{border-top:1px solid var(--line);padding:28px 24px;}
-    .footer-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-    .footer-brand{font-size:13px;color:var(--ink-3);}
-    .footer-links{display:flex;gap:20px;flex-wrap:wrap;}
-    .footer-links a{font-size:13px;color:var(--ink-3);text-decoration:none;transition:color 0.15s;}
-    .footer-links a:hover{color:var(--ink);}
-    @media(max-width:480px){
-      /* EID Banner mobile */
-      .eid-inner{flex-wrap:wrap;gap:6px;justify-content:center}
-      .eid-desc{display:none}
-      .eid-dot{display:none}
-      .footer-inner{flex-direction:column;align-items:flex-start;}.footer-links{gap:14px;}}
-      
-    /* ═══ HAMBURGER MOBILE MENU ═══ */
-    .nav-hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;padding:8px;flex-shrink:0}
-    .nav-hamburger span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}
-    .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .nav-hamburger.open span:nth-child(2){opacity:0}
-    .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .mobile-menu{position:fixed;top:0;left:0;right:0;bottom:0;z-index:200;pointer-events:none}
-    .mobile-menu-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .25s;pointer-events:none}
-    .mobile-menu-drawer{position:absolute;top:0;right:-280px;width:272px;height:100%;background:#fff;box-shadow:-4px 0 24px rgba(0,0,0,.12);transition:right .25s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto}
-    .mobile-menu.open{pointer-events:all}
-    .mobile-menu.open .mobile-menu-overlay{background:rgba(0,0,0,.35);pointer-events:all}
-    .mobile-menu.open .mobile-menu-drawer{right:0}
-    .mobile-menu-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
-    .mobile-menu-logo{font-size:14px;font-weight:800;color:var(--ink)}
-    .mobile-menu-close{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg2);border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:18px;color:var(--ink-2);line-height:1}
-    .mobile-menu-links{padding:12px 0;flex:1}
-    .mobile-menu-section{font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;padding:8px 20px 4px}
-    .mobile-menu-link{display:flex;align-items:center;gap:10px;padding:12px 20px;font-size:14px;font-weight:600;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s}
-    .mobile-menu-link:hover{background:var(--bg2);color:var(--ink)}
-    .mobile-menu-link.active{color:var(--blue);background:var(--blue-light)}
-    .mobile-menu-link-icon{width:18px;height:18px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
-    .mobile-menu-footer{padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
-    .mobile-menu-cta{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:14px;font-weight:700;padding:13px;border-radius:10px;text-decoration:none}
-    .mobile-menu-yt{display:flex;align-items:center;justify-content:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:13px;font-weight:700;padding:11px;border-radius:10px;text-decoration:none}
-    .mobile-menu-yt svg{width:14px;height:14px;fill:currentColor}
-    @media(max-width:768px){.nav-hamburger{display:flex}}
-    /* NAVBAR */
-    .navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:0 24px;transition:box-shadow .2s}
-    .navbar.scrolled{box-shadow:0 2px 16px rgba(0,0,0,.08)}
-    .nav-inner{max-width:1080px;margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#4f46e5,#2563eb);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
-    .nav-logo-text{display:flex;flex-direction:column;line-height:1.15}
-    .nav-logo-name{font-size:14px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
-    .nav-logo-sub{font-size:10px;color:var(--ink-3);font-family:var(--mono);font-weight:500;letter-spacing:.04em}
-    .nav-links{display:flex;align-items:center;gap:4px;flex:1;justify-content:center}
-    .nav-link{font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 12px;border-radius:8px;transition:background .15s,color .15s;white-space:nowrap}
-    .nav-link:hover{background:var(--bg2);color:var(--ink)}
-    .nav-link.active{color:var(--blue)}
-    .nav-actions{display:flex;align-items:center;gap:8px}
-    .nav-yt{display:inline-flex;align-items:center;gap:6px;background:#fee2e2;color:#dc2626;font-size:12px;font-weight:700;padding:7px 14px;border-radius:8px;text-decoration:none;transition:background .15s;font-family:var(--mono)}
-    .nav-yt svg{width:14px;height:14px;fill:currentColor}
-    .nav-yt:hover{background:#fecaca}
-    .nav-cta{display:inline-flex;align-items:center;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:8px 18px;border-radius:9px;text-decoration:none;transition:opacity .15s;white-space:nowrap}
-    .nav-cta:hover{opacity:.9}
-    @media(max-width:768px){.nav-link-hide{display:none}.nav-logo-sub{display:none}}
-      /* FLOAT CTA */
-    .float-cta{position:fixed;bottom:20px;right:20px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:12px 22px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(79,70,229,.4);transition:transform .2s,box-shadow .2s;z-index:200}
-    .float-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.45)}
-    @media(max-width:480px){.float-cta{bottom:16px;right:16px;font-size:12px;padding:10px 16px}}
-  
-    /* BACK BUTTON */
-    .back-bar{background:var(--bg2);border-bottom:1px solid var(--line);padding:10px 24px}
-    .back-bar-inner{max-width:1080px;margin:0 auto}
-    .back-btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);text-decoration:none;padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;transition:border-color .15s,color .15s,background .15s}
-    .back-btn:hover{border-color:var(--blue-border);color:var(--blue);background:var(--blue-light)}
-    .back-btn svg{width:14px;height:14px;flex-shrink:0}
-  
-    
-    
-    
-    
-    
-    
-    
-    @media(max-width:600px){}
-  
-    /* PAYMENT STEPS - REMADE */
-    .pay-section{margin-bottom:48px}
-    .pay-section-label{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:18px}
-    .pay-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
-    .pay-step{padding:22px 18px;background:#fff;position:relative;border-right:1px solid var(--line)}
-    .pay-step:last-child{border-right:none}
-    .pay-step-num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--blue);background:var(--blue-light);border:1px solid var(--blue-border);padding:3px 10px;border-radius:100px;display:inline-block;margin-bottom:12px;letter-spacing:.06em}
-    .pay-step-icon{font-size:22px;margin-bottom:10px;display:block}
-    .pay-step-title{font-size:13.5px;font-weight:800;color:var(--ink);margin-bottom:6px;line-height:1.3}
-    .pay-step-desc{font-size:12.5px;color:var(--ink-3);line-height:1.6}
-    .pay-step-desc strong{color:var(--ink-2)}
-    .pay-step-tag{display:inline-block;margin-top:8px;background:var(--blue-light);color:var(--blue);font-family:var(--mono);font-size:10px;font-weight:700;padding:3px 9px;border-radius:5px;letter-spacing:.05em}
-    .pay-step-connector{display:none}
-    @media(max-width:720px){.pay-steps{grid-template-columns:1fr 1fr}.pay-step:nth-child(2){border-right:none}.pay-step:nth-child(1),.pay-step:nth-child(2){border-bottom:1px solid var(--line)}}
-    @media(max-width:480px){.pay-steps{grid-template-columns:1fr}.pay-step{border-right:none;border-bottom:1px solid var(--line)}.pay-step:last-child{border-bottom:none}}
-
-    /* UID BOX - REMADE */
-    .uid-wrap{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);border-radius:16px;padding:0;margin-bottom:48px;overflow:hidden}
-    .uid-header{padding:18px 28px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:10px}
-    .uid-header-badge{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(129,140,248,.8);background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.2);padding:4px 12px;border-radius:100px}
-    .uid-header-warn{font-size:12px;color:rgba(255,255,255,.35);margin-left:auto;display:flex;align-items:center;gap:6px}
-    .uid-body{padding:28px}
-    .uid-main{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
-    .uid-left-label{font-family:var(--mono);font-size:10px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-    .uid-num-display{font-family:var(--mono);font-size:28px;font-weight:800;color:#F0B90B;letter-spacing:.08em;line-height:1}
-    .uid-copy-btn{display:inline-flex;align-items:center;gap:7px;background:rgba(240,185,11,.15);border:1px solid rgba(240,185,11,.35);color:#F0B90B;font-family:var(--mono);font-size:12px;font-weight:700;padding:10px 20px;border-radius:9px;cursor:pointer;transition:background .2s,transform .15s;letter-spacing:.05em;white-space:nowrap;flex-shrink:0}
-    .uid-copy-btn:hover{background:rgba(240,185,11,.28);transform:translateY(-1px)}
-    .uid-copy-btn svg{width:14px;height:14px}
-    .uid-hint{display:flex;align-items:flex-start;gap:10px;background:rgba(240,185,11,.07);border:1px solid rgba(240,185,11,.2);border-radius:10px;padding:12px 16px;font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6}
-    .uid-hint strong{color:rgba(255,255,255,.8)}
-
-    /* PRICE SUMMARY - REMADE */
-    .price-wrap{border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-bottom:48px;box-shadow:0 4px 24px rgba(0,0,0,.06)}
-    .price-wrap-head{padding:18px 28px;display:flex;align-items:center;justify-content:space-between}
-    .price-wrap-head-title{font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase}
-    .price-wrap-head-tag{font-size:11px;color:rgba(255,255,255,.5);font-family:var(--mono)}
-    .price-rows{background:#fff}
-    .price-row-new{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;border-bottom:1px solid var(--line)}
-    .price-row-new:last-child{border-bottom:none}
-    .price-row-new-label{font-size:14px;color:var(--ink-2)}
-    .price-row-new-val{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--ink)}
-    .price-row-new-val.crossed{text-decoration:line-through;color:var(--ink-3);font-weight:500}
-    .price-row-new-val.green{color:#16a34a}
-    .price-row-new-val.accent{color:var(--blue)}
-    .price-summary-footer{padding:20px 28px;display:flex;align-items:center;justify-content:space-between;border-top:2px solid}
-    .price-summary-footer-label{font-size:14px;font-weight:700}
-    .price-summary-footer-val{font-family:var(--mono);font-size:32px;font-weight:800;letter-spacing:-.02em}
-    @media(max-width:480px){.price-wrap-head{padding:14px 20px}.price-row-new{padding:12px 20px}.price-summary-footer{padding:16px 20px}.price-summary-footer-val{font-size:26px}}
-
-    /* ENROLL CTA - REMADE */
-    .enroll-block{border-radius:20px;padding:40px 36px;text-align:center;position:relative;overflow:hidden;margin-bottom:48px}
-    .enroll-block::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(99,102,241,.25),transparent 65%);pointer-events:none}
-    .enroll-inner{position:relative;z-index:1}
-    .enroll-label{font-family:var(--mono);font-size:10px;font-weight:700;color:rgba(129,140,248,.8);letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-    .enroll-title{font-size:26px;font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:8px;line-height:1.2}
-    .enroll-sub{font-size:14px;color:rgba(255,255,255,.45);margin-bottom:28px;line-height:1.65;max-width:440px;margin-left:auto;margin-right:auto}
-    .enroll-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
-    .enroll-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:15px;font-weight:700;padding:14px 28px;border-radius:12px;text-decoration:none;box-shadow:0 4px 20px rgba(79,70,229,.45);transition:transform .2s,box-shadow .2s}
-    .enroll-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.55)}
-    .enroll-secondary{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.75);font-size:13.5px;font-weight:600;padding:12px 20px;border-radius:12px;text-decoration:none;transition:background .2s}
-    .enroll-secondary:hover{background:rgba(255,255,255,.13)}
-    .enroll-trust{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
-    .enroll-trust-item{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.4);font-family:var(--mono)}
-    .enroll-trust-item::before{content:'✓';color:rgba(129,140,248,.7);font-weight:700}
-    @media(max-width:480px){.enroll-block{padding:28px 20px}.enroll-title{font-size:21px}.enroll-btns{flex-direction:column}.enroll-primary,.enroll-secondary{justify-content:center}}
-  
-    /* ═══ MOBILE OPTIMIZATION ═══ */
-    @media(max-width:480px){
-      .navbar .nav-inner{padding:0 16px}
-      .nav-logo-name{font-size:13px}
-      .nav-yt{display:none}
-      .nav-cta{font-size:12px;padding:7px 14px}
-      .back-bar{padding:8px 16px}
-      /* Hero */
-      .hero{padding:44px 16px 40px}
-      .hero h1{font-size:clamp(26px,8vw,40px);letter-spacing:-.025em}
-      .hero-sub{font-size:14px;line-height:1.65}
-      .hero-chip{font-size:10px;padding:5px 12px;margin-bottom:16px}
-      .hero-for{font-size:11.5px;padding:5px 12px}
-      .hero-stats{gap:8px}
-      .hero-stat{padding:10px 14px}
-      .stat-val{font-size:18px}
-      .stat-label{font-size:9px}
-      /* Container */
-      .container{padding:40px 16px 60px}
-      .sec-title{font-size:17px}
-      /* For whom */
-      .for-whom{padding:18px 20px}
-      /* Features */
-      .features-grid{grid-template-columns:1fr;gap:10px}
-      .feat-card{padding:16px 18px}
-      /* Chapter list */
-      .chapter-item{padding:14px 16px;flex-wrap:wrap;gap:8px}
-      .chapter-num{width:28px;height:28px;font-size:12px}
-      .chapter-name{font-size:13.5px}
-      .chapter-desc{font-size:12px}
-      .chapter-price{flex-direction:row;gap:8px}
-      /* Payment steps */
-      .pay-steps{grid-template-columns:1fr}
-      .pay-step{border-right:none;border-bottom:1px solid var(--line)}
-      .pay-step:last-child{border-bottom:none}
-      /* UID box */
-      .uid-body{padding:18px 16px}
-      .uid-main{flex-direction:column;align-items:flex-start;gap:12px}
-      .uid-num-display{font-size:22px}
-      .uid-copy-btn{width:100%;justify-content:center}
-      /* Price wrap */
-      .price-wrap-head{padding:14px 18px;flex-direction:column;align-items:flex-start;gap:4px}
-      .price-row-new{padding:12px 18px}
-      .price-row-new-label{font-size:13px}
-      .price-summary-footer{padding:16px 18px;flex-direction:column;align-items:flex-start;gap:4px}
-      .price-summary-footer-val{font-size:28px}
-      /* Enroll CTA */
-      .enroll-block{padding:28px 18px}
-      .enroll-title{font-size:20px}
-      .enroll-btns{flex-direction:column;gap:10px}
-      .enroll-primary,.enroll-secondary{justify-content:center;width:100%}
-      .enroll-trust{gap:12px}
-      .enroll-trust-item{font-size:11px}
-      /* FAQ */
-      .faq-q{padding:14px 16px;font-size:13.5px}
-      .faq-a{font-size:13px;padding:0 16px 16px}
-      /* Float CTA */
-      .float-cta{bottom:12px;right:12px;font-size:12px;padding:10px 14px}
-    }
-    @media(min-width:481px) and (max-width:768px){
-      .hero{padding:52px 20px 48px}
-      .hero h1{font-size:clamp(28px,6vw,44px)}
-      .container{padding:48px 20px 64px}
-      .features-grid{grid-template-columns:1fr}
-    }
-  </style>
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" type="image/svg+xml"/>
-  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E"/>
-  <!-- OG / Social -->
-  <meta property="og:title" content="Package 04 Elite — | NLT Exclusive Mentorship"/>
-  <meta property="og:description" content="Elite mentorship — $499-এ সর্বোচ্চ সুবিধা, 1-on-1 guidance এবং priority support।"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://exclusivementorship.pages.dev/package-04.html"/>
-  <meta property="og:image" content="https://exclusivementorship.pages.dev/og-cover.png"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <!-- Canonical -->
-  <link rel="canonical" href="https://exclusivementorship.pages.dev/package-04.html"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui,sans-serif' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="shortcut icon"/>
+<!-- OG / Social -->
+<meta content="Package 04 Elite — | NLT Exclusive Mentorship" property="og:title"/>
+<meta content="Elite mentorship — $499-এ সর্বোচ্চ সুবিধা, 1-on-1 guidance এবং priority support।" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://exclusivementorship.pages.dev/package-04.html" property="og:url"/>
+<meta content="https://exclusivementorship.pages.dev/og-cover.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- Canonical -->
+<link href="https://exclusivementorship.pages.dev/package-04.html" rel="canonical"/><link href="css/package-04.css" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <div class="nav-logo-mark">NLT</div>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">Exclusive Mentorship</span>
-        <span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
-      </div>
-    </a>
-    <div class="nav-actions">
-      <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-      <a href="https://www.youtube.com/@WeAreNLT" target="_blank" rel="noopener noreferrer" class="nav-yt">
-        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+<div class="nav-inner">
+<a class="nav-logo" href="index.html">
+<div class="nav-logo-mark">NLT</div>
+<div class="nav-logo-text">
+<span class="nav-logo-name">Exclusive Mentorship</span>
+<span class="nav-logo-sub">by NLT · ICT-Based Trading</span>
+</div>
+</a>
+<div class="nav-actions">
+<button aria-label="Menu" class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+<a class="nav-yt" href="https://www.youtube.com/@WeAreNLT" rel="noopener noreferrer" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
         YouTube
       </a>
-      <a href="index.html#packages" class="nav-cta">Enroll Now →</a>
-    </div>
-  </div>
+<a class="nav-cta" href="index.html#packages">Enroll Now →</a>
+</div>
+</div>
 </nav>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-top-row anim anim-d1">
-        <div class="hero-badge">👑 Elite Package</div>
-        <div class="hero-chip">Package 04 — Yearly</div>
-      </div>
-      <h1 class="anim anim-d2">সর্বোচ্চ support,<br/><span>সর্বোচ্চ result।</span></h1>
-      <p class="hero-sub anim anim-d3">Elite Package-এ আপনি শুধু একজন student নন — আপনি একজন personally mentored trader। প্রতিটি trade, প্রতিটি সিদ্ধান্তে আপনার পাশে থাকব আমরা।</p>
-      <div class="hero-for anim anim-d3">👑 যারা সর্বোচ্চ attention ও guided support-এ দ্রুত এগিয়ে যেতে চান</div>
-      <div class="hero-stats anim anim-d4">
-        <div class="hero-stat"><div class="stat-val">$499</div><div class="stat-label">Yearly Price</div></div>
-        <div class="hero-stat"><div class="stat-val">29%</div><div class="stat-label">Discount</div></div>
-        <div class="hero-stat"><div class="stat-val">$50K</div><div class="stat-label">Giveaway সুযোগ</div></div>
-        <div class="hero-stat"><div class="stat-val">১ বছর</div><div class="stat-label">সব সুবিধা</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-
-    <!-- FOR WHOM -->
-    <h2 class="sec-title reveal">এই Package কার জন্য?</h2>
-    <div class="for-whom reveal">
-      <div class="for-whom-title">আপনি যদি...</div>
-      <ul class="for-whom-list">
-        <li>সবচেয়ে বেশি personal attention ও close mentorship চান</li>
-        <li>প্রতিদিনের market analysis-এ Daily Bias সহ সম্পূর্ণ guidance চান</li>
-        <li>প্রায় প্রতিটি trade review করিয়ে দ্রুত এবং নির্ভুলভাবে এগোতে চান</li>
-        <li>সপ্তাহে দুইবার সরাসরি 1v1 session-এ নিজেকে গড়তে চান</li>
-      </ul>
-    </div>
-
-    <!-- FEATURES -->
-    <h2 class="sec-title reveal">Elite Package-এ যা পাবেন</h2>
-    <div class="features-grid">
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">📦</div>
-        <div class="feat-text">
-          <h4>Package 02 সম্পূর্ণ অন্তর্ভুক্ত</h4>
-          <p>৭-chapter course, ১টি personal setup ও $10,000 giveaway সুযোগ — সব কিছু এর মধ্যেই আছে</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">💬</div>
-        <div class="feat-text">
-          <h4>Exclusive Elite Telegram Channel</h4>
-          <p>শুধুমাত্র Elite সদস্যদের জন্য আলাদা premium channel — সব exclusive content এখানেই</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">📊</div>
-        <div class="feat-text">
-          <h4>Daily Outlook + Daily Bias</h4>
-          <p>Fundamental, Technical ও Daily Bias একসাথে — Pro-তে Outlook, Elite-তে সেটার সাথে Bias-ও</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">⚙️</div>
-        <div class="feat-text">
-          <h4>৫টি Personal Setup — Backtest সহ</h4>
-          <p>সর্বোচ্চ সংখ্যক setup — Pro-তে ৩টি, Elite-তে ৫টি। বেশি edge, বেশি সুযোগ</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">🔍</div>
-        <div class="feat-text">
-          <h4>প্রায় প্রতিটি Trade Review</h4>
-          <p>Pro-তে সাপ্তাহিক ১টি, Elite-তে প্রায় প্রতিটি — নিয়মিত feedback-এ দ্রুত উন্নতি</p>
-        </div>
-      </div>
-      <div class="feat-card reveal">
-        <div class="feat-icon-box">🎯</div>
-        <div class="feat-text">
-          <h4>সপ্তাহে দুইবার 1v1 Consultation</h4>
-          <p>Pro-তে biweekly, Elite-তে weekly twice — সর্বোচ্চ personal attention, সরাসরি আপনার জন্য</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRO VS ELITE COMPARISON -->
-    <h2 class="sec-title reveal">Pro বনাম Elite — পার্থক্য কোথায়?</h2>
-    <div class="compare-box reveal">
-      <div class="compare-head">
-        <div class="compare-head-cell feature">সুবিধা</div>
-        <div class="compare-head-cell pro">Pro Package</div>
-        <div class="compare-head-cell elite">Elite Package</div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">Daily Market Content</div>
-        <div class="compare-cell pro-val">Fundamental + Technical</div>
-        <div class="compare-cell elite-val">+ Daily Bias <span class="badge">Extra</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">Personal Setup</div>
-        <div class="compare-cell pro-val">৩টি</div>
-        <div class="compare-cell elite-val">৫টি <span class="badge">+২টি</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">Trade Review</div>
-        <div class="compare-cell pro-val">সপ্তাহে ১/৫</div>
-        <div class="compare-cell elite-val">প্রায় প্রতিটি <span class="badge">Max</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">1v1 Consultation</div>
-        <div class="compare-cell pro-val">Biweekly (২ সপ্তাহে ১)</div>
-        <div class="compare-cell elite-val">Weekly Twice <span class="badge">4x বেশি</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">Funded Giveaway</div>
-        <div class="compare-cell pro-val">Top 3 → $25,000</div>
-        <div class="compare-cell elite-val">Top 2 → $50,000 <span class="badge">2x</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="compare-cell feature">মূল্য</div>
-        <div class="compare-cell pro-val">$299 / year</div>
-        <div class="compare-cell elite-val">$499 / year</div>
-      </div>
-    </div>
-
-    <!-- GIVEAWAY BANNER -->
-    <div class="giveaway-banner reveal">
-      <div class="giveaway-icon">👑</div>
-      <div class="giveaway-body">
-        <div class="giveaway-tag">Elite Exclusive Giveaway</div>
-        <div class="giveaway-title">Top 2 Performers পাবেন</div>
-        <div class="giveaway-amount">$50,000 Funded Account</div>
-        <div class="giveaway-desc">সেরা ২ জন trader বাছাই করা হবে — তারা পাবেন $50,000-এর একটি fully funded trading account। নিজের capital ছাড়াই সর্বোচ্চ পর্যায়ে trade করার সুযোগ।</div>
-      </div>
-    </div>
-
-    <hr class="divider"/>
-
-    <!-- PAYMENT STEPS -->
-    <div class="pay-section reveal">
-      <div class="pay-section-label">কীভাবে Payment করবেন</div>
-      <div class="pay-steps">
-        <div class="pay-step">
-          <span class="pay-step-num">ধাপ ০১</span>
-          <span class="pay-step-icon">📱</span>
-          <div class="pay-step-title">Binance App খুলুন</div>
-          <div class="pay-step-desc">Binance app-এ login করুন। <strong>Assets</strong> tab-এ যান।</div>
-        </div>
-        <div class="pay-step">
-          <span class="pay-step-num">ধাপ ০২</span>
-          <span class="pay-step-icon">💸</span>
-          <div class="pay-step-title">Send Crypto / Withdraw</div>
-          <div class="pay-step-desc">Assets থেকে <strong>Send Crypto</strong> বা <strong>Withdraw</strong> select করুন।</div>
-        </div>
-        <div class="pay-step">
-          <span class="pay-step-num">ধাপ ০৩</span>
-          <span class="pay-step-icon">🔢</span>
-          <div class="pay-step-title">UID দিন ও Amount পাঠান</div>
-          <div class="pay-step-desc"><strong>Binance UID</strong> select করুন → UID <strong>936178742</strong> লিখুন → <strong>$499</strong> পাঠান।<span class="pay-step-tag">$499</span></div>
-        </div>
-        <div class="pay-step">
-          <span class="pay-step-num">ধাপ ০৪</span>
-          <span class="pay-step-icon">📸</span>
-          <div class="pay-step-title">Screenshot পাঠান</div>
-          <div class="pay-step-desc">Transaction screenshot নিন → নিচের Enroll button-এ click করে <strong>Telegram-এ পাঠান।</strong> ২৪ ঘণ্টায় Elite access পাবেন।</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- BINANCE UID -->
-    <div class="uid-wrap reveal">
-      <div class="uid-header">
-        <span class="uid-header-badge">Binance UID · Payment</span>
-        <span class="uid-header-warn">⚠️ কোনো wallet address নেই — শুধু UID-তে পাঠান</span>
-      </div>
-      <div class="uid-body">
-        <div class="uid-main">
-          <div>
-            <div class="uid-left-label">Binance User ID</div>
-            <div class="uid-num-display" id="uid-num">936178742</div>
-          </div>
-          <button class="uid-copy-btn" onclick="copyUID('')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-            <span id="copy-text">UID Copy করুন</span>
-          </button>
-        </div>
-        <div class="uid-hint">
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-top-row anim anim-d1">
+<div class="hero-badge">👑 Elite Package</div>
+<div class="hero-chip">Package 04 — Yearly</div>
+</div>
+<h1 class="anim anim-d2">সর্বোচ্চ support,<br/><span>সর্বোচ্চ result।</span></h1>
+<p class="hero-sub anim anim-d3">Elite Package-এ আপনি শুধু একজন student নন — আপনি একজন personally mentored trader। প্রতিটি trade, প্রতিটি সিদ্ধান্তে আপনার পাশে থাকব আমরা।</p>
+<div class="hero-for anim anim-d3">👑 যারা সর্বোচ্চ attention ও guided support-এ দ্রুত এগিয়ে যেতে চান</div>
+<div class="hero-stats anim anim-d4">
+<div class="hero-stat"><div class="stat-val">$499</div><div class="stat-label">Yearly Price</div></div>
+<div class="hero-stat"><div class="stat-val">29%</div><div class="stat-label">Discount</div></div>
+<div class="hero-stat"><div class="stat-val">$50K</div><div class="stat-label">Giveaway সুযোগ</div></div>
+<div class="hero-stat"><div class="stat-val">১ বছর</div><div class="stat-label">সব সুবিধা</div></div>
+</div>
+</div>
+</section>
+<div class="container">
+<!-- FOR WHOM -->
+<h2 class="sec-title reveal">এই Package কার জন্য?</h2>
+<div class="for-whom reveal">
+<div class="for-whom-title">আপনি যদি...</div>
+<ul class="for-whom-list">
+<li>সবচেয়ে বেশি personal attention ও close mentorship চান</li>
+<li>প্রতিদিনের market analysis-এ Daily Bias সহ সম্পূর্ণ guidance চান</li>
+<li>প্রায় প্রতিটি trade review করিয়ে দ্রুত এবং নির্ভুলভাবে এগোতে চান</li>
+<li>সপ্তাহে দুইবার সরাসরি 1v1 session-এ নিজেকে গড়তে চান</li>
+</ul>
+</div>
+<!-- FEATURES -->
+<h2 class="sec-title reveal">Elite Package-এ যা পাবেন</h2>
+<div class="features-grid">
+<div class="feat-card reveal">
+<div class="feat-icon-box">📦</div>
+<div class="feat-text">
+<h4>Package 02 সম্পূর্ণ অন্তর্ভুক্ত</h4>
+<p>৭-chapter course, ১টি personal setup ও $10,000 giveaway সুযোগ — সব কিছু এর মধ্যেই আছে</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">💬</div>
+<div class="feat-text">
+<h4>Exclusive Elite Telegram Channel</h4>
+<p>শুধুমাত্র Elite সদস্যদের জন্য আলাদা premium channel — সব exclusive content এখানেই</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">📊</div>
+<div class="feat-text">
+<h4>Daily Outlook + Daily Bias</h4>
+<p>Fundamental, Technical ও Daily Bias একসাথে — Pro-তে Outlook, Elite-তে সেটার সাথে Bias-ও</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">⚙️</div>
+<div class="feat-text">
+<h4>৫টি Personal Setup — Backtest সহ</h4>
+<p>সর্বোচ্চ সংখ্যক setup — Pro-তে ৩টি, Elite-তে ৫টি। বেশি edge, বেশি সুযোগ</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">🔍</div>
+<div class="feat-text">
+<h4>প্রায় প্রতিটি Trade Review</h4>
+<p>Pro-তে সাপ্তাহিক ১টি, Elite-তে প্রায় প্রতিটি — নিয়মিত feedback-এ দ্রুত উন্নতি</p>
+</div>
+</div>
+<div class="feat-card reveal">
+<div class="feat-icon-box">🎯</div>
+<div class="feat-text">
+<h4>সপ্তাহে দুইবার 1v1 Consultation</h4>
+<p>Pro-তে biweekly, Elite-তে weekly twice — সর্বোচ্চ personal attention, সরাসরি আপনার জন্য</p>
+</div>
+</div>
+</div>
+<!-- PRO VS ELITE COMPARISON -->
+<h2 class="sec-title reveal">Pro বনাম Elite — পার্থক্য কোথায়?</h2>
+<div class="compare-box reveal">
+<div class="compare-head">
+<div class="compare-head-cell feature">সুবিধা</div>
+<div class="compare-head-cell pro">Pro Package</div>
+<div class="compare-head-cell elite">Elite Package</div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">Daily Market Content</div>
+<div class="compare-cell pro-val">Fundamental + Technical</div>
+<div class="compare-cell elite-val">+ Daily Bias <span class="badge">Extra</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">Personal Setup</div>
+<div class="compare-cell pro-val">৩টি</div>
+<div class="compare-cell elite-val">৫টি <span class="badge">+২টি</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">Trade Review</div>
+<div class="compare-cell pro-val">সপ্তাহে ১/৫</div>
+<div class="compare-cell elite-val">প্রায় প্রতিটি <span class="badge">Max</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">1v1 Consultation</div>
+<div class="compare-cell pro-val">Biweekly (২ সপ্তাহে ১)</div>
+<div class="compare-cell elite-val">Weekly Twice <span class="badge">4x বেশি</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">Funded Giveaway</div>
+<div class="compare-cell pro-val">Top 3 → $25,000</div>
+<div class="compare-cell elite-val">Top 2 → $50,000 <span class="badge">2x</span></div>
+</div>
+<div class="compare-row">
+<div class="compare-cell feature">মূল্য</div>
+<div class="compare-cell pro-val">$299 / year</div>
+<div class="compare-cell elite-val">$499 / year</div>
+</div>
+</div>
+<!-- GIVEAWAY BANNER -->
+<div class="giveaway-banner reveal">
+<div class="giveaway-icon">👑</div>
+<div class="giveaway-body">
+<div class="giveaway-tag">Elite Exclusive Giveaway</div>
+<div class="giveaway-title">Top 2 Performers পাবেন</div>
+<div class="giveaway-amount">$50,000 Funded Account</div>
+<div class="giveaway-desc">সেরা ২ জন trader বাছাই করা হবে — তারা পাবেন $50,000-এর একটি fully funded trading account। নিজের capital ছাড়াই সর্বোচ্চ পর্যায়ে trade করার সুযোগ।</div>
+</div>
+</div>
+<hr class="divider"/>
+<!-- PAYMENT STEPS -->
+<div class="pay-section reveal">
+<div class="pay-section-label">কীভাবে Payment করবেন</div>
+<div class="pay-steps">
+<div class="pay-step">
+<span class="pay-step-num">ধাপ ০১</span>
+<span class="pay-step-icon">📱</span>
+<div class="pay-step-title">Binance App খুলুন</div>
+<div class="pay-step-desc">Binance app-এ login করুন। <strong>Assets</strong> tab-এ যান।</div>
+</div>
+<div class="pay-step">
+<span class="pay-step-num">ধাপ ০২</span>
+<span class="pay-step-icon">💸</span>
+<div class="pay-step-title">Send Crypto / Withdraw</div>
+<div class="pay-step-desc">Assets থেকে <strong>Send Crypto</strong> বা <strong>Withdraw</strong> select করুন।</div>
+</div>
+<div class="pay-step">
+<span class="pay-step-num">ধাপ ০৩</span>
+<span class="pay-step-icon">🔢</span>
+<div class="pay-step-title">UID দিন ও Amount পাঠান</div>
+<div class="pay-step-desc"><strong>Binance UID</strong> select করুন → UID <strong>936178742</strong> লিখুন → <strong>$499</strong> পাঠান।<span class="pay-step-tag">$499</span></div>
+</div>
+<div class="pay-step">
+<span class="pay-step-num">ধাপ ০৪</span>
+<span class="pay-step-icon">📸</span>
+<div class="pay-step-title">Screenshot পাঠান</div>
+<div class="pay-step-desc">Transaction screenshot নিন → নিচের Enroll button-এ click করে <strong>Telegram-এ পাঠান।</strong> ২৪ ঘণ্টায় Elite access পাবেন।</div>
+</div>
+</div>
+</div>
+<!-- BINANCE UID -->
+<div class="uid-wrap reveal">
+<div class="uid-header">
+<span class="uid-header-badge">Binance UID · Payment</span>
+<span class="uid-header-warn">⚠️ কোনো wallet address নেই — শুধু UID-তে পাঠান</span>
+</div>
+<div class="uid-body">
+<div class="uid-main">
+<div>
+<div class="uid-left-label">Binance User ID</div>
+<div class="uid-num-display" id="uid-num">936178742</div>
+</div>
+<button class="uid-copy-btn" onclick="copyUID('')">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="13" rx="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg>
+<span id="copy-text">UID Copy করুন</span>
+</button>
+</div>
+<div class="uid-hint">
           💡 <span>Binance App খুলুন → <strong>Pay</strong> → <strong>Send</strong> → UID লিখুন → Amount দিন। যেকোনো Binance-supported coin দিয়ে payment করা যাবে।</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- PRICE SUMMARY -->
-    <div class="price-wrap reveal">
-      <div class="price-wrap-head" style="background:linear-gradient(135deg,#a16207,#78350f)">
-        <span class="price-wrap-head-title">Package 04 — Elite</span>
-        <span class="price-wrap-head-tag">Yearly · ১ বছর</span>
-      </div>
-      <div class="price-rows">
-        <div class="price-row-new"><span class="price-row-new-label">Regular মূল্য</span><span class="price-row-new-val crossed">$700 / year</span></div>
-        <div class="price-row-new"><span class="price-row-new-label">29% Discount-এ</span><span class="price-row-new-val green">$499</span></div>
-        <div class="price-row-new"><span class="price-row-new-label">আপনার সাশ্রয়</span><span class="price-row-new-val green">$201</span></div>
-        <div class="price-row-new"><span class="price-row-new-label">মেয়াদ</span><span class="price-row-new-val accent">১ বছর</span></div>
-      </div>
-      <div class="price-summary-footer" style="background:#fefce8;border-color:#fde68a">
-        <span class="price-summary-footer-label" style="color:#a16207">সর্বোচ্চ guidance — ১ বছর</span>
-        <span class="price-summary-footer-val" style="color:#a16207">$499</span>
-      </div>
-    </div>
-
-    <!-- ENROLL CTA -->
-    <div class="enroll-block reveal" style="background:linear-gradient(135deg,#0a0a0a,#1a1200)">
-      <div class="enroll-inner">
-        <div class="enroll-label">Enroll Now</div>
-        <h3 class="enroll-title">Elite Member হিসেবে যোগ দিন</h3>
-        <p class="enroll-sub">$499 দিয়ে ১ বছরের Elite membership পান — সর্বোচ্চ attention ও daily support।</p>
-        <div style="margin-bottom:16px;background:rgba(240,185,11,.1);border:1px solid rgba(240,185,11,.25);border-radius:10px;padding:10px 16px;font-size:13px;color:#F0B90B;font-weight:600">👑 Top 2 Traders পাবেন $50,000 Funded Account</div>
-        <div class="enroll-btns">
-          <a href="https://t.me/AskNLT?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%21%20Package%2004%20Elite-এ%20enroll%20করতে%20চাই।%20Binance-এ%20%24499%20payment%20করেছি।%20Screenshot%20পাঠাচ্ছি।" target="_blank" rel="noopener noreferrer" class="enroll-primary">
+</div>
+</div>
+</div>
+<!-- PRICE SUMMARY -->
+<div class="price-wrap reveal">
+<div class="price-wrap-head" style="background:linear-gradient(135deg,#a16207,#78350f)">
+<span class="price-wrap-head-title">Package 04 — Elite</span>
+<span class="price-wrap-head-tag">Yearly · ১ বছর</span>
+</div>
+<div class="price-rows">
+<div class="price-row-new"><span class="price-row-new-label">Regular মূল্য</span><span class="price-row-new-val crossed">$700 / year</span></div>
+<div class="price-row-new"><span class="price-row-new-label">29% Discount-এ</span><span class="price-row-new-val green">$499</span></div>
+<div class="price-row-new"><span class="price-row-new-label">আপনার সাশ্রয়</span><span class="price-row-new-val green">$201</span></div>
+<div class="price-row-new"><span class="price-row-new-label">মেয়াদ</span><span class="price-row-new-val accent">১ বছর</span></div>
+</div>
+<div class="price-summary-footer" style="background:#fefce8;border-color:#fde68a">
+<span class="price-summary-footer-label" style="color:#a16207">সর্বোচ্চ guidance — ১ বছর</span>
+<span class="price-summary-footer-val" style="color:#a16207">$499</span>
+</div>
+</div>
+<!-- ENROLL CTA -->
+<div class="enroll-block reveal" style="background:linear-gradient(135deg,#0a0a0a,#1a1200)">
+<div class="enroll-inner">
+<div class="enroll-label">Enroll Now</div>
+<h3 class="enroll-title">Elite Member হিসেবে যোগ দিন</h3>
+<p class="enroll-sub">$499 দিয়ে ১ বছরের Elite membership পান — সর্বোচ্চ attention ও daily support।</p>
+<div style="margin-bottom:16px;background:rgba(240,185,11,.1);border:1px solid rgba(240,185,11,.25);border-radius:10px;padding:10px 16px;font-size:13px;color:#F0B90B;font-weight:600">👑 Top 2 Traders পাবেন $50,000 Funded Account</div>
+<div class="enroll-btns">
+<a class="enroll-primary" href="https://t.me/AskNLT?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%21%20Package%2004%20Elite-এ%20enroll%20করতে%20চাই।%20Binance-এ%20%24499%20payment%20করেছি।%20Screenshot%20পাঠাচ্ছি।" rel="noopener noreferrer" target="_blank">
             Screenshot পাঠিয়ে Enroll করুন
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" class="enroll-secondary">
+            <svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+</a>
+<a class="enroll-secondary" href="https://t.me/AskNLT" rel="noopener noreferrer" target="_blank">
             💬 Payment সম্পর্কে প্রশ্ন আছে?
           </a>
-        </div>
-        <div class="enroll-trust"><span class="enroll-trust-item">২৪ ঘণ্টায় Elite access</span><span class="enroll-trust-item">যেকোনো Binance coin</span><span class="enroll-trust-item">$50,000 Giveaway eligible</span></div>
-      </div>
-    </div>
+</div>
+<div class="enroll-trust"><span class="enroll-trust-item">২৪ ঘণ্টায় Elite access</span><span class="enroll-trust-item">যেকোনো Binance coin</span><span class="enroll-trust-item">$50,000 Giveaway eligible</span></div>
+</div>
+</div>
+<!-- FAQ -->
+<h2 class="sec-title reveal">সাধারণ প্রশ্ন</h2>
+<div class="faq-list reveal">
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">Pro ও Elite-এর মূল পার্থক্য কী?<span class="faq-icon">+</span></button>
+<div class="faq-a">মূল পার্থক্য তিনটি জায়গায়: (১) Elite-তে Daily Bias অতিরিক্ত পাবেন, (২) সপ্তাহে ২বার 1v1 session — Pro-তে ২ সপ্তাহে ১বার, (৩) প্রায় প্রতিটি trade review — Pro-তে সপ্তাহে ১টি। এছাড়া ৫টি personal setup ও $50,000 giveaway।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">Daily Bias মানে কী?<span class="faq-icon">+</span></button>
+<div class="faq-a">Daily Bias হলো সেই দিনের market-এর সম্ভাব্য direction সম্পর্কে expert opinion — আজকে market কোন দিকে যাওয়ার সম্ভাবনা বেশি সেটা বিশ্লেষণ করে দেওয়া হয়। Pro-তে শুধু Fundamental ও Technical Outlook পাবেন, Elite-তে তার সাথে এই Daily Bias-ও থাকবে।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">"প্রায় প্রতিটি" Trade Review মানে কতটা?<span class="faq-icon">+</span></button>
+<div class="faq-a">আপনি channel-এ যে trade পাঠাবেন তার প্রায় সবগুলোই review করা হবে। দিনে বেশি trade থাকলে priority অনুযায়ী নেওয়া হবে। Pro-তে সপ্তাহে ১টি নির্দিষ্ট, Elite-তে সেই সীমাবদ্ধতা নেই।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">1v1 Session সপ্তাহে দুইবার কীভাবে কাজ করে?<span class="faq-icon">+</span></button>
+<div class="faq-a">Channel-এ যোগ দেওয়ার পর আপনার জন্য সাপ্তাহিক দুটি session slot নির্ধারণ করা হবে — আপনার সুবিধামতো সময়ে। প্রতিটি session-এ আপনার trade, strategy বা যেকোনো প্রশ্ন নিয়ে সরাসরি আলোচনা করতে পারবেন।</div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="toggleFaq(this)">Pro থেকে Elite-এ upgrade করা যাবে?<span class="faq-icon">+</span></button>
+<div class="faq-a">হ্যাঁ। Pro-তে যতটুকু সময় ব্যবহার করেছেন সেটা হিসাব করে বাকি অংশের জন্য Elite-এ upgrade করতে পারবেন। Telegram-এ আমাদের জানালে বিস্তারিত জানানো হবে।</div>
+</div>
+</div>
+</div>
+<div class="cta-trust">
+<span class="cta-trust-item">২৪ ঘণ্টার মধ্যে access</span>
+<span class="cta-trust-item">পুরো ১ বছর সব সুবিধা</span>
+<span class="cta-trust-item">Top 2 → $50,000 Funded</span>
+</div>
 
 
-    <!-- FAQ -->
-    <h2 class="sec-title reveal">সাধারণ প্রশ্ন</h2>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Pro ও Elite-এর মূল পার্থক্য কী?<span class="faq-icon">+</span></button>
-        <div class="faq-a">মূল পার্থক্য তিনটি জায়গায়: (১) Elite-তে Daily Bias অতিরিক্ত পাবেন, (২) সপ্তাহে ২বার 1v1 session — Pro-তে ২ সপ্তাহে ১বার, (৩) প্রায় প্রতিটি trade review — Pro-তে সপ্তাহে ১টি। এছাড়া ৫টি personal setup ও $50,000 giveaway।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Daily Bias মানে কী?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Daily Bias হলো সেই দিনের market-এর সম্ভাব্য direction সম্পর্কে expert opinion — আজকে market কোন দিকে যাওয়ার সম্ভাবনা বেশি সেটা বিশ্লেষণ করে দেওয়া হয়। Pro-তে শুধু Fundamental ও Technical Outlook পাবেন, Elite-তে তার সাথে এই Daily Bias-ও থাকবে।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">"প্রায় প্রতিটি" Trade Review মানে কতটা?<span class="faq-icon">+</span></button>
-        <div class="faq-a">আপনি channel-এ যে trade পাঠাবেন তার প্রায় সবগুলোই review করা হবে। দিনে বেশি trade থাকলে priority অনুযায়ী নেওয়া হবে। Pro-তে সপ্তাহে ১টি নির্দিষ্ট, Elite-তে সেই সীমাবদ্ধতা নেই।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">1v1 Session সপ্তাহে দুইবার কীভাবে কাজ করে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Channel-এ যোগ দেওয়ার পর আপনার জন্য সাপ্তাহিক দুটি session slot নির্ধারণ করা হবে — আপনার সুবিধামতো সময়ে। প্রতিটি session-এ আপনার trade, strategy বা যেকোনো প্রশ্ন নিয়ে সরাসরি আলোচনা করতে পারবেন।</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">Pro থেকে Elite-এ upgrade করা যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">হ্যাঁ। Pro-তে যতটুকু সময় ব্যবহার করেছেন সেটা হিসাব করে বাকি অংশের জন্য Elite-এ upgrade করতে পারবেন। Telegram-এ আমাদের জানালে বিস্তারিত জানানো হবে।</div>
-      </div>
-    </div>
 
-
-  </div>
-        <div class="cta-trust">
-          <span class="cta-trust-item">২৪ ঘণ্টার মধ্যে access</span>
-          <span class="cta-trust-item">পুরো ১ বছর সব সুবিধা</span>
-          <span class="cta-trust-item">Top 2 → $50,000 Funded</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-    <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">Exclusive Mentorship by NLT &copy; 2026</div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="faq.html">FAQ</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="https://t.me/AskNLT" target="_blank">Contact</a>
-    </div>
-  </div>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">Exclusive Mentorship by NLT © 2026</div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="faq.html">FAQ</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="terms.html">Terms &amp; Conditions</a>
+<a href="https://t.me/AskNLT" target="_blank">Contact</a>
+</div>
+</div>
 </footer>
 
-  <script>
-    function copyUID(suffix) {
-      const uid = document.getElementById('uid-num' + (suffix||'')).textContent;
-      navigator.clipboard.writeText(uid).then(() => {
-        const btn = document.getElementById('copy-text' + (suffix||''));
-        btn.textContent = 'Copied! ✓';
-        setTimeout(() => btn.textContent = 'UID Copy করুন', 2000);
-      });
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-        });
-      }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-      document.querySelectorAll('.reveal').forEach((el, i) => {
-        el.style.transitionDelay = (i % 4) * 0.07 + 's';
-        observer.observe(el);
-      });
-      // Fallback: show all after 1.5s in case observer fails
-      setTimeout(() => {
-        document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
-      }, 1500);
-    });
-  </script>
 
-  <script>
-
-  // EID TIMER — ends March 26, 2026
-  const eidEnd = new Date('2026-03-26T23:59:59').getTime();
-  function tick() {
-    const diff = eidEnd - Date.now();
-    if (diff <= 0) { const b = document.getElementById('eidBanner'); if(b) b.style.display='none'; return; }
-    const d = Math.floor(diff/86400000);
-    const h = Math.floor((diff%86400000)/3600000);
-    const m = Math.floor((diff%3600000)/60000);
-    const s = Math.floor((diff%60000)/1000);
-    const pad = n => String(n).padStart(2,'0');
-    const eD = document.getElementById('eidD'); if(eD) eD.textContent = pad(d);
-    const eH = document.getElementById('eidH'); if(eH) eH.textContent = pad(h);
-    const eM = document.getElementById('eidM'); if(eM) eM.textContent = pad(m);
-    const eS = document.getElementById('eidS'); if(eS) eS.textContent = pad(s);
-  }
-  tick(); setInterval(tick, 1000);
-  // HAMBURGER MENU
-  const hamburger = document.getElementById('navHamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuClose = document.getElementById('menuClose');
-  const menuOverlay = document.getElementById('menuOverlay');
-  function openMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('open'); document.body.style.overflow='hidden'; }
-  function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow=''; }
-  if(hamburger) hamburger.addEventListener('click', openMenu);
-  if(menuClose)  menuClose.addEventListener('click', closeMenu);
-  if(menuOverlay) menuOverlay.addEventListener('click', closeMenu);
-  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-  // Close mobile menu on internal link click
-  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => {
-    if(!a.href.startsWith('http')) a.addEventListener('click', closeMenu);
-  });
-    window.addEventListener('scroll',()=>{
-      document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10);
-    });
-  </script>
-</body>
+<script src="js/copy-uid.js"></script><script src="js/eid-timer.js"></script></body>
 </html>
