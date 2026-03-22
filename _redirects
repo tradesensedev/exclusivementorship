@@ -1,13 +1,2 @@
-# Clean URL redirects (no .html extension needed)
-/faq                /faq.html             301
-/compare            /compare.html         301
-/investment         /investment.html      301
-/package-01         /package-01.html      301
-/package-02         /package-02.html      301
-/package-03         /package-03.html      301
-/package-04         /package-04.html      301
-/disclaimer         /disclaimer.html      301
-/terms              /terms.html           301
-
 # 404 fallback
 /*                  /index.html           404
