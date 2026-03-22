@@ -1,4 +1,3 @@
-/* EID BANNER */
 .eid-banner {
     background: linear-gradient(90deg, #0a3d20, #14652e, #0a3d20);
     padding: 10px 20px;
@@ -94,7 +93,7 @@
     --blue-light: #eff6ff;
     --blue-border: #bfdbfe;
     --serif: 'Plus Jakarta Sans', sans-serif;
-    --mono: 'Space Grotesk', sans-serif;
+    --mono: 'Space Grotesk', sans-serif
 }
 
 html {
@@ -105,10 +104,9 @@ body {
     background: var(--bg);
     font-family: var(--serif);
     color: var(--ink);
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
-/* ═══ GLOBAL MOBILE UX ═══ */
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -135,7 +133,6 @@ img {
     height: auto
 }
 
-/* NAV */
 @keyframes pulse {
 
     0%,
@@ -157,12 +154,11 @@ img {
     height: 14px
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #2e1065 100%);
     padding: 68px 24px 60px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .hero::before {
@@ -170,7 +166,7 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(109, 40, 217, 0.3) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero::after {
@@ -179,14 +175,14 @@ img {
     inset: 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero-inner {
     max-width: 760px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .hero-top-row {
@@ -194,7 +190,7 @@ img {
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 22px;
+    margin-bottom: 22px
 }
 
 .hero-badge {
@@ -210,7 +206,7 @@ img {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 6px 14px;
-    border-radius: 100px;
+    border-radius: 100px
 }
 
 .hero-chip {
@@ -226,7 +222,7 @@ img {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 5px 13px;
-    border-radius: 100px;
+    border-radius: 100px
 }
 
 .hero h1 {
@@ -235,13 +231,13 @@ img {
     color: #fff;
     line-height: 1.1;
     letter-spacing: -0.03em;
-    margin-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .hero h1 span {
     background: linear-gradient(90deg, #c4b5fd, #818cf8);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent
 }
 
 .hero-sub {
@@ -249,7 +245,7 @@ img {
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.75;
     margin-bottom: 16px;
-    max-width: 580px;
+    max-width: 580px
 }
 
 .hero-for {
@@ -263,13 +259,13 @@ img {
     font-weight: 600;
     padding: 6px 14px;
     border-radius: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 32px
 }
 
 .hero-stats {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px
 }
 
 .hero-stat {
@@ -280,12 +276,12 @@ img {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    transition: background 0.2s, border-color 0.2s;
+    transition: background 0.2s, border-color 0.2s
 }
 
 .hero-stat:hover {
     background: rgba(255, 255, 255, 0.11);
-    border-color: rgba(167, 139, 250, 0.3);
+    border-color: rgba(167, 139, 250, 0.3)
 }
 
 .stat-val {
@@ -293,7 +289,7 @@ img {
     font-weight: 800;
     color: #fff;
     letter-spacing: -0.02em;
-    line-height: 1;
+    line-height: 1
 }
 
 .stat-label {
@@ -302,17 +298,15 @@ img {
     font-family: var(--mono);
     font-weight: 500;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
-/* CONTAINER */
 .container {
     max-width: 760px;
     margin: 0 auto;
-    padding: 60px 24px 80px;
+    padding: 60px 24px 80px
 }
 
-/* SECTION TITLE */
 .sec-title {
     font-size: 20px;
     font-weight: 800;
@@ -321,7 +315,7 @@ img {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px
 }
 
 .sec-title::before {
@@ -330,16 +324,15 @@ img {
     height: 22px;
     background: var(--pro);
     border-radius: 2px;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
-/* FOR WHOM */
 .for-whom {
     background: var(--pro-light);
     border: 1px solid var(--pro-border);
     border-radius: 14px;
     padding: 24px 28px;
-    margin-bottom: 48px;
+    margin-bottom: 48px
 }
 
 .for-whom-title {
@@ -349,14 +342,14 @@ img {
     font-family: var(--mono);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: 14px
 }
 
 .for-whom-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10px
 }
 
 .for-whom-list li {
@@ -365,7 +358,7 @@ img {
     gap: 10px;
     font-size: 14px;
     color: var(--ink-2);
-    line-height: 1.55;
+    line-height: 1.55
 }
 
 .for-whom-list li::before {
@@ -381,10 +374,9 @@ img {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 1px
 }
 
-/* PKG 02 INCLUDED */
 .included-box {
     background: var(--blue-light);
     border: 1px solid var(--blue-border);
@@ -393,7 +385,7 @@ img {
     margin-bottom: 48px;
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 14px
 }
 
 .included-icon {
@@ -406,28 +398,27 @@ img {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 16px
 }
 
 .included-body h4 {
     font-size: 13.5px;
     font-weight: 700;
     color: #1e40af;
-    margin-bottom: 4px;
+    margin-bottom: 4px
 }
 
 .included-body p {
     font-size: 12.5px;
     color: #3b82f6;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
-/* FEATURES */
 .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    margin-bottom: 48px;
+    margin-bottom: 48px
 }
 
 .feat-card {
@@ -438,13 +429,13 @@ img {
     display: flex;
     gap: 14px;
     align-items: flex-start;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s
 }
 
 .feat-card:hover {
     border-color: var(--pro-border);
     box-shadow: 0 4px 16px var(--pro-glow);
-    transform: translateY(-2px);
+    transform: translateY(-2px)
 }
 
 .feat-icon-box {
@@ -456,7 +447,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    font-size: 17px;
+    font-size: 17px
 }
 
 .feat-text h4 {
@@ -464,16 +455,15 @@ img {
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 5px;
-    line-height: 1.3;
+    line-height: 1.3
 }
 
 .feat-text p {
     font-size: 12.5px;
     color: var(--ink-3);
-    line-height: 1.55;
+    line-height: 1.55
 }
 
-/* GIVEAWAY BANNER */
 .giveaway-banner {
     background: linear-gradient(135deg, #2e1065, #4c1d95);
     border-radius: 14px;
@@ -483,7 +473,7 @@ img {
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 24px
 }
 
 .giveaway-banner::before {
@@ -491,19 +481,19 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .giveaway-icon {
     font-size: 48px;
     flex-shrink: 0;
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .giveaway-body {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .giveaway-tag {
@@ -513,7 +503,7 @@ img {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.45);
-    margin-bottom: 6px;
+    margin-bottom: 6px
 }
 
 .giveaway-title {
@@ -521,7 +511,7 @@ img {
     font-weight: 800;
     color: #fff;
     margin-bottom: 4px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.02em
 }
 
 .giveaway-amount {
@@ -529,17 +519,16 @@ img {
     font-weight: 800;
     color: #c4b5fd;
     font-family: var(--mono);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.02em
 }
 
 .giveaway-desc {
     font-size: 13.5px;
     color: rgba(255, 255, 255, 0.55);
     line-height: 1.55;
-    margin-top: 6px;
+    margin-top: 6px
 }
 
-/* BENEFITS LIST */
 .benefits-list {
     display: flex;
     flex-direction: column;
@@ -547,7 +536,7 @@ img {
     border: 1px solid var(--line);
     border-radius: 14px;
     overflow: hidden;
-    margin-bottom: 48px;
+    margin-bottom: 48px
 }
 
 .benefit-item {
@@ -556,7 +545,7 @@ img {
     gap: 16px;
     padding: 18px 22px;
     border-bottom: 1px solid var(--line);
-    transition: background 0.15s;
+    transition: background 0.15s
 }
 
 .benefit-item:last-child {
@@ -579,24 +568,24 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .benefit-body {
-    flex: 1;
+    flex: 1
 }
 
 .benefit-title {
     font-size: 14px;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 3px;
+    margin-bottom: 3px
 }
 
 .benefit-desc {
     font-size: 12.5px;
     color: var(--ink-3);
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .benefit-tag {
@@ -610,71 +599,26 @@ img {
     padding: 2px 8px;
     border-radius: 4px;
     margin-top: 6px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em
 }
 
-/* DIVIDER */
 .divider {
     border: none;
     border-top: 1px solid var(--line);
-    margin: 48px 0;
+    margin: 48px 0
 }
 
-/* STEPS */
-
-
-
-
-
-
-
-
-
-
-
-
-/* BINANCE UID */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* PRICE CARD */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FAQ */
 .faq-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 48px;
+    margin-bottom: 48px
 }
 
 .faq-item {
     border: 1px solid var(--line);
     border-radius: 12px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .faq-q {
@@ -692,7 +636,7 @@ img {
     font-size: 14px;
     font-weight: 700;
     color: var(--ink);
-    transition: background 0.15s;
+    transition: background 0.15s
 }
 
 .faq-q:hover {
@@ -716,13 +660,13 @@ img {
     font-size: 14px;
     font-weight: 700;
     transition: background 0.15s, transform 0.2s;
-    color: var(--ink-2);
+    color: var(--ink-2)
 }
 
 .faq-q.open .faq-icon {
     background: var(--pro);
     color: #fff;
-    transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 
 .faq-a {
@@ -732,21 +676,20 @@ img {
     color: var(--ink-2);
     line-height: 1.7;
     border-top: 1px solid var(--pro-border);
-    background: var(--pro-light);
+    background: var(--pro-light)
 }
 
 .faq-a.open {
     display: block
 }
 
-/* CTA */
 .cta-block {
     background: linear-gradient(135deg, #0f172a, #2e1065);
     border-radius: 16px;
     padding: 40px 36px;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .cta-block::before {
@@ -754,12 +697,12 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(109, 40, 217, 0.25) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .cta-block-inner {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .cta-block h3 {
@@ -767,7 +710,7 @@ img {
     font-weight: 800;
     color: #fff;
     margin-bottom: 10px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.02em
 }
 
 .cta-block p {
@@ -777,7 +720,7 @@ img {
     line-height: 1.65;
     max-width: 460px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .cta-btns {
@@ -785,7 +728,7 @@ img {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
-    margin-bottom: 4px;
+    margin-bottom: 4px
 }
 
 .cta-btn {
@@ -803,12 +746,12 @@ img {
     border: none;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4);
+    box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4)
 }
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(109, 40, 217, 0.55);
+    box-shadow: 0 8px 28px rgba(109, 40, 217, 0.55)
 }
 
 .cta-btn svg {
@@ -830,18 +773,18 @@ img {
     border-radius: 12px;
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
+    transition: background 0.2s, transform 0.2s
 }
 
 .cta-btn-alt:hover {
     background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-2px);
+    transform: translateY(-2px)
 }
 
 .cta-btn-alt svg {
     width: 15px;
     height: 15px;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .cta-trust {
@@ -850,7 +793,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .cta-trust-item {
@@ -858,7 +801,7 @@ img {
     align-items: center;
     gap: 6px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.35)
 }
 
 .cta-trust-item::before {
@@ -871,19 +814,18 @@ img {
     font-size: 9px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
-/* SCROLL REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(22px);
-    transition: opacity 0.55s ease, transform 0.55s ease;
+    transition: opacity 0.55s ease, transform 0.55s ease
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
 @keyframes up {
@@ -899,7 +841,7 @@ img {
 }
 
 .anim {
-    animation: up 0.5s ease both;
+    animation: up 0.5s ease both
 }
 
 .anim-d1 {
@@ -923,7 +865,7 @@ footer {
     padding: 28px 24px;
     text-align: center;
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 @media(max-width:600px) {
@@ -937,17 +879,14 @@ footer {
         padding: 22px
     }
 
-
-
     .cta-block {
         padding: 28px 20px
     }
 }
 
-/* SITE FOOTER */
 .site-footer {
     border-top: 1px solid var(--line);
-    padding: 28px 24px;
+    padding: 28px 24px
 }
 
 .footer-inner {
@@ -957,34 +896,32 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 12px
 }
 
 .footer-brand {
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 .footer-links {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .footer-links a {
     font-size: 13px;
     color: var(--ink-3);
     text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.15s
 }
 
 .footer-links a:hover {
-    color: var(--ink);
+    color: var(--ink)
 }
 
 @media(max-width:480px) {
-
-    /* EID Banner mobile */
     .eid-inner {
         flex-wrap: wrap;
         gap: 6px;
@@ -1001,16 +938,14 @@ footer {
 
     .footer-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     .footer-links {
-        gap: 14px;
+        gap: 14px
     }
 }
 
-/* ═══ HAMBURGER MOBILE MENU ═══ */
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -1167,10 +1102,8 @@ footer {
     }
 }
 
-/* FLOAT CTA */
 @media(max-width:480px) {}
 
-/* BACK BUTTON */
 .back-bar {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -1209,16 +1142,8 @@ footer {
     flex-shrink: 0
 }
 
-
-
-
-
-
-
-
 @media(max-width:600px) {}
 
-/* PAYMENT STEPS - REMADE */
 .pay-section {
     margin-bottom: 48px
 }
@@ -1338,7 +1263,6 @@ footer {
     }
 }
 
-/* UID BOX - REMADE */
 .uid-wrap {
     background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
     border-radius: 16px;
@@ -1458,7 +1382,6 @@ footer {
     color: rgba(255, 255, 255, .8)
 }
 
-/* PRICE SUMMARY - REMADE */
 .price-wrap {
     border-radius: 16px;
     overflow: hidden;
@@ -1569,7 +1492,6 @@ footer {
     }
 }
 
-/* ENROLL CTA - REMADE */
 .enroll-block {
     border-radius: 20px;
     padding: 40px 36px;
@@ -1710,7 +1632,6 @@ footer {
     }
 }
 
-/* ═══ MOBILE OPTIMIZATION ═══ */
 @media(max-width:480px) {
     .navbar .nav-inner {
         padding: 0 16px
@@ -1733,7 +1654,6 @@ footer {
         padding: 8px 16px
     }
 
-    /* Hero */
     .hero {
         padding: 44px 16px 40px
     }
@@ -1775,7 +1695,6 @@ footer {
         font-size: 9px
     }
 
-    /* Container */
     .container {
         padding: 40px 16px 60px
     }
@@ -1784,12 +1703,10 @@ footer {
         font-size: 17px
     }
 
-    /* For whom */
     .for-whom {
         padding: 18px 20px
     }
 
-    /* Features */
     .features-grid {
         grid-template-columns: 1fr;
         gap: 10px
@@ -1799,7 +1716,6 @@ footer {
         padding: 16px 18px
     }
 
-    /* Chapter list */
     .chapter-item {
         padding: 14px 16px;
         flex-wrap: wrap;
@@ -1825,7 +1741,6 @@ footer {
         gap: 8px
     }
 
-    /* Payment steps */
     .pay-steps {
         grid-template-columns: 1fr
     }
@@ -1839,7 +1754,6 @@ footer {
         border-bottom: none
     }
 
-    /* UID box */
     .uid-body {
         padding: 18px 16px
     }
@@ -1859,7 +1773,6 @@ footer {
         justify-content: center
     }
 
-    /* Price wrap */
     .price-wrap-head {
         padding: 14px 18px;
         flex-direction: column;
@@ -1886,7 +1799,6 @@ footer {
         font-size: 28px
     }
 
-    /* Enroll CTA */
     .enroll-block {
         padding: 28px 18px
     }
@@ -1914,7 +1826,6 @@ footer {
         font-size: 11px
     }
 
-    /* FAQ */
     .faq-q {
         padding: 14px 16px;
         font-size: 13.5px
@@ -1924,8 +1835,6 @@ footer {
         font-size: 13px;
         padding: 0 16px 16px
     }
-
-    /* Float CTA */
 }
 
 @media(min-width:481px) and (max-width:768px) {

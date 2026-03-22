@@ -21,7 +21,7 @@
     --red-light: #fef2f2;
     --red-border: #fecaca;
     --serif: 'Plus Jakarta Sans', sans-serif;
-    --mono: 'Space Grotesk', sans-serif;
+    --mono: 'Space Grotesk', sans-serif
 }
 
 html {
@@ -32,10 +32,9 @@ body {
     background: var(--bg);
     font-family: var(--serif);
     color: var(--ink);
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
-/* EID BANNER */
 .eid-banner {
     background: linear-gradient(90deg, #0a3d20, #14652e, #0a3d20);
     padding: 10px 20px;
@@ -106,7 +105,6 @@ body {
     margin-right: 4px
 }
 
-/* ═══ GLOBAL MOBILE UX ═══ */
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -133,7 +131,6 @@ img {
     height: auto
 }
 
-/* NAV */
 .nav {
     position: sticky;
     top: 0;
@@ -144,7 +141,7 @@ img {
     padding: 14px 24px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 @keyframes pulse {
@@ -167,7 +164,7 @@ img {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s
 }
 
 .nav-back:hover {
@@ -179,12 +176,11 @@ img {
     height: 14px
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
     padding: 56px 24px 48px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .hero::before {
@@ -192,7 +188,7 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(99, 102, 241, 0.18) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero::after {
@@ -201,14 +197,14 @@ img {
     inset: 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero-inner {
     max-width: 760px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .hero-chip {
@@ -225,7 +221,7 @@ img {
     text-transform: uppercase;
     padding: 6px 14px;
     border-radius: 100px;
-    margin-bottom: 18px;
+    margin-bottom: 18px
 }
 
 .hero h1 {
@@ -234,23 +230,21 @@ img {
     color: #fff;
     line-height: 1.15;
     letter-spacing: -0.03em;
-    margin-bottom: 12px;
+    margin-bottom: 12px
 }
 
 .hero-meta {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.35);
-    font-family: var(--mono);
+    font-family: var(--mono)
 }
 
-/* CONTAINER */
 .container {
     max-width: 760px;
     margin: 0 auto;
-    padding: 52px 24px 80px;
+    padding: 52px 24px 80px
 }
 
-/* IMPORTANT NOTICE */
 .important-notice {
     background: var(--red-light);
     border: 1px solid var(--red-border);
@@ -260,35 +254,34 @@ img {
     margin-bottom: 48px;
     display: flex;
     gap: 12px;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 .notice-icon {
     font-size: 18px;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 1px
 }
 
 .notice-body h4 {
     font-size: 14px;
     font-weight: 700;
     color: var(--red);
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .notice-body p {
     font-size: 13.5px;
     color: #7f1d1d;
-    line-height: 1.6;
+    line-height: 1.6
 }
 
-/* TOC */
 .toc {
     background: var(--bg2);
     border: 1px solid var(--line);
     border-radius: 14px;
     padding: 22px 26px;
-    margin-bottom: 48px;
+    margin-bottom: 48px
 }
 
 .toc-title {
@@ -298,14 +291,14 @@ img {
     font-family: var(--mono);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 14px;
+    margin-bottom: 14px
 }
 
 .toc-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 6px
 }
 
 .toc-list li a {
@@ -316,7 +309,7 @@ img {
     font-weight: 600;
     color: var(--blue);
     text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.15s
 }
 
 .toc-list li a:hover {
@@ -329,19 +322,18 @@ img {
     height: 4px;
     background: var(--blue-border);
     border-radius: 50%;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .toc-num {
     font-family: var(--mono);
     font-size: 11px;
     color: var(--ink-3);
-    min-width: 18px;
+    min-width: 18px
 }
 
-/* SECTION */
 .tc-section {
-    margin-bottom: 44px;
+    margin-bottom: 44px
 }
 
 .tc-section:last-child {
@@ -357,7 +349,7 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 80px
 }
 
 .tc-heading::before {
@@ -366,7 +358,7 @@ img {
     height: 20px;
     background: var(--blue);
     border-radius: 2px;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .tc-num {
@@ -377,17 +369,17 @@ img {
     background: var(--bg2);
     border: 1px solid var(--line);
     padding: 2px 7px;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 .tc-body {
     font-size: 14px;
     color: var(--ink-2);
-    line-height: 1.8;
+    line-height: 1.8
 }
 
 .tc-body p {
-    margin-bottom: 12px;
+    margin-bottom: 12px
 }
 
 .tc-body p:last-child {
@@ -399,7 +391,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 12px 0;
+    margin: 12px 0
 }
 
 .tc-body ul li {
@@ -408,7 +400,7 @@ img {
     gap: 10px;
     font-size: 14px;
     color: var(--ink-2);
-    line-height: 1.6;
+    line-height: 1.6
 }
 
 .tc-body ul li::before {
@@ -416,15 +408,14 @@ img {
     color: var(--ink-3);
     font-weight: 600;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 1px
 }
 
 .tc-body strong {
     color: var(--ink);
-    font-weight: 700;
+    font-weight: 700
 }
 
-/* HIGHLIGHT BOX */
 .highlight-box {
     background: var(--blue-light);
     border: 1px solid var(--blue-border);
@@ -434,10 +425,9 @@ img {
     font-size: 13.5px;
     color: #1e40af;
     line-height: 1.65;
-    font-weight: 500;
+    font-weight: 500
 }
 
-/* WARN BOX */
 .warn-box {
     background: #fffbeb;
     border: 1px solid #fde68a;
@@ -447,24 +437,22 @@ img {
     font-size: 13.5px;
     color: #92400e;
     line-height: 1.65;
-    font-weight: 500;
+    font-weight: 500
 }
 
-/* DIVIDER */
 .divider {
     border: none;
     border-top: 1px solid var(--line);
-    margin: 44px 0;
+    margin: 44px 0
 }
 
-/* CONTACT CTA */
 .contact-cta {
     background: linear-gradient(135deg, #0f172a, #1e1b4b);
     border-radius: 14px;
     padding: 32px;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .contact-cta::before {
@@ -472,26 +460,26 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(99, 102, 241, 0.18) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .contact-cta-inner {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .contact-cta h3 {
     font-size: 18px;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 8px
 }
 
 .contact-cta p {
     font-size: 13.5px;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.6
 }
 
 .contact-btn {
@@ -507,12 +495,12 @@ img {
     border-radius: 10px;
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.35)
 }
 
 .contact-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 22px rgba(79, 70, 229, 0.5);
+    box-shadow: 0 6px 22px rgba(79, 70, 229, 0.5)
 }
 
 .contact-btn svg {
@@ -520,16 +508,15 @@ img {
     height: 14px
 }
 
-/* REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(18px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
 @keyframes up {
@@ -545,7 +532,7 @@ img {
 }
 
 .anim {
-    animation: up 0.5s ease both;
+    animation: up 0.5s ease both
 }
 
 .anim-d1 {
@@ -565,7 +552,7 @@ footer {
     padding: 28px 24px;
     text-align: center;
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 @media(max-width:600px) {
@@ -578,10 +565,9 @@ footer {
     }
 }
 
-/* SITE FOOTER */
 .site-footer {
     border-top: 1px solid var(--line);
-    padding: 28px 24px;
+    padding: 28px 24px
 }
 
 .footer-inner {
@@ -591,29 +577,29 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 12px
 }
 
 .footer-brand {
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 .footer-links {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .footer-links a {
     font-size: 13px;
     color: var(--ink-3);
     text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.15s
 }
 
 .footer-links a:hover {
-    color: var(--ink);
+    color: var(--ink)
 }
 
 @media(max-width:480px) {
@@ -633,16 +619,14 @@ footer {
 
     .footer-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     .footer-links {
-        gap: 14px;
+        gap: 14px
     }
 }
 
-/* ═══ HAMBURGER MOBILE MENU ═══ */
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -799,10 +783,8 @@ footer {
     }
 }
 
-/* FLOAT CTA */
 @media(max-width:480px) {}
 
-/* BACK BUTTON */
 .back-bar {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -841,7 +823,6 @@ footer {
     flex-shrink: 0
 }
 
-/* ═══ MOBILE OPTIMIZATION ═══ */
 @media(max-width:480px) {
     .nav-inner {
         padding: 0 16px

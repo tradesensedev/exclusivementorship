@@ -24,7 +24,7 @@
     --featured: #1d4ed8;
     --featured-glow: rgba(37, 99, 235, 0.15);
     --serif: 'Plus Jakarta Sans', sans-serif;
-    --mono: 'Space Grotesk', sans-serif;
+    --mono: 'Space Grotesk', sans-serif
 }
 
 html {
@@ -38,7 +38,6 @@ body {
     -webkit-font-smoothing: antialiased
 }
 
-/* ═══ GLOBAL MOBILE UX ═══ */
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -65,7 +64,6 @@ img {
     height: auto
 }
 
-/* EID BANNER */
 .eid-banner {
     background: linear-gradient(90deg, #0a3d20, #14652e, #0a3d20);
     padding: 10px 20px;
@@ -136,9 +134,6 @@ img {
     margin-right: 4px
 }
 
-
-/* ═══ HAMBURGER MOBILE MENU ═══ */
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -304,7 +299,6 @@ img {
     }
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(135deg, #0f172a, #1e1b4b);
     padding: 80px 24px 72px;
@@ -493,7 +487,6 @@ img {
     border-color: rgba(255, 255, 255, .28)
 }
 
-/* WHY US */
 .why-section {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -633,7 +626,6 @@ img {
     }
 }
 
-/* SECTION */
 .section {
     max-width: 1080px;
     margin: 0 auto;
@@ -659,7 +651,6 @@ img {
     line-height: 1.6
 }
 
-/* PKG COMPARE STRIP */
 .pkg-compare {
     display: flex;
     align-items: center;
@@ -735,7 +726,6 @@ img {
     }
 }
 
-/* CARDS */
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1069,7 +1059,6 @@ img {
     color: #f0c040
 }
 
-/* INVEST CARD */
 .invest-card {
     border: 1px solid var(--orange-border);
     border-radius: 16px;
@@ -1218,7 +1207,6 @@ img {
     height: 13px
 }
 
-/* YOUTUBE SECTION */
 .yt-section {
     background: #0f0f0f;
     border-top: 1px solid rgba(255, 255, 255, .06);
@@ -1402,7 +1390,6 @@ img {
     }
 }
 
-/* FAQ TEASER */
 .faq-teaser {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -1531,7 +1518,6 @@ img {
     transform: translateY(-1px)
 }
 
-/* CTA STRIP */
 .cta-strip {
     background: linear-gradient(135deg, #0f172a, #1e1b4b);
     padding: 56px 24px;
@@ -1577,7 +1563,6 @@ img {
     flex-wrap: wrap
 }
 
-/* FOOTER */
 .site-footer {
     border-top: 1px solid var(--line);
     padding: 28px 24px
@@ -1626,7 +1611,6 @@ img {
     }
 }
 
-/* ANIMATIONS */
 @keyframes up {
     from {
         opacity: 0;
@@ -1671,8 +1655,6 @@ img {
     animation-delay: .34s
 }
 
-/* FLOAT CTA */
-
 @media(max-width:768px) {
     .cards {
         grid-template-columns: 1fr
@@ -1713,10 +1695,7 @@ img {
     }
 }
 
-/* ═══ MOBILE OPTIMIZATION ═══ */
 @media(max-width:480px) {
-
-    /* EID Banner */
     .eid-inner {
         flex-wrap: wrap;
         gap: 6px;
@@ -1731,7 +1710,6 @@ img {
         display: none
     }
 
-    /* Navbar */
     .nav-inner {
         padding: 0 16px
     }
@@ -1749,7 +1727,6 @@ img {
         padding: 7px 14px
     }
 
-    /* Hero */
     .hero {
         padding: 52px 20px 48px
     }
@@ -1795,7 +1772,6 @@ img {
         justify-content: center
     }
 
-    /* Ticker */
     .why-bar-scroll::before,
     .why-bar-scroll::after {
         width: 30px
@@ -1806,7 +1782,6 @@ img {
         width: 30px
     }
 
-    /* Packages */
     .section {
         padding: 40px 16px 60px
     }
@@ -1852,14 +1827,12 @@ img {
         font-size: 13px
     }
 
-    /* Why section */
     .why-tag,
     .learn-tag {
         font-size: 11px;
         padding: 5px 10px
     }
 
-    /* FAQ */
     .faq-q {
         padding: 14px 16px
     }
@@ -1873,7 +1846,6 @@ img {
         font-size: 13px
     }
 
-    /* CTA section */
     .cta-section-inner {
         padding: 40px 20px
     }
@@ -1886,12 +1858,10 @@ img {
         font-size: 14px
     }
 
-    /* Footer */
     .footer-inner {
         padding: 0 16px
     }
 
-    /* Invest section */
     .invest-section {
         padding: 0 16px
     }
@@ -1915,7 +1885,6 @@ img {
     }
 }
 
-/* ── Package Compare Button ── */
 .pkg-compare-btn {
     display: inline-flex;
     align-items: center;
@@ -1933,10 +1902,9 @@ img {
     border: 1.5px solid rgba(79, 70, 229, 0.22);
     box-shadow: 0 2px 12px rgba(79, 70, 229, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, color 0.22s ease;
-    cursor: pointer;
+    cursor: pointer
 }
 
-/* shimmer sweep */
 .pkg-compare-btn::before {
     content: '';
     position: absolute;
@@ -1947,22 +1915,22 @@ img {
     background: linear-gradient(120deg, transparent, rgba(79, 70, 229, 0.07), transparent);
     transform: skewX(-20deg);
     transition: left 0.55s ease;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .pkg-compare-btn:hover::before {
-    left: 130%;
+    left: 130%
 }
 
 .pkg-compare-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(79, 70, 229, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
     border-color: rgba(79, 70, 229, 0.45);
-    color: #3730a3;
+    color: #3730a3
 }
 
 .pkg-compare-btn:hover .pkg-compare-btn__arrow {
-    transform: translateX(4px);
+    transform: translateX(4px)
 }
 
 .pkg-compare-btn__icon {
@@ -1975,15 +1943,15 @@ img {
     background: linear-gradient(135deg, #eef2ff, #e0e7ff);
     color: #4f46e5;
     flex-shrink: 0;
-    transition: background 0.22s;
+    transition: background 0.22s
 }
 
 .pkg-compare-btn:hover .pkg-compare-btn__icon {
-    background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+    background: linear-gradient(135deg, #e0e7ff, #c7d2fe)
 }
 
 .pkg-compare-btn__label {
-    letter-spacing: -0.01em;
+    letter-spacing: -0.01em
 }
 
 .pkg-compare-btn__arrow {
@@ -1991,19 +1959,19 @@ img {
     align-items: center;
     color: #818cf8;
     transition: transform 0.22s ease;
-    margin-left: 2px;
+    margin-left: 2px
 }
 
 @media(max-width:480px) {
     .pkg-compare-btn {
         font-size: 13px;
         padding: 11px 18px 11px 14px;
-        gap: 8px;
+        gap: 8px
     }
 
     .pkg-compare-btn__icon {
         width: 28px;
         height: 28px;
-        border-radius: 7px;
+        border-radius: 7px
     }
 }

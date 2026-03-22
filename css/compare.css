@@ -1,4 +1,3 @@
-/* EID BANNER */
 .eid-banner {
     background: linear-gradient(90deg, #0a3d20, #14652e, #0a3d20);
     padding: 10px 20px;
@@ -98,7 +97,7 @@
     --orange-light: #fff7ed;
     --orange-border: #fed7aa;
     --serif: 'Plus Jakarta Sans', sans-serif;
-    --mono: 'Space Grotesk', sans-serif;
+    --mono: 'Space Grotesk', sans-serif
 }
 
 html {
@@ -112,7 +111,6 @@ body {
     -webkit-font-smoothing: antialiased
 }
 
-/* ═══ GLOBAL MOBILE UX ═══ */
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -139,9 +137,6 @@ img {
     height: auto
 }
 
-
-/* ═══ HAMBURGER MOBILE MENU ═══ */
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -298,7 +293,6 @@ img {
     }
 }
 
-/* PAGE HERO */
 .page-hero {
     background: linear-gradient(135deg, #0f172a, #1e1b4b);
     padding: 52px 24px 48px;
@@ -360,7 +354,6 @@ img {
     line-height: 1.7
 }
 
-/* QUICK PICK STRIP */
 .quick-pick {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -460,7 +453,6 @@ img {
     color: var(--orange)
 }
 
-/* MAIN COMPARISON TABLE */
 .compare-wrap {
     max-width: 1100px;
     margin: 0 auto;
@@ -468,7 +460,6 @@ img {
     overflow-x: auto
 }
 
-/* STICKY HEADER ROW */
 .compare-table {
     width: 100%;
     border-collapse: collapse;
@@ -483,7 +474,6 @@ img {
     width: 1fr
 }
 
-/* HEADER */
 .pkg-header {
     text-align: center;
     padding: 20px 16px 18px;
@@ -579,7 +569,6 @@ img {
     transform: translateY(-1px)
 }
 
-/* TABLE BODY */
 .section-row td {
     padding: 14px 16px 8px;
     font-size: 11px;
@@ -630,7 +619,6 @@ img {
     background: rgba(37, 99, 235, .03)
 }
 
-/* ICONS */
 .check {
     width: 22px;
     height: 22px;
@@ -686,7 +674,6 @@ img {
     font-weight: 700
 }
 
-/* PRICE ROW */
 .price-row td {
     padding: 20px 16px;
     border-top: 2px solid var(--line)
@@ -717,7 +704,6 @@ img {
     display: inline-block
 }
 
-/* RECOMMENDATION CARDS */
 .rec-section {
     max-width: 900px;
     margin: 0 auto;
@@ -797,7 +783,6 @@ img {
     }
 }
 
-/* FOOTER */
 .site-footer {
     border-top: 1px solid var(--line);
     padding: 28px 24px
@@ -835,10 +820,7 @@ img {
     color: var(--ink)
 }
 
-/* FLOAT CTA */
 @media(max-width:480px) {
-
-    /* EID Banner mobile */
     .eid-inner {
         flex-wrap: wrap;
         gap: 6px;
@@ -854,7 +836,6 @@ img {
     }
 }
 
-/* BACK BUTTON */
 .back-bar {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -893,7 +874,6 @@ img {
     flex-shrink: 0
 }
 
-/* ═══ MOBILE OPTIMIZATION ═══ */
 @media(max-width:480px) {
     .nav-inner {
         padding: 0 16px

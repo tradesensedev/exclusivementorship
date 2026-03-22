@@ -27,7 +27,7 @@
     --amber-light: #fffbeb;
     --amber-border: #fde68a;
     --serif: 'Plus Jakarta Sans', sans-serif;
-    --mono: 'Space Grotesk', sans-serif;
+    --mono: 'Space Grotesk', sans-serif
 }
 
 html {
@@ -38,10 +38,9 @@ body {
     background: var(--bg);
     font-family: var(--serif);
     color: var(--ink);
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
-/* EID BANNER */
 .eid-banner {
     background: linear-gradient(90deg, #0a3d20, #14652e, #0a3d20);
     padding: 10px 20px;
@@ -112,7 +111,6 @@ body {
     margin-right: 4px
 }
 
-/* ═══ GLOBAL MOBILE UX ═══ */
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%
@@ -139,7 +137,6 @@ img {
     height: auto
 }
 
-/* NAV */
 .nav {
     position: sticky;
     top: 0;
@@ -150,7 +147,7 @@ img {
     padding: 14px 24px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 @keyframes pulse {
@@ -173,7 +170,7 @@ img {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s
 }
 
 .nav-back:hover {
@@ -185,12 +182,11 @@ img {
     height: 14px
 }
 
-/* HERO */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1c1917 100%);
     padding: 56px 24px 48px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .hero::before {
@@ -198,7 +194,7 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 55% 45% at 50% 0%, rgba(220, 38, 38, 0.12) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero::after {
@@ -207,14 +203,14 @@ img {
     inset: 0;
     background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
     background-size: 40px 40px;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .hero-inner {
     max-width: 760px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .hero-chip {
@@ -231,7 +227,7 @@ img {
     text-transform: uppercase;
     padding: 6px 14px;
     border-radius: 100px;
-    margin-bottom: 18px;
+    margin-bottom: 18px
 }
 
 .hero h1 {
@@ -240,7 +236,7 @@ img {
     color: #fff;
     line-height: 1.15;
     letter-spacing: -0.03em;
-    margin-bottom: 12px;
+    margin-bottom: 12px
 }
 
 .hero-sub {
@@ -248,40 +244,38 @@ img {
     color: rgba(255, 255, 255, 0.45);
     line-height: 1.65;
     max-width: 520px;
-    margin-bottom: 12px;
+    margin-bottom: 12px
 }
 
 .hero-meta {
     font-size: 12.5px;
     color: rgba(255, 255, 255, 0.28);
-    font-family: var(--mono);
+    font-family: var(--mono)
 }
 
-/* CONTAINER */
 .container {
     max-width: 760px;
     margin: 0 auto;
-    padding: 52px 24px 80px;
+    padding: 52px 24px 80px
 }
 
-/* DISCLAIMER CARD */
 .disc-card {
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 24px;
     border: 1px solid var(--line);
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s
 }
 
 .disc-card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06)
 }
 
 .disc-card-head {
     padding: 16px 24px;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 14px
 }
 
 .disc-num {
@@ -290,30 +284,30 @@ img {
     font-weight: 700;
     letter-spacing: 0.1em;
     opacity: 0.7;
-    min-width: 24px;
+    min-width: 24px
 }
 
 .disc-icon {
     font-size: 20px;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .disc-title {
     font-size: 15px;
     font-weight: 800;
     letter-spacing: -0.01em;
-    flex: 1;
+    flex: 1
 }
 
 .disc-card-body {
     padding: 0 24px 22px 62px;
     font-size: 14px;
     color: var(--ink-2);
-    line-height: 1.8;
+    line-height: 1.8
 }
 
 .disc-card-body p {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .disc-card-body p:last-child {
@@ -322,46 +316,44 @@ img {
 
 .disc-card-body strong {
     color: var(--ink);
-    font-weight: 700;
+    font-weight: 700
 }
 
 .disc-card-body a {
     color: var(--blue);
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .disc-card-body a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
-/* CARD COLORS */
 .card-edu .disc-card-head {
     background: var(--blue-light);
-    color: var(--featured);
+    color: var(--featured)
 }
 
 .card-ict .disc-card-head {
     background: #f5f3ff;
-    color: #5b21b6;
+    color: #5b21b6
 }
 
 .card-risk .disc-card-head {
     background: var(--red-light);
-    color: var(--red);
+    color: var(--red)
 }
 
 .card-law .disc-card-head {
     background: var(--amber-light);
-    color: var(--amber);
+    color: var(--amber)
 }
 
 .card-resp .disc-card-head {
     background: var(--green-light);
-    color: var(--green);
+    color: var(--green)
 }
 
-/* HIGHLIGHT NOTE */
 .highlight-note {
     background: var(--amber-light);
     border: 1px solid var(--amber-border);
@@ -372,7 +364,7 @@ img {
     font-size: 13.5px;
     color: #92400e;
     line-height: 1.65;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .blue-note {
@@ -385,24 +377,22 @@ img {
     font-size: 13.5px;
     color: #1e40af;
     line-height: 1.65;
-    font-weight: 500;
+    font-weight: 500
 }
 
-/* DIVIDER */
 .divider {
     border: none;
     border-top: 1px solid var(--line);
-    margin: 44px 0;
+    margin: 44px 0
 }
 
-/* ACCEPTANCE BOX */
 .acceptance {
     background: linear-gradient(135deg, #0f172a, #1c1917);
     border-radius: 14px;
     padding: 30px 32px;
     margin-bottom: 0;
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .acceptance::before {
@@ -410,12 +400,12 @@ img {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
-    pointer-events: none;
+    pointer-events: none
 }
 
 .acceptance-inner {
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
 .acceptance h3 {
@@ -423,25 +413,24 @@ img {
     font-weight: 800;
     color: #fff;
     margin-bottom: 8px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.01em
 }
 
 .acceptance p {
     font-size: 13.5px;
     color: rgba(255, 255, 255, 0.45);
-    line-height: 1.7;
+    line-height: 1.7
 }
 
-/* REVEAL */
 .reveal {
     opacity: 0;
     transform: translateY(18px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
 @keyframes up {
@@ -457,7 +446,7 @@ img {
 }
 
 .anim {
-    animation: up 0.5s ease both;
+    animation: up 0.5s ease both
 }
 
 .anim-d1 {
@@ -477,12 +466,12 @@ footer {
     padding: 28px 24px;
     text-align: center;
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 @media(max-width:600px) {
     .disc-card-body {
-        padding: 0 18px 20px 18px;
+        padding: 0 18px 20px 18px
     }
 
     .acceptance {
@@ -490,10 +479,9 @@ footer {
     }
 }
 
-/* SITE FOOTER */
 .site-footer {
     border-top: 1px solid var(--line);
-    padding: 28px 24px;
+    padding: 28px 24px
 }
 
 .footer-inner {
@@ -503,29 +491,29 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 12px
 }
 
 .footer-brand {
     font-size: 13px;
-    color: var(--ink-3);
+    color: var(--ink-3)
 }
 
 .footer-links {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .footer-links a {
     font-size: 13px;
     color: var(--ink-3);
     text-decoration: none;
-    transition: color 0.15s;
+    transition: color 0.15s
 }
 
 .footer-links a:hover {
-    color: var(--ink);
+    color: var(--ink)
 }
 
 @media(max-width:480px) {
@@ -545,16 +533,14 @@ footer {
 
     .footer-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     .footer-links {
-        gap: 14px;
+        gap: 14px
     }
 }
 
-/* ═══ HAMBURGER MOBILE MENU ═══ */
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
@@ -711,10 +697,8 @@ footer {
     }
 }
 
-/* FLOAT CTA */
 @media(max-width:480px) {}
 
-/* BACK BUTTON */
 .back-bar {
     background: var(--bg2);
     border-bottom: 1px solid var(--line);
@@ -753,7 +737,6 @@ footer {
     flex-shrink: 0
 }
 
-/* ═══ MOBILE OPTIMIZATION ═══ */
 @media(max-width:480px) {
     .nav-inner {
         padding: 0 16px
