@@ -1404,6 +1404,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
     padding: 14px 28px;
     border-bottom: 1px solid var(--line)
 }
@@ -1414,7 +1416,9 @@ footer {
 
 .price-row-new-label {
     font-size: 14px;
-    color: var(--ink-2)
+    color: var(--ink-2);
+    min-width: 0;
+    flex: 1
 }
 
 .price-row-new-val {
@@ -1443,6 +1447,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
     border-top: 2px solid
 }
 
