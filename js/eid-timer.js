@@ -1,4 +1,4 @@
-// EID TIMER — ends March 26, 2026
+  // EID TIMER — ends March 26, 2026
   const eidEnd = new Date('2026-03-26T23:59:59').getTime();
   function tick() {
     const diff = eidEnd - Date.now();
@@ -14,21 +14,14 @@
     const eS = document.getElementById('eidS'); if(eS) eS.textContent = pad(s);
   }
   tick(); setInterval(tick, 1000);
-  // HAMBURGER MENU
+
+  // HAMBURGER — only navHamburger exists in HTML
   const hamburger = document.getElementById('navHamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuClose = document.getElementById('menuClose');
-  const menuOverlay = document.getElementById('menuOverlay');
-  function openMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('open'); document.body.style.overflow='hidden'; }
-  function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow=''; }
-  if(hamburger) hamburger.addEventListener('click', openMenu);
-  if(menuClose)  menuClose.addEventListener('click', closeMenu);
-  if(menuOverlay) menuOverlay.addEventListener('click', closeMenu);
-  document.addEventListener('keydown', e => { if(e.key==='Escape') closeMenu(); });
-  // Close mobile menu on internal link click
-  mobileMenu && mobileMenu.querySelectorAll('a').forEach(a => {
-    if(!a.href.startsWith('http')) a.addEventListener('click', closeMenu);
+  if(hamburger) hamburger.addEventListener('click', () => hamburger.classList.toggle('open'));
+  document.addEventListener('keydown', e => { if(e.key==='Escape') hamburger && hamburger.classList.remove('open'); });
+
+  // NAVBAR
+  window.addEventListener('scroll', () => {
+    const nb = document.getElementById('navbar');
+    if(nb) nb.classList.toggle('scrolled', window.scrollY > 10);
   });
-    window.addEventListener('scroll',()=>{
-      document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10);
-    });

@@ -229,9 +229,7 @@
     .nav-cta:hover{opacity:.9}
     @media(max-width:768px){.nav-link-hide{display:none}.nav-logo-sub{display:none}}
       /* FLOAT CTA */
-    .float-cta{position:fixed;bottom:20px;right:20px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#4f46e5,#2563eb);color:#fff;font-size:13px;font-weight:700;padding:12px 22px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(79,70,229,.4);transition:transform .2s,box-shadow .2s;z-index:200}
-    .float-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(79,70,229,.45)}
-    @media(max-width:480px){.float-cta{bottom:16px;right:16px;font-size:12px;padding:10px 16px}}
+    @media(max-width:480px){}
   
     /* BACK BUTTON */
     .back-bar{background:var(--bg2);border-bottom:1px solid var(--line);padding:10px 24px}
@@ -247,5 +245,4 @@
       .nav-yt{display:none}
       .nav-cta{font-size:12px;padding:7px 14px}
       .back-bar{padding:8px 16px}
-      .float-cta{bottom:12px;right:12px;font-size:12px;padding:10px 14px}
     }
