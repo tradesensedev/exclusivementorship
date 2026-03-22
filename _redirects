@@ -1,2 +1,2 @@
-# 404 fallback
-/*                  /index.html           404
+# 404 fallback - only for truly missing pages
+/404    /index.html    404
