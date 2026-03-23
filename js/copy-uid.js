@@ -1,9 +1,21 @@
 function copyUID(suffix) {
-    const uid = document.getElementById('uid-num' + (suffix || '')).textContent;
+    const uid = document.getElementById('uid-num' + (suffix || '')).textContent.trim();
     navigator.clipboard.writeText(uid).then(() => {
         const btn = document.getElementById('copy-text' + (suffix || ''));
-        btn.textContent = 'Copied! ✓';
-        setTimeout(() => btn.textContent = 'UID Copy করুন', 2000);
+        const btnEl = btn.closest('button');
+        btn.textContent = 'Copied ✓';
+        btnEl.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy UID'; btnEl.classList.remove('copied'); }, 2000);
+    });
+}
+function copyAddr() {
+    const addr = document.getElementById('uid-addr').textContent.trim();
+    navigator.clipboard.writeText(addr).then(() => {
+        const btn = document.getElementById('copy-addr-text');
+        const btnEl = btn.closest('button');
+        btn.textContent = 'Copied ✓';
+        btnEl.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy Address'; btnEl.classList.remove('copied'); }, 2000);
     });
 }
 document.addEventListener('DOMContentLoaded', function() {
