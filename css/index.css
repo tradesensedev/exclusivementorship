@@ -11,7 +11,7 @@
     --bg2: #f8faff;
     --ink: #0d0d0d;
     --ink-2: #444;
-    --ink-3: #888;
+    --ink-3: #6b7280;
     --line: #eaeaea;
     --blue: #2563eb;
     --blue-light: #eff6ff;
@@ -423,7 +423,7 @@ img {
 
 .hero-pill-label {
     font-size: 11px;
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .72);
     font-family: var(--mono);
     font-weight: 500;
     letter-spacing: .1em;
@@ -1328,7 +1328,7 @@ img {
 
 .yt-stat-label {
     font-size: 10px;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .72);
     font-family: var(--mono);
     letter-spacing: .08em;
     text-transform: uppercase

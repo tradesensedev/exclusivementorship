@@ -81,17 +81,17 @@
     --bg2: #f8faff;
     --ink: #0d0d0d;
     --ink-2: #444;
-    --ink-3: #888;
+    --ink-3: #6b7280;
     --line: #eaeaea;
-    --pro: #6d28d9;
-    --pro-light: #f5f3ff;
-    --pro-border: #ddd6fe;
-    --pro-glow: rgba(109, 40, 217, 0.12);
+    --pro: #7c3aed;
+    --pro-light: #f5f0ff;
+    --pro-border: #c4b5fd;
+    --pro-glow: rgba(124, 58, 237, 0.14);
     --green: #059669;
     --green-light: #ecfdf5;
-    --blue: #2563eb;
-    --blue-light: #eff6ff;
-    --blue-border: #bfdbfe;
+    --blue: #7c3aed;
+    --blue-light: #f5f0ff;
+    --blue-border: #c4b5fd;
     --serif: 'Plus Jakarta Sans', sans-serif;
     --mono: 'Space Grotesk', sans-serif
 }
@@ -155,7 +155,7 @@ img {
 }
 
 .hero {
-    background: linear-gradient(135deg, #0f172a 0%, #2e1065 100%);
+    background: linear-gradient(135deg, #0a0520 0%, #3b0764 100%);
     padding: 68px 24px 60px;
     position: relative;
     overflow: hidden
@@ -165,7 +165,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(109, 40, 217, 0.3) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(124, 58, 237, 0.38) 0%, transparent 70%);
     pointer-events: none
 }
 
@@ -173,7 +173,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(124, 58, 237, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(124, 58, 237, 0.08) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none
 }
@@ -197,9 +197,9 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    background: rgba(167, 139, 250, 0.15);
+    background: rgba(192, 132, 252, 0.18);
     border: 1px solid rgba(167, 139, 250, 0.35);
-    color: #c4b5fd;
+    color: #e9d5ff;
     font-family: var(--mono);
     font-size: 11px;
     font-weight: 700;
@@ -235,14 +235,14 @@ img {
 }
 
 .hero h1 span {
-    background: linear-gradient(90deg, #c4b5fd, #818cf8);
+    background: linear-gradient(90deg, #e9d5ff, #c084fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
 
 .hero-sub {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.72);
     line-height: 1.75;
     margin-bottom: 16px;
     max-width: 580px
@@ -280,8 +280,8 @@ img {
 }
 
 .hero-stat:hover {
-    background: rgba(255, 255, 255, 0.11);
-    border-color: rgba(167, 139, 250, 0.3)
+    background: rgba(124, 58, 237, 0.12);
+    border-color: rgba(196, 181, 253, 0.45)
 }
 
 .stat-val {
@@ -294,7 +294,7 @@ img {
 
 .stat-label {
     font-size: 10.5px;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.55);
     font-family: var(--mono);
     font-weight: 500;
     letter-spacing: 0.08em;
@@ -684,7 +684,7 @@ img {
 }
 
 .cta-block {
-    background: linear-gradient(135deg, #0f172a, #2e1065);
+    background: linear-gradient(135deg, #0a0520, #3b0764);
     border-radius: 16px;
     padding: 40px 36px;
     text-align: center;
@@ -696,7 +696,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(109, 40, 217, 0.25) 0%, transparent 70%);
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(124, 58, 237, 0.32) 0%, transparent 70%);
     pointer-events: none
 }
 
@@ -715,7 +715,7 @@ img {
 
 .cta-block p {
     font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.72);
     margin-bottom: 28px;
     line-height: 1.65;
     max-width: 460px;
@@ -735,7 +735,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #6d28d9, #5b21b6);
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
     color: #fff;
     font-family: var(--serif);
     font-size: 15px;
@@ -746,12 +746,12 @@ img {
     border: none;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4)
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.45)
 }
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(109, 40, 217, 0.55)
+    box-shadow: 0 8px 28px rgba(124, 58, 237, 0.62)
 }
 
 .cta-btn svg {
@@ -801,7 +801,7 @@ img {
     align-items: center;
     gap: 6px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.35)
+    color: rgba(255, 255, 255, 0.6)
 }
 
 .cta-trust-item::before {
@@ -982,7 +982,7 @@ footer {
 .nav-logo-mark {
     width: 36px;
     height: 36px;
-    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -1285,7 +1285,7 @@ footer {
 
 .uid-header-warn {
     font-size: 12px;
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -1312,7 +1312,7 @@ footer {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .6);
     letter-spacing: .12em;
     text-transform: uppercase;
     margin-bottom: 8px
@@ -1559,13 +1559,13 @@ footer {
     padding: 14px 28px;
     border-radius: 12px;
     text-decoration: none;
-    box-shadow: 0 4px 20px rgba(79, 70, 229, .45);
+    box-shadow: 0 4px 20px rgba(124, 58, 237, .45);
     transition: transform .2s, box-shadow .2s
 }
 
 .enroll-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(79, 70, 229, .55)
+    box-shadow: 0 8px 28px rgba(124, 58, 237, .55)
 }
 
 .enroll-secondary {
@@ -1873,7 +1873,7 @@ footer {
 
 .join-step:hover {
     border-color: var(--blue-border);
-    box-shadow: 0 4px 16px rgba(37,99,235,.07);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, .07);
     transform: translateY(-2px)
 }
 
@@ -1912,11 +1912,11 @@ footer {
 }
 
 .join-pay-card {
-    background: linear-gradient(160deg, #0f172a 0%, #1a1040 100%);
+    background: linear-gradient(160deg, #0a0520 0%, #3b0764 100%);
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;
-    border: 1px solid rgba(255,255,255,.06)
+    border: 1px solid rgba(255, 255, 255, .06)
 }
 
 .join-pay-option {
@@ -1939,9 +1939,9 @@ footer {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(129,140,248,.8);
-    background: rgba(129,140,248,.1);
-    border: 1px solid rgba(129,140,248,.2);
+    color: rgba(129, 140, 248, .8);
+    background: rgba(129, 140, 248, .1);
+    border: 1px solid rgba(129, 140, 248, .2);
     padding: 3px 10px;
     border-radius: 100px;
     letter-spacing: .1em;
@@ -1950,9 +1950,9 @@ footer {
 }
 
 .join-pay-tag-crypto {
-    color: rgba(240,185,11,.8);
-    background: rgba(240,185,11,.08);
-    border-color: rgba(240,185,11,.2)
+    color: rgba(240, 185, 11, .8);
+    background: rgba(240, 185, 11, .08);
+    border-color: rgba(240, 185, 11, .2)
 }
 
 .join-pay-badge {
@@ -1965,7 +1965,7 @@ footer {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(255,255,255,.3);
+    color: rgba(255, 255, 255, .65);
     letter-spacing: .12em;
     text-transform: uppercase;
     margin-bottom: 8px
@@ -1985,16 +1985,16 @@ footer {
     letter-spacing: .03em;
     word-break: break-all;
     line-height: 1.65;
-    color: rgba(255,255,255,.85)
+    color: rgba(255, 255, 255, .85)
 }
 
 .join-copy-btn {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.12);
-    color: rgba(255,255,255,.5);
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: rgba(255, 255, 255, .5);
     font-family: var(--mono);
     font-size: 11px;
     font-weight: 600;
@@ -2008,15 +2008,15 @@ footer {
 }
 
 .join-copy-btn:hover {
-    background: rgba(255,255,255,.12);
-    border-color: rgba(255,255,255,.22);
+    background: rgba(255, 255, 255, .12);
+    border-color: rgba(255, 255, 255, .22);
     color: #fff;
     transform: translateY(-1px)
 }
 
 .join-copy-btn.copied {
-    background: rgba(5,150,105,.2);
-    border-color: rgba(5,150,105,.4);
+    background: rgba(5, 150, 105, .2);
+    border-color: rgba(5, 150, 105, .4);
     color: #6ee7b7
 }
 
@@ -2033,14 +2033,14 @@ footer {
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(255,255,255,.07)
+    background: rgba(255, 255, 255, .07)
 }
 
 .join-pay-sep-text {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(255,255,255,.2);
+    color: rgba(255, 255, 255, .5);
     letter-spacing: .12em;
     text-transform: uppercase;
     padding: 0 14px
@@ -2049,16 +2049,16 @@ footer {
 .join-pay-warn {
     margin: 4px 28px 20px;
     padding: 11px 16px;
-    background: rgba(251,191,36,.05);
-    border: 1px solid rgba(251,191,36,.15);
+    background: rgba(251, 191, 36, .05);
+    border: 1px solid rgba(251, 191, 36, .15);
     border-radius: 10px;
     font-size: 12px;
-    color: rgba(255,255,255,.35);
+    color: rgba(255, 255, 255, .72);
     line-height: 1.65
 }
 
 .join-pay-warn strong {
-    color: rgba(253,186,116,.75)
+    color: rgba(253, 186, 116, .75)
 }
 
 .join-cta {
@@ -2074,7 +2074,7 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #2563eb;
+    background: #7c3aed;
     color: #fff;
     font-family: var(--mono);
     font-size: 14px;
@@ -2084,13 +2084,13 @@ footer {
     text-decoration: none;
     letter-spacing: .03em;
     transition: background .2s, transform .2s, box-shadow .2s;
-    box-shadow: 0 4px 18px rgba(37,99,235,.3)
+    box-shadow: 0 4px 18px rgba(37, 99, 235, .3)
 }
 
 .join-cta-btn:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(37,99,235,.4)
+    box-shadow: 0 8px 28px rgba(37, 99, 235, .4)
 }
 
 .join-cta-secondary {
@@ -2114,26 +2114,30 @@ footer {
     border-color: var(--blue-border);
     color: var(--blue);
     background: var(--blue-light);
-    box-shadow: 0 2px 10px rgba(37,99,235,.08)
+    box-shadow: 0 2px 10px rgba(37, 99, 235, .08)
 }
 
 @media (max-width: 720px) {
     .join-steps {
         grid-template-columns: 1fr
     }
+
     .join-pay-option {
         flex-direction: column;
         align-items: flex-start;
         gap: 14px;
         padding: 18px 20px
     }
+
     .join-copy-btn {
         width: 100%;
         justify-content: center
     }
+
     .join-pay-sep {
         margin: 0 20px
     }
+
     .join-pay-warn {
         margin: 4px 20px 16px
     }

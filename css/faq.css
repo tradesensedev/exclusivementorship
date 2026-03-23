@@ -81,7 +81,7 @@
     --bg2: #f8faff;
     --ink: #0d0d0d;
     --ink-2: #444;
-    --ink-3: #888;
+    --ink-3: #6b7280;
     --line: #eaeaea;
     --blue: #2563eb;
     --blue-light: #eff6ff;
@@ -334,7 +334,7 @@ img {
 }
 
 .page-hero h1 span {
-    background: linear-gradient(90deg, #818cf8, #38bdf8);
+    background: linear-gradient(90deg, #818cf8, #60a5fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
