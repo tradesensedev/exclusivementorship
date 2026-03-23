@@ -1937,7 +1937,7 @@ footer {
 
 .join-step:hover {
     border-color: var(--blue-border);
-    box-shadow: 0 4px 16px rgba(37, 99, 235, .07);
+    box-shadow: 0 4px 16px rgba(37,99,235,.07);
     transform: translateY(-2px)
 }
 
@@ -1980,7 +1980,7 @@ footer {
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;
-    border: 1px solid rgba(255, 255, 255, .06)
+    border: 1px solid rgba(255,255,255,.06)
 }
 
 .join-pay-option {
@@ -2003,9 +2003,9 @@ footer {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(129, 140, 248, .8);
-    background: rgba(129, 140, 248, .1);
-    border: 1px solid rgba(129, 140, 248, .2);
+    color: rgba(129,140,248,.8);
+    background: rgba(129,140,248,.1);
+    border: 1px solid rgba(129,140,248,.2);
     padding: 3px 10px;
     border-radius: 100px;
     letter-spacing: .1em;
@@ -2014,9 +2014,9 @@ footer {
 }
 
 .join-pay-tag-crypto {
-    color: rgba(240, 185, 11, .8);
-    background: rgba(240, 185, 11, .08);
-    border-color: rgba(240, 185, 11, .2)
+    color: rgba(240,185,11,.8);
+    background: rgba(240,185,11,.08);
+    border-color: rgba(240,185,11,.2)
 }
 
 .join-pay-badge {
@@ -2029,7 +2029,7 @@ footer {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255,255,255,.3);
     letter-spacing: .12em;
     text-transform: uppercase;
     margin-bottom: 8px
@@ -2049,16 +2049,16 @@ footer {
     letter-spacing: .03em;
     word-break: break-all;
     line-height: 1.65;
-    color: rgba(255, 255, 255, .85)
+    color: rgba(255,255,255,.85)
 }
 
 .join-copy-btn {
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    background: rgba(255, 255, 255, .06);
-    border: 1px solid rgba(255, 255, 255, .12);
-    color: rgba(255, 255, 255, .5);
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    color: rgba(255,255,255,.5);
     font-family: var(--mono);
     font-size: 11px;
     font-weight: 600;
@@ -2072,15 +2072,15 @@ footer {
 }
 
 .join-copy-btn:hover {
-    background: rgba(255, 255, 255, .12);
-    border-color: rgba(255, 255, 255, .22);
+    background: rgba(255,255,255,.12);
+    border-color: rgba(255,255,255,.22);
     color: #fff;
     transform: translateY(-1px)
 }
 
 .join-copy-btn.copied {
-    background: rgba(5, 150, 105, .2);
-    border-color: rgba(5, 150, 105, .4);
+    background: rgba(5,150,105,.2);
+    border-color: rgba(5,150,105,.4);
     color: #6ee7b7
 }
 
@@ -2097,14 +2097,14 @@ footer {
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(255, 255, 255, .07)
+    background: rgba(255,255,255,.07)
 }
 
 .join-pay-sep-text {
     font-family: var(--mono);
     font-size: 10px;
     font-weight: 700;
-    color: rgba(255, 255, 255, .2);
+    color: rgba(255,255,255,.2);
     letter-spacing: .12em;
     text-transform: uppercase;
     padding: 0 14px
@@ -2113,16 +2113,16 @@ footer {
 .join-pay-warn {
     margin: 4px 28px 20px;
     padding: 11px 16px;
-    background: rgba(251, 191, 36, .05);
-    border: 1px solid rgba(251, 191, 36, .15);
+    background: rgba(251,191,36,.05);
+    border: 1px solid rgba(251,191,36,.15);
     border-radius: 10px;
     font-size: 12px;
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255,255,255,.35);
     line-height: 1.65
 }
 
 .join-pay-warn strong {
-    color: rgba(253, 186, 116, .75)
+    color: rgba(253,186,116,.75)
 }
 
 .join-cta {
@@ -2148,13 +2148,13 @@ footer {
     text-decoration: none;
     letter-spacing: .03em;
     transition: background .2s, transform .2s, box-shadow .2s;
-    box-shadow: 0 4px 18px rgba(37, 99, 235, .3)
+    box-shadow: 0 4px 18px rgba(37,99,235,.3)
 }
 
 .join-cta-btn:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(37, 99, 235, .4)
+    box-shadow: 0 8px 28px rgba(37,99,235,.4)
 }
 
 .join-cta-secondary {
@@ -2178,30 +2178,26 @@ footer {
     border-color: var(--blue-border);
     color: var(--blue);
     background: var(--blue-light);
-    box-shadow: 0 2px 10px rgba(37, 99, 235, .08)
+    box-shadow: 0 2px 10px rgba(37,99,235,.08)
 }
 
 @media (max-width: 720px) {
     .join-steps {
         grid-template-columns: 1fr
     }
-
     .join-pay-option {
         flex-direction: column;
         align-items: flex-start;
         gap: 14px;
         padding: 18px 20px
     }
-
     .join-copy-btn {
         width: 100%;
         justify-content: center
     }
-
     .join-pay-sep {
         margin: 0 20px
     }
-
     .join-pay-warn {
         margin: 4px 20px 16px
     }
