@@ -292,16 +292,16 @@
     <script defer src="js/eid-timer.js"></script>
     <script defer src="js/compare.js"></script>
     <!-- Course Info Popup -->
-    <div class="course-popup-overlay" id="coursePopupOverlay" onclick="return false;">
-        <div class="course-popup">
-            <div class="cp-icon">📚</div>
-            <h3 class="cp-title">সব package-এ course একই!</h3>
-            <p class="cp-body">আপনি যে package-ই নেন — ৭টি Chapter, ৯৯+ Class সবার জন্য একই।<br><br>Package 03 ও 04-এ শুধু কিছু <strong>এক্সট্রা সার্ভিস</strong> পাবেন, course বেশি না।</p>
+    <div class="course-popup-overlay" id="coursePopupOverlay" onclick="overlayClick(event)">
+        <div class="course-popup" onclick="event.stopPropagation()">
+            <div class="cp-icon">💡</div>
+            <h3 class="cp-title">শুরু করার আগে একটু জানুন</h3>
+            <p class="cp-body">সব package-এ <strong>course content সম্পূর্ণ একই</strong> — ৭টি Chapter, ৯৯+ Class।<br><br>Package 03 ও 04-এ শুধু কিছু <strong>extra সুবিধা</strong> যোগ হয় — যেমন daily outlook, 1v1 session, trade review। Course কম বা বেশি হয় না।</p>
             <label class="cp-checkbox-label">
                 <input type="checkbox" id="cpCheckbox" onchange="toggleConfirm(this)">
-                <span class="cp-checkbox-text">বুঝতে পেরেছি, course সব package-এ একই।</span>
+                <span class="cp-checkbox-text">বুঝলাম — course সবার জন্য একই, extra সুবিধা আলাদা।</span>
             </label>
-            <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>নিশ্চিত করুন ✓</button>
+            <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>ঠিক আছে, বুঝেছি ✓</button>
         </div>
     </div>
 
@@ -309,42 +309,70 @@
     var cpTimer = null;
     var cpSeconds = 5;
 
+    function unlockScroll() {
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+    }
+
+    function overlayClick(e) {
+        // Clicking outside the popup card = force close & unlock scroll
+        forceClosePopup();
+    }
+
     function toggleConfirm(cb) {
         var btn = document.getElementById("cpConfirmBtn");
         if (cb.checked) {
             cpSeconds = 5;
             btn.disabled = true;
-            btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+            btn.textContent = "একটু অপেক্ষা করুন (" + cpSeconds + "s)";
             cpTimer = setInterval(function() {
                 cpSeconds--;
                 if (cpSeconds > 0) {
-                    btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+                    btn.textContent = "একটু অপেক্ষা করুন (" + cpSeconds + "s)";
                 } else {
                     clearInterval(cpTimer);
                     btn.disabled = false;
-                    btn.textContent = "নিশ্চিত করুন ✓";
+                    btn.textContent = "ঠিক আছে, বুঝেছি ✓";
                 }
             }, 1000);
         } else {
             clearInterval(cpTimer);
             btn.disabled = true;
-            btn.textContent = "নিশ্চিত করুন ✓";
+            btn.textContent = "ঠিক আছে, বুঝেছি ✓";
         }
     }
+
     function closeCoursePopup() {
         if (!document.getElementById("cpConfirmBtn").disabled) {
             localStorage.setItem("coursePopupConfirmed", "1");
             document.getElementById("coursePopupOverlay").classList.remove("active");
-            document.body.style.overflow = "";
+            unlockScroll();
         }
     }
+
+    // Force-close without requiring confirmation (e.g. backdrop click)
+    function forceClosePopup() {
+        document.getElementById("coursePopupOverlay").classList.remove("active");
+        unlockScroll();
+    }
+
     window.addEventListener("DOMContentLoaded", function() {
+        // Always ensure scroll is unlocked on load first
+        unlockScroll();
+
         if (!localStorage.getItem("coursePopupConfirmed")) {
             setTimeout(function() {
                 document.getElementById("coursePopupOverlay").classList.add("active");
                 document.body.style.overflow = "hidden";
             }, 800);
         }
+    });
+
+    // Safety net: if page hides (user navigates away), always unlock scroll
+    window.addEventListener("pagehide", unlockScroll);
+    // Also unlock on Escape key
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") forceClosePopup();
     });
     </script>
 </body>

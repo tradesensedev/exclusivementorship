@@ -1966,7 +1966,9 @@ img {
     .pkg-compare-btn {
         font-size: 13px;
         padding: 11px 18px 11px 14px;
-        gap: 8px
+        gap: 8px;
+        width: 100%;
+        justify-content: center
     }
 
     .pkg-compare-btn__icon {
@@ -1978,7 +1980,7 @@ img {
 /* === Course Same Notice Banner === */
 .course-same-notice {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     background: linear-gradient(135deg, #eff6ff, #f0fdf4);
     border: 1.5px solid #86efac;
@@ -1988,6 +1990,18 @@ img {
     max-width: 860px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media(max-width:480px) {
+    .course-same-notice {
+        padding: 12px 16px;
+        gap: 10px;
+        border-radius: 12px
+    }
+
+    .csn-text {
+        font-size: 13.5px
+    }
 }
 
 .csn-icon {
