@@ -103,6 +103,7 @@
             <h1 class="anim anim-d2">সর্বোচ্চ support,<br /><span>সর্বোচ্চ result।</span></h1>
             <p class="hero-sub anim anim-d3">Elite Package-এ আপনি শুধু একজন student নন — আপনি একজন personally mentored trader। প্রতিটি trade, প্রতিটি সিদ্ধান্তে আপনার পাশে থাকব আমরা।</p>
             <div class="hero-for anim anim-d3">👑 যারা সর্বোচ্চ attention ও guided support-এ দ্রুত এগিয়ে যেতে চান</div>
+
             <!-- Course Info Popup -->
             <div class="course-popup-overlay" id="coursePopupOverlay" onclick="closeCoursePopup()">
                 <div class="course-popup" onclick="event.stopPropagation()">
@@ -116,6 +117,7 @@
                     <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>নিশ্চিত করুন ✓</button>
                 </div>
             </div>
+
             <script>
             var cpTimer = null;
             var cpSeconds = 5;
@@ -142,7 +144,6 @@
                     btn.textContent = "নিশ্চিত করুন ✓";
                 }
             }
-
             function closeCoursePopup() {
                 if (!document.getElementById("cpConfirmBtn").disabled) {
                     localStorage.setItem("coursePopupConfirmed", "1");

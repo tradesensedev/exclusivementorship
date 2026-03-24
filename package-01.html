@@ -100,6 +100,7 @@
             <h1 class="anim anim-d2">ছোট শুরু,<br /><span>বড় লক্ষ্য।</span></h1>
             <p class="hero-sub anim anim-d3">একসাথে পুরো টাকা দিতে হবে না। প্রতিটি chapter শেষ করুন, তারপর পরের chapter-এর payment করুন — সম্পূর্ণ course মাত্র $119-এ।</p>
             <div class="hero-for anim anim-d3">✦ যাদের এখন বড় budget নেই তাদের জন্য সবচেয়ে সহজ উপায়</div>
+
             <!-- Course Info Popup -->
             <div class="course-popup-overlay" id="coursePopupOverlay" onclick="closeCoursePopup()">
                 <div class="course-popup" onclick="event.stopPropagation()">
@@ -113,6 +114,7 @@
                     <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>নিশ্চিত করুন ✓</button>
                 </div>
             </div>
+
             <script>
             var cpTimer = null;
             var cpSeconds = 5;
@@ -139,7 +141,6 @@
                     btn.textContent = "নিশ্চিত করুন ✓";
                 }
             }
-
             function closeCoursePopup() {
                 if (!document.getElementById("cpConfirmBtn").disabled) {
                     localStorage.setItem("coursePopupConfirmed", "1");
