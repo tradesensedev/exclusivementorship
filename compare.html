@@ -73,6 +73,12 @@
         </div>
     </div>
     <div class="compare-wrap">
+        <div class="compare-notice">
+            <span class="compare-notice-icon">📌</span>
+            <div class="compare-notice-text">
+                <strong>সব Package-এ Course Content সম্পূর্ণ একই</strong> — ৭টি Chapter, ৯৯+ Class। Package 03 ও 04-এ শুধু <em>কিছু এক্সট্রা সার্ভিস</em> যোগ হয়, course কম বেশি হয় না।
+            </div>
+        </div>
         <table class="compare-table">
             <thead>
                 <tr>
@@ -105,7 +111,7 @@
             </thead>
             <tbody>
                 <tr class="section-row">
-                    <td colspan="5">📚 Course Content</td>
+                    <td colspan="5">📚 Course Content — <span style="font-weight:500;font-size:12.5px;opacity:0.75">সব Package-এ একই</span></td>
                 </tr>
                 <tr class="feature-row">
                     <td class="col-feature">
@@ -155,7 +161,7 @@
                     <td class="cell"><span class="cell-text gold">One-time / Yearly</span></td>
                 </tr>
                 <tr class="section-row">
-                    <td colspan="5">👥 Mentorship সুবিধা</td>
+                    <td colspan="5">👥 Mentorship সুবিধা — <span style="font-weight:500;font-size:12.5px;opacity:0.75">Package 03 ও 04 এ Extra</span></td>
                 </tr>
                 <tr class="feature-row">
                     <td class="col-feature">
@@ -285,6 +291,62 @@
     </footer>
     <script defer src="js/eid-timer.js"></script>
     <script defer src="js/compare.js"></script>
+    <!-- Course Info Popup -->
+    <div class="course-popup-overlay" id="coursePopupOverlay" onclick="return false;">
+        <div class="course-popup">
+            <div class="cp-icon">📚</div>
+            <h3 class="cp-title">সব package-এ course একই!</h3>
+            <p class="cp-body">আপনি যে package-ই নেন — ৭টি Chapter, ৯৯+ Class সবার জন্য একই।<br><br>Package 03 ও 04-এ শুধু কিছু <strong>এক্সট্রা সার্ভিস</strong> পাবেন, course বেশি না।</p>
+            <label class="cp-checkbox-label">
+                <input type="checkbox" id="cpCheckbox" onchange="toggleConfirm(this)">
+                <span class="cp-checkbox-text">বুঝতে পেরেছি, course সব package-এ একই।</span>
+            </label>
+            <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>নিশ্চিত করুন ✓</button>
+        </div>
+    </div>
+
+    <script>
+    var cpTimer = null;
+    var cpSeconds = 5;
+
+    function toggleConfirm(cb) {
+        var btn = document.getElementById("cpConfirmBtn");
+        if (cb.checked) {
+            cpSeconds = 5;
+            btn.disabled = true;
+            btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+            cpTimer = setInterval(function() {
+                cpSeconds--;
+                if (cpSeconds > 0) {
+                    btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+                } else {
+                    clearInterval(cpTimer);
+                    btn.disabled = false;
+                    btn.textContent = "নিশ্চিত করুন ✓";
+                }
+            }, 1000);
+        } else {
+            clearInterval(cpTimer);
+            btn.disabled = true;
+            btn.textContent = "নিশ্চিত করুন ✓";
+        }
+    }
+    function closeCoursePopup() {
+        if (!document.getElementById("cpConfirmBtn").disabled) {
+            localStorage.setItem("coursePopupConfirmed", "1");
+            document.getElementById("coursePopupOverlay").classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    }
+    window.addEventListener("DOMContentLoaded", function() {
+        if (!localStorage.getItem("coursePopupConfirmed")) {
+            setTimeout(function() {
+                document.getElementById("coursePopupOverlay").classList.add("active");
+                document.body.style.overflow = "hidden";
+            }, 800);
+        }
+    });
+    </script>
 </body>
 
 </html>

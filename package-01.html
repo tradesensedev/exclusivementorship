@@ -100,6 +100,62 @@
             <h1 class="anim anim-d2">ছোট শুরু,<br /><span>বড় লক্ষ্য।</span></h1>
             <p class="hero-sub anim anim-d3">একসাথে পুরো টাকা দিতে হবে না। প্রতিটি chapter শেষ করুন, তারপর পরের chapter-এর payment করুন — সম্পূর্ণ course মাত্র $119-এ।</p>
             <div class="hero-for anim anim-d3">✦ যাদের এখন বড় budget নেই তাদের জন্য সবচেয়ে সহজ উপায়</div>
+            <!-- Course Info Popup -->
+            <div class="course-popup-overlay" id="coursePopupOverlay" onclick="closeCoursePopup()">
+                <div class="course-popup" onclick="event.stopPropagation()">
+                    <div class="cp-icon">📚</div>
+                    <h3 class="cp-title">সব package-এ course একই!</h3>
+                    <p class="cp-body">আপনি যে package-ই নেন — ৭টি Chapter, ৯৯+ Class সবার জন্য একই।<br><br>Package 03 ও 04-এ শুধু কিছু <strong>এক্সট্রা সার্ভিস</strong> পাবেন, course বেশি না।</p>
+                    <label class="cp-checkbox-label">
+                        <input type="checkbox" id="cpCheckbox" onchange="toggleConfirm(this)">
+                        <span class="cp-checkbox-text">বুঝতে পেরেছি, course সব package-এ একই।</span>
+                    </label>
+                    <button class="cp-confirm" id="cpConfirmBtn" onclick="closeCoursePopup()" disabled>নিশ্চিত করুন ✓</button>
+                </div>
+            </div>
+            <script>
+            var cpTimer = null;
+            var cpSeconds = 5;
+
+            function toggleConfirm(cb) {
+                var btn = document.getElementById("cpConfirmBtn");
+                if (cb.checked) {
+                    cpSeconds = 5;
+                    btn.disabled = true;
+                    btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+                    cpTimer = setInterval(function() {
+                        cpSeconds--;
+                        if (cpSeconds > 0) {
+                            btn.textContent = "নিশ্চিত করুন (" + cpSeconds + "s)";
+                        } else {
+                            clearInterval(cpTimer);
+                            btn.disabled = false;
+                            btn.textContent = "নিশ্চিত করুন ✓";
+                        }
+                    }, 1000);
+                } else {
+                    clearInterval(cpTimer);
+                    btn.disabled = true;
+                    btn.textContent = "নিশ্চিত করুন ✓";
+                }
+            }
+
+            function closeCoursePopup() {
+                if (!document.getElementById("cpConfirmBtn").disabled) {
+                    localStorage.setItem("coursePopupConfirmed", "1");
+                    document.getElementById("coursePopupOverlay").classList.remove("active");
+                    document.body.style.overflow = "";
+                }
+            }
+            window.addEventListener("DOMContentLoaded", function() {
+                if (!localStorage.getItem("coursePopupConfirmed")) {
+                    setTimeout(function() {
+                        document.getElementById("coursePopupOverlay").classList.add("active");
+                        document.body.style.overflow = "hidden";
+                    }, 800);
+                }
+            });
+            </script>
             <div class="hero-stats anim anim-d4">
                 <div class="hero-stat">
                     <div class="stat-val">$8</div>

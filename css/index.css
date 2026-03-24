@@ -1975,3 +1975,83 @@ img {
         border-radius: 7px
     }
 }
+/* === Course Same Notice Banner === */
+.course-same-notice {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+    border: 1.5px solid #86efac;
+    border-radius: 14px;
+    padding: 14px 20px;
+    margin-bottom: 28px;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.csn-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.csn-text {
+    font-size: 14.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+}
+
+.csn-text strong {
+    color: #166534;
+}
+
+.csn-text em {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+/* === Same Course / Extra Service Badges on Cards === */
+.same-course-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #166534;
+    font-size: 12.5px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+.same-course-badge strong {
+    font-weight: 700;
+}
+
+.extra-service-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+    font-size: 12.5px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+.extra-service-badge strong {
+    font-weight: 700;
+}
+
+.card.elite .extra-service-badge {
+    background: rgba(240,192,64,0.12);
+    border-color: rgba(240,192,64,0.4);
+    color: #92400e;
+}

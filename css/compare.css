@@ -914,3 +914,69 @@ img {
         padding: 10px 8px
     }
 }
+/* === Same Course Notice === */
+.compare-notice {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+    border: 1.5px solid #86efac;
+    border-radius: 14px;
+    padding: 14px 20px;
+    margin-bottom: 24px;
+}
+
+.compare-notice-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.compare-notice-text {
+    font-size: 14.5px;
+    color: #374151;
+    line-height: 1.55;
+}
+
+.compare-notice-text strong {
+    color: #166534;
+}
+
+.compare-notice-text em {
+    font-style: normal;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+/* === Popup Checkbox === */
+.cp-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f0fdf4;
+    border: 1.5px solid #86efac;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+.cp-checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    accent-color: #059669;
+    cursor: pointer;
+    margin-top: 1px;
+}
+.cp-checkbox-text {
+    font-size: 13.5px;
+    color: #166534;
+    font-weight: 500;
+    line-height: 1.45;
+}
+.cp-confirm:disabled {
+    background: #d1d5db;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
