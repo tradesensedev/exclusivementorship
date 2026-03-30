@@ -278,6 +278,136 @@ a,button{min-height:44px}
     </div>
   </div>
 
+<!-- ═══ ENROLL PAGE: DISCOUNT URGENCY STRIP ═══ -->
+<div class="enroll-disc-strip" id="enrollDiscStrip">
+  <div class="enroll-disc-inner">
+    <div class="enroll-disc-left">
+      <span class="enroll-disc-dot"></span>
+      <span class="enroll-disc-name" id="eDiscName">আজকের বিশেষ Discount সক্রিয়</span>
+    </div>
+    <div class="enroll-disc-timer">
+      <span class="enroll-disc-label">শেষ হতে বাকি:</span>
+      <span class="enroll-disc-clock" id="eTimer">00:00:00</span>
+    </div>
+    <div class="enroll-disc-right">
+      <span class="enroll-disc-enroll-count">আজ <strong id="eEnrollCount">--</strong> জন enroll করেছেন</span>
+    </div>
+  </div>
+  <p class="enroll-disc-sub" id="eDiscTagline">আজকের offer মিস করলে কাল নতুন rate-এ আসবে — এখনই সিদ্ধান্ত নিন</p>
+</div>
+
+<style>
+.enroll-disc-strip{
+  background:linear-gradient(135deg,rgba(245,158,11,.12),rgba(217,119,6,.08));
+  border:1px solid rgba(245,158,11,.28);
+  border-radius:12px;
+  padding:14px 20px 10px;
+  margin:0 0 20px;
+  position:relative;overflow:hidden;
+}
+.enroll-disc-strip::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(245,158,11,.6),transparent);
+}
+.enroll-disc-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+}
+.enroll-disc-left{display:flex;align-items:center;gap:8px;}
+.enroll-disc-dot{
+  width:8px;height:8px;border-radius:50%;background:#f59e0b;flex-shrink:0;
+  animation:ePulse 1.6s ease-in-out infinite;
+}
+@keyframes ePulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(245,158,11,.6)}
+  50%{box-shadow:0 0 0 5px rgba(245,158,11,0)}
+}
+.enroll-disc-name{
+  font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:#f59e0b;
+}
+.enroll-disc-timer{display:flex;align-items:center;gap:8px;}
+.enroll-disc-label{
+  font-family:'DM Sans',sans-serif;font-size:11px;color:rgba(255,255,255,.5);
+}
+.enroll-disc-clock{
+  font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:700;
+  color:#f59e0b;letter-spacing:.05em;
+  transition:color .3s;
+}
+.enroll-disc-clock.urgent{color:#ef4444!important;}
+.enroll-disc-right{
+  font-family:'DM Sans',sans-serif;font-size:11.5px;color:rgba(255,255,255,.55);
+}
+.enroll-disc-right strong{
+  color:#10b981;font-family:'JetBrains Mono',monospace;font-weight:700;
+}
+.enroll-disc-sub{
+  font-family:'DM Sans',sans-serif;font-size:11.5px;color:rgba(245,158,11,.6);
+  margin-top:8px;font-style:italic;text-align:center;
+}
+@media(max-width:580px){
+  .enroll-disc-inner{flex-direction:column;gap:8px;align-items:flex-start;}
+  .enroll-disc-right{display:none;}
+}
+</style>
+
+<script>
+(function(){
+  function bdNow(){ return new Date(Date.now()+6*60*60*1000); }
+  var DISCOUNTS={
+    0:{name:'⚡ Weekend Day Discount সক্রিয়',tagline:'সাপ্তাহিক ছুটির অফার — রাত ১২টার পরে পরিবর্তন হবে'},
+    1:{name:'🖤 Black Monday Discount সক্রিয়',tagline:'Black Monday-র বিশেষ rate — এখনই নিন, রাতেই শেষ'},
+    2:{name:'🔥 Peak Week Discount সক্রিয়',tagline:'আজকের offer মিস করলে কাল নতুন rate — এখনই সিদ্ধান্ত নিন'},
+    3:{name:'🔥 Peak Week Discount সক্রিয়',tagline:'আজকের বিশেষ rate রাত ১২টায় শেষ — দেরি না করে enroll করুন'},
+    4:{name:'🔥 Peak Week Discount সক্রিয়',tagline:'সপ্তাহের শেষ Peak Day — এই rate আর পাবেন না'},
+    5:{name:'🎉 Holiday Special Discount সক্রিয়',tagline:'ছুটির দিনের বিশেষ offer — রাত ১২টার পরেই পরিবর্তন'},
+    6:{name:'⚡ Weekend Day Discount সক্রিয়',tagline:'সপ্তাহান্তের offer — রাত ১২টায় নতুন rate শুরু'}
+  };
+  function getEnrollCount(){
+    var now=bdNow(),h=now.getUTCHours();
+    var dy=Math.floor(now.getTime()/86400000);
+    var seed=((dy*37+h*13)%89)+1;
+    var bases=[3,5,9,14,20,26,33,40,47,45,50,55,48,53,57,51,56,60,58,63,67,61,65,68];
+    return bases[Math.min(h,23)]+(seed%11);
+  }
+  function getMsUntilMidnight(){
+    var now=bdNow();
+    var ms=(now.getUTCHours()*3600+now.getUTCMinutes()*60+now.getUTCSeconds())*1000+now.getUTCMilliseconds();
+    return 86400000-ms;
+  }
+  function pad2(n){return n<10?'0'+n:''+n;}
+  var elName=document.getElementById('eDiscName');
+  var elTagline=document.getElementById('eDiscTagline');
+  var elCount=document.getElementById('eEnrollCount');
+  var elClock=document.getElementById('eTimer');
+  var lastDay=-1;
+  function updateDiscount(){
+    var now=bdNow(),day=now.getUTCDay();
+    var d=DISCOUNTS[day];
+    if(elName) elName.textContent=d.name;
+    if(elTagline) elTagline.textContent=d.tagline;
+  }
+  function tick(){
+    var ms=getMsUntilMidnight();
+    var now=bdNow(),day=now.getUTCDay();
+    if(day!==lastDay){updateDiscount();lastDay=day;}
+    var s=Math.floor(ms/1000);
+    var hh=Math.floor(s/3600),mm=Math.floor((s%3600)/60),ss=s%60;
+    if(elClock){
+      elClock.textContent=pad2(hh)+':'+pad2(mm)+':'+pad2(ss);
+      if(hh<2) elClock.classList.add('urgent');
+      else elClock.classList.remove('urgent');
+    }
+  }
+  function updateEnroll(){if(elCount) elCount.textContent=getEnrollCount();}
+  updateDiscount();updateEnroll();tick();
+  setInterval(tick,1000);
+  setInterval(updateEnroll,83000);
+})();
+</script>
+
+
+
   <!-- ══ STEP 1 ══ -->
   <div class="panel active" id="p1">
     <div class="ph">

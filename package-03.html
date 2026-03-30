@@ -224,6 +224,314 @@
     </div>
 </section>
 
+<!-- ═══════════════════════════════════════════════════════════════
+     DISCOUNT BANNER — Bangladesh Time (UTC+6) Daily Rotating
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="disc-banner" id="discBanner">
+  <div class="disc-banner-inner">
+
+    <!-- TOP ROW -->
+    <div class="disc-top-row">
+      <div class="disc-badge-wrap">
+        <span class="disc-fire-icon">🔥</span>
+        <span class="disc-name" id="discName">আজকের বিশেষ Discount</span>
+        <span class="disc-only-tag">শুধু আজকের জন্য</span>
+      </div>
+      <div class="disc-live-wrap">
+        <span class="disc-live-dot"></span>
+        <span class="disc-live-text">আজ <strong id="enrollCount">--</strong> জন enroll করেছেন</span>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="disc-main-row">
+
+      <!-- LEFT: tagline -->
+      <div class="disc-left">
+        <p class="disc-tagline" id="discTagline">আজকের offer মিস করলে কাল নতুন rate-এ আসবে</p>
+        <p class="disc-scarcity">⚠️ এই discount শুধু আজকের জন্য — প্রতিদিনের offer আলাদা</p>
+      </div>
+
+      <!-- CENTER: timer -->
+      <div class="disc-timer-wrap">
+        <div class="disc-timer-label">Offer শেষ হতে বাকি</div>
+        <div class="disc-timer" id="discTimer">
+          <div class="disc-unit">
+            <span class="disc-digit" id="tHH">00</span>
+            <span class="disc-unit-label">ঘণ্টা</span>
+          </div>
+          <span class="disc-colon">:</span>
+          <div class="disc-unit">
+            <span class="disc-digit" id="tMM">00</span>
+            <span class="disc-unit-label">মিনিট</span>
+          </div>
+          <span class="disc-colon">:</span>
+          <div class="disc-unit">
+            <span class="disc-digit disc-sec" id="tSS">00</span>
+            <span class="disc-unit-label">সেকেন্ড</span>
+          </div>
+        </div>
+        <div class="disc-urgency-note" id="discUrgency">আজকের offer মিস করলে কাল নতুন rate-এ আসবে</div>
+      </div>
+
+      <!-- RIGHT: CTA -->
+      <div class="disc-right">
+        <a href="enroll.html" class="disc-cta-btn">
+          এখনই Enroll করুন
+          <span class="disc-cta-sub">→ offer শেষ হওয়ার আগে</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ══ DISCOUNT BANNER STYLES ══ */
+.disc-banner{
+  background:linear-gradient(135deg,#0d0c08 0%,#111008 50%,#0d0c08 100%);
+  border-top:1px solid rgba(245,158,11,.22);
+  border-bottom:1px solid rgba(245,158,11,.22);
+  position:relative;overflow:hidden;
+  padding:0;
+}
+.disc-banner::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(245,158,11,.055) 0%,transparent 65%);
+  pointer-events:none;
+}
+.disc-banner::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent 0%,rgba(245,158,11,.5) 30%,rgba(251,191,36,.8) 50%,rgba(245,158,11,.5) 70%,transparent 100%);
+}
+.disc-banner-inner{
+  max-width:1120px;margin:0 auto;padding:18px 24px;
+  position:relative;z-index:1;
+}
+/* Top row */
+.disc-top-row{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:10px;margin-bottom:14px;
+}
+.disc-badge-wrap{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
+.disc-fire-icon{font-size:16px;line-height:1;}
+.disc-name{
+  font-family:'Sora',sans-serif;font-size:14px;font-weight:800;
+  color:#f59e0b;letter-spacing:-.01em;
+}
+.disc-only-tag{
+  font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);
+  color:#fbbf24;padding:3px 10px;border-radius:100px;
+}
+.disc-live-wrap{
+  display:flex;align-items:center;gap:7px;
+  background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);
+  padding:5px 12px;border-radius:100px;
+}
+.disc-live-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#10b981;
+  box-shadow:0 0 0 0 rgba(16,185,129,.5);
+  animation:discPulse 1.8s ease-in-out infinite;
+  flex-shrink:0;
+}
+@keyframes discPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.5)}
+  50%{box-shadow:0 0 0 5px rgba(16,185,129,0)}
+}
+.disc-live-text{
+  font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;
+  color:rgba(255,255,255,.7);white-space:nowrap;
+}
+.disc-live-text strong{
+  color:#10b981;font-weight:700;font-family:'JetBrains Mono',monospace;
+}
+/* Main row */
+.disc-main-row{
+  display:grid;grid-template-columns:1fr auto 1fr;
+  gap:24px;align-items:center;
+}
+/* Left */
+.disc-left{display:flex;flex-direction:column;gap:6px;}
+.disc-tagline{
+  font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:600;
+  color:rgba(255,255,255,.75);line-height:1.55;
+}
+.disc-scarcity{
+  font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;
+  color:rgba(245,158,11,.7);line-height:1.4;
+}
+/* Timer */
+.disc-timer-wrap{text-align:center;}
+.disc-timer-label{
+  font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(245,158,11,.6);margin-bottom:8px;
+}
+.disc-timer{
+  display:inline-flex;align-items:center;gap:4px;
+}
+.disc-unit{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.disc-digit{
+  font-family:'JetBrains Mono',monospace;font-size:clamp(22px,3vw,32px);
+  font-weight:700;color:#f59e0b;
+  background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);
+  border-radius:8px;padding:6px 10px;min-width:54px;text-align:center;
+  line-height:1;
+  transition:color .3s,border-color .3s,background .3s;
+}
+.disc-digit.urgent{
+  color:#ef4444!important;
+  background:rgba(239,68,68,.1)!important;
+  border-color:rgba(239,68,68,.3)!important;
+}
+.disc-unit-label{
+  font-family:'JetBrains Mono',monospace;font-size:8.5px;font-weight:600;
+  letter-spacing:.1em;color:rgba(255,255,255,.35);text-transform:uppercase;
+}
+.disc-colon{
+  font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;
+  color:rgba(245,158,11,.5);margin-bottom:14px;line-height:1;
+}
+.disc-urgency-note{
+  font-family:'DM Sans',sans-serif;font-size:10.5px;font-weight:500;
+  color:rgba(255,255,255,.35);margin-top:6px;text-align:center;
+  font-style:italic;
+}
+/* Right / CTA */
+.disc-right{display:flex;justify-content:flex-end;}
+.disc-cta-btn{
+  display:inline-flex;flex-direction:column;align-items:center;gap:4px;
+  background:linear-gradient(135deg,#f59e0b,#d97706);
+  color:#000;font-family:'Sora',sans-serif;font-size:14px;font-weight:700;
+  padding:13px 22px;border-radius:11px;cursor:pointer;
+  transition:all .25s;box-shadow:0 4px 20px rgba(245,158,11,.3);
+  text-decoration:none;white-space:nowrap;
+}
+.disc-cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.45);}
+.disc-cta-sub{
+  font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;
+  color:rgba(0,0,0,.65);
+}
+/* Responsive */
+@media(max-width:860px){
+  .disc-main-row{grid-template-columns:1fr;gap:16px;}
+  .disc-left{display:none;}
+  .disc-timer-wrap{order:1;}
+  .disc-right{justify-content:center;order:2;}
+}
+@media(max-width:480px){
+  .disc-top-row{flex-direction:column;align-items:flex-start;gap:8px;}
+  .disc-digit{font-size:22px;min-width:44px;padding:5px 8px;}
+}
+</style>
+
+<script>
+(function(){
+  // ── Helpers ──────────────────────────────────────────────────────
+  function bdNow(){
+    // Returns a Date object representing current Bangladesh time (UTC+6)
+    return new Date(Date.now() + 6*60*60*1000);
+  }
+
+  // ── Discount schedule ────────────────────────────────────────────
+  var DISCOUNTS = {
+    0: { name:'⚡ Weekend Day Discount',    tagline:'সাপ্তাহিক ছুটির শুরুতে বিশেষ offer — আজকের পরে এই rate আর নেই' },
+    1: { name:'🖤 Black Monday Discount',  tagline:'নতুন সপ্তাহের শুরুতে সবচেয়ে বড় ছাড় — শুধু আজকের জন্য' },
+    2: { name:'🔥 Peak Week Discount',     tagline:'সপ্তাহের ব্যস্ত সময়ে বিশেষ rate — আজকের offer মিস করলে কাল নতুন রেট' },
+    3: { name:'🔥 Peak Week Discount',     tagline:'সপ্তাহের মাঝে বিশেষ সুযোগ — প্রতিদিনের offer আলাদা, আজকেরটা আজকেই' },
+    4: { name:'🔥 Peak Week Discount',     tagline:'সপ্তাহ শেষ হওয়ার আগে শেষ সুযোগ — আজ রাতেই offer শেষ' },
+    5: { name:'🎉 Holiday Special Discount',tagline:'ছুটির দিনে বিশেষ ছাড় — আজকের offer রাত ১২টার পরেই পরিবর্তন' },
+    6: { name:'⚡ Weekend Day Discount',    tagline:'সপ্তাহান্তের বিশেষ offer — আজ মিস করলে কাল নতুন rate' }
+  };
+
+  // ── Enrollment count (time-based, realistic) ─────────────────────
+  function getEnrollCount(){
+    var now = bdNow();
+    var h = now.getUTCHours();
+    var dayOfYear = Math.floor(now.getTime() / 86400000);
+    var seed = ((dayOfYear * 37 + h * 13) % 89) + 1; // 1-89
+    var bases = [3,5,9,14,20,26,33,40,47,45,50,55,48,53,57,51,56,60,58,63,67,61,65,68];
+    var base = bases[Math.min(h, 23)];
+    return base + (seed % 11);
+  }
+
+  // ── Countdown to midnight BD time ────────────────────────────────
+  function getMsUntilMidnight(){
+    var now = bdNow();
+    var msSinceMidnight = (now.getUTCHours()*3600 + now.getUTCMinutes()*60 + now.getUTCSeconds())*1000 + now.getUTCMilliseconds();
+    return 86400000 - msSinceMidnight;
+  }
+
+  function pad2(n){ return n < 10 ? '0'+n : ''+n; }
+
+  // ── DOM refs ─────────────────────────────────────────────────────
+  var elName    = document.getElementById('discName');
+  var elTagline = document.getElementById('discTagline');
+  var elCount   = document.getElementById('enrollCount');
+  var elHH      = document.getElementById('tHH');
+  var elMM      = document.getElementById('tMM');
+  var elSS      = document.getElementById('tSS');
+  var digits    = [elHH, elMM, elSS];
+
+  // ── Set discount info ─────────────────────────────────────────────
+  function updateDiscount(){
+    var now = bdNow();
+    var day = now.getUTCDay(); // 0=Sun … 6=Sat
+    var d = DISCOUNTS[day];
+    if(elName)    elName.textContent    = d.name;
+    if(elTagline) elTagline.textContent = d.tagline;
+  }
+
+  // ── Tick ─────────────────────────────────────────────────────────
+  var lastDay = -1;
+  function tick(){
+    var ms  = getMsUntilMidnight();
+    var now = bdNow();
+    var day = now.getUTCDay();
+
+    // Day changed? refresh discount
+    if(day !== lastDay){ updateDiscount(); lastDay = day; }
+
+    var totalSec = Math.floor(ms / 1000);
+    var hh = Math.floor(totalSec / 3600);
+    var mm = Math.floor((totalSec % 3600) / 60);
+    var ss = totalSec % 60;
+
+    if(elHH) elHH.textContent = pad2(hh);
+    if(elMM) elMM.textContent = pad2(mm);
+    if(elSS) elSS.textContent = pad2(ss);
+
+    // Urgent: < 2 hours
+    var urgent = hh < 2;
+    digits.forEach(function(el){
+      if(!el) return;
+      if(urgent) el.classList.add('urgent');
+      else       el.classList.remove('urgent');
+    });
+  }
+
+  // ── Enrollment counter (update every ~80 sec for subtle live feel) ─
+  function updateEnroll(){
+    if(elCount) elCount.textContent = getEnrollCount();
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────
+  updateDiscount();
+  updateEnroll();
+  tick();
+  setInterval(tick, 1000);
+  setInterval(updateEnroll, 83000);
+})();
+</script>
+
+
+
 <div class="container">
 
     <h2 class="sec-title reveal">কাদের জন্য এই Package</h2>
