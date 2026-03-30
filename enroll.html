@@ -182,14 +182,14 @@ input.ok { border-bottom-color: var(--green); }
 .pdone-txt { font-size: 14px; font-weight: 500; color: var(--muted); line-height: 1.5; }
 .pdone-txt strong { color: var(--text); }
 
-/* TG BUTTON */
-.tgbtn { width: 100%; padding: 16px 22px; background: #2AABEE; border-radius: 11px; font-family: var(--font-h); font-size: 14.5px; font-weight: 700; color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; transition: all .25s; box-shadow: 0 4px 18px rgba(42,171,238,.18); opacity: .38; pointer-events: none; }
-.tgbtn.on { opacity: 1; pointer-events: all; }
-.tgbtn.on:hover { background: #1a9fd4; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(42,171,238,.28); }
-.tgbtn svg { width: 19px; height: 19px; fill: currentColor; flex-shrink: 0; }
-.tgsub { font-size: 11px; font-weight: 400; opacity: .8; margin-top: 1px; }
-.tglock { text-align: center; font-size: 11.5px; color: var(--subtle); margin-top: 8px; font-family: var(--font-m); }
-.tglock.on { color: var(--green); }
+/* SUBMIT BUTTON */
+.tgbtn { width:100%; padding:17px 24px; background:var(--gold); border-radius:11px; font-family:var(--font-h); font-size:15px; font-weight:700; color:#000; display:flex; align-items:center; justify-content:center; gap:10px; transition:background .2s,transform .2s,box-shadow .2s; box-shadow:0 4px 20px rgba(245,158,11,.28); opacity:.3; pointer-events:none; }
+.tgbtn.on { opacity:1; pointer-events:all; }
+.tgbtn.on:hover { background:#fbbf24; transform:translateY(-1px); box-shadow:0 6px 26px rgba(245,158,11,.38); }
+.tgbtn.on:active { transform:translateY(0); }
+.tgbtn svg { width:18px; height:18px; flex-shrink:0; fill:currentColor; }
+.tglock { text-align:center; font-size:11.5px; color:var(--subtle); margin-top:8px; font-family:var(--font-m); }
+.tglock.on { color:var(--gold); }
 
 /* NAV BTNS */
 .navbtns { display: flex; align-items: center; gap: 10px; margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--border); }
@@ -528,11 +528,11 @@ a,button{min-height:44px}
 
     <!-- Review -->
     <div class="revgrid">
-      <div class="rcell"><div class="rk">নাম</div><div class="rv" id="rv-n">—</div></div>
+      <div class="rcell"><div class="rk">Name</div><div class="rv" id="rv-n">—</div></div>
       <div class="rcell"><div class="rk">Phone</div><div class="rv" id="rv-p">—</div></div>
       <div class="rcell"><div class="rk">Email</div><div class="rv" id="rv-e">—</div></div>
       <div class="rcell"><div class="rk">Telegram</div><div class="rv" id="rv-t">—</div></div>
-      <div class="rcell"><div class="rk">অবস্থান</div><div class="rv" id="rv-c">—</div></div>
+      <div class="rcell"><div class="rk">Location</div><div class="rv" id="rv-c">—</div></div>
       <div class="rcell"><div class="rk">Package</div><div class="rv" id="rv-k">—</div></div>
     </div>
 
@@ -540,20 +540,17 @@ a,button{min-height:44px}
     <div class="pdone" id="pdone" onclick="togPay()">
       <div class="pdone-box" id="pbox"></div>
       <div class="pdone-txt">
-        <strong>হ্যাঁ, আমি payment করেছি</strong><br>
-        <span style="font-size:12px;font-weight:400">Screenshot বা TxHash ready আছে পাঠানোর জন্য।</span>
+        <strong>আমি payment করেছি</strong><br>
+        <span style="font-size:12px;font-weight:400">Screenshot ready আছে পাঠানোর জন্য।</span>
       </div>
     </div>
 
-    <!-- Telegram -->
+    <!-- Submit Button -->
     <button class="tgbtn" id="tgbtn" onclick="openTg()">
       <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
-      <div>
-        <div>Telegram-এ Payment জানান</div>
-        <div class="tgsub">@AskNLT — সব তথ্য auto-filled থাকবে</div>
-      </div>
+      Enrollment Submit করুন
     </button>
-    <div class="tglock" id="tglock">🔒 Payment করার পর confirm করুন</div>
+    <div class="tglock" id="tglock">🔒 উপরে payment confirm করুন</div>
 
     <div class="navbtns">
       <button class="bk" onclick="go(3)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 4L6 8l4 4"/></svg>আগে</button>
@@ -680,7 +677,7 @@ function togPay(){
   document.getElementById('tgbtn').classList.toggle('on',paid);
   const lk=document.getElementById('tglock');
   lk.className='tglock'+(paid?' on':'');
-  lk.textContent=paid?'✅ Telegram-এ পাঠান — সব তথ্য pre-filled থাকবে':'🔒 Payment করার পর confirm করুন';
+  lk.textContent=paid?'✅ এখন Submit করুন — Telegram-এ পাঠানো হবে':'🔒 উপরে payment confirm করুন';
 }
 
 function doCopy(e,txt){
@@ -700,7 +697,7 @@ function openTg(){
     '',
     'Package  : '+d.name+' ('+d.price+')',
     '──────────────────────',
-    'নাম       : '+g('fn'),
+    'Name     : '+g('fn'),
     'Phone    : '+g('fp'),
     'Email    : '+g('fe'),
     'Telegram : '+g('ft'),
@@ -710,8 +707,8 @@ function openTg(){
     'Amount   : '+d.usdt,
     'Status   : Done ✅',
     '',
-    'Screenshot / TxHash নিচে দিচ্ছি।',
-    'Please access দিন। ধন্যবাদ! 🙏'
+    'Screenshot নিচে দিচ্ছি।',
+    'Please check করে access দিন। ধন্যবাদ! 🙏'
   ].join('\n');
   window.open('https://t.me/AskNLT?text='+encodeURIComponent(msg),'_blank');
 }
