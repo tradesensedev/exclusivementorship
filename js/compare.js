@@ -1,1 +1,0 @@
-window.addEventListener('scroll', () => document.getElementById('navbar').classList.toggle('scrolled', scrollY > 20));
