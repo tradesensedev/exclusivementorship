@@ -3,4 +3,5 @@ Allow: /
 Disallow: /_headers
 Disallow: /_redirects
 
+# Sitemap location
 Sitemap: https://exclusivementorship.pages.dev/sitemap.xml
