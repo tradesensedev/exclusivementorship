@@ -103,8 +103,17 @@
     }
 
     @keyframes discPulse {
-        0%, 100% { transform: translateY(0); box-shadow: 0 6px 24px rgba(255, 107, 53, .35); }
-        50% { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255, 107, 53, .45); }
+
+        0%,
+        100% {
+            transform: translateY(0);
+            box-shadow: 0 6px 24px rgba(255, 107, 53, .35);
+        }
+
+        50% {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(255, 107, 53, .45);
+        }
     }
 
     .disc-fl {
@@ -138,8 +147,15 @@
     }
 
     @keyframes arrBounce {
-        0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(3px); }
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(3px);
+        }
     }
 
     .disc-now {
@@ -198,9 +214,10 @@
         transform: translateY(-3px);
         box-shadow: 0 12px 28px rgba(255, 107, 53, .7)
     }
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 10px 28px rgba(255, 107, 53, .65);
-        background: linear-gradient(135deg, #ff5320, #ff3d00)
+
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 28px rgba(255, 107, 53, .65);
+    background: linear-gradient(135deg, #ff5320, #ff3d00)
     }
 
     .disc-cta:active {
