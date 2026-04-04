@@ -1,392 +1,1104 @@
 <!DOCTYPE html>
 <html lang="bn-BD">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-<meta name="theme-color" content="#07070a"/>
-<title>FAQ — Exclusive Mentorship by NLT</title>
-<meta content="NLT Exclusive Mentorship-এর সব প্রশ্নের উত্তর — Payment, Access, Course ও Support।" name="description"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet"/>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#07070a;--bg-card:#0e0e12;--bg-elevated:#151519;--bg-surface:#1c1c22;
-  --ink:#f4f4f6;--ink-2:#c4c4ce;--ink-3:#8e8e9c;
-  --line:rgba(255,255,255,.07);--line-s:rgba(255,255,255,.13);
-  --amber:#f59e0b;--amber-s:#fbbf24;--amber-dim:rgba(245,158,11,.10);--amber-b:rgba(245,158,11,.18);
-  --H:'Sora',sans-serif;--B:'DM Sans',sans-serif;--M:'JetBrains Mono',monospace;
-  --mw:720px;--r:14px;
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--B);color:var(--ink-2);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-*{-webkit-tap-highlight-color:transparent}
-a,button{touch-action:manipulation}
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta name="theme-color" content="#07070a" />
+    <title>FAQ — Exclusive Mentorship by NLT</title>
+    <meta content="NLT Exclusive Mentorship-এর সব প্রশ্নের উত্তর — Payment, Access, Course ও Support।" name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml" />
+    <style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+    }
 
-/* ═══ NAV ═══ */
-.navbar{position:sticky;top:0;z-index:100;background:rgba(7,7,10,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
-.navbar.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.5)}
-.nav-inner{max-width:var(--mw);margin:0 auto;height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:16px}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--M);font-size:12px;font-weight:700;color:#000;flex-shrink:0}
-.nav-logo-name{font-family:var(--H);font-size:13px;font-weight:700;color:var(--ink);display:block;line-height:1.3}
-.nav-logo-sub{font-size:10px;color:var(--ink-3);letter-spacing:.06em;display:block}
-.nav-right{display:flex;align-items:center;gap:6px}
-.nav-link{font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:8px;transition:all .2s}
-.nav-link:hover{background:rgba(255,255,255,.06);color:var(--ink)}
-.nav-link.active{color:var(--amber)}
-.nav-cta{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--M);font-size:12px;font-weight:700;padding:8px 16px;border-radius:8px;transition:all .2s}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 4px 18px rgba(245,158,11,.35)}
-@media(max-width:540px){.nav-link:not(.active){display:none}}
+    :root {
+        --bg: #07070a;
+        --bg-card: #0e0e12;
+        --bg-elevated: #151519;
+        --bg-surface: #1c1c22;
+        --ink: #f4f4f6;
+        --ink-2: #c4c4ce;
+        --ink-3: #8e8e9c;
+        --line: rgba(255, 255, 255, .07);
+        --line-s: rgba(255, 255, 255, .13);
+        --amber: #f59e0b;
+        --amber-s: #fbbf24;
+        --amber-dim: rgba(245, 158, 11, .10);
+        --amber-b: rgba(245, 158, 11, .18);
+        --H: 'Sora', sans-serif;
+        --B: 'DM Sans', sans-serif;
+        --M: 'JetBrains Mono', monospace;
+        --mw: 720px;
+        --r: 14px;
+    }
 
-/* ═══ PAGE HEADER ═══ */
-.page-hero{padding:56px 24px 48px;text-align:center;position:relative;overflow:hidden;background:linear-gradient(170deg,#07070a,#1a140066,#07070a)}
-.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 0%,rgba(245,158,11,.09) 0%,transparent 65%);pointer-events:none}
-.page-hero-inner{position:relative;z-index:1;max-width:var(--mw);margin:0 auto}
-.page-badge{display:inline-block;font-family:var(--M);font-size:11px;font-weight:700;letter-spacing:.08em;padding:7px 16px;border-radius:100px;background:var(--amber-dim);border:1px solid var(--amber-b);color:var(--amber-s);margin-bottom:18px}
-.page-title{font-family:var(--H);font-size:clamp(28px,5vw,42px);font-weight:800;color:var(--ink);letter-spacing:-.04em;line-height:1.15;margin-bottom:12px}
-.page-sub{font-size:15.5px;color:var(--ink-2);line-height:1.72;max-width:480px;margin:0 auto}
+    html {
+        scroll-behavior: smooth
+    }
 
-/* ═══ CONTENT WRAP ═══ */
-.wrap{max-width:var(--mw);margin:0 auto;padding:48px 24px 64px}
+    body {
+        font-family: var(--B);
+        color: var(--ink-2);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden
+    }
 
-/* ═══ CATEGORY TABS ═══ */
-.cat-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--line)}
-.cat-btn{font-family:var(--M);font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--ink-3);background:var(--bg-card);border:1px solid var(--line-s);padding:8px 16px;border-radius:8px;cursor:pointer;transition:all .2s}
-.cat-btn:hover{color:var(--ink-2);border-color:rgba(255,255,255,.2)}
-.cat-btn.active{background:var(--amber-dim);border-color:var(--amber-b);color:var(--amber)}
+    a {
+        color: inherit;
+        text-decoration: none
+    }
 
-/* ═══ FAQ GROUP ═══ */
-.faq-group{margin-bottom:40px}
-.faq-group-lbl{font-family:var(--M);font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--amber);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.faq-group-lbl::after{content:'';flex:1;height:1px;background:var(--line-s)}
-.faq-list{display:flex;flex-direction:column;gap:8px}
-.faq-item{background:var(--bg-card);border:1px solid var(--line-s);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
-.faq-item:hover{border-color:rgba(255,255,255,.18)}
-.faq-item[data-cat].hidden{display:none}
-.faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 20px;width:100%;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--B);font-size:14px;font-weight:600;color:var(--ink);line-height:1.45}
-.faq-icon{width:24px;height:24px;flex-shrink:0;border-radius:6px;background:var(--bg-surface);border:1px solid var(--line-s);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink-3);transition:all .25s}
-.faq-q.open .faq-icon{background:var(--amber-dim);border-color:var(--amber-b);color:var(--amber);transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;padding:0 20px;font-size:13.5px;color:var(--ink-2);line-height:1.78;transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s}
-.faq-q.open+.faq-a{max-height:400px;padding-bottom:16px}
-.faq-a strong{color:var(--ink);font-weight:700}
-.faq-a .hl{color:var(--amber-s);font-weight:700}
-.faq-a ul{margin:10px 0 0 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:6px}
-.faq-a ul li{display:flex;align-items:flex-start;gap:8px;font-size:13px}
-.faq-a ul li::before{content:'·';color:var(--amber);flex-shrink:0;margin-top:1px;font-size:16px;line-height:1.2}
+    * {
+        -webkit-tap-highlight-color: transparent
+    }
 
-/* ═══ CTA BOX ═══ */
-.cta-box{background:var(--bg-card);border:1px solid var(--amber-b);border-radius:var(--r);padding:32px;text-align:center;position:relative;overflow:hidden;margin-top:48px}
-.cta-box::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 50% 0%,rgba(245,158,11,.07) 0%,transparent 65%);pointer-events:none}
-.cta-box::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,var(--amber) 50%,transparent 95%);opacity:.35}
-.cta-inner{position:relative;z-index:1}
-.cta-title{font-family:var(--H);font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.02em;margin-bottom:8px}
-.cta-sub{font-size:14px;color:var(--ink-2);line-height:1.65;margin-bottom:22px}
-.cta-btn{display:inline-flex;flex-direction:column;align-items:center;gap:4px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--H);font-size:15px;font-weight:700;padding:15px 32px;border-radius:11px;transition:all .25s;box-shadow:0 4px 22px rgba(245,158,11,.3)}
-.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,158,11,.42)}
-.cta-btn small{font-family:var(--B);font-size:11px;font-weight:500;color:rgba(0,0,0,.5)}
+    a,
+    button {
+        touch-action: manipulation
+    }
 
-/* ═══ FOOTER ═══ */
-.ft{padding:40px 24px 28px;border-top:1px solid var(--line)}
-.ft-inner{max-width:var(--mw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;margin-bottom:28px}
-.ft-logo{display:flex;align-items:center;gap:10px;margin-bottom:10px}
-.ft-lm{width:34px;height:34px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:var(--M);font-size:12px;font-weight:700;color:#000}
-.ft-ln{font-family:var(--H);font-size:13px;font-weight:700;color:var(--ink);display:block;line-height:1.3}
-.ft-ls{font-size:10px;color:var(--ink-3);display:block}
-.ft-tag{font-size:13px;color:var(--ink-3);line-height:1.65;max-width:260px;margin-top:8px}
-.ft-nav{display:flex;flex-direction:column;gap:9px;align-items:flex-end}
-.ft-nav a{font-size:13px;color:var(--ink-3);transition:color .2s}
-.ft-nav a:hover{color:var(--ink-2)}
-.ft-bot{max-width:var(--mw);margin:0 auto;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
-.ft-copy{font-size:12px;color:var(--ink-3)}
-.ft-disc{font-size:11px;color:rgba(255,255,255,.22)}
-@media(max-width:540px){.ft-nav{align-items:flex-start}}
+    /* ═══ NAV ═══ */
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(7, 7, 10, .88);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--line);
+        transition: box-shadow .3s
+    }
 
-/* ═══ REVEAL ═══ */
-.rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
-.rv.on{opacity:1;transform:translateY(0)}
+    .navbar.scrolled {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .5)
+    }
 
-/* ═══ STICKY BAR ═══ */
-@media(max-width:768px){
-  .sticky{position:fixed;bottom:0;left:0;right:0;z-index:500;padding:10px 16px 14px;background:rgba(7,7,10,.97);border-top:1px solid rgba(245,158,11,.2);backdrop-filter:blur(20px);transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
-  .sticky.on{transform:translateY(0)}
-  .sticky a{display:flex;align-items:center;justify-content:center;width:100%;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-size:15px;font-weight:700;padding:14px;border-radius:11px;font-family:'Sora',sans-serif}
-}
-@media(min-width:769px){.sticky{display:none!important}}
+    .nav-inner {
+        max-width: var(--mw);
+        margin: 0 auto;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        gap: 16px
+    }
 
-.btt{position:fixed;bottom:80px;right:20px;z-index:400;width:40px;height:40px;background:var(--bg-elevated);border:1px solid var(--line-s);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .3s;color:var(--ink-3)}
-.btt.on{opacity:1;transform:translateY(0)}
-.btt:hover{border-color:var(--amber-b);color:var(--amber)}
-@media(max-width:768px){.btt{bottom:86px;right:14px}}
-</style>
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px
+    }
+
+    .nav-logo-mark {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+        flex-shrink: 0
+    }
+
+    .nav-logo-name {
+        font-family: var(--H);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink);
+        display: block;
+        line-height: 1.3
+    }
+
+    .nav-logo-sub {
+        font-size: 10px;
+        color: var(--ink-3);
+        letter-spacing: .06em;
+        display: block
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 6px
+    }
+
+    .nav-link {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-2);
+        padding: 7px 13px;
+        border-radius: 8px;
+        transition: all .2s
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink)
+    }
+
+    .nav-link.active {
+        color: var(--amber)
+    }
+
+    .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--amber);
+        color: #000;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: opacity .2s
+    }
+
+    .nav-cta:hover {
+        opacity: .85
+    }
+
+    @media(max-width:540px) {
+        .nav-link:not(.active) {
+            display: none
+        }
+    }
+
+    /* ═══ PAGE HEADER ═══ */
+    .page-hero {
+        padding: 56px 24px 48px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(170deg, #07070a, #1a140066, #07070a)
+    }
+
+    .page-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 55% 45% at 50% 0%, rgba(245, 158, 11, .09) 0%, transparent 65%);
+        pointer-events: none
+    }
+
+    .page-hero-inner {
+        position: relative;
+        z-index: 1;
+        max-width: var(--mw);
+        margin: 0 auto
+    }
+
+    .page-badge {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .08em;
+        padding: 7px 16px;
+        border-radius: 100px;
+        background: var(--amber-dim);
+        border: 1px solid var(--amber-b);
+        color: var(--amber-s);
+        margin-bottom: 18px
+    }
+
+    .page-title {
+        font-family: var(--H);
+        font-size: clamp(28px, 5vw, 42px);
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -.04em;
+        line-height: 1.15;
+        margin-bottom: 12px
+    }
+
+    .page-sub {
+        font-size: 15.5px;
+        color: var(--ink-2);
+        line-height: 1.72;
+        max-width: 480px;
+        margin: 0 auto
+    }
+
+    /* ═══ CONTENT WRAP ═══ */
+    .wrap {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 48px 24px 64px
+    }
+
+    /* ═══ CATEGORY TABS ═══ */
+    .cat-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 36px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line)
+    }
+
+    .cat-btn {
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .06em;
+        color: var(--ink-3);
+        background: var(--bg-card);
+        border: 1px solid var(--line-s);
+        padding: 6px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: color .2s, border-color .2s
+    }
+
+    .cat-btn:hover {
+        color: var(--ink-2);
+        border-color: rgba(255, 255, 255, .2)
+    }
+
+    .cat-btn.active {
+        background: var(--amber-dim);
+        border-color: var(--amber-b);
+        color: var(--amber)
+    }
+
+    /* ═══ FAQ GROUP ═══ */
+    .faq-group {
+        margin-bottom: 40px
+    }
+
+    .faq-group-lbl {
+        font-family: var(--M);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .12em;
+        color: var(--amber);
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px
+    }
+
+    .faq-group-lbl::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: var(--line-s)
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    .faq-item {
+        background: var(--bg-card);
+        border: 1px solid var(--line-s);
+        border-radius: var(--r);
+        overflow: hidden;
+        transition: border-color .2s
+    }
+
+    .faq-item:hover {
+        border-color: rgba(255, 255, 255, .18)
+    }
+
+    .faq-item[data-cat].hidden {
+        display: none
+    }
+
+    .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 15px 20px;
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-family: var(--B);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.45
+    }
+
+    .faq-icon {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: var(--bg-surface);
+        border: 1px solid var(--line-s);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: var(--ink-3);
+        transition: all .25s
+    }
+
+    .faq-q.open .faq-icon {
+        background: var(--amber-dim);
+        border-color: var(--amber-b);
+        color: var(--amber);
+        transform: rotate(45deg)
+    }
+
+    .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        font-size: 13.5px;
+        color: var(--ink-2);
+        line-height: 1.78;
+        transition: max-height .35s cubic-bezier(.4, 0, .2, 1), padding .35s
+    }
+
+    .faq-q.open+.faq-a {
+        max-height: 400px;
+        padding-bottom: 16px
+    }
+
+    .faq-a strong {
+        color: var(--ink);
+        font-weight: 700
+    }
+
+    .faq-a .hl {
+        color: var(--amber-s);
+        font-weight: 700
+    }
+
+    .faq-a ul {
+        margin: 10px 0 0 0;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px
+    }
+
+    .faq-a ul li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 13px
+    }
+
+    .faq-a ul li::before {
+        content: '·';
+        color: var(--amber);
+        flex-shrink: 0;
+        margin-top: 1px;
+        font-size: 16px;
+        line-height: 1.2
+    }
+
+    /* ═══ CTA BOX ═══ */
+    .cta-box {
+        background: var(--bg-card);
+        border: 1px solid var(--amber-b);
+        border-radius: var(--r);
+        padding: 32px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 48px
+    }
+
+    .cta-box::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 55% at 50% 0%, rgba(245, 158, 11, .07) 0%, transparent 65%);
+        pointer-events: none
+    }
+
+    .cta-box::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 5%, var(--amber) 50%, transparent 95%);
+        opacity: .35
+    }
+
+    .cta-inner {
+        position: relative;
+        z-index: 1
+    }
+
+    .cta-title {
+        font-family: var(--H);
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -.02em;
+        margin-bottom: 8px
+    }
+
+    .cta-sub {
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.65;
+        margin-bottom: 22px
+    }
+
+    .cta-btn {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+        background: var(--amber);
+        color: #000;
+        font-family: var(--H);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 22px;
+        border-radius: 9px;
+        text-decoration: none;
+        transition: opacity .2s;
+        white-space: nowrap
+    }
+
+    .cta-btn:hover {
+        opacity: .85
+    }
+
+    .cta-btn small {
+        font-family: var(--B);
+        font-size: 11px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, .5)
+    }
+
+    /* ═══ FOOTER ═══ */
+    .ft {
+        padding: 40px 24px 28px;
+        border-top: 1px solid var(--line)
+    }
+
+    .ft-inner {
+        max-width: var(--mw);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+    }
+
+    .ft-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px
+    }
+
+    .ft-lm {
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .ft-ln {
+        font-family: var(--H);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink);
+        display: block;
+        line-height: 1.3
+    }
+
+    .ft-ls {
+        font-size: 10px;
+        color: var(--ink-3);
+        display: block
+    }
+
+    .ft-tag {
+        font-size: 13px;
+        color: var(--ink-3);
+        line-height: 1.65;
+        max-width: 260px;
+        margin-top: 8px
+    }
+
+    .ft-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-items: flex-end
+    }
+
+    .ft-nav a {
+        font-size: 13px;
+        color: var(--ink-3);
+        transition: color .2s
+    }
+
+    .ft-nav a:hover {
+        color: var(--ink-2)
+    }
+
+    .ft-bot {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px
+    }
+
+    .ft-copy {
+        font-size: 12px;
+        color: var(--ink-3)
+    }
+
+    .ft-disc {
+        font-size: 11px;
+        color: rgba(255, 255, 255, .22)
+    }
+
+    @media(max-width:540px) {
+        .ft-nav {
+            align-items: flex-start
+        }
+    }
+
+    /* ═══ REVEAL ═══ */
+    .rv {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity .5s ease, transform .5s ease
+    }
+
+    .rv.on {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    /* ═══ STICKY BAR ═══ */
+    @media(max-width:768px) {
+        .sticky {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            padding: 10px 16px 14px;
+            background: rgba(7, 7, 10, .97);
+            border-top: 1px solid rgba(245, 158, 11, .2);
+            backdrop-filter: blur(20px);
+            transform: translateY(100%);
+            transition: transform .35s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        .sticky.on {
+            transform: translateY(0)
+        }
+
+        .sticky a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #000;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px;
+            border-radius: 11px;
+            font-family: 'Sora', sans-serif
+        }
+    }
+
+    @media(min-width:769px) {
+        .sticky {
+            display: none !important
+        }
+    }
+
+    .btt {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 400;
+        width: 40px;
+        height: 40px;
+        background: var(--bg-elevated);
+        border: 1px solid var(--line-s);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all .3s;
+        color: var(--ink-3)
+    }
+
+    .btt.on {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    .btt:hover {
+        border-color: var(--amber-b);
+        color: var(--amber)
+    }
+
+    @media(max-width:768px) {
+        .btt {
+            bottom: 86px;
+            right: 14px
+        }
+    }
+
+    /* ══ DISCOUNT BAR ══ */
+    .disc-bar {
+        background: linear-gradient(90deg, #180d00, #1f1100, #180d00);
+        border-bottom: 1px solid rgba(245, 158, 11, .2);
+        padding: 9px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden
+    }
+
+    .disc-bar::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 100% at 50%, rgba(245, 158, 11, .05), transparent);
+        pointer-events: none
+    }
+
+    .disc-fl {
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        color: rgba(245, 158, 11, .7);
+        letter-spacing: .04em;
+        position: relative;
+        z-index: 1
+    }
+
+    .disc-orig {
+        font-family: var(--M);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink-3);
+        text-decoration: line-through;
+        position: relative;
+        z-index: 1
+    }
+
+    .disc-arr {
+        color: rgba(245, 158, 11, .6);
+        font-weight: 700;
+        position: relative;
+        z-index: 1
+    }
+
+    .disc-now {
+        font-family: var(--M);
+        font-size: 17px;
+        font-weight: 800;
+        color: var(--amber-s);
+        position: relative;
+        z-index: 1;
+        letter-spacing: -.02em
+    }
+
+    .disc-badge {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        background: rgba(245, 158, 11, .14);
+        color: var(--amber);
+        border: 1px solid rgba(245, 158, 11, .28);
+        padding: 3px 8px;
+        border-radius: 100px;
+        position: relative;
+        z-index: 1
+    }
+
+    .disc-sep {
+        color: rgba(245, 158, 11, .35);
+        position: relative;
+        z-index: 1
+    }
+
+    .disc-timer-wrap {
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(245, 158, 11, .75);
+        letter-spacing: .06em;
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px
+    }
+
+    .disc-timer {
+        font-variant-numeric: tabular-nums
+    }
+
+    .disc-bar.disc-urgent .disc-timer-wrap {
+        color: #ff4444;
+        text-shadow: 0 0 10px rgba(255, 68, 68, .5)
+    }
+
+    .disc-bar.disc-urgent {
+        border-bottom-color: rgba(255, 68, 68, .3)
+    }
+    </style>
 </head>
+
 <body>
-
-<!-- ════ NAVBAR ════ -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <div class="nav-logo-mark">NLT</div>
-      <div>
-        <span class="nav-logo-name">Exclusive Mentorship</span>
-        <span class="nav-logo-sub">by NLT · ICT Based Trading</span>
-      </div>
-    </a>
-    <div class="nav-right">
-      <a class="nav-link active" href="faq.html">FAQ</a>
-      <a class="nav-link" href="terms.html">Terms</a>
-      <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">📞 Join করুন</a>
+    <!-- ════ DISCOUNT BAR ════ -->
+    <div class="disc-bar" id="discBar">
+        <span class="disc-fl">🔥 <span id="discName">সীমিত সময়ের Offer</span></span>
+        <span class="disc-orig" id="dOrig"></span>
+        <span class="disc-arr">→</span>
+        <span class="disc-now" id="dNow"></span>
+        <span class="disc-badge" id="dSave"></span>
+        <span class="disc-sep">·</span>
+        <span class="disc-timer-wrap">⏱ <span class="disc-timer" id="discTimer">--:--:--</span></span>
     </div>
-  </div>
-</nav>
-
-<!-- ════ PAGE HEADER ════ -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="page-badge">Frequently Asked Questions</div>
-    <h1 class="page-title">আপনার মনে প্রশ্ন আছে?</h1>
-    <p class="page-sub">সবচেয়ে বেশি জিজ্ঞেস করা প্রশ্নগুলোর উত্তর এখানে আছে। না পেলে Telegram-এ জিজ্ঞেস করুন।</p>
-  </div>
-</div>
-
-<!-- ════ CONTENT ════ -->
-<div class="wrap">
-
-  <!-- Category tabs -->
-  <div class="cat-bar rv">
-    <button class="cat-btn active" onclick="filterCat('all',this)">সব প্রশ্ন</button>
-    <button class="cat-btn" onclick="filterCat('join',this)">Join করা</button>
-    <button class="cat-btn" onclick="filterCat('payment',this)">Payment</button>
-    <button class="cat-btn" onclick="filterCat('access',this)">Access</button>
-    <button class="cat-btn" onclick="filterCat('course',this)">Course</button>
-    <button class="cat-btn" onclick="filterCat('support',this)">Support</button>
-  </div>
-
-  <!-- ── JOIN ── -->
-  <div class="faq-group rv" id="grp-join">
-    <div class="faq-group-lbl">🚀 Join করা</div>
-    <div class="faq-list">
-      <div class="faq-item" data-cat="join">
-        <button class="faq-q" onclick="tFaq(this)">কীভাবে Exclusive Mentorship-এ join করব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের support team কয়েক মিনিটের মধ্যে আপনাকে call করবে, সব বিস্তারিত জানাবে এবং payment নিয়ে manually access দিয়ে দেবে। কোনো automatic payment page নেই — সরাসরি মানুষের সাথে কথা বলেই সব হয়।</div>
-      </div>
-      <div class="faq-item" data-cat="join">
-        <button class="faq-q" onclick="tFaq(this)">Join করার আগে কথা বলা যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">অবশ্যই — এটাই আমাদের মূল process। Telegram-এ <span class="hl">@AskNLT</span>-এ message দিন, কয়েক মিনিটের মধ্যে আপনার সাথে call-এ join হওয়া হবে। সব প্রশ্নের উত্তর পেয়ে, নিশ্চিত হয়ে তারপর সিদ্ধান্ত নিন।</div>
-      </div>
-      <div class="faq-item" data-cat="join">
-        <button class="faq-q" onclick="tFaq(this)">এই Mentorship কি beginners-দের জন্য?<span class="faq-icon">+</span></button>
-        <div class="faq-a">হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব step by step শেখানো হয়। কোনো আগের experience লাগবে না। কিছু না বুঝলে সরাসরি call করে জিজ্ঞেস করতে পারবেন।</div>
-      </div>
-      <div class="faq-item" data-cat="join">
-        <button class="faq-q" onclick="tFaq(this)">Mentorship-এ কি শুধু একটাই package আছে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">হ্যাঁ। আমাদের <strong>Exclusive Mentorship</strong> package — একটাই, সম্পূর্ণ। এতে ৫টি module, ৯৯+ recorded class এবং lifetime access সহ সবকিছু আছে। $39 one-time payment, কোনো hidden cost নেই।</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── PAYMENT ── -->
-  <div class="faq-group rv" id="grp-payment">
-    <div class="faq-group-lbl">💳 Payment</div>
-    <div class="faq-list">
-      <div class="faq-item" data-cat="payment">
-        <button class="faq-q" onclick="tFaq(this)">কোন কোন payment method accept করা হয়?<span class="faq-icon">+</span></button>
-        <div class="faq-a">
-          <ul>
-            <li><strong>বাংলাদেশ:</strong> bKash, Nagad, Rocket (personal ও merchant উভয়)</li>
-            <li><strong>International:</strong> USDT (TRC20 / BEP20), Binance Pay</li>
-            <li><strong>অন্যান্য:</strong> যেকোনো crypto exchange-এর P2P</li>
-          </ul>
-          <p style="margin-top:12px">Payment করার পর Telegram-এ screenshot পাঠান — দ্রুত process করা হবে।</p>
+    <!-- ════ NAVBAR ════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html">
+                <div class="nav-logo-mark">NLT</div>
+                <div>
+                    <span class="nav-logo-name">Exclusive Mentorship</span>
+                    <span class="nav-logo-sub">by NLT · ICT Based Trading</span>
+                </div>
+            </a>
+            <div class="nav-right">
+                <a class="nav-link active" href="faq.html">FAQ</a>
+                <a class="nav-link" href="terms.html">Terms</a>
+                <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Join করুন</a>
+            </div>
         </div>
-      </div>
-      <div class="faq-item" data-cat="payment">
-        <button class="faq-q" onclick="tFaq(this)">Payment করার পর কত সময়ের মধ্যে access পাব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Payment confirm হওয়ার পর সাধারণত <strong>কয়েক ঘণ্টার মধ্যে</strong> সব module unlock করে দেওয়া হয়। Telegram-এ <span class="hl">@AskNLT</span>-এ payment screenshot পাঠালে process আরও দ্রুত হয়।</div>
-      </div>
-      <div class="faq-item" data-cat="payment">
-        <button class="faq-q" onclick="tFaq(this)">Payment screenshot কোথায় পাঠাব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Payment screenshot পাঠান Telegram-এ <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID, Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।</div>
-      </div>
-      <div class="faq-item" data-cat="payment">
-        <button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><strong>একদমই না।</strong> <span class="hl">$39</span> একবার pay করলেই সারাজীবন access। কোনো monthly fee, renewal charge, বা hidden cost নেই।</div>
-      </div>
-      <div class="faq-item" data-cat="payment">
-        <button class="faq-q" onclick="tFaq(this)">Refund policy কী?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Digital content-এর nature অনুযায়ী, একবার access দেওয়া হলে refund সম্ভব নয়। তাই join করার আগে Telegram-এ কথা বলুন, সব জেনে-বুঝে সিদ্ধান্ত নিন। কোনো technical problem হলে সেটা সবসময় resolve করা হবে।</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── ACCESS ── -->
-  <div class="faq-group rv" id="grp-access">
-    <div class="faq-group-lbl">🔐 Access</div>
-    <div class="faq-list">
-      <div class="faq-item" data-cat="access">
-        <button class="faq-q" onclick="tFaq(this)">"Lifetime access" মানে ঠিক কতদিন?<span class="faq-icon">+</span></button>
-        <div class="faq-a">সত্যিকারের lifetime — <strong>platform চালু আছে যতদিন, access থাকবে ততদিন।</strong> কোনো expiry date নেই। আজ থেকে ৫ বছর পরেও দেখতে পারবেন, বারবার revise করতে পারবেন।</div>
-      </div>
-      <div class="faq-item" data-cat="access">
-        <button class="faq-q" onclick="tFaq(this)">কতটি device থেকে access করতে পারব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">আপনার নিজের device — phone, tablet, laptop — যেকোনো থেকেই access করতে পারবেন। শুধু account sharing বা credentials অন্যকে দেওয়া যাবে না।</div>
-      </div>
-      <div class="faq-item" data-cat="access">
-        <button class="faq-q" onclick="tFaq(this)">Class কি download করা যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Classes online platform-এ দেওয়া হয় — download option নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।</div>
-      </div>
-      <div class="faq-item" data-cat="access">
-        <button class="faq-q" onclick="tFaq(this)">হঠাৎ access চলে গেলে কী করব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। Payment proof (screenshot বা transaction ID) দিলে দ্রুত restore করে দেওয়া হবে।</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── COURSE ── -->
-  <div class="faq-group rv" id="grp-course">
-    <div class="faq-group-lbl">📚 Course</div>
-    <div class="faq-list">
-      <div class="faq-item" data-cat="course">
-        <button class="faq-q" onclick="tFaq(this)">Course-এ কী কী শেখানো হয়?<span class="faq-icon">+</span></button>
-        <div class="faq-a">
-          মোট ৫টি Module:
-          <ul>
-            <li><strong>Module 01:</strong> Basic Foundation — Trading শুরু থেকে, Chart, Broker, Orders</li>
-            <li><strong>Module 02:</strong> ICT Concept — Liquidity, Order Blocks, Market Profile, Strategies</li>
-            <li><strong>Module 03:</strong> Fundamental Analysis — Central Banks, News Trading, COT</li>
-            <li><strong>Module 04:</strong> Psychology Training — Mindset, FOMO, Journaling</li>
-            <li><strong>Module 05:</strong> Prop Trading — Funded Account পাওয়ার সম্পূর্ণ guide</li>
-          </ul>
-        </div>
-      </div>
-      <div class="faq-item" data-cat="course">
-        <button class="faq-q" onclick="tFaq(this)">Absolute beginner হিসেবে কি পারব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">অবশ্যই। Module 01 একদম zero থেকে শুরু হয় — "Trading কী" দিয়ে শুরু করে step by step সবকিছু। কোনো background knowledge লাগবে না।</div>
-      </div>
-      <div class="faq-item" data-cat="course">
-        <button class="faq-q" onclick="tFaq(this)">কতগুলো class আছে?<span class="faq-icon">+</span></button>
-        <div class="faq-a"><strong>৯৯+ recorded class</strong> আছে ৫টি module-এ। সব class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।</div>
-      </div>
-      <div class="faq-item" data-cat="course">
-        <button class="faq-q" onclick="tFaq(this)">Course শেষ করতে কতদিন লাগবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">এটা সম্পূর্ণ আপনার নিজের উপর নির্ভর করে। কেউ প্রতিদিন ১-২ ঘণ্টা দিলে ২-৩ মাসে শেষ করতে পারে। Lifetime access থাকায় কোনো তাড়া নেই — নিজের pace-এ শিখুন।</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── SUPPORT ── -->
-  <div class="faq-group rv" id="grp-support">
-    <div class="faq-group-lbl">📞 Support</div>
-    <div class="faq-list">
-      <div class="faq-item" data-cat="support">
-        <button class="faq-q" onclick="tFaq(this)">Support পেতে কোথায় যাব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের team কয়েক মিনিটের মধ্যে সাড়া দেয়। Call করতে চাইলে message করলেই call পাবেন।</div>
-      </div>
-      <div class="faq-item" data-cat="support">
-        <button class="faq-q" onclick="tFaq(this)">Call-এ কথা বলা যাবে?<span class="faq-icon">+</span></button>
-        <div class="faq-a">হ্যাঁ। এটাই আমাদের মূল support system। Telegram-এ <span class="hl">@AskNLT</span>-এ message দিন — কয়েক মিনিটের মধ্যে আপনার সাথে phone call-এ join হওয়া হবে। আমাদের trained team আপনার সব প্রশ্নের উত্তর দেবে।</div>
-      </div>
-      <div class="faq-item" data-cat="support">
-        <button class="faq-q" onclick="tFaq(this)">Course শেখার সময়ও support পাব?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করুন।</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA BOX -->
-  <div class="cta-box rv">
-    <div class="cta-inner">
-      <div class="cta-title">এখনও প্রশ্ন আছে?</div>
-      <div class="cta-sub">Telegram-এ message করুন। কয়েক মিনিটের মধ্যে আপনার সাথে call-এ join হওয়া হবে — সব জিজ্ঞেস করুন।</div>
-      <a class="cta-btn" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
-        📞 Telegram-এ Message করুন
-        <small>@AskNLT · কয়েক মিনিটেই call পাবেন</small>
-      </a>
-    </div>
-  </div>
-
-</div>
-
-<!-- ════ FOOTER ════ -->
-<footer class="ft">
-  <div class="ft-inner">
-    <div>
-      <div class="ft-logo">
-        <div class="ft-lm">NLT</div>
-        <div><span class="ft-ln">Exclusive Mentorship</span><span class="ft-ls">by NLT — ICT Based Trading</span></div>
-      </div>
-      <div class="ft-tag">ICT-based authentic trading mentorship — সহজ বাংলায়। Real market knowledge, zero fluff.</div>
-    </div>
-    <nav class="ft-nav">
-      <a href="index.html">Home</a>
-      <a href="faq.html">FAQ</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">Telegram Support</a>
     </nav>
-  </div>
-  <div class="ft-bot">
-    <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
-    <span class="ft-disc">Trading involves significant risk. Past performance ≠ future results.</span>
-  </div>
-</footer>
+    <!-- ════ PAGE HEADER ════ -->
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <div class="page-badge">Frequently Asked Questions</div>
+            <h1 class="page-title">আপনার মনে প্রশ্ন আছে?</h1>
+            <p class="page-sub">সবচেয়ে বেশি জিজ্ঞেস করা প্রশ্নগুলোর উত্তর এখানে আছে। না পেলে Telegram-এ জিজ্ঞেস করুন।</p>
+        </div>
+    </div>
+    <!-- ════ CONTENT ════ -->
+    <div class="wrap">
+        <!-- Category tabs -->
+        <div class="cat-bar rv">
+            <button class="cat-btn active" onclick="filterCat('all',this)">সব প্রশ্ন</button>
+            <button class="cat-btn" onclick="filterCat('join',this)">Join করা</button>
+            <button class="cat-btn" onclick="filterCat('payment',this)">Payment</button>
+            <button class="cat-btn" onclick="filterCat('access',this)">Access</button>
+            <button class="cat-btn" onclick="filterCat('course',this)">Course</button>
+            <button class="cat-btn" onclick="filterCat('support',this)">Support</button>
+        </div>
+        <!-- ── JOIN ── -->
+        <div class="faq-group rv" id="grp-join">
+            <div class="faq-group-lbl">🚀 Join করা</div>
+            <div class="faq-list">
+                <div class="faq-item" data-cat="join">
+                    <button class="faq-q" onclick="tFaq(this)">কীভাবে Exclusive Mentorship-এ join করব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের support team সব বিস্তারিত জানাবে — Crypto-তে payment করলেই সাথে সাথে access পেয়ে যাবেন। কোনো automatic payment page নেই — সরাসরি মানুষের সাথে কথা বলেই সব হয়।</div>
+                </div>
+                <div class="faq-item" data-cat="join">
+                    <button class="faq-q" onclick="tFaq(this)">Join করার আগে কথা বলা যাবে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">অবশ্যই — এটাই আমাদের মূল process। Telegram-এ <span class="hl">@AskNLT</span>-এ message দিন, আমাদের support team সব প্রশ্নের উত্তর দেবে। সব জেনে-বুঝে নিশ্চিত হয়ে তারপর সিদ্ধান্ত নিন।</div>
+                </div>
+                <div class="faq-item" data-cat="join">
+                    <button class="faq-q" onclick="tFaq(this)">এই Mentorship কি beginners-দের জন্য?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব step by step শেখানো হয়। কোনো আগের experience লাগবে না। কিছু না বুঝলে Telegram-এ জিজ্ঞেস করতে পারবেন।</div>
+                </div>
+                <div class="faq-item" data-cat="join">
+                    <button class="faq-q" onclick="tFaq(this)">Mentorship-এ কি শুধু একটাই package আছে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">হ্যাঁ। আমাদের <strong>Exclusive Mentorship</strong> package — একটাই, সম্পূর্ণ। এতে ৫টি module, ৯৯+ recorded class এবং lifetime access সহ সবকিছু আছে। <span id="faqPrice1">$39</span> one-time payment, কোনো hidden cost নেই।</div>
+                </div>
+            </div>
+        </div>
+        <!-- ── PAYMENT ── -->
+        <div class="faq-group rv" id="grp-payment">
+            <div class="faq-group-lbl">💳 Payment</div>
+            <div class="faq-list">
+                <div class="faq-item" data-cat="payment">
+                    <button class="faq-q" onclick="tFaq(this)">কোন কোন payment method accept করা হয়?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>শুধুমাত্র <strong>Crypto</strong>-তে payment নেওয়া হয়:</p>
+                        <ul>
+                            <li><strong>USDT:</strong> সরাসরি Binance UID-তে পাঠাতে পারবেন</li>
+                            <li><strong>অন্য Crypto:</strong> Binance-এ available যেকোনো crypto network ব্যবহার করেও পাঠানো যাবে</li>
+                        </ul>
+                        <p style="margin-top:12px">সম্পূর্ণ payment process টা Telegram-এ <span class="hl">@AskNLT</span>-এ যোগাযোগ করে manually করতে হবে।</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-cat="payment">
+                    <button class="faq-q" onclick="tFaq(this)">Payment করার পর কত সময়ের মধ্যে access পাব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Payment confirm হওয়ার পর সাধারণত <strong>কয়েক ঘণ্টার মধ্যে</strong> সব module unlock করে দেওয়া হয়। Telegram-এ <span class="hl">@AskNLT</span>-এ payment screenshot পাঠালে process আরও দ্রুত হয়।</div>
+                </div>
+                <div class="faq-item" data-cat="payment">
+                    <button class="faq-q" onclick="tFaq(this)">Payment screenshot কোথায় পাঠাব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Payment screenshot পাঠান Telegram-এ <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID, Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।</div>
+                </div>
+                <div class="faq-item" data-cat="payment">
+                    <button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a"><strong>একদমই না।</strong> <span class="hl" id="faqPrice2">$39</span> একবার pay করলেই সারাজীবন access। কোনো monthly fee, renewal charge, বা hidden cost নেই।</div>
+                </div>
+                <div class="faq-item" data-cat="payment">
+                    <button class="faq-q" onclick="tFaq(this)">Refund policy কী?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Digital content-এর nature অনুযায়ী, একবার access দেওয়া হলে refund সম্ভব নয়। তাই join করার আগে Telegram-এ কথা বলুন, সব জেনে-বুঝে সিদ্ধান্ত নিন। কোনো technical problem হলে সেটা সবসময় resolve করা হবে।</div>
+                </div>
+            </div>
+        </div>
+        <!-- ── ACCESS ── -->
+        <div class="faq-group rv" id="grp-access">
+            <div class="faq-group-lbl">🔐 Access</div>
+            <div class="faq-list">
+                <div class="faq-item" data-cat="access">
+                    <button class="faq-q" onclick="tFaq(this)">"Lifetime access" মানে ঠিক কতদিন?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">সত্যিকারের lifetime — <strong>platform চালু আছে যতদিন, access থাকবে ততদিন।</strong> কোনো expiry date নেই। আজ থেকে ৫ বছর পরেও দেখতে পারবেন, বারবার revise করতে পারবেন।</div>
+                </div>
+                <div class="faq-item" data-cat="access">
+                    <button class="faq-q" onclick="tFaq(this)">কতটি device থেকে access করতে পারব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">আপনার নিজের device — phone, tablet, laptop — যেকোনো থেকেই access করতে পারবেন। শুধু account sharing বা credentials অন্যকে দেওয়া যাবে না।</div>
+                </div>
+                <div class="faq-item" data-cat="access">
+                    <button class="faq-q" onclick="tFaq(this)">Class কি download করা যাবে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Classes online platform-এ দেওয়া হয় — download option নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।</div>
+                </div>
+                <div class="faq-item" data-cat="access">
+                    <button class="faq-q" onclick="tFaq(this)">হঠাৎ access চলে গেলে কী করব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। Payment proof (screenshot বা transaction ID) দিলে দ্রুত restore করে দেওয়া হবে।</div>
+                </div>
+            </div>
+        </div>
+        <!-- ── COURSE ── -->
+        <div class="faq-group rv" id="grp-course">
+            <div class="faq-group-lbl">📚 Course</div>
+            <div class="faq-list">
+                <div class="faq-item" data-cat="course">
+                    <button class="faq-q" onclick="tFaq(this)">Course-এ কী কী শেখানো হয়?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        মোট ৫টি Module:
+                        <ul>
+                            <li><strong>Module 01:</strong> Basic Foundation — Trading শুরু থেকে, Chart, Broker, Orders</li>
+                            <li><strong>Module 02:</strong> ICT Concept — Liquidity, Order Blocks, Market Profile, Strategies</li>
+                            <li><strong>Module 03:</strong> Fundamental Analysis — Central Banks, News Trading, COT</li>
+                            <li><strong>Module 04:</strong> Psychology Training — Mindset, FOMO, Journaling</li>
+                            <li><strong>Module 05:</strong> Prop Trading — Funded Account পাওয়ার সম্পূর্ণ guide</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item" data-cat="course">
+                    <button class="faq-q" onclick="tFaq(this)">Absolute beginner হিসেবে কি পারব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">অবশ্যই। Module 01 একদম zero থেকে শুরু হয় — "Trading কী" দিয়ে শুরু করে step by step সবকিছু। কোনো background knowledge লাগবে না।</div>
+                </div>
+                <div class="faq-item" data-cat="course">
+                    <button class="faq-q" onclick="tFaq(this)">কতগুলো class আছে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a"><strong>৯৯+ recorded class</strong> আছে ৫টি module-এ। সব class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।</div>
+                </div>
+                <div class="faq-item" data-cat="course">
+                    <button class="faq-q" onclick="tFaq(this)">Course শেষ করতে কতদিন লাগবে?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">এটা সম্পূর্ণ আপনার নিজের উপর নির্ভর করে। কেউ প্রতিদিন ১-২ ঘণ্টা দিলে ২-৩ মাসে শেষ করতে পারে। Lifetime access থাকায় কোনো তাড়া নেই — নিজের pace-এ শিখুন।</div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-group rv" id="grp-support">
+            <div class="faq-group-lbl"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Support</div>
+            <div class="faq-list">
+                <div class="faq-item" data-cat="support">
+                    <button class="faq-q" onclick="tFaq(this)">Support পেতে কোথায় যাব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের team দ্রুত সাড়া দেয়।</div>
+                </div>
+                <div class="faq-item" data-cat="support">
+                    <button class="faq-q" onclick="tFaq(this)">Telegram-এ যোগাযোগ করলে কত দ্রুত সাড়া পাব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">সাধারণত কয়েক মিনিটের মধ্যেই। আমাদের trained support team সবসময় active থাকে।</div>
+                </div>
+                <div class="faq-item" data-cat="support">
+                    <button class="faq-q" onclick="tFaq(this)">Course শেখার সময়ও support পাব?<span class="faq-icon">+</span></button>
+                    <div class="faq-a">Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করুন।</div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA BOX -->
+        <div class="cta-box rv">
+            <div class="cta-inner">
+                <div class="cta-title">এখনও প্রশ্ন আছে?</div>
+                <div class="cta-sub">Telegram-এ @AskNLT-এ message করুন — কয়েক মিনিটেই call পাবেন।</div>
+                <a class="cta-btn" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg>
+                    Telegram-এ Call করুন
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ════ FOOTER ════ -->
+    <footer class="ft">
+        <div class="ft-bot">
+            <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
+            <nav style="display:flex;gap:16px">
+                <a href="index.html" style="font-size:12px;color:var(--ink-3)">Home</a>
+                <a href="faq.html" style="font-size:12px;color:var(--ink-3)">FAQ</a>
+                <a href="terms.html" style="font-size:12px;color:var(--ink-3)">Terms</a>
+                <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:var(--ink-3)">Telegram</a>
+            </nav>
+            <span class="ft-disc">Trading involves risk · Past performance ≠ future results</span>
+        </div>
+    </footer>
+    <div class="sticky" id="sticky">
+        <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Telegram-এ Call করুন →</a>
+    </div>
+    <button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16">
+            <path d="M18 15l-6-6-6 6" /></svg>
+    </button>
+    <script>
+    /* ══ DISCOUNT + TIMER SYSTEM ══ */
+    (function() {
+        var ORIG = 100;
 
-<div class="sticky" id="sticky">
-  <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">📞 Join করুন — Telegram-এ Message করুন →</a>
-</div>
+        function pickDiscount() { return Math.random() < 0.60 ? 61 : Math.floor(Math.random() * 16) + 51; }
+        var disc;
+        try {
+            disc = parseInt(sessionStorage.getItem('nlt_disc') || '0');
+            if (!disc || disc < 51 || disc > 66) { disc = pickDiscount();
+                sessionStorage.setItem('nlt_disc', String(disc)); }
+        } catch (e) { disc = 61; }
+        var CURR = Math.round(ORIG * (1 - disc / 100));
 
-<button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
-  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
+        function setTxt(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+        setTxt('dOrig', '$' + ORIG);
+        setTxt('dNow', '$' + CURR);
+        setTxt('dSave', disc + '% OFF');
+        setTxt('faqPrice1', '$' + CURR);
+        setTxt('faqPrice2', '$' + CURR);
+        var dayNames = ['Weekend Discount', 'Welcome Discount', 'Fortune Discount', 'Fortune Discount', 'Fortune Discount', 'Jumma Discount', 'Weekend Discount'];
+        setTxt('discName', dayNames[new Date().getDay()]);
 
-<script>
-/* Navbar */
-const nb=document.getElementById('navbar');
-window.addEventListener('scroll',()=>nb&&nb.classList.toggle('scrolled',scrollY>20),{passive:true});
+        function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
-/* FAQ accordion */
-function tFaq(btn){
-  const a=btn.nextElementSibling,o=btn.classList.contains('open');
-  document.querySelectorAll('.faq-q').forEach(x=>x.classList.remove('open'));
-  document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));
-  if(!o){btn.classList.add('open');a.classList.add('open');}
-}
+        function tick() {
+            var now = new Date(),
+                end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+            var diff = Math.max(0, end - now);
+            var h = Math.floor(diff / 3600000),
+                m = Math.floor((diff % 3600000) / 60000),
+                s = Math.floor((diff % 60000) / 1000);
+            setTxt('discTimer', pad(h) + ':' + pad(m) + ':' + pad(s));
+            var bar = document.getElementById('discBar');
+            if (bar) bar.classList.toggle('disc-urgent', h < 5);
+        }
+        tick();
+        setInterval(tick, 1000);
+    })();
 
-/* Category filter */
-function filterCat(cat,btn){
-  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.faq-item[data-cat]').forEach(el=>{
-    el.classList.toggle('hidden', cat!=='all' && el.dataset.cat !== cat);
-  });
-  document.querySelectorAll('.faq-group').forEach(g=>{
-    const visible=g.querySelectorAll('.faq-item:not(.hidden)').length;
-    g.style.display=visible===0?'none':'';
-  });
-}
+    /* Navbar */
+    const nb = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nb && nb.classList.toggle('scrolled', scrollY > 20), { passive: true });
 
-/* Reveal */
-const ro=new IntersectionObserver(e=>{
-  e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');ro.unobserve(x.target);}});
-},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%5)*.07+'s';ro.observe(el);});
-setTimeout(()=>document.querySelectorAll('.rv:not(.on)').forEach(el=>el.classList.add('on')),1400);
+    /* FAQ accordion */
+    function tFaq(btn) {
+        const a = btn.nextElementSibling,
+            o = btn.classList.contains('open');
+        document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
+        document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+        if (!o) { btn.classList.add('open');
+            a.classList.add('open'); }
+    }
 
-/* Sticky */
-(function(){
-  var b=document.getElementById('sticky');
-  if(!b||window.innerWidth>768)return;
-  window.addEventListener('scroll',function(){if(scrollY>300)b.classList.add('on');},{passive:true});
-})();
+    /* Category filter */
+    function filterCat(cat, btn) {
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.faq-item[data-cat]').forEach(el => {
+            el.classList.toggle('hidden', cat !== 'all' && el.dataset.cat !== cat);
+        });
+        document.querySelectorAll('.faq-group').forEach(g => {
+            const visible = g.querySelectorAll('.faq-item:not(.hidden)').length;
+            g.style.display = visible === 0 ? 'none' : '';
+        });
+    }
 
-/* BTT */
-(function(){
-  var b=document.getElementById('btt');
-  if(!b)return;
-  window.addEventListener('scroll',()=>b.classList.toggle('on',scrollY>400),{passive:true});
-})();
-</script>
+    /* Reveal */
+    const ro = new IntersectionObserver(e => {
+        e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on');
+                ro.unobserve(x.target); } });
+    }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay = (i % 5) * .07 + 's';
+        ro.observe(el); });
+    setTimeout(() => document.querySelectorAll('.rv:not(.on)').forEach(el => el.classList.add('on')), 1400);
+
+    /* Sticky */
+    (function() {
+        var b = document.getElementById('sticky');
+        if (!b || window.innerWidth > 768) return;
+        window.addEventListener('scroll', function() { if (scrollY > 300) b.classList.add('on'); }, { passive: true });
+    })();
+
+    /* BTT */
+    (function() {
+        var b = document.getElementById('btt');
+        if (!b) return;
+        window.addEventListener('scroll', () => b.classList.toggle('on', scrollY > 400), { passive: true });
+    })();
+    </script>
 </body>
+
 </html>

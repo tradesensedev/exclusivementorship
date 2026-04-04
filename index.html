@@ -1,580 +1,2253 @@
 <!DOCTYPE html>
 <html lang="bn-BD">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-<meta name="theme-color" content="#07070a"/>
-<title>Exclusive Mentorship by NLT | ICT-Based Trading শিখুন</title>
-<meta content="ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়।" name="description"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet"/>
-<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#07070a;--bg-card:#0e0e12;--bg-elevated:#151519;--bg-surface:#1c1c22;
-  --ink:#f4f4f6;--ink-2:#c4c4ce;--ink-3:#8e8e9c;
-  --line:rgba(255,255,255,.07);--line-s:rgba(255,255,255,.13);
-  --amber:#f59e0b;--amber-s:#fbbf24;--amber-dim:rgba(245,158,11,.10);--amber-b:rgba(245,158,11,.18);
-  --H:'Sora',sans-serif;--B:'DM Sans',sans-serif;--M:'JetBrains Mono',monospace;
-  --mw:780px;--r:14px;
-}
-html{scroll-behavior:smooth}
-body{font-family:var(--B);color:var(--ink-2);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-*{-webkit-tap-highlight-color:transparent}
-a,button{touch-action:manipulation}
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta name="theme-color" content="#07070a" />
+    <title>Exclusive Mentorship by NLT | ICT-Based Trading শিখুন</title>
+    <meta content="ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়।" name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml" />
+    <style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+    }
 
-/* ══ DISCOUNT BAR ══ */
-.disc-bar{background:linear-gradient(90deg,#180d00,#1f1100,#180d00);border-bottom:1px solid rgba(245,158,11,.2);padding:9px 20px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;position:relative;overflow:hidden}
-.disc-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 100% at 50%,rgba(245,158,11,.05),transparent);pointer-events:none}
-.disc-fl{font-family:var(--M);font-size:11px;font-weight:700;color:rgba(245,158,11,.7);letter-spacing:.04em;position:relative;z-index:1}
-.disc-orig{font-family:var(--M);font-size:13px;font-weight:700;color:var(--ink-3);text-decoration:line-through;position:relative;z-index:1}
-.disc-arr{color:rgba(245,158,11,.6);font-weight:700;position:relative;z-index:1}
-.disc-now{font-family:var(--M);font-size:17px;font-weight:800;color:var(--amber-s);position:relative;z-index:1;letter-spacing:-.02em}
-.disc-badge{display:inline-block;font-family:var(--M);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(245,158,11,.14);color:var(--amber);border:1px solid rgba(245,158,11,.28);padding:3px 8px;border-radius:100px;position:relative;z-index:1}
-.disc-cta{display:inline-flex;align-items:center;gap:5px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--M);font-size:11px;font-weight:700;padding:6px 14px;border-radius:6px;position:relative;z-index:1;transition:all .2s;white-space:nowrap}
-.disc-cta:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(245,158,11,.3)}
+    :root {
+        --bg: #07070a;
+        --bg-card: #0e0e12;
+        --bg-elevated: #151519;
+        --bg-surface: #1c1c22;
+        --ink: #f4f4f6;
+        --ink-2: #c4c4ce;
+        --ink-3: #8e8e9c;
+        --line: rgba(255, 255, 255, .07);
+        --line-s: rgba(255, 255, 255, .13);
+        --amber: #f59e0b;
+        --amber-s: #fbbf24;
+        --amber-dim: rgba(245, 158, 11, .10);
+        --amber-b: rgba(245, 158, 11, .18);
+        --H: 'Sora', sans-serif;
+        --B: 'DM Sans', sans-serif;
+        --M: 'JetBrains Mono', monospace;
+        --mw: 780px;
+        --r: 14px;
+    }
 
-/* ══ ENTRY OVERLAY ══ */
-.eo{position:fixed;inset:0;z-index:9999;background:rgba(7,7,10,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .4s ease}
-.eo::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 35%,rgba(245,158,11,.08),transparent 70%);pointer-events:none}
-.eo.hide{opacity:0;pointer-events:none}
-.eo-box{position:relative;z-index:1;max-width:410px;width:100%;text-align:center}
-.eo-logo{width:60px;height:60px;margin:0 auto 20px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:17px;display:flex;align-items:center;justify-content:center;font-family:var(--M);font-size:19px;font-weight:700;color:#000;box-shadow:0 0 48px rgba(245,158,11,.28)}
-.eo-title{font-family:var(--H);font-size:clamp(21px,5vw,26px);font-weight:800;color:var(--ink);letter-spacing:-.035em;line-height:1.18;margin-bottom:5px}
-.eo-sub{font-size:13px;color:var(--ink-3);margin-bottom:22px;line-height:1.5}
-.eo-div{width:36px;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent);margin:0 auto 22px}
-.eo-btns{display:flex;flex-direction:column;gap:10px}
+    html {
+        scroll-behavior: smooth
+    }
 
-.eo-call{display:flex;align-items:center;gap:15px;background:linear-gradient(135deg,#f59e0b,#e09000);color:#000;padding:16px 20px;border-radius:14px;cursor:pointer;position:relative;overflow:hidden;transition:all .25s;box-shadow:0 6px 30px rgba(245,158,11,.36);text-align:left}
-.eo-call::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.2),transparent 55%);pointer-events:none}
-.eo-call-ic{flex-shrink:0;width:48px;height:48px;border-radius:12px;background:rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:22px;position:relative;z-index:1}
-.eo-call-body{flex:1;position:relative;z-index:1}
-.eo-call-rec{display:inline-block;font-family:var(--M);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(0,0,0,.18);color:rgba(0,0,0,.65);padding:2px 9px;border-radius:100px;margin-bottom:4px}
-.eo-call-main{font-family:var(--H);font-size:15px;font-weight:800;color:#000;line-height:1.2;display:block;margin-bottom:2px}
-.eo-call-hint{font-size:11.5px;font-weight:500;color:rgba(0,0,0,.52)}
-.eo-call:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(245,158,11,.48)}
+    body {
+        font-family: var(--B);
+        color: var(--ink-2);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden
+    }
 
-.eo-skip{display:flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--ink-3);padding:13px 24px;border-radius:11px;border:1px solid var(--line-s);font-family:var(--H);font-size:14px;font-weight:600;cursor:pointer;transition:all .25s}
-.eo-skip:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.2);color:var(--ink-2)}
+    a {
+        color: inherit;
+        text-decoration: none
+    }
 
-body.locked{overflow:hidden}
+    * {
+        -webkit-tap-highlight-color: transparent
+    }
 
-/* ══ NAV ══ */
-.navbar{position:sticky;top:0;z-index:100;background:rgba(7,7,10,.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
-.navbar.scrolled{box-shadow:0 4px 28px rgba(0,0,0,.5)}
-.nav-inner{max-width:var(--mw);margin:0 auto;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:16px}
-.nav-logo{display:flex;align-items:center;gap:10px}
-.nav-lm{width:35px;height:35px;background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--M);font-size:12px;font-weight:700;color:#000;flex-shrink:0}
-.nav-ln{font-family:var(--H);font-size:13px;font-weight:700;color:var(--ink);display:block;line-height:1.3}
-.nav-ls{font-size:10px;color:var(--ink-3);letter-spacing:.06em;display:block}
-.nav-r{display:flex;align-items:center;gap:4px}
-.nav-link{font-size:13px;font-weight:600;color:var(--ink-2);padding:6px 12px;border-radius:8px;transition:all .2s}
-.nav-link:hover{background:rgba(255,255,255,.06);color:var(--ink)}
-.nav-cta{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--H);font-size:13px;font-weight:700;padding:8px 18px;border-radius:9px;transition:all .2s;box-shadow:0 2px 12px rgba(245,158,11,.22)}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 4px 18px rgba(245,158,11,.38)}
-@media(max-width:540px){.nav-link{display:none}}
+    a,
+    button {
+        touch-action: manipulation
+    }
 
-/* ══ HERO ══ */
-.hero{position:relative;overflow:hidden;padding:72px 24px 64px;background:linear-gradient(168deg,#07070a 0%,#1a1400 48%,#0d0c09 100%)}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at 50% 0%,rgba(245,158,11,.13) 0%,transparent 62%);pointer-events:none}
-.hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(245,158,11,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(245,158,11,.018) 1px,transparent 1px);background-size:50px 50px;pointer-events:none;mask-image:radial-gradient(ellipse 55% 50% at 50% 25%,black 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse 55% 50% at 50% 25%,black 10%,transparent 65%)}
-.hero-inner{max-width:640px;margin:0 auto;position:relative;z-index:1;text-align:center}
-.hero-badge{display:inline-block;font-family:var(--M);font-size:11px;font-weight:700;letter-spacing:.08em;padding:7px 18px;border-radius:100px;background:linear-gradient(135deg,rgba(245,158,11,.18),rgba(245,158,11,.06));border:1px solid var(--amber-b);color:var(--amber-s);margin-bottom:22px;animation:fU .5s ease both}
-.hero h1{font-family:var(--H);font-size:clamp(30px,6vw,56px);font-weight:800;color:var(--ink);line-height:1.15;letter-spacing:-.04em;margin-bottom:20px;animation:fU .55s ease .1s both}
-.hero h1 em{background:linear-gradient(135deg,#f59e0b 0%,#fbbf24 40%,#f59e0b 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;font-style:normal}
-@keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
-@keyframes fU{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.hero-sub{font-size:15.5px;color:var(--ink-2);line-height:1.82;margin-bottom:28px;animation:fU .55s ease .18s both}
-.hero-stats{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:32px;animation:fU .55s ease .28s both}
-.hero-stat{background:rgba(245,158,11,.04);border:1px solid rgba(245,158,11,.1);border-radius:12px;padding:13px 20px;text-align:center}
-.stat-val{font-family:var(--H);font-size:20px;font-weight:800;color:var(--ink);line-height:1;margin-bottom:4px}
-.stat-lbl{font-family:var(--M);font-size:10px;color:rgba(255,255,255,.42);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
-.hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;animation:fU .55s ease .36s both}
+    /* ══ DISCOUNT BAR ══ */
+    .disc-bar {
+        background: linear-gradient(90deg, #180d00, #1f1100, #180d00);
+        border-bottom: 1px solid rgba(245, 158, 11, .2);
+        padding: 9px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden
+    }
 
-/* ══ BUTTONS ══ */
-.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--H);font-size:15px;font-weight:700;padding:14px 28px;border-radius:12px;transition:all .25s;box-shadow:0 4px 22px rgba(245,158,11,.28);white-space:nowrap}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,158,11,.42)}
-.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:8px;color:var(--ink-2);font-family:var(--H);font-size:14px;font-weight:600;padding:13px 22px;border:1px solid var(--line-s);border-radius:10px;background:rgba(255,255,255,.03);transition:all .2s;white-space:nowrap}
-.btn-ghost:hover{border-color:rgba(255,255,255,.2);color:var(--ink);background:rgba(255,255,255,.06)}
+    .disc-bar::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 100% at 50%, rgba(245, 158, 11, .05), transparent);
+        pointer-events: none
+    }
 
-/* ══ MARQUEE ══ */
-.mq{padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-card);overflow:hidden}
-.mq-wrap{overflow:hidden}
-.mq-track{display:flex;width:max-content;animation:marq 30s linear infinite}
-.mq-track.rev{animation-direction:reverse;margin-top:7px}
-.mq-set{display:flex;align-items:center}
-.mq-tag{font-family:var(--M);font-size:12px;font-weight:700;color:rgba(245,158,11,.9);padding:0 18px;white-space:nowrap;letter-spacing:.03em}
-.mq-tag.alt{color:rgba(196,196,206,.65)}
-.mq-sep{width:5px;height:5px;background:rgba(245,158,11,.32);border-radius:50%;flex-shrink:0}
-@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .disc-fl {
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        color: rgba(245, 158, 11, .7);
+        letter-spacing: .04em;
+        position: relative;
+        z-index: 1
+    }
 
-/* ══ LAYOUT ══ */
-.wrap{max-width:var(--mw);margin:0 auto;padding:64px 24px 0}
+    .disc-orig {
+        font-family: var(--M);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink-3);
+        text-decoration: line-through;
+        position: relative;
+        z-index: 1
+    }
 
-/* ══ SECTION TITLE (single golden) ══ */
-.s-ttl{font-family:var(--H);font-size:clamp(21px,3vw,26px);font-weight:800;background:linear-gradient(135deg,#f59e0b 0%,#fbbf24 50%,#f59e0b 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-.03em;line-height:1.2;margin-bottom:20px}
+    .disc-arr {
+        color: rgba(245, 158, 11, .6);
+        font-weight: 700;
+        position: relative;
+        z-index: 1
+    }
 
-/* ══ FOR WHOM ══ */
-.fw-box{background:var(--bg-card);border:1px solid var(--line-s);border-radius:var(--r);padding:28px;margin-bottom:64px}
-.fw-list{list-style:none;display:flex;flex-direction:column;gap:13px}
-.fw-list li{display:flex;align-items:flex-start;gap:13px;font-size:14.5px;color:var(--ink-2);line-height:1.72}
-.fw-list li::before{content:'→';flex-shrink:0;font-weight:700;color:var(--amber);font-size:14px;margin-top:2px}
+    .disc-now {
+        font-family: var(--M);
+        font-size: 17px;
+        font-weight: 800;
+        color: var(--amber-s);
+        position: relative;
+        z-index: 1;
+        letter-spacing: -.02em
+    }
 
-/* ══ FEATURES compact ══ */
-.feats{border:1px solid var(--line-s);border-radius:var(--r);overflow:hidden;margin-bottom:64px}
-.feat-row{display:flex;align-items:flex-start;gap:14px;padding:15px 20px;background:var(--bg-card);transition:background .2s}
-.feat-row+.feat-row{border-top:1px solid var(--line)}
-.feat-row:hover{background:var(--bg-elevated)}
-.feat-em{flex-shrink:0;width:36px;height:36px;background:var(--amber-dim);border:1px solid var(--amber-b);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-top:1px}
-.feat-name{font-family:var(--H);font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:3px}
-.feat-info{font-size:12.5px;color:var(--ink-2);line-height:1.6}
+    .disc-badge {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        background: rgba(245, 158, 11, .14);
+        color: var(--amber);
+        border: 1px solid rgba(245, 158, 11, .28);
+        padding: 3px 8px;
+        border-radius: 100px;
+        position: relative;
+        z-index: 1
+    }
 
-/* ══ COURSE OUTLINE ══ */
-.co-section{margin-bottom:64px}
-/* Module */
-.co-mod{background:var(--bg-card);border:1px solid var(--line-s);border-radius:var(--r);overflow:hidden;margin-bottom:6px;transition:border-color .25s}
-.co-mod.open{border-color:rgba(245,158,11,.3)}
-.co-mod-hd{display:flex;align-items:center;gap:13px;padding:16px 20px;cursor:pointer;transition:background .2s;user-select:none}
-.co-mod-hd:hover{background:rgba(245,158,11,.02)}
-.co-num{font-family:var(--M);font-size:12px;font-weight:700;color:var(--amber);background:var(--amber-dim);border:1px solid var(--amber-b);border-radius:7px;padding:5px 9px;flex-shrink:0;min-width:38px;text-align:center}
-.co-mi{flex:1;min-width:0}
-.co-mt{font-family:var(--H);font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:1px}
-.co-ms{font-size:12px;color:var(--ink-3)}
-.co-chev{color:var(--ink-3);transition:transform .3s;flex-shrink:0}
-.co-mod.open .co-chev{transform:rotate(180deg)}
-/* Module body */
-.co-body{max-height:0;overflow:hidden;transition:max-height .42s cubic-bezier(.4,0,.2,1)}
-.co-mod.open .co-body{max-height:3000px}
-/* Topic */
-.co-tp{border-top:1px solid var(--line)}
-.co-tp-hd{display:flex;align-items:center;gap:10px;padding:11px 20px 11px 22px;cursor:pointer;transition:background .2s;user-select:none}
-.co-tp-hd:hover{background:rgba(255,255,255,.02)}
-.co-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0;opacity:.65}
-.co-tp-name{flex:1;font-family:var(--H);font-size:13.5px;font-weight:600;color:var(--ink-2);line-height:1.3}
-.co-tp.open .co-tp-name{color:var(--ink)}
-.co-tchev{width:14px;height:14px;flex-shrink:0;color:var(--ink-3);transition:transform .25s}
-.co-tp.open .co-tchev{transform:rotate(180deg);color:var(--amber)}
-/* Sub items */
-.co-subs{max-height:0;overflow:hidden;transition:max-height .3s ease}
-.co-tp.open .co-subs{max-height:800px}
-.co-sub-ul{padding:3px 20px 13px 40px;display:flex;flex-direction:column;gap:5px;list-style:none}
-.co-sub-ul li{font-size:12.5px;color:var(--ink-3);line-height:1.55;display:flex;align-items:baseline;gap:7px}
-.co-sub-ul li::before{content:'·';color:var(--amber);font-size:16px;flex-shrink:0;line-height:1.1}
-.co-sub-ul li b{color:var(--ink-2);font-weight:600}
-/* Module foot */
-.co-mod-ft{background:var(--bg-elevated);border-top:1px solid var(--line);padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
-.co-mod-cnt{font-family:var(--M);font-size:10px;font-weight:600;color:var(--ink-3);letter-spacing:.06em}
-.co-exp-all{font-family:var(--M);font-size:10px;font-weight:700;color:var(--amber);cursor:pointer;background:none;border:none;transition:opacity .2s}
-.co-exp-all:hover{opacity:.7}
-/* Outline footer */
-.co-ft{background:var(--bg-card);border:1px solid rgba(245,158,11,.2);border-radius:var(--r);padding:16px 22px;text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
-.co-ft-txt{font-size:13.5px;color:var(--ink-2);font-weight:600}
-.co-ft-price{font-family:var(--M);font-size:16px;font-weight:800;color:var(--amber)}
+    .disc-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        color: #000;
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 11px;
+        border-radius: 6px;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        transition: all .2s;
+        white-space: nowrap
+    }
 
-/* ══ SUPPORT ══ */
-.sup-section{margin-bottom:64px}
-.sup-card{position:relative;overflow:hidden;background:var(--bg-card);border:1px solid var(--amber-b);border-radius:var(--r);padding:36px 32px}
-.sup-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 50% 0%,rgba(245,158,11,.08) 0%,transparent 62%);pointer-events:none}
-.sup-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 5%,var(--amber) 50%,transparent 95%);opacity:.4}
-.sup-inner{position:relative;z-index:1}
-.sup-ey{display:inline-block;font-family:var(--M);font-size:9px;font-weight:700;letter-spacing:.14em;color:var(--amber);background:var(--amber-dim);border:1px solid var(--amber-b);padding:4px 12px;border-radius:100px;text-transform:uppercase;margin-bottom:13px}
-.sup-title{font-family:var(--H);font-size:clamp(20px,3vw,25px);font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1.2;margin-bottom:8px}
-.sup-sub{font-size:14px;color:var(--ink-2);line-height:1.75;margin-bottom:24px}
-.sup-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:24px}
-.sup-item{background:rgba(245,158,11,.04);border:1px solid var(--amber-b);border-radius:10px;padding:15px 12px;text-align:center}
-.sup-icon{font-size:20px;margin-bottom:7px}
-.sup-num{font-family:var(--H);font-size:18px;font-weight:800;color:var(--amber-s);line-height:1;margin-bottom:4px}
-.sup-lbl{font-family:var(--M);font-size:10px;font-weight:600;color:var(--ink-3);letter-spacing:.05em;line-height:1.4}
-@media(max-width:540px){.sup-grid{grid-template-columns:1fr 1fr}.sup-card{padding:24px 20px}}
+    .disc-cta:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 14px rgba(245, 158, 11, .3)
+    }
 
-/* ══ FAQ ══ */
-.faq-section{margin-bottom:48px}
-.faq-list{display:flex;flex-direction:column;gap:7px}
-.faq-item{background:var(--bg-card);border:1px solid var(--line-s);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
-.faq-item:hover{border-color:rgba(255,255,255,.18)}
-.faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 20px;width:100%;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--B);font-size:14px;font-weight:600;color:var(--ink);line-height:1.45}
-.faq-ic{width:24px;height:24px;flex-shrink:0;border-radius:6px;background:var(--bg-surface);border:1px solid var(--line-s);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--ink-3);transition:all .25s}
-.faq-q.open .faq-ic{background:var(--amber-dim);border-color:var(--amber-b);color:var(--amber);transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;padding:0 20px;font-size:13.5px;color:var(--ink-2);line-height:1.78;transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s}
-.faq-q.open+.faq-a{max-height:300px;padding-bottom:16px}
-.faq-more{text-align:center;margin-top:16px}
-.faq-more a{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--amber);transition:gap .2s}
-.faq-more a:hover{gap:10px}
+    .disc-sep {
+        color: rgba(245, 158, 11, .35);
+        position: relative;
+        z-index: 1
+    }
 
-/* ══ JOIN CTA ══ */
-.join-section{padding:52px 24px;border-top:1px solid var(--line);text-align:center}
-.join-inner{max-width:420px;margin:0 auto}
-.join-ey{font-family:var(--M);font-size:10px;font-weight:700;color:var(--amber);letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
-.join-ttl{font-family:var(--H);font-size:clamp(22px,4vw,28px);font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1.2;margin-bottom:8px}
-.join-sub{font-size:13.5px;color:var(--ink-2);line-height:1.65;margin-bottom:24px}
-.join-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-family:var(--H);font-size:16px;font-weight:800;padding:18px 32px;border-radius:13px;transition:all .25s;box-shadow:0 6px 28px rgba(245,158,11,.32);width:100%;max-width:400px;margin:0 auto}
-.join-btn:hover{transform:translateY(-2px);box-shadow:0 10px 38px rgba(245,158,11,.46)}
-.join-hint{margin-top:12px;font-family:var(--M);font-size:11px;color:var(--ink-3);letter-spacing:.04em}
+    .disc-timer-wrap {
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(245, 158, 11, .75);
+        letter-spacing: .06em;
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px
+    }
 
-/* ══ REVEAL ══ */
-.rv{opacity:0;transform:translateY(15px);transition:opacity .5s ease,transform .5s ease}
-.rv.on{opacity:1;transform:translateY(0)}
+    .disc-timer {
+        font-variant-numeric: tabular-nums
+    }
 
-/* ══ STICKY BAR ══ */
-@media(max-width:768px){
-  .sticky{position:fixed;bottom:0;left:0;right:0;z-index:500;padding:10px 16px 14px;background:rgba(7,7,10,.97);border-top:1px solid rgba(245,158,11,.2);backdrop-filter:blur(20px);transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
-  .sticky.on{transform:translateY(0)}
-  .sticky a{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;font-size:15px;font-weight:700;padding:14px;border-radius:11px;font-family:'Sora',sans-serif}
-}
-@media(min-width:769px){.sticky{display:none!important}}
+    .disc-bar.disc-urgent .disc-timer-wrap {
+        color: #ff4444;
+        text-shadow: 0 0 10px rgba(255, 68, 68, .5)
+    }
 
-/* ══ BACK TO TOP ══ */
-.btt{position:fixed;bottom:80px;right:20px;z-index:400;width:40px;height:40px;background:var(--bg-elevated);border:1px solid var(--line-s);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .3s;color:var(--ink-3)}
-.btt.on{opacity:1;transform:translateY(0)}
-.btt:hover{border-color:var(--amber-b);color:var(--amber)}
-@media(max-width:768px){.btt{bottom:86px;right:14px}}
+    .disc-bar.disc-urgent {
+        border-bottom-color: rgba(255, 68, 68, .3)
+    }
 
-/* ══ COPYRIGHT ══ */
-.copy-bar{padding:16px 24px;text-align:center;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px}
-.copy-bar span{font-size:12px;color:var(--ink-3)}
-</style>
+    /* ══ ENTRY OVERLAY ══ */
+    .eo {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: rgba(7, 7, 10, .97);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        transition: opacity .4s ease
+    }
+
+    .eo::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% 35%, rgba(245, 158, 11, .08), transparent 70%);
+        pointer-events: none
+    }
+
+    .eo.hide {
+        opacity: 0;
+        pointer-events: none
+    }
+
+    .eo-box {
+        position: relative;
+        z-index: 1;
+        max-width: 410px;
+        width: 100%;
+        text-align: center
+    }
+
+    .eo-logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        border-radius: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--M);
+        font-size: 19px;
+        font-weight: 700;
+        color: #000;
+        box-shadow: 0 0 48px rgba(245, 158, 11, .28)
+    }
+
+    .eo-title {
+        font-family: var(--H);
+        font-size: clamp(21px, 5vw, 26px);
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -.035em;
+        line-height: 1.18;
+        margin-bottom: 5px
+    }
+
+    .eo-sub {
+        font-size: 13px;
+        color: var(--ink-3);
+        margin-bottom: 22px;
+        line-height: 1.5
+    }
+
+    .eo-div {
+        width: 36px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--amber), transparent);
+        margin: 0 auto 22px
+    }
+
+    .eo-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    /* wrapper holds the floating tag + button together */
+    .eo-call-wrap {
+        position: relative;
+        padding-top: 16px
+    }
+
+    /* floating recommended tag — sits above button, centered */
+    .eo-call-rec {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--M);
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        background: #07070a;
+        color: #22c55e;
+        border: 1px solid rgba(34, 197, 94, .45);
+        padding: 4px 11px 4px 9px;
+        border-radius: 100px;
+        white-space: nowrap;
+        box-shadow: 0 0 12px rgba(34, 197, 94, .18)
+    }
+
+    .eo-rec-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #22c55e;
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .7);
+        animation: recPulse 1.6s ease-in-out infinite;
+        flex-shrink: 0
+    }
+
+    @keyframes recPulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, .7)
+        }
+
+        60% {
+            box-shadow: 0 0 0 5px rgba(34, 197, 94, 0)
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0)
+        }
+    }
+
+    .eo-call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: linear-gradient(135deg, #f59e0b, #e09000);
+        color: #000;
+        padding: 13px 22px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all .25s;
+        box-shadow: 0 6px 30px rgba(245, 158, 11, .36);
+        text-align: center;
+        width: 100%
+    }
+
+    .eo-call::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, .18), transparent 55%);
+        pointer-events: none
+    }
+
+    .eo-call-ic {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        background: rgba(0, 0, 0, .14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1
+    }
+
+    .eo-call-body {
+        position: relative;
+        z-index: 1
+    }
+
+    .eo-call-main {
+        font-family: var(--H);
+        font-size: 16px;
+        font-weight: 800;
+        color: #000;
+        line-height: 1;
+        display: block
+    }
+
+    .eo-call:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 40px rgba(245, 158, 11, .5)
+    }
+
+    .eo-skip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: transparent;
+        color: var(--ink-3);
+        padding: 10px 22px;
+        border-radius: 9px;
+        border: 1px solid var(--line-s);
+        font-family: var(--H);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        transition: border-color .2s, color .2s
+    }
+
+    .eo-skip:hover {
+        border-color: rgba(255, 255, 255, .2);
+        color: var(--ink-2)
+    }
+
+    body.locked {
+        overflow: hidden
+    }
+
+    /* ══ NAV ══ */
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(7, 7, 10, .9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--line);
+        transition: box-shadow .3s
+    }
+
+    .navbar.scrolled {
+        box-shadow: 0 4px 28px rgba(0, 0, 0, .5)
+    }
+
+    .nav-inner {
+        max-width: var(--mw);
+        margin: 0 auto;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 24px;
+        gap: 16px
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px
+    }
+
+    .nav-logo-mark {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: #000;
+        flex-shrink: 0
+    }
+
+    .nav-logo-name {
+        font-family: var(--H);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink);
+        display: block;
+        line-height: 1.3
+    }
+
+    .nav-logo-sub {
+        font-size: 10px;
+        color: var(--ink-3);
+        letter-spacing: .06em;
+        display: block
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 4px
+    }
+
+    .nav-link {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-2);
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: all .2s
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, .06);
+        color: var(--ink)
+    }
+
+    .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--amber);
+        color: #000;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 7px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: opacity .2s
+    }
+
+    .nav-cta:hover {
+        opacity: .85
+    }
+
+    @media(max-width:540px) {
+        .nav-link {
+            display: none
+        }
+    }
+
+    /* ══ HERO ══ */
+    .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 72px 24px 64px;
+        background: linear-gradient(168deg, #07070a 0%, #1a1400 48%, #0d0c09 100%)
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 55% 45% at 50% 0%, rgba(245, 158, 11, .13) 0%, transparent 62%);
+        pointer-events: none
+    }
+
+    .hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(245, 158, 11, .018) 1px, transparent 1px), linear-gradient(90deg, rgba(245, 158, 11, .018) 1px, transparent 1px);
+        background-size: 50px 50px;
+        pointer-events: none;
+        mask-image: radial-gradient(ellipse 55% 50% at 50% 25%, black 10%, transparent 65%);
+        -webkit-mask-image: radial-gradient(ellipse 55% 50% at 50% 25%, black 10%, transparent 65%)
+    }
+
+    .hero-inner {
+        max-width: 640px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        text-align: center
+    }
+
+    .hero-badge {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .08em;
+        padding: 7px 18px;
+        border-radius: 100px;
+        background: linear-gradient(135deg, rgba(245, 158, 11, .18), rgba(245, 158, 11, .06));
+        border: 1px solid var(--amber-b);
+        color: var(--amber-s);
+        margin-bottom: 22px;
+        animation: fU .5s ease both
+    }
+
+    .hero h1 {
+        font-family: var(--H);
+        font-size: clamp(30px, 6vw, 56px);
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1.15;
+        letter-spacing: -.04em;
+        margin-bottom: 20px;
+        animation: fU .55s ease .1s both
+    }
+
+    .hero h1 em {
+        background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 40%, #f59e0b 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: shimmer 4s linear infinite;
+        font-style: normal
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: 0% center
+        }
+
+        100% {
+            background-position: 200% center
+        }
+    }
+
+    @keyframes fU {
+        from {
+            opacity: 0;
+            transform: translateY(18px)
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+
+    .hero-sub {
+        font-size: 15.5px;
+        color: var(--ink-2);
+        line-height: 1.82;
+        margin-bottom: 28px;
+        animation: fU .55s ease .18s both
+    }
+
+    .hero-stats {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 32px;
+        animation: fU .55s ease .28s both
+    }
+
+    .hero-stat {
+        background: rgba(245, 158, 11, .04);
+        border: 1px solid rgba(245, 158, 11, .1);
+        border-radius: 12px;
+        padding: 13px 20px;
+        text-align: center
+    }
+
+    .stat-val {
+        font-family: var(--H);
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--ink);
+        line-height: 1;
+        margin-bottom: 4px
+    }
+
+    .stat-lbl {
+        font-family: var(--M);
+        font-size: 10px;
+        color: rgba(255, 255, 255, .42);
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase
+    }
+
+    .hero-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        animation: fU .55s ease .36s both
+    }
+
+    /* ══ BUTTONS ══ */
+    .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: var(--amber);
+        color: #000;
+        font-family: var(--H);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 22px;
+        border-radius: 9px;
+        text-decoration: none;
+        transition: opacity .2s;
+        white-space: nowrap
+    }
+
+    .btn-primary:hover {
+        opacity: .85
+    }
+
+    .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: var(--ink-2);
+        font-family: var(--H);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 9px 20px;
+        border: 1px solid var(--line-s);
+        border-radius: 9px;
+        background: transparent;
+        text-decoration: none;
+        transition: border-color .2s, color .2s;
+        white-space: nowrap
+    }
+
+    .btn-ghost:hover {
+        border-color: rgba(255, 255, 255, .2);
+        color: var(--ink)
+    }
+
+    /* ══ MARQUEE ══ */
+    .mq {
+        padding: 12px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: var(--bg-card);
+        overflow: hidden
+    }
+
+    .mq-wrap {
+        overflow: hidden
+    }
+
+    .mq-track {
+        display: flex;
+        width: max-content;
+        animation: marq 30s linear infinite
+    }
+
+    .mq-track.rev {
+        animation-direction: reverse;
+        margin-top: 7px
+    }
+
+    .mq-set {
+        display: flex;
+        align-items: center
+    }
+
+    .mq-tag {
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(245, 158, 11, .9);
+        padding: 0 18px;
+        white-space: nowrap;
+        letter-spacing: .03em
+    }
+
+    .mq-tag.alt {
+        color: rgba(196, 196, 206, .65)
+    }
+
+    .mq-sep {
+        width: 5px;
+        height: 5px;
+        background: rgba(245, 158, 11, .32);
+        border-radius: 50%;
+        flex-shrink: 0
+    }
+
+    @keyframes marq {
+        0% {
+            transform: translateX(0)
+        }
+
+        100% {
+            transform: translateX(-50%)
+        }
+    }
+
+    /* ══ LAYOUT ══ */
+    .wrap {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 64px 24px 0
+    }
+
+    /* ══ SECTION TITLE (single golden) ══ */
+    .s-ttl {
+        font-family: var(--H);
+        font-size: clamp(21px, 3vw, 26px);
+        font-weight: 800;
+        background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -.03em;
+        line-height: 1.2;
+        margin-bottom: 20px
+    }
+
+    /* ══ FOR WHOM ══ */
+    .fw-box {
+        background: var(--bg-card);
+        border: 1px solid var(--line-s);
+        border-radius: var(--r);
+        padding: 28px;
+        margin-bottom: 64px
+    }
+
+    .fw-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 13px
+    }
+
+    .fw-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        font-size: 14.5px;
+        color: var(--ink-2);
+        line-height: 1.72
+    }
+
+    .fw-list li::before {
+        content: '→';
+        flex-shrink: 0;
+        font-weight: 700;
+        color: var(--amber);
+        font-size: 14px;
+        margin-top: 2px
+    }
+
+    /* ══ MENTORSHIP BENEFITS GRID ══ */
+    .mb-section {
+        margin-bottom: 64px
+    }
+
+    .mb-card {
+        position: relative;
+        overflow: hidden;
+        background: var(--bg-card);
+        border: 1px solid var(--amber-b);
+        border-radius: var(--r);
+        padding: 28px
+    }
+
+    .mb-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 55% 55% at 50% 0%, rgba(245, 158, 11, .08) 0%, transparent 62%);
+        pointer-events: none
+    }
+
+    .mb-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 5%, var(--amber) 50%, transparent 95%);
+        opacity: .4
+    }
+
+    .mb-inner {
+        position: relative;
+        z-index: 1
+    }
+
+    .mb-ey {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        color: var(--amber);
+        background: var(--amber-dim);
+        border: 1px solid var(--amber-b);
+        padding: 4px 12px;
+        border-radius: 100px;
+        text-transform: uppercase;
+        margin-bottom: 13px
+    }
+
+    .mb-title {
+        font-family: var(--H);
+        font-size: clamp(18px, 3vw, 22px);
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -.03em;
+        line-height: 1.2;
+        margin-bottom: 22px
+    }
+
+    .mb-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px
+    }
+
+    .mb-item {
+        background: rgba(245, 158, 11, .04);
+        border: 1px solid var(--amber-b);
+        border-radius: 12px;
+        padding: 18px 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        transition: background .2s, border-color .2s
+    }
+
+    .mb-item:hover {
+        background: rgba(245, 158, 11, .08);
+        border-color: rgba(245, 158, 11, .35)
+    }
+
+    .mb-icon {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        background: var(--amber-dim);
+        border: 1px solid var(--amber-b);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px
+    }
+
+    .mb-body {}
+
+    .mb-name {
+        font-family: var(--H);
+        font-size: 13.5px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 4px;
+        line-height: 1.3
+    }
+
+    .mb-info {
+        font-size: 12px;
+        color: var(--ink-2);
+        line-height: 1.6
+    }
+
+    @media(max-width:540px) {
+        .mb-grid {
+            grid-template-columns: 1fr
+        }
+
+        .mb-card {
+            padding: 24px 20px
+        }
+    }
+
+    /* ══ COURSE OUTLINE ══ */
+    .co-section {
+        margin-bottom: 64px
+    }
+
+    /* Module */
+    .co-mod {
+        background: var(--bg-card);
+        border: 1px solid var(--line-s);
+        border-radius: var(--r);
+        overflow: hidden;
+        margin-bottom: 6px;
+        transition: border-color .25s
+    }
+
+    .co-mod.open {
+        border-color: rgba(245, 158, 11, .3)
+    }
+
+    .co-mod-hd {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 16px 20px;
+        cursor: pointer;
+        transition: background .2s;
+        user-select: none
+    }
+
+    .co-mod-hd:hover {
+        background: rgba(245, 158, 11, .02)
+    }
+
+    .co-num {
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--amber);
+        background: var(--amber-dim);
+        border: 1px solid var(--amber-b);
+        border-radius: 7px;
+        padding: 5px 9px;
+        flex-shrink: 0;
+        min-width: 38px;
+        text-align: center
+    }
+
+    .co-mi {
+        flex: 1;
+        min-width: 0
+    }
+
+    .co-mt {
+        font-family: var(--H);
+        font-size: 14.5px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 1px
+    }
+
+    .co-ms {
+        font-size: 12px;
+        color: var(--ink-3)
+    }
+
+    .co-chev {
+        color: var(--ink-3);
+        transition: transform .3s;
+        flex-shrink: 0
+    }
+
+    .co-mod.open .co-chev {
+        transform: rotate(180deg)
+    }
+
+    /* Module body */
+    .co-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .42s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .co-mod.open .co-body {
+        max-height: 3000px
+    }
+
+    /* Topic */
+    .co-tp {
+        border-top: 1px solid var(--line)
+    }
+
+    .co-tp-hd {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 20px 11px 22px;
+        cursor: pointer;
+        transition: background .2s;
+        user-select: none
+    }
+
+    .co-tp-hd:hover {
+        background: rgba(255, 255, 255, .02)
+    }
+
+    .co-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--amber);
+        flex-shrink: 0;
+        opacity: .65
+    }
+
+    .co-tp-name {
+        flex: 1;
+        font-family: var(--H);
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-2);
+        line-height: 1.3
+    }
+
+    .co-tp.open .co-tp-name {
+        color: var(--ink)
+    }
+
+    .co-tchev {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        color: var(--ink-3);
+        transition: transform .25s
+    }
+
+    .co-tp.open .co-tchev {
+        transform: rotate(180deg);
+        color: var(--amber)
+    }
+
+    /* Sub items */
+    .co-subs {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease
+    }
+
+    .co-tp.open .co-subs {
+        max-height: 800px
+    }
+
+    .co-sub-ul {
+        padding: 3px 20px 13px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        list-style: none
+    }
+
+    .co-sub-ul li {
+        font-size: 12.5px;
+        color: var(--ink-3);
+        line-height: 1.55;
+        display: flex;
+        align-items: baseline;
+        gap: 7px
+    }
+
+    .co-sub-ul li::before {
+        content: '·';
+        color: var(--amber);
+        font-size: 16px;
+        flex-shrink: 0;
+        line-height: 1.1
+    }
+
+    .co-sub-ul li b {
+        color: var(--ink-2);
+        font-weight: 600
+    }
+
+    /* Module foot */
+    .co-mod-ft {
+        background: var(--bg-elevated);
+        border-top: 1px solid var(--line);
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .co-mod-cnt {
+        font-family: var(--M);
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--ink-3);
+        letter-spacing: .06em
+    }
+
+    .co-exp-all {
+        font-family: var(--M);
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--amber);
+        cursor: pointer;
+        background: none;
+        border: none;
+        transition: opacity .2s
+    }
+
+    .co-exp-all:hover {
+        opacity: .7
+    }
+
+    /* Outline footer */
+    .co-ft {
+        background: var(--bg-card);
+        border: 1px solid rgba(245, 158, 11, .2);
+        border-radius: var(--r);
+        padding: 16px 22px;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap
+    }
+
+    .co-ft-txt {
+        font-size: 13.5px;
+        color: var(--ink-2);
+        font-weight: 600
+    }
+
+    .co-ft-price {
+        font-family: var(--M);
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--amber)
+    }
+
+    /* ══ JOIN CARD ══ */
+    .join-card {
+        position: relative;
+        overflow: hidden;
+        background: var(--bg-card);
+        border: 1px solid var(--amber-b);
+        border-radius: var(--r);
+        padding: 40px 36px;
+        max-width: var(--mw);
+        margin: 0 auto
+    }
+
+    .join-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 60% at 50% 0%, rgba(245, 158, 11, .1) 0%, transparent 65%);
+        pointer-events: none
+    }
+
+    .join-card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent 5%, var(--amber) 50%, transparent 95%);
+        opacity: .45
+    }
+
+    .join-card-inner {
+        position: relative;
+        z-index: 1
+    }
+
+    .join-card-ey {
+        display: inline-block;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: .14em;
+        color: var(--amber);
+        background: var(--amber-dim);
+        border: 1px solid var(--amber-b);
+        padding: 4px 12px;
+        border-radius: 100px;
+        text-transform: uppercase;
+        margin-bottom: 14px
+    }
+
+    .join-card-ttl {
+        font-family: var(--H);
+        font-size: clamp(22px, 4vw, 28px);
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -.035em;
+        line-height: 1.18;
+        margin-bottom: 10px
+    }
+
+    .join-card-sub {
+        font-size: 14px;
+        color: var(--ink-2);
+        line-height: 1.75;
+        margin-bottom: 28px;
+        max-width: 480px
+    }
+
+    @media(max-width:540px) {
+        .join-card {
+            padding: 28px 20px
+        }
+    }
+
+    /* ══ FAQ ══ */
+    .faq-section {
+        margin-bottom: 48px
+    }
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 7px
+    }
+
+    .faq-item {
+        background: var(--bg-card);
+        border: 1px solid var(--line-s);
+        border-radius: var(--r);
+        overflow: hidden;
+        transition: border-color .2s
+    }
+
+    .faq-item:hover {
+        border-color: rgba(255, 255, 255, .18)
+    }
+
+    .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 11px 18px;
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font-family: var(--B);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.45
+    }
+
+    .faq-ic {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        background: var(--bg-surface);
+        border: 1px solid var(--line-s);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: var(--ink-3);
+        transition: all .25s
+    }
+
+    .faq-q.open .faq-ic {
+        background: var(--amber-dim);
+        border-color: var(--amber-b);
+        color: var(--amber);
+        transform: rotate(45deg)
+    }
+
+    .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        font-size: 13.5px;
+        color: var(--ink-2);
+        line-height: 1.78;
+        transition: max-height .35s cubic-bezier(.4, 0, .2, 1), padding .35s
+    }
+
+    .faq-q.open+.faq-a {
+        max-height: 300px;
+        padding-bottom: 16px
+    }
+
+    .faq-more {
+        text-align: center;
+        margin-top: 16px
+    }
+
+    .faq-more a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--amber);
+        transition: gap .2s
+    }
+
+    .faq-more a:hover {
+        gap: 10px
+    }
+
+    /* ══ JOIN CTA ══ */
+    .join-section {
+        padding: 52px 24px;
+        border-top: 1px solid var(--line)
+    }
+
+    /* ══ REVEAL ══ */
+    .rv {
+        opacity: 0;
+        transform: translateY(15px);
+        transition: opacity .5s ease, transform .5s ease
+    }
+
+    .rv.on {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    /* ══ STICKY BAR ══ */
+    @media(max-width:768px) {
+        .sticky {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            padding: 10px 16px 14px;
+            background: rgba(7, 7, 10, .97);
+            border-top: 1px solid rgba(245, 158, 11, .2);
+            backdrop-filter: blur(20px);
+            transform: translateY(100%);
+            transition: transform .35s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        .sticky.on {
+            transform: translateY(0)
+        }
+
+        .sticky a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #000;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 14px;
+            border-radius: 11px;
+            font-family: 'Sora', sans-serif
+        }
+    }
+
+    @media(min-width:769px) {
+        .sticky {
+            display: none !important
+        }
+    }
+
+    /* ══ BACK TO TOP ══ */
+    .btt {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 400;
+        width: 40px;
+        height: 40px;
+        background: var(--bg-elevated);
+        border: 1px solid var(--line-s);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all .3s;
+        color: var(--ink-3)
+    }
+
+    .btt.on {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    .btt:hover {
+        border-color: var(--amber-b);
+        color: var(--amber)
+    }
+
+    @media(max-width:768px) {
+        .btt {
+            bottom: 86px;
+            right: 14px
+        }
+    }
+
+    /* ══ FOOTER ══ */
+    .ft {
+        padding: 40px 24px 28px;
+        border-top: 1px solid var(--line)
+    }
+
+    .ft-inner {
+        max-width: var(--mw);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+        margin-bottom: 28px
+    }
+
+    .ft-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px
+    }
+
+    .ft-lm {
+        width: 34px;
+        height: 34px;
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--M);
+        font-size: 12px;
+        font-weight: 700;
+        color: #000
+    }
+
+    .ft-ln {
+        font-family: var(--H);
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink);
+        display: block;
+        line-height: 1.3
+    }
+
+    .ft-ls {
+        font-size: 10px;
+        color: var(--ink-3);
+        display: block
+    }
+
+    .ft-tag {
+        font-size: 13px;
+        color: var(--ink-3);
+        line-height: 1.65;
+        max-width: 260px;
+        margin-top: 8px
+    }
+
+    .ft-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-items: flex-end
+    }
+
+    .ft-nav a {
+        font-size: 13px;
+        color: var(--ink-3);
+        transition: color .2s
+    }
+
+    .ft-nav a:hover {
+        color: var(--ink-2)
+    }
+
+    .ft-bot {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px
+    }
+
+    .ft-copy {
+        font-size: 12px;
+        color: var(--ink-3)
+    }
+
+    .ft-disc {
+        font-size: 11px;
+        color: rgba(255, 255, 255, .22)
+    }
+
+    @media(max-width:540px) {
+        .ft-nav {
+            align-items: flex-start
+        }
+    }
+    </style>
 </head>
+
 <body class="locked">
-
-<!-- ════ DISCOUNT BAR ════ -->
-<div class="disc-bar">
-  <span class="disc-fl">🔥 সীমিত সময়ের Offer</span>
-  <span class="disc-orig" id="dOrig"></span>
-  <span class="disc-arr">→</span>
-  <span class="disc-now" id="dNow"></span>
-  <span class="disc-badge" id="dSave"></span>
-  <a class="disc-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">এখনই Join করুন →</a>
-</div>
-
-<!-- ════ ENTRY OVERLAY ════ -->
-<div id="eo" class="eo">
-  <div class="eo-box">
-    <div class="eo-logo">NLT</div>
-    <div class="eo-title">Exclusive Mentorship<br>by NLT</div>
-    <div class="eo-sub">ICT-Based Trading · সহজ বাংলায়</div>
-    <div class="eo-div"></div>
-    <div class="eo-btns">
-      <a class="eo-call" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" onclick="closeOverlay()">
-        <div class="eo-call-ic">📞</div>
-        <div class="eo-call-body">
-          <span class="eo-call-rec">⭐ Recommended</span>
-          <span class="eo-call-main">সরাসরি Call করে জানুন</span>
-          <span class="eo-call-hint">কয়েক মিনিটের মধ্যে call পাবেন</span>
+    <!-- ════ DISCOUNT BAR ════ -->
+    <div class="disc-bar" id="discBar">
+        <span class="disc-fl">🔥 <span id="discName">সীমিত সময়ের Offer</span></span>
+        <span class="disc-orig" id="dOrig"></span>
+        <span class="disc-arr">→</span>
+        <span class="disc-now" id="dNow"></span>
+        <span class="disc-badge" id="dSave"></span>
+        <span class="disc-sep">·</span>
+        <span class="disc-timer-wrap">⏱ <span class="disc-timer" id="discTimer">--:--:--</span></span>
+    </div>
+    <!-- ════ ENTRY OVERLAY ════ -->
+    <div id="eo" class="eo">
+        <div class="eo-box">
+            <div class="eo-logo">NLT</div>
+            <div class="eo-title">Exclusive Mentorship<br>by NLT</div>
+            <div class="eo-sub">ICT-Based Trading · সহজ বাংলায়</div>
+            <div class="eo-div"></div>
+            <div class="eo-btns">
+                <div class="eo-call-wrap">
+                    <span class="eo-call-rec"><span class="eo-rec-dot"></span>Recommended</span>
+                    <a class="eo-call" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" onclick="closeOverlay(); return true;">
+                        <div class="eo-call-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(0,0,0,0.75)">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg></div>
+                        <span class="eo-call-main">সরাসরি Call করুন</span>
+                    </a>
+                </div>
+                <button class="eo-skip" onclick="closeAndScroll()">বিস্তারিত দেখুন →</button>
+            </div>
         </div>
-      </a>
-      <button class="eo-skip" onclick="closeOverlay()">বিস্তারিত দেখুন →</button>
     </div>
-  </div>
-</div>
-
-<!-- ════ NAVBAR ════ -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <div class="nav-lm">NLT</div>
-      <div><span class="nav-ln">Exclusive Mentorship</span><span class="nav-ls">by NLT · ICT Based Trading</span></div>
-    </a>
-    <div class="nav-r">
-      <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="terms.html">Terms</a>
-      <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">📞 Join করুন</a>
-    </div>
-  </div>
-</nav>
-
-<!-- ════ HERO ════ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-badge">Exclusive Mentorship Program</div>
-    <h1>Institutions-এর মতো<br><em>Trade করতে শিখুন</em></h1>
-    <p class="hero-sub">ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়।</p>
-    <div class="hero-stats">
-      <div class="hero-stat"><div class="stat-val">৯৯+</div><div class="stat-lbl">Recorded Class</div></div>
-      <div class="hero-stat"><div class="stat-val">৫টি</div><div class="stat-lbl">Module</div></div>
-      <div class="hero-stat"><div class="stat-val">Lifetime</div><div class="stat-lbl">Access</div></div>
-      <div class="hero-stat"><div class="stat-val" id="heroPrice">$39</div><div class="stat-lbl">One-time</div></div>
-    </div>
-    <div class="hero-ctas">
-      <a class="btn-primary" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"/></svg>
-        Telegram-এ Message করুন
-      </a>
-      <a class="btn-ghost" href="#outline">Course Outline দেখুন ↓</a>
-    </div>
-  </div>
-</section>
-
-<!-- ════ MARQUEE ════ -->
-<div class="mq">
-  <div class="mq-wrap"><div class="mq-track"><div class="mq-set"><span class="mq-tag">ICT Concept</span><span class="mq-sep"></span><span class="mq-tag">Institutional Liquidity</span><span class="mq-sep"></span><span class="mq-tag">Order Blocks</span><span class="mq-sep"></span><span class="mq-tag">Fair Value Gap</span><span class="mq-sep"></span><span class="mq-tag">Market Profile</span><span class="mq-sep"></span><span class="mq-tag">Power of Three</span><span class="mq-sep"></span><span class="mq-tag">Silver Bullet</span><span class="mq-sep"></span><span class="mq-tag">Fundamental Analysis</span><span class="mq-sep"></span><span class="mq-tag">Trading Psychology</span><span class="mq-sep"></span><span class="mq-tag">Prop Trading</span><span class="mq-sep"></span></div><div class="mq-set"><span class="mq-tag">ICT Concept</span><span class="mq-sep"></span><span class="mq-tag">Institutional Liquidity</span><span class="mq-sep"></span><span class="mq-tag">Order Blocks</span><span class="mq-sep"></span><span class="mq-tag">Fair Value Gap</span><span class="mq-sep"></span><span class="mq-tag">Market Profile</span><span class="mq-sep"></span><span class="mq-tag">Power of Three</span><span class="mq-sep"></span><span class="mq-tag">Silver Bullet</span><span class="mq-sep"></span><span class="mq-tag">Fundamental Analysis</span><span class="mq-sep"></span><span class="mq-tag">Trading Psychology</span><span class="mq-sep"></span><span class="mq-tag">Prop Trading</span><span class="mq-sep"></span></div></div></div>
-  <div class="mq-wrap"><div class="mq-track rev"><div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep"></span></div><div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep"></span></div></div></div>
-</div>
-
-<!-- ════ MAIN ════ -->
-<main class="wrap">
-
-  <!-- FOR WHOM -->
-  <section style="margin-bottom:64px">
-    <h2 class="s-ttl rv">এই Mentorship কার জন্য?</h2>
-    <div class="fw-box rv">
-      <ul class="fw-list">
-        <li>একদম নতুন — Trading কী সেটাই জানেন না, কিন্তু শিখতে চান</li>
-        <li>কিছুদিন চেষ্টা করেছেন কিন্তু consistent হতে পারছেন না</li>
-        <li>ইন্টারনেটে অনেক কিছু দেখেছেন কিন্তু structured roadmap পাননি</li>
-        <li>Institutions কীভাবে market move করায় সেটা সত্যিকার অর্থে বুঝতে চান</li>
-        <li>Prop Trading-এ funded account পেতে চান</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section style="margin-bottom:64px">
-    <h2 class="s-ttl rv">Mentorship-এ কী পাবেন</h2>
-    <div class="feats rv">
-      <div class="feat-row"><div class="feat-em">🎓</div><div><div class="feat-name">৯৯+ Recorded Class</div><div class="feat-info">Basic Foundation থেকে Prop Trading পর্যন্ত সব, এক জায়গায়।</div></div></div>
-      <div class="feat-row"><div class="feat-em">🔁</div><div><div class="feat-name">Lifetime Access</div><div class="feat-info">একবার pay, সারাজীবন। আজ থেকে ৫ বছর পরেও দেখতে পারবেন।</div></div></div>
-      <div class="feat-row"><div class="feat-em">📈</div><div><div class="feat-name">সম্পূর্ণ ICT Curriculum</div><div class="feat-info">Liquidity, Order Blocks, MMXM, Silver Bullet সহ পুরো ICT framework।</div></div></div>
-      <div class="feat-row"><div class="feat-em">📞</div><div><div class="feat-name">Call Support — কয়েক মিনিটেই</div><div class="feat-info">Message করুন, কয়েক মিনিটেই trained support team call দেবে।</div></div></div>
-      <div class="feat-row"><div class="feat-em">🇧🇩</div><div><div class="feat-name">সহজ বাংলায়</div><div class="feat-info">জটিল ICT concept সহজ বাংলায় — যে কেউ বুঝতে পারবেন।</div></div></div>
-    </div>
-  </section>
-
-  <!-- COURSE OUTLINE -->
-  <section class="co-section" id="outline">
-    <h2 class="s-ttl rv">৫টি Module — সম্পূর্ণ Curriculum</h2>
-    <p class="rv" style="font-size:14px;color:var(--ink-2);line-height:1.72;margin-bottom:20px">Join করলেই সব ৫টি module instant unlock। কোনো extra cost নেই।</p>
-
-    <!-- MODULE 01 -->
-    <div class="co-mod rv">
-      <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
-        <span class="co-num">01</span>
-        <div class="co-mi"><div class="co-mt">Basic Foundation</div><div class="co-ms">Trading-এর সম্পূর্ণ ভিত্তি — শূন্য থেকে শুরু · 6 Topics</div></div>
-        <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="co-body">
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Introduction to Trading</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>What is Trading?</li><li>Types: Position, Swing, Short Term, Intraday &amp; Scalping</li><li>Markets: Forex, Crypto, Commodity, Stock &amp; Indices</li><li>Products: Spot, CFDs, Futures &amp; Options</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Technical Chart Basics</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Candlestick Explained</li><li>Chart Types (Line, Bar, Candlestick)</li><li>Understanding Time-Frames</li><li>Technical vs Fundamental Analysis</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Broker System</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>What is a Broker?</li><li>Market Maker Broker</li><li>ECN Broker (Electronic Communications Network)</li><li>STP Broker (Straight Through Processing)</li><li>How to Choose a Reliable Broker</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Trading Terminology</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Lot Size &amp; Contract Size</li><li>Leverage Explained</li><li>Pips &amp; Pip Value</li><li>Margin &amp; Equity</li><li>Spread &amp; Commission</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Orders &amp; Positions</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Market Order · Limit Order · Stop Order</li><li>Long Position (Buy) &amp; Short Position (Sell)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Crypto Wallet</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>What is a Crypto Wallet?</li><li>Best Crypto Wallet Accounts</li><li>Basic Usage &amp; Safety Tips</li></ul></div></div>
-        <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
-      </div>
-    </div>
-
-    <!-- MODULE 02 -->
-    <div class="co-mod rv">
-      <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
-        <span class="co-num">02</span>
-        <div class="co-mi"><div class="co-mt">ICT Concept</div><div class="co-ms">Institutional trading-এর সম্পূর্ণ framework · 6 Topics</div></div>
-        <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="co-body">
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Institutional Liquidity</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Swing Point &amp; Legs</li><li>BuySide / SellSide Liquidity (BSL/SSL)</li><li>Internal / External Range Liquidity (IRL/ERL)</li><li>Engineered Liquidity</li><li>Time Based &amp; Candle Based Liquidity</li><li>Draw On Liquidity (DOL)</li><li>Protected Liquidity · Liquidity Void · Liquidity Pool</li><li>Liquidity Sweep vs Run</li><li>High/Low Resistance Liquidity Run</li><li>Phantom Liquidity</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Premium &amp; Discount Arrays</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Fair Value Gap (FVG) &amp; Inverted FVG (IFVG)</li><li>BISI / SIBI / Balanced Price Range (BPR)</li><li>Order Block (OB) · Breaker Block (BB)</li><li>Mitigation Block (MB) · Rejection Block (RB)</li><li>Propulsion Blocks (PB) · Reclaim Block</li><li>Vacuum Gap / Volume Imbalance</li><li>Opening Gap (NDOG / NWOG)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Market Profile</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Institutional Market Structure</li><li>Weekly Profile &amp; Daily/Weekly Bias</li><li>IRL to ERL · Daily Profile</li><li>Power of Three — PO3 / AMD</li><li>Market Maker X Model (MMXM)</li><li>Quarterly Theory</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Time and Price Theory</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Sessions (Asia, London, New York)</li><li>Killzones</li><li>90-Minute Cycles</li><li>Inter-Bank Price Delivery Algorithm (IPDA)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">ICT Essentials</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Optimal Trade Entry (OTE)</li><li>Candle Range Theory</li><li>Central Bank Dealer Range (CBDR)</li><li>ICT Judas Swing</li><li>ICT Macros</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">ICT Models / Strategies</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Turtle Soup</li><li>Silver Bullet</li><li>Asian Sweep</li><li>Unicorn Model</li><li>Venom Model</li><li>Box Setup</li><li>ATM Model</li><li>OSOK Model</li></ul></div></div>
-        <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
-      </div>
-    </div>
-
-    <!-- MODULE 03 -->
-    <div class="co-mod rv">
-      <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
-        <span class="co-num">03</span>
-        <div class="co-mi"><div class="co-mt">Fundamental Analysis</div><div class="co-ms">কেন market move করে — Central Banks ও News Trading · 6 Topics</div></div>
-        <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="co-body">
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Concept of Money</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>What is Money?</li><li>History: Bartering → Commodity → Coinage → Paper → Bank → Digital</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Major Central Banks &amp; Policies</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Federal Reserve (Fed – USD)</li><li>Bank of Japan (BoJ – JPY)</li><li>Bank of England (BoE – GBP)</li><li>European Central Bank (ECB – EUR)</li><li>SNB (CHF) · RBNZ (NZD) · RBA (AUD) · BoC (CAD)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Central Bank Tools &amp; Mandates</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Price Stability · Inflation Targeting</li><li>Employment / Labor Market</li><li>Exchange Rate Policies</li><li>Interest Rate Policy · Quantitative Easing</li><li>Forward Guidance (Communication)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Macroeconomic Environment</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Interest Rates · Inflation · GDP · Business Cycles</li><li>CPI · PPI · Retail Sales · Unemployment Rate</li><li>Balance of Trade · Budget Deficit/Surplus</li><li>Geopolitical Factors · US Dollar Index (DXY)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Economic Data Releases / News Trading</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li><b>High Impact:</b> NFP · CPI M/M · FOMC Press Conference</li><li><b>Medium Impact:</b> PPI · Core PCE · Central Bank Minutes</li><li><b>Low Impact:</b> PMI/ISM · GDP · Unemployment Claims · Retail Sales · ADP · Average Hourly Earnings</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Market Sentiment &amp; Inter-Market Analysis</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Correlation Tools</li><li>Interest Rate Differentials</li><li>COT (Commitments of Traders) Report</li><li>Open Interest Reports</li><li>Risk-On / Risk-Off Sentiment</li></ul></div></div>
-        <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
-      </div>
-    </div>
-
-    <!-- MODULE 04 -->
-    <div class="co-mod rv">
-      <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
-        <span class="co-num">04</span>
-        <div class="co-mi"><div class="co-mt">Psychology Training</div><div class="co-ms">Profitable trader হওয়ার মানসিক ভিত্তি · 3 Topics</div></div>
-        <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="co-body">
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Mindset Development</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Successful &amp; Unsuccessful Trader Mindsets</li><li>Patience · Discipline · Emotional Resilience</li><li>Detachment from Monetary Outcomes</li><li>Developing Probabilistic Thinking</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Psychological Barriers</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Fear of Failure</li><li>Greed During Winning Streaks</li><li>Fear of Missing Out (FOMO)</li><li>Impatience Between Setups</li><li>Fear of Not Being Good Enough</li><li>Fear of Losing Streaks &amp; Drawdowns</li><li>Lack of Discipline in Following Rules</li><li>Searching for the "Next Best Thing"</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Effective Journaling</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Daily &amp; Weekly Journals</li><li>Recording Emotions &amp; Experiences</li><li>Screen Captures &amp; Notations</li><li>Positive Reinforcement</li><li>Avoiding Negative Self-Talk</li><li>Developing Coping Mechanisms</li></ul></div></div>
-        <div class="co-mod-ft"><span class="co-mod-cnt">3 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
-      </div>
-    </div>
-
-    <!-- MODULE 05 -->
-    <div class="co-mod rv">
-      <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
-        <span class="co-num">05</span>
-        <div class="co-mi"><div class="co-mt">Prop Trading</div><div class="co-ms">Funded Account পাওয়ার সম্পূর্ণ roadmap · 3 Topics</div></div>
-        <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </div>
-      <div class="co-body">
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Introduction to Prop Trading Firms</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>What is Proprietary (Prop) Trading?</li><li>Evaluation vs. Instant Funding</li><li>Scaling Funded Capital &amp; Profit Splits</li><li>Risk Rules (Drawdown, Daily Loss, Lot Size)</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Challenges &amp; Rules</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Steps to Get Funded</li><li>Common Reasons Traders Fail</li><li>Risk Management Under Firm Rules</li><li>Time Limits &amp; Consistency Rules</li></ul></div></div>
-        <div class="co-tp"><div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Passing &amp; Maintaining Funded Accounts</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></div><div class="co-subs"><ul class="co-sub-ul"><li>Roadmap to Pass Funding Challenges</li><li>Avoiding Traps (Over-trading, Rule Violations)</li><li>Scaling Funded Capital</li><li>Keeping Payout Consistency</li><li>Best Prop Trading Firms for ICT Strategies</li></ul></div></div>
-        <div class="co-mod-ft"><span class="co-mod-cnt">3 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
-      </div>
-    </div>
-
-    <div class="co-ft rv">
-      <span class="co-ft-txt">৫টি Module · ৯৯+ Class · Instant Unlock ·</span>
-      <span class="co-ft-price" id="outlinePrice">$39 One-time</span>
-    </div>
-  </section>
-
-  <!-- SUPPORT -->
-  <section class="sup-section">
-    <div class="sup-card rv">
-      <div class="sup-inner">
-        <div class="sup-ey">Support System</div>
-        <h2 class="sup-title">Message করুন —<br>কয়েক মিনিটেই Call পাবেন</h2>
-        <p class="sup-sub">আমাদের support team শুধু message-এর জবাব দেয় না — সরাসরি phone call-এ কথা বলে। প্রতিটি member ভালোভাবে trained। আপনার যেকোনো প্রশ্নের সঠিক উত্তর পাবেন।</p>
-        <div class="sup-grid">
-          <div class="sup-item"><div class="sup-icon">⏱️</div><div class="sup-num">~৫ মিনিট</div><div class="sup-lbl">Call পেতে সময় লাগে</div></div>
-          <div class="sup-item"><div class="sup-icon">🎯</div><div class="sup-num">Trained</div><div class="sup-lbl">সব প্রশ্নের সঠিক উত্তর</div></div>
-          <div class="sup-item"><div class="sup-icon">🤝</div><div class="sup-num">No Pressure</div><div class="sup-lbl">কথা বলুন, নিজে সিদ্ধান্ত নিন</div></div>
+    <!-- ════ NAVBAR ════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html">
+                <div class="nav-logo-mark">NLT</div>
+                <div><span class="nav-logo-name">Exclusive Mentorship</span><span class="nav-logo-sub">by NLT · ICT Based Trading</span></div>
+            </a>
+            <div class="nav-right">
+                <a class="nav-link" href="faq.html">FAQ</a>
+                <a class="nav-link" href="terms.html">Terms</a>
+                <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Join করুন</a>
+            </div>
         </div>
-        <a class="btn-primary" style="width:100%;font-size:15px;padding:16px 24px" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
-          📞 এখনই Message করুন — Call পাবেন
-        </a>
-      </div>
+    </nav>
+    <!-- ════ HERO ════ -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">Exclusive Mentorship Program</div>
+            <h1>Learn To Trade<br><em>Like Institutions</em></h1>
+            <p class="hero-sub">ICT Concept, Fundamental Analysis, Risk Management ও Trading Psychology — Basic থেকে Advanced পর্যন্ত, সহজ বাংলায়।</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-val">99+</div>
+                    <div class="stat-lbl">Recorded Class</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-val">4+1</div>
+                    <div class="stat-lbl">Module</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-val">Lifetime</div>
+                    <div class="stat-lbl">Access</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-val" id="heroPrice">$39</div>
+                    <div class="stat-lbl">One-time</div>
+                </div>
+            </div>
+            <div class="hero-ctas">
+                <a class="btn-primary" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg>
+                    সরাসরি Call করুন
+                </a>
+                <a class="btn-ghost" href="#outline">Course Outline ↓</a>
+            </div>
+        </div>
+    </section>
+    <div class="mq-wrap">
+        <div class="mq-track rev">
+            <div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep"></span></div>
+            <div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep"></span></div>
+        </div>
     </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq-section">
-    <h2 class="s-ttl rv">কিছু প্রশ্ন থাকতে পারে</h2>
-    <div class="faq-list">
-      <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">এই Mentorship কি beginners-দের জন্য?<span class="faq-ic">+</span></button><div class="faq-a">হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব step by step। কোনো আগের experience লাগবে না।</div></div>
-      <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কীভাবে join করব?<span class="faq-ic">+</span></button><div class="faq-a">Telegram-এ @AskNLT-এ message করুন। আমাদের support team আপনাকে call করবে, সব বিস্তারিত জানাবে এবং payment নিয়ে manually access দিয়ে দেবে।</div></div>
-      <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কোন payment method accept করা হয়?<span class="faq-ic">+</span></button><div class="faq-a">বাংলাদেশ: bKash, Nagad, Rocket। International: USDT (TRC20 / BEP20), Binance Pay। যেকোনো crypto P2P-ও accept করা হয়।</div></div>
-      <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">Lifetime access মানে কতদিন?<span class="faq-ic">+</span></button><div class="faq-a">সত্যিকারের lifetime — platform চালু থাকবে যতদিন, access থাকবে ততদিন। কোনো expiry নেই।</div></div>
-      <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-ic">+</span></button><div class="faq-a">একদমই না। একবার pay করলেই সারাজীবন access। কোনো renewal বা hidden cost নেই।</div></div>
     </div>
-    <div class="faq-more rv"><a href="faq.html">সব প্রশ্ন দেখুন — FAQ Page →</a></div>
-  </section>
+    <!-- ════ MAIN ════ -->
+    <main class="wrap">
+        <!-- FOR WHOM -->
+        <section style="margin-bottom:64px">
+            <h2 class="s-ttl rv">এই Mentorship কার জন্য?</h2>
+            <div class="fw-box rv">
+                <ul class="fw-list">
+                    <li>একদম নতুন — Trading কী সেটাই জানেন না, কিন্তু শিখতে চান</li>
+                    <li>কিছুদিন চেষ্টা করেছেন কিন্তু consistent হতে পারছেন না</li>
+                    <li>ইন্টারনেটে অনেক কিছু দেখেছেন কিন্তু structured roadmap পাননি</li>
+                    <li>Institutions কীভাবে market move করায় সেটা সত্যিকার অর্থে বুঝতে চান</li>
+                    <li>Prop Trading-এ funded account পেতে চান</li>
+                </ul>
+            </div>
+        </section>
+        <!-- COURSE OUTLINE -->
+        <section class="co-section" id="outline">
+            <h2 class="s-ttl rv">Mentorship-এ যা শিখানো হবে</h2>
+            <p class="rv" style="font-size:14px;color:var(--ink-2);line-height:1.72;margin-bottom:20px">একবার পে করে join হলেই পুরা কোর্সের lifetime access পাবেন। কোনো extra cost নেই।</p>
+            <!-- MODULE 01 -->
+            <div class="co-mod rv open">
+                <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
+                    <span class="co-num">01</span>
+                    <div class="co-mi">
+                        <div class="co-mt">Basic Foundation</div>
+                        <div class="co-ms">Trading-এর সম্পূর্ণ ভিত্তি — শূন্য থেকে শুরু · 6 Topics</div>
+                    </div>
+                    <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+                <div class="co-body">
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Introduction to Trading</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>What is Trading?</li>
+                                <li>Types: Position, Swing, Short Term, Intraday &amp; Scalping</li>
+                                <li>Markets: Forex, Crypto, Commodity, Stock &amp; Indices</li>
+                                <li>Products: Spot, CFDs, Futures &amp; Options</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Technical Chart Basics</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Candlestick Explained</li>
+                                <li>Chart Types (Line, Bar, Candlestick)</li>
+                                <li>Understanding Time-Frames</li>
+                                <li>Technical vs Fundamental Analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Broker System</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>What is a Broker?</li>
+                                <li>Market Maker Broker</li>
+                                <li>ECN Broker (Electronic Communications Network)</li>
+                                <li>STP Broker (Straight Through Processing)</li>
+                                <li>How to Choose a Reliable Broker</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Trading Terminology</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Lot Size &amp; Contract Size</li>
+                                <li>Leverage Explained</li>
+                                <li>Pips &amp; Pip Value</li>
+                                <li>Margin &amp; Equity</li>
+                                <li>Spread &amp; Commission</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Orders &amp; Positions</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Market Order · Limit Order · Stop Order</li>
+                                <li>Long Position (Buy) &amp; Short Position (Sell)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Crypto Wallet</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>What is a Crypto Wallet?</li>
+                                <li>Best Crypto Wallet Accounts</li>
+                                <li>Basic Usage &amp; Safety Tips</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
+                </div>
+            </div>
+            <!-- MODULE 02 -->
+            <div class="co-mod rv open">
+                <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
+                    <span class="co-num">02</span>
+                    <div class="co-mi">
+                        <div class="co-mt">ICT Concept</div>
+                        <div class="co-ms">Institutional trading-এর সম্পূর্ণ framework · 6 Topics</div>
+                    </div>
+                    <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+                <div class="co-body">
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Institutional Liquidity</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Swing Point &amp; Legs</li>
+                                <li>BuySide / SellSide Liquidity (BSL/SSL)</li>
+                                <li>Internal / External Range Liquidity (IRL/ERL)</li>
+                                <li>Engineered Liquidity</li>
+                                <li>Time Based &amp; Candle Based Liquidity</li>
+                                <li>Draw On Liquidity (DOL)</li>
+                                <li>Protected Liquidity · Liquidity Void · Liquidity Pool</li>
+                                <li>Liquidity Sweep vs Run</li>
+                                <li>High/Low Resistance Liquidity Run</li>
+                                <li>Phantom Liquidity</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Premium &amp; Discount Arrays</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Fair Value Gap (FVG) &amp; Inverted FVG (IFVG)</li>
+                                <li>BISI / SIBI / Balanced Price Range (BPR)</li>
+                                <li>Order Block (OB) · Breaker Block (BB)</li>
+                                <li>Mitigation Block (MB) · Rejection Block (RB)</li>
+                                <li>Propulsion Blocks (PB) · Reclaim Block</li>
+                                <li>Vacuum Gap / Volume Imbalance</li>
+                                <li>Opening Gap (NDOG / NWOG)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Market Profile</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Institutional Market Structure</li>
+                                <li>Weekly Profile &amp; Daily/Weekly Bias</li>
+                                <li>IRL to ERL · Daily Profile</li>
+                                <li>Power of Three — PO3 / AMD</li>
+                                <li>Market Maker X Model (MMXM)</li>
+                                <li>Quarterly Theory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Time and Price Theory</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Sessions (Asia, London, New York)</li>
+                                <li>Killzones</li>
+                                <li>90-Minute Cycles</li>
+                                <li>Inter-Bank Price Delivery Algorithm (IPDA)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">ICT Essentials</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Optimal Trade Entry (OTE)</li>
+                                <li>Candle Range Theory</li>
+                                <li>Central Bank Dealer Range (CBDR)</li>
+                                <li>ICT Judas Swing</li>
+                                <li>ICT Macros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">ICT Models / Strategies</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Turtle Soup</li>
+                                <li>Silver Bullet</li>
+                                <li>Asian Sweep</li>
+                                <li>Unicorn Model</li>
+                                <li>Venom Model</li>
+                                <li>Box Setup</li>
+                                <li>ATM Model</li>
+                                <li>OSOK Model</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
+                </div>
+            </div>
+            <!-- MODULE 03 -->
+            <div class="co-mod rv open">
+                <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
+                    <span class="co-num">03</span>
+                    <div class="co-mi">
+                        <div class="co-mt">Fundamental Analysis</div>
+                        <div class="co-ms">কেন market move করে — Central Banks ও News Trading · 6 Topics</div>
+                    </div>
+                    <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+                <div class="co-body">
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Concept of Money</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>What is Money?</li>
+                                <li>History: Bartering → Commodity → Coinage → Paper → Bank → Digital</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Major Central Banks &amp; Policies</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Federal Reserve (Fed – USD)</li>
+                                <li>Bank of Japan (BoJ – JPY)</li>
+                                <li>Bank of England (BoE – GBP)</li>
+                                <li>European Central Bank (ECB – EUR)</li>
+                                <li>SNB (CHF) · RBNZ (NZD) · RBA (AUD) · BoC (CAD)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Central Bank Tools &amp; Mandates</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Price Stability · Inflation Targeting</li>
+                                <li>Employment / Labor Market</li>
+                                <li>Exchange Rate Policies</li>
+                                <li>Interest Rate Policy · Quantitative Easing</li>
+                                <li>Forward Guidance (Communication)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Macroeconomic Environment</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Interest Rates · Inflation · GDP · Business Cycles</li>
+                                <li>CPI · PPI · Retail Sales · Unemployment Rate</li>
+                                <li>Balance of Trade · Budget Deficit/Surplus</li>
+                                <li>Geopolitical Factors · US Dollar Index (DXY)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Economic Data Releases / News Trading</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li><b>High Impact:</b> NFP · CPI M/M · FOMC Press Conference</li>
+                                <li><b>Medium Impact:</b> PPI · Core PCE · Central Bank Minutes</li>
+                                <li><b>Low Impact:</b> PMI/ISM · GDP · Unemployment Claims · Retail Sales · ADP · Average Hourly Earnings</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Market Sentiment &amp; Inter-Market Analysis</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Correlation Tools</li>
+                                <li>Interest Rate Differentials</li>
+                                <li>COT (Commitments of Traders) Report</li>
+                                <li>Open Interest Reports</li>
+                                <li>Risk-On / Risk-Off Sentiment</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-mod-ft"><span class="co-mod-cnt">6 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
+                </div>
+            </div>
+            <!-- MODULE 04 -->
+            <div class="co-mod rv open">
+                <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
+                    <span class="co-num">04</span>
+                    <div class="co-mi">
+                        <div class="co-mt">Psychology Training</div>
+                        <div class="co-ms">Profitable trader হওয়ার মানসিক ভিত্তি · 3 Topics</div>
+                    </div>
+                    <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+                <div class="co-body">
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Mindset Development</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Successful &amp; Unsuccessful Trader Mindsets</li>
+                                <li>Patience · Discipline · Emotional Resilience</li>
+                                <li>Detachment from Monetary Outcomes</li>
+                                <li>Developing Probabilistic Thinking</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Psychological Barriers</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Fear of Failure</li>
+                                <li>Greed During Winning Streaks</li>
+                                <li>Fear of Missing Out (FOMO)</li>
+                                <li>Impatience Between Setups</li>
+                                <li>Fear of Not Being Good Enough</li>
+                                <li>Fear of Losing Streaks &amp; Drawdowns</li>
+                                <li>Lack of Discipline in Following Rules</li>
+                                <li>Searching for the "Next Best Thing"</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Effective Journaling</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Daily &amp; Weekly Journals</li>
+                                <li>Recording Emotions &amp; Experiences</li>
+                                <li>Screen Captures &amp; Notations</li>
+                                <li>Positive Reinforcement</li>
+                                <li>Avoiding Negative Self-Talk</li>
+                                <li>Developing Coping Mechanisms</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-mod-ft"><span class="co-mod-cnt">3 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
+                </div>
+            </div>
+            <!-- MODULE 05 -->
+            <div class="co-mod rv open">
+                <div class="co-mod-hd" onclick="toggleMod(this.closest('.co-mod'))">
+                    <span class="co-num">05</span>
+                    <div class="co-mi">
+                        <div class="co-mt">Prop Trading</div>
+                        <div class="co-ms">Funded Account পাওয়ার সম্পূর্ণ roadmap · 3 Topics</div>
+                    </div>
+                    <svg class="co-chev" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+                <div class="co-body">
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Introduction to Prop Trading Firms</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>What is Proprietary (Prop) Trading?</li>
+                                <li>Evaluation vs. Instant Funding</li>
+                                <li>Scaling Funded Capital &amp; Profit Splits</li>
+                                <li>Risk Rules (Drawdown, Daily Loss, Lot Size)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Challenges &amp; Rules</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Steps to Get Funded</li>
+                                <li>Common Reasons Traders Fail</li>
+                                <li>Risk Management Under Firm Rules</li>
+                                <li>Time Limits &amp; Consistency Rules</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-tp">
+                        <div class="co-tp-hd" onclick="toggleTp(this.closest('.co-tp'))"><span class="co-dot"></span><span class="co-tp-name">Passing &amp; Maintaining Funded Accounts</span><svg class="co-tchev" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9" /></svg></div>
+                        <div class="co-subs">
+                            <ul class="co-sub-ul">
+                                <li>Roadmap to Pass Funding Challenges</li>
+                                <li>Avoiding Traps (Over-trading, Rule Violations)</li>
+                                <li>Scaling Funded Capital</li>
+                                <li>Keeping Payout Consistency</li>
+                                <li>Best Prop Trading Firms for ICT Strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="co-mod-ft"><span class="co-mod-cnt">3 TOPICS</span><button class="co-exp-all" onclick="expandAll(this)">সব খুলুন</button></div>
+                </div>
+            </div>
+            <div class="co-ft rv">
+                <span class="co-ft-txt">৫টি Module · ৯৯+ Class ·</span>
+                <span class="co-ft-price" id="outlinePrice">$39 One-time</span>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="faq-section">
+            <h2 class="s-ttl rv">সাধারণ প্রশ্ন</h2>
+            <div class="faq-list">
+                <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">এই Mentorship কি beginners-দের জন্য?<span class="faq-ic">+</span></button>
+                    <div class="faq-a">হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব step by step। কোনো আগের experience লাগবে না।</div>
+                </div>
+                <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কীভাবে join করব?<span class="faq-ic">+</span></button>
+                    <div class="faq-a">Telegram-এ @AskNLT-এ message করুন। আমাদের support team সব বিস্তারিত জানাবে — Crypto-তে payment করলেই সাথে সাথে access পেয়ে যাবেন।</div>
+                </div>
+                <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কোন payment method accept করা হয়?<span class="faq-ic">+</span></button>
+                    <div class="faq-a">শুধুমাত্র Crypto-তে payment নেওয়া হয়। USDT সরাসরি Binance UID-তে পাঠাতে পারবেন, অথবা Binance-এ available যেকোনো crypto network ব্যবহার করেও পাঠাতে পারবেন। সম্পূর্ণ payment process টা support-এর সাথে Telegram-এ যোগাযোগ করে manually করতে হবে।</div>
+                </div>
+                <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">Lifetime access মানে কতদিন?<span class="faq-ic">+</span></button>
+                    <div class="faq-a">সত্যিকারের lifetime — platform চালু থাকবে যতদিন, access থাকবে ততদিন। কোনো expiry নেই।</div>
+                </div>
+                <div class="faq-item rv"><button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-ic">+</span></button>
+                    <div class="faq-a">একদমই না। একবার pay করলেই সারাজীবন access। কোনো renewal বা hidden cost নেই।</div>
+                </div>
+            </div>
+            <div class="faq-more rv"><a href="faq.html">FAQ Page →</a></div>
+        </section>
+    </main>
+    <footer class="ft">
+        <div class="ft-bot">
+            <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
+            <nav style="display:flex;gap:16px">
+                <a href="faq.html" style="font-size:12px;color:var(--ink-3)">FAQ</a>
+                <a href="terms.html" style="font-size:12px;color:var(--ink-3)">Terms</a>
+                <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:var(--ink-3)">Telegram</a>
+            </nav>
+            <span class="ft-disc">Trading involves risk · Past performance ≠ future results</span>
+        </div>
+    </footer>
+    <!-- ════ STICKY BAR ════ -->
+    <div class="sticky" id="sticky">
+        <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Telegram-এ Call করুন — কয়েক মিনিটেই →</a>
+    </div>
+    <button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16">
+            <path d="M18 15l-6-6-6 6" /></svg>
+    </button>
+    <script>
+    /* ══ DISCOUNT + TIMER SYSTEM ══ */
+    (function() {
+        var ORIG = 100;
 
-</main>
+        /* Weighted random: 60% chance of 61%, else 51–66 */
+        function pickDiscount() {
+            if (Math.random() < 0.60) return 61;
+            return Math.floor(Math.random() * 16) + 51;
+        }
 
-<!-- ════ JOIN CTA ════ -->
-<div class="join-section">
-  <div class="join-inner rv">
-    <div class="join-ey">শুরু করুন আজই</div>
-    <div class="join-ttl">Join করতে চান?</div>
-    <div class="join-sub">Telegram-এ message করুন — আমাদের team call করবে, সব জানাবে, তারপর আপনি সিদ্ধান্ত নিন।</div>
-    <a class="join-btn" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
-      📞 Telegram-এ Message করুন →
-    </a>
-    <div class="join-hint">@AskNLT · কয়েক মিনিটের মধ্যেই call পাবেন</div>
-  </div>
-</div>
+        /* Persist discount per session so page refreshes keep same % */
+        var disc;
+        try {
+            disc = parseInt(sessionStorage.getItem('nlt_disc') || '0');
+            if (!disc || disc < 51 || disc > 66) {
+                disc = pickDiscount();
+                sessionStorage.setItem('nlt_disc', String(disc));
+            }
+        } catch (e) { disc = 61; }
 
-<div class="copy-bar">
-  <span>© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
-  <span style="color:rgba(255,255,255,.2)">Trading involves risk · Past performance ≠ future results</span>
-</div>
+        var CURR = Math.round(ORIG * (1 - disc / 100));
 
-<!-- ════ STICKY BAR ════ -->
-<div class="sticky" id="sticky">
-  <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">📞 Join করুন — Telegram-এ Message করুন →</a>
-</div>
+        /* Set prices */
+        function setTxt(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+        setTxt('dOrig', '$' + ORIG);
+        setTxt('dNow', '$' + CURR);
+        setTxt('dSave', disc + '% OFF');
+        setTxt('heroPrice', '$' + CURR);
+        setTxt('outlinePrice', '$' + CURR + ' One-time');
 
-<button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
-  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
+        /* Day-based discount name */
+        var dayNames = ['Weekend Discount', 'Welcome Discount', 'Fortune Discount', 'Fortune Discount', 'Fortune Discount', 'Jumma Discount', 'Weekend Discount'];
+        setTxt('discName', dayNames[new Date().getDay()]);
 
-<script>
-/* ══ EDIT PRICES HERE ══ */
-var ORIG = 100;   // original price (strikethrough)
-var CURR = 39;    // current discounted price
+        /* Countdown timer */
+        function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
-/* Set prices everywhere */
-(function(){
-  var save = Math.round((1 - CURR/ORIG)*100);
-  document.getElementById('dOrig').textContent = '$' + ORIG;
-  document.getElementById('dNow').textContent = '$' + CURR;
-  document.getElementById('dSave').textContent = save + '% OFF';
-  document.getElementById('heroPrice').textContent = '$' + CURR;
-  document.getElementById('outlinePrice').textContent = '$' + CURR + ' One-time';
-})();
+        function tick() {
+            var now = new Date();
+            var end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+            var diff = Math.max(0, end - now);
+            var h = Math.floor(diff / 3600000);
+            var m = Math.floor((diff % 3600000) / 60000);
+            var s = Math.floor((diff % 60000) / 1000);
+            setTxt('discTimer', pad(h) + ':' + pad(m) + ':' + pad(s));
+            var bar = document.getElementById('discBar');
+            if (bar) bar.classList.toggle('disc-urgent', h < 5);
+        }
+        tick();
+        setInterval(tick, 1000);
+    })();
 
-/* Overlay */
-function closeOverlay(){
-  var el = document.getElementById('eo');
-  document.body.classList.remove('locked');
-  el.classList.add('hide');
-  setTimeout(function(){ el.style.display = 'none'; }, 420);
-}
+    /* Overlay */
+    function closeOverlay() {
+        var el = document.getElementById('eo');
+        document.body.classList.remove('locked');
+        el.classList.add('hide');
+        setTimeout(function() { el.style.display = 'none'; }, 420);
+    }
 
-/* Navbar */
-var nb = document.getElementById('navbar');
-window.addEventListener('scroll', function(){ nb && nb.classList.toggle('scrolled', scrollY > 20); }, {passive:true});
+    function closeAndScroll() {
+        closeOverlay();
+        setTimeout(function() {
+            var target = document.getElementById('outline') || document.querySelector('main');
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 440);
+    }
 
-/* Module accordion */
-function toggleMod(mod){
-  var open = mod.classList.contains('open');
-  document.querySelectorAll('.co-mod.open').forEach(function(m){ m.classList.remove('open'); });
-  if(!open) mod.classList.add('open');
-}
+    /* Navbar */
+    var nb = document.getElementById('navbar');
+    window.addEventListener('scroll', function() { nb && nb.classList.toggle('scrolled', scrollY > 20); }, { passive: true });
 
-/* Topic accordion */
-function toggleTp(tp){ tp.classList.toggle('open'); }
+    /* Module accordion — independent toggle */
+    function toggleMod(mod) {
+        mod.classList.toggle('open');
+    }
 
-/* Expand all in module */
-function expandAll(btn){
-  var mod = btn.closest('.co-mod');
-  var tps = mod.querySelectorAll('.co-tp');
-  var anyOpen = Array.from(tps).some(function(t){ return t.classList.contains('open'); });
-  tps.forEach(function(t){ t.classList.toggle('open', !anyOpen); });
-  btn.textContent = anyOpen ? 'সব খুলুন' : 'সব বন্ধ করুন';
-}
+    /* Topic accordion */
+    function toggleTp(tp) { tp.classList.toggle('open'); }
 
-/* FAQ */
-function tFaq(btn){
-  var a = btn.nextElementSibling, o = btn.classList.contains('open');
-  document.querySelectorAll('.faq-q').forEach(function(x){ x.classList.remove('open'); });
-  document.querySelectorAll('.faq-a').forEach(function(x){ x.classList.remove('open'); });
-  if(!o){ btn.classList.add('open'); a.classList.add('open'); }
-}
+    /* Expand all topics in module */
+    function expandAll(btn) {
+        var mod = btn.closest('.co-mod');
+        var tps = mod.querySelectorAll('.co-tp');
+        var anyOpen = Array.from(tps).some(function(t) { return t.classList.contains('open'); });
+        tps.forEach(function(t) { t.classList.toggle('open', !anyOpen); });
+        btn.textContent = anyOpen ? 'সব খুলুন' : 'সব বন্ধ করুন';
+    }
 
-/* Reveal */
-var ro = new IntersectionObserver(function(e){
-  e.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('on'); ro.unobserve(x.target); } });
-}, {threshold: .1, rootMargin: '0px 0px -30px 0px'});
-document.querySelectorAll('.rv').forEach(function(el, i){
-  el.style.transitionDelay = (i % 6) * .06 + 's';
-  ro.observe(el);
-});
-setTimeout(function(){ document.querySelectorAll('.rv:not(.on)').forEach(function(el){ el.classList.add('on'); }); }, 1600);
+    /* FAQ */
+    function tFaq(btn) {
+        var a = btn.nextElementSibling,
+            o = btn.classList.contains('open');
+        document.querySelectorAll('.faq-q').forEach(function(x) { x.classList.remove('open'); });
+        document.querySelectorAll('.faq-a').forEach(function(x) { x.classList.remove('open'); });
+        if (!o) {
+            btn.classList.add('open');
+            a.classList.add('open');
+        }
+    }
 
-/* Sticky */
-(function(){
-  var b = document.getElementById('sticky');
-  if(!b || window.innerWidth > 768) return;
-  window.addEventListener('scroll', function(){ if(scrollY > 300) b.classList.add('on'); }, {passive:true});
-})();
+    /* Reveal */
+    var ro = new IntersectionObserver(function(e) {
+        e.forEach(function(x) {
+            if (x.isIntersecting) {
+                x.target.classList.add('on');
+                ro.unobserve(x.target);
+            }
+        });
+    }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.rv').forEach(function(el, i) {
+        el.style.transitionDelay = (i % 6) * .06 + 's';
+        ro.observe(el);
+    });
+    setTimeout(function() { document.querySelectorAll('.rv:not(.on)').forEach(function(el) { el.classList.add('on'); }); }, 1600);
 
-/* BTT */
-(function(){
-  var b = document.getElementById('btt');
-  if(!b) return;
-  window.addEventListener('scroll', function(){ b.classList.toggle('on', scrollY > 400); }, {passive:true});
-})();
-</script>
+    /* Sticky */
+    (function() {
+        var b = document.getElementById('sticky');
+        if (!b || window.innerWidth > 768) return;
+        window.addEventListener('scroll', function() { if (scrollY > 300) b.classList.add('on'); }, { passive: true });
+    })();
+
+    /* BTT */
+    (function() {
+        var b = document.getElementById('btt');
+        if (!b) return;
+        window.addEventListener('scroll', function() { b.classList.toggle('on', scrollY > 400); }, { passive: true });
+    })();
+    </script>
 </body>
+
 </html>
