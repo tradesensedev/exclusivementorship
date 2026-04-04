@@ -913,97 +913,6 @@
     }
 
     /* ══ MARQUEE ══ */
-    .mq {
-        padding: 14px 0;
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-        background: linear-gradient(180deg, #f5f3ee 0%, var(--bg-card) 50%, #f5f3ee 100%);
-        overflow: hidden;
-        position: relative
-    }
-
-    .mq::before,
-    .mq::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 80px;
-        z-index: 2;
-        pointer-events: none
-    }
-
-    .mq::before {
-        left: 0;
-        background: linear-gradient(90deg, var(--bg) 0%, transparent 100%)
-    }
-
-    .mq::after {
-        right: 0;
-        background: linear-gradient(270deg, var(--bg) 0%, transparent 100%)
-    }
-
-    .mq-wrap {
-        overflow: hidden
-    }
-
-    .mq-track {
-        display: flex;
-        width: max-content;
-        animation: marq 28s linear infinite
-    }
-
-    .mq-track.rev {
-        animation-direction: reverse;
-        animation-duration: 34s;
-        margin-top: 8px
-    }
-
-    .mq-set {
-        display: flex;
-        align-items: center
-    }
-
-    .mq-tag {
-        font-family: var(--M);
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--amber-s);
-        padding: 4px 18px;
-        white-space: nowrap;
-        letter-spacing: .04em;
-        text-shadow: 0 0 12px rgba(245, 158, 11, .35)
-    }
-
-    .mq-tag.alt {
-        color: rgba(196, 196, 206, .6);
-        text-shadow: none
-    }
-
-    .mq-sep {
-        width: 4px;
-        height: 4px;
-        background: rgba(245, 158, 11, .4);
-        border-radius: 50%;
-        flex-shrink: 0;
-        box-shadow: 0 0 6px rgba(245, 158, 11, .3)
-    }
-
-    .mq-sep.alt {
-        background: rgba(196, 196, 206, .25);
-        box-shadow: none
-    }
-
-    @keyframes marq {
-        0% {
-            transform: translateX(0)
-        }
-
-        100% {
-            transform: translateX(-50%)
-        }
-    }
-
     /* ══ LAYOUT ══ */
     .wrap {
         max-width: var(--mw);
@@ -1624,85 +1533,6 @@
         transform: translateY(0)
     }
 
-    /* ══ STICKY BAR ══ */
-    @media(max-width:768px) {
-        .sticky {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 500;
-            padding: 10px 16px 18px;
-            background: rgba(7, 7, 10, .98);
-            border-top: 1px solid rgba(245, 158, 11, .25);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            transform: translateY(100%);
-            transition: transform .35s cubic-bezier(.4, 0, .2, 1)
-        }
-
-        .sticky.on {
-            transform: translateY(0)
-        }
-
-        .sticky a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(135deg, #ff6b35 0%, #ff5320 100%);
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 900;
-            padding: 16px;
-            border-radius: 13px;
-            font-family: 'Sora', sans-serif;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 8px 28px rgba(255, 107, 53, .55);
-            letter-spacing: -.01em;
-            transition: all .3s cubic-bezier(.34, 1.56, .64, 1);
-            border: none;
-            cursor: pointer
-        }
-
-        .sticky a::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,.3), transparent 55%);
-            pointer-events: none
-        }
-
-        .sticky a::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 60%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
-            animation: btnShimmer 2.5s ease-in-out infinite
-        }
-
-        .sticky a:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 12px 40px rgba(255, 107, 53, .7);
-            background: linear-gradient(135deg, #ff5320 0%, #ff3d00 100%)
-        }
-
-        .sticky a:active {
-            transform: translateY(-1px) scale(1.01)
-        }
-    }
-
-    @media(min-width:769px) {
-        .sticky {
-            display: none !important
-        }
-    }
-
     /* ══ BACK TO TOP ══ */
     .btt {
         position: fixed;
@@ -1747,107 +1577,114 @@
 
     /* ══ FOOTER ══ */
     .ft {
-        padding: 40px 24px 28px;
-        border-top: 1px solid var(--line)
+        background: linear-gradient(180deg, #ffffff 0%, #f9f8f6 100%);
+        border-top: 1px solid var(--line);
+        padding: 48px 24px 36px;
+        position: relative;
+        overflow: hidden;
     }
 
-    .ft-inner {
-        max-width: var(--mw);
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 32px;
-        flex-wrap: wrap;
-        margin-bottom: 28px
-    }
-
-    .ft-logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px
-    }
-
-    .ft-lm {
-        width: 34px;
-        height: 34px;
-        background: linear-gradient(135deg, #ff6b35, #ff8555);
-        border-radius: 9px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--M);
-        font-size: 12px;
-        font-weight: 700;
-        color: #ffffff
-    }
-
-    .ft-ln {
-        font-family: var(--H);
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--ink);
-        display: block;
-        line-height: 1.3
-    }
-
-    .ft-ls {
-        font-size: 10px;
-        color: var(--ink-3);
-        display: block
-    }
-
-    .ft-tag {
-        font-size: 13px;
-        color: var(--ink-3);
-        line-height: 1.65;
-        max-width: 260px;
-        margin-top: 8px
-    }
-
-    .ft-nav {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-        align-items: flex-end
-    }
-
-    .ft-nav a {
-        font-size: 13px;
-        color: var(--ink-3);
-        transition: color .2s
-    }
-
-    .ft-nav a:hover {
-        color: var(--ink-2)
+    .ft::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+        pointer-events: none;
     }
 
     .ft-bot {
         max-width: var(--mw);
         margin: 0 auto;
-        padding-top: 20px;
-        border-top: 1px solid var(--line);
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 8px
+        gap: 16px;
     }
 
     .ft-copy {
-        font-size: 12px;
-        color: var(--ink-3)
+        font-size: 13px;
+        color: var(--ink-2);
+        font-weight: 500;
+        flex: 1;
+        min-width: 200px;
     }
 
     .ft-disc {
         font-size: 11px;
-        color: rgba(255, 255, 255, .22)
+        color: var(--ink-3);
+        letter-spacing: 0.02em;
+        font-weight: 500;
     }
 
-    @media(max-width:540px) {
+    .ft-nav {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .ft-nav a {
+        font-size: 13px;
+        color: var(--ink-2);
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .ft-nav a::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #ff6b35, #ff8555);
+        transition: width 0.3s ease;
+    }
+
+    .ft-nav a:hover {
+        color: var(--amber-s);
+    }
+
+    .ft-nav a:hover::after {
+        width: 100%;
+    }
+
+    @media(max-width:640px) {
+        .ft {
+            padding: 40px 20px 32px;
+        }
+
+        .ft-bot {
+            flex-direction: column;
+            text-align: center;
+            gap: 12px;
+        }
+
+        .ft-copy {
+            width: 100%;
+            min-width: unset;
+            order: 1;
+        }
+
         .ft-nav {
-            align-items: flex-start
+            order: 2;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .ft-disc {
+            order: 3;
+            width: 100%;
+        }
+    }
         }
     }
 
@@ -1884,8 +1721,7 @@
         .co-sub-ul { padding: 3px 16px 12px 32px; }
         .co-ft { padding: 16px 18px; }
         .btm-join-btn { padding: 16px 24px; gap: 10px; }
-        .ft-bot { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
-        .ft-bot nav { flex-wrap: wrap; justify-content: center; }
+        .ft { padding: 36px 16px 28px; }
     }
 
     @media(max-width:380px) {
@@ -1982,22 +1818,6 @@
             </div>
         </div>
     </section>
-    <div class="mq">
-        <!-- Row 1: Golden — ICT concepts scrolling forward -->
-        <div class="mq-wrap">
-            <div class="mq-track">
-                <div class="mq-set"><span class="mq-tag">ICT Concept</span><span class="mq-sep"></span><span class="mq-tag">Order Blocks</span><span class="mq-sep"></span><span class="mq-tag">Fair Value Gap</span><span class="mq-sep"></span><span class="mq-tag">Breaker Block</span><span class="mq-sep"></span><span class="mq-tag">Power of 3</span><span class="mq-sep"></span><span class="mq-tag">Kill Zones</span><span class="mq-sep"></span><span class="mq-tag">Optimal Trade Entry</span><span class="mq-sep"></span><span class="mq-tag">MSS / BOS</span><span class="mq-sep"></span><span class="mq-tag">Premium &amp; Discount</span><span class="mq-sep"></span><span class="mq-tag">Market Structure</span><span class="mq-sep"></span><span class="mq-tag">IPDA</span><span class="mq-sep"></span><span class="mq-tag">SMT Divergence</span><span class="mq-sep"></span></div>
-                <div class="mq-set"><span class="mq-tag">ICT Concept</span><span class="mq-sep"></span><span class="mq-tag">Order Blocks</span><span class="mq-sep"></span><span class="mq-tag">Fair Value Gap</span><span class="mq-sep"></span><span class="mq-tag">Breaker Block</span><span class="mq-sep"></span><span class="mq-tag">Power of 3</span><span class="mq-sep"></span><span class="mq-tag">Kill Zones</span><span class="mq-sep"></span><span class="mq-tag">Optimal Trade Entry</span><span class="mq-sep"></span><span class="mq-tag">MSS / BOS</span><span class="mq-sep"></span><span class="mq-tag">Premium &amp; Discount</span><span class="mq-sep"></span><span class="mq-tag">Market Structure</span><span class="mq-sep"></span><span class="mq-tag">IPDA</span><span class="mq-sep"></span><span class="mq-tag">SMT Divergence</span><span class="mq-sep"></span></div>
-            </div>
-        </div>
-        <!-- Row 2: Dim — more terms scrolling reverse -->
-        <div class="mq-wrap">
-            <div class="mq-track rev">
-                <div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep alt"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep alt"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep alt"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep alt"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep alt"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep alt"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Risk Management</span><span class="mq-sep alt"></span><span class="mq-tag alt">Trading Psychology</span><span class="mq-sep alt"></span><span class="mq-tag alt">Prop Firms</span><span class="mq-sep alt"></span></div>
-                <div class="mq-set"><span class="mq-tag alt">MMXM Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Unicorn Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Asian Sweep</span><span class="mq-sep alt"></span><span class="mq-tag alt">BSL / SSL</span><span class="mq-sep alt"></span><span class="mq-tag alt">NFP · CPI · FOMC</span><span class="mq-sep alt"></span><span class="mq-tag alt">Central Banks</span><span class="mq-sep alt"></span><span class="mq-tag alt">COT Report</span><span class="mq-sep alt"></span><span class="mq-tag alt">Funded Accounts</span><span class="mq-sep alt"></span><span class="mq-tag alt">Venom Model</span><span class="mq-sep alt"></span><span class="mq-tag alt">Risk Management</span><span class="mq-sep alt"></span><span class="mq-tag alt">Trading Psychology</span><span class="mq-sep alt"></span><span class="mq-tag alt">Prop Firms</span><span class="mq-sep alt"></span></div>
-            </div>
-        </div>
-    </div>
     <!-- ════ MAIN ════ -->
     <main class="wrap">
         <!-- FOR WHOM -->
@@ -2439,19 +2259,14 @@
     <footer class="ft">
         <div class="ft-bot">
             <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
-            <nav style="display:flex;gap:16px">
-                <a href="faq.html" style="font-size:12px;color:var(--ink-3)">FAQ</a>
-                <a href="terms.html" style="font-size:12px;color:var(--ink-3)">Terms</a>
-                <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer" style="font-size:12px;color:var(--ink-3)">Telegram</a>
+            <nav class="ft-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="terms.html">Terms</a>
+                <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">Telegram</a>
             </nav>
             <span class="ft-disc">Trading involves risk · Past performance ≠ future results</span>
         </div>
     </footer>
-    <!-- ════ STICKY BAR ════ -->
-    <div class="sticky" id="sticky">
-        <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Telegram-এ Call করুন — কয়েক মিনিটেই →</a>
-    </div>
     <button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
         <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16">
             <path d="M18 15l-6-6-6 6" /></svg>
@@ -2563,13 +2378,6 @@
         ro.observe(el);
     });
     setTimeout(function() { document.querySelectorAll('.rv:not(.on)').forEach(function(el) { el.classList.add('on'); }); }, 1600);
-
-    /* Sticky */
-    (function() {
-        var b = document.getElementById('sticky');
-        if (!b || window.innerWidth > 768) return;
-        window.addEventListener('scroll', function() { if (scrollY > 300) b.classList.add('on'); }, { passive: true });
-    })();
 
     /* BTT */
     (function() {
