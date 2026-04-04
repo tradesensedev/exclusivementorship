@@ -167,8 +167,14 @@
     }
 
     @keyframes btnShimmer {
-        0% { left: -100% }
-        60%, 100% { left: 160% }
+        0% {
+            left: -100%
+        }
+
+        60%,
+        100% {
+            left: 160%
+        }
     }
 
     .nav-cta {
@@ -196,7 +202,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(255,255,255,.3), transparent 55%);
+        background: linear-gradient(135deg, rgba(255, 255, 255, .3), transparent 55%);
         pointer-events: none
     }
 
@@ -207,7 +213,7 @@
         left: -100%;
         width: 60%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
         animation: btnShimmer 3s ease-in-out infinite
     }
 
@@ -546,7 +552,7 @@
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(255,255,255,.3) 0%, transparent 55%);
+        background: linear-gradient(135deg, rgba(255, 255, 255, .3) 0%, transparent 55%);
         pointer-events: none
     }
 
@@ -557,7 +563,7 @@
         left: -100%;
         width: 60%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
         animation: btnShimmer 2.6s ease-in-out infinite
     }
 
@@ -748,7 +754,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,.3), transparent 55%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, .3), transparent 55%);
             pointer-events: none
         }
 
@@ -759,7 +765,7 @@
             left: -100%;
             width: 60%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
             animation: btnShimmer 2.5s ease-in-out infinite
         }
 
@@ -772,14 +778,15 @@
         .sticky a:active {
             transform: translateY(-1px) scale(1.01)
         }
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,.3), transparent);
-            animation: btnShimmer 2.5s ease-in-out infinite
-        }
 
-        .sticky a:active {
-            transform: scale(.98)
-        }
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3), transparent);
+        animation: btnShimmer 2.5s ease-in-out infinite
+    }
+
+    .sticky a:active {
+        transform: scale(.98)
+    }
     }
 
     @media(min-width:769px) {
@@ -936,26 +943,77 @@
 
     /* ══ MOBILE IMPROVEMENTS ══ */
     @media(max-width:520px) {
-        .disc-bar { padding: 8px 12px; gap: 6px; }
-        .disc-fl { display: none; }
-        .disc-sep { display: none; }
-        .disc-now { font-size: 14px; }
-        .disc-timer-wrap { font-size: 11px; }
+        .disc-bar {
+            padding: 8px 12px;
+            gap: 6px;
+        }
+
+        .disc-fl {
+            display: none;
+        }
+
+        .disc-sep {
+            display: none;
+        }
+
+        .disc-now {
+            font-size: 14px;
+        }
+
+        .disc-timer-wrap {
+            font-size: 11px;
+        }
     }
+
     @media(max-width:480px) {
-        .page-hero { padding: 40px 20px 36px; }
-        .wrap { padding: 36px 16px 52px; }
-        .cat-bar { gap: 6px; }
-        .cat-btn { font-size: 10px; padding: 6px 11px; }
-        .cta-box { padding: 32px 20px; }
-        .ft-bot { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
-        .ft-bot nav { flex-wrap: wrap; justify-content: center; }
+        .page-hero {
+            padding: 40px 20px 36px;
+        }
+
+        .wrap {
+            padding: 36px 16px 52px;
+        }
+
+        .cat-bar {
+            gap: 6px;
+        }
+
+        .cat-btn {
+            font-size: 10px;
+            padding: 6px 11px;
+        }
+
+        .cta-box {
+            padding: 32px 20px;
+        }
+
+        .ft-bot {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .ft-bot nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
+
     @media(max-width:380px) {
-        .nav-logo-sub { display: none; }
-        .nav-cta { padding: 8px 13px; font-size: 11.5px; }
+        .nav-logo-sub {
+            display: none;
+        }
+
+        .nav-cta {
+            padding: 8px 13px;
+            font-size: 11.5px;
+        }
     }
-    .faq-q { min-height: 52px; }
+
+    .faq-q {
+        min-height: 52px;
+    }
     </style>
 </head>
 
@@ -995,7 +1053,7 @@
     <div class="page-hero">
         <div class="page-hero-inner">
             <div class="page-badge">Frequently Asked Questions</div>
-            <h1 class="page-title">আপনার মনে প্রশ্ন আছে?</h1>
+            <h1 class="page-title">Most Common Questions</h1>
             <p class="page-sub">সবচেয়ে বেশি জিজ্ঞেস করা প্রশ্নগুলোর উত্তর এখানে আছে। না পেলে Telegram-এ জিজ্ঞেস করুন।</p>
         </div>
     </div>
@@ -1053,7 +1111,7 @@
                 </div>
                 <div class="faq-item" data-cat="payment">
                     <button class="faq-q" onclick="tFaq(this)">Payment screenshot কোথায় পাঠাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Payment screenshot পাঠান Telegram-এ <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID, Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।</div>
+                    <div class="faq-a">Payment screenshot পাঠাবেন Telegram-এ <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID, Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।</div>
                 </div>
                 <div class="faq-item" data-cat="payment">
                     <button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-icon">+</span></button>
@@ -1079,7 +1137,7 @@
                 </div>
                 <div class="faq-item" data-cat="access">
                     <button class="faq-q" onclick="tFaq(this)">Class কি download করা যাবে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Classes online platform-এ দেওয়া হয় — download option নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।</div>
+                    <div class="faq-a">Classes Telegram Channel-এ দেওয়া হয় — device-এ download option নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।</div>
                 </div>
                 <div class="faq-item" data-cat="access">
                     <button class="faq-q" onclick="tFaq(this)">হঠাৎ access চলে গেলে কী করব?<span class="faq-icon">+</span></button>
@@ -1110,7 +1168,7 @@
                 </div>
                 <div class="faq-item" data-cat="course">
                     <button class="faq-q" onclick="tFaq(this)">কতগুলো class আছে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a"><strong>৯৯+ recorded class</strong> আছে ৫টি module-এ। সব class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।</div>
+                    <div class="faq-a"><strong>Total ৯৯+ recorded class</strong> আছে ৫টি module-এ। সব class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।</div>
                 </div>
                 <div class="faq-item" data-cat="course">
                     <button class="faq-q" onclick="tFaq(this)">Course শেষ করতে কতদিন লাগবে?<span class="faq-icon">+</span></button>
@@ -1124,7 +1182,7 @@
             <div class="faq-list">
                 <div class="faq-item" data-cat="support">
                     <button class="faq-q" onclick="tFaq(this)">Support পেতে কোথায় যাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের team দ্রুত সাড়া দেয়।</div>
+                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের team খুব দ্রুত সাড়া দেয়।</div>
                 </div>
                 <div class="faq-item" data-cat="support">
                     <button class="faq-q" onclick="tFaq(this)">Telegram-এ যোগাযোগ করলে কত দ্রুত সাড়া পাব?<span class="faq-icon">+</span></button>
@@ -1132,7 +1190,7 @@
                 </div>
                 <div class="faq-item" data-cat="support">
                     <button class="faq-q" onclick="tFaq(this)">Course শেখার সময়ও support পাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করুন।</div>
+                    <div class="faq-a">Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করতে পারবেন।</div>
                 </div>
             </div>
         </div>
@@ -1219,8 +1277,10 @@
             o = btn.classList.contains('open');
         document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
         document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
-        if (!o) { btn.classList.add('open');
-            a.classList.add('open'); }
+        if (!o) {
+            btn.classList.add('open');
+            a.classList.add('open');
+        }
     }
 
     /* Category filter */
@@ -1238,11 +1298,17 @@
 
     /* Reveal */
     const ro = new IntersectionObserver(e => {
-        e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('on');
-                ro.unobserve(x.target); } });
+        e.forEach(x => {
+            if (x.isIntersecting) {
+                x.target.classList.add('on');
+                ro.unobserve(x.target);
+            }
+        });
     }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay = (i % 5) * .07 + 's';
-        ro.observe(el); });
+    document.querySelectorAll('.rv').forEach((el, i) => {
+        el.style.transitionDelay = (i % 5) * .07 + 's';
+        ro.observe(el);
+    });
     setTimeout(() => document.querySelectorAll('.rv:not(.on)').forEach(el => el.classList.add('on')), 1400);
 
     /* Sticky */
