@@ -78,42 +78,33 @@
         background: linear-gradient(90deg, #ffe8d6, #ffd9c0, #ffe8d6);
         border-bottom: 4px solid #ff6b35;
         border-top: 2px solid rgba(255, 107, 53, .3);
-        padding: 16px 20px;
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 12px;
         flex-wrap: wrap;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 4px 16px rgba(255, 107, 53, .2)
+        box-shadow: 0 4px 16px rgba(255, 107, 53, .18)
     }
 
     .disc-bar::before {
         content: '';
         position: absolute;
         inset: 0;
-        background: radial-gradient(ellipse 60% 100% at 50%, rgba(255, 107, 53, .18), transparent);
+        background: radial-gradient(ellipse 60% 100% at 50%, rgba(255, 107, 53, .12), transparent);
         pointer-events: none
     }
 
     .disc-bar.disc-urgent {
         animation: discPulse 1.2s ease-in-out infinite;
-        box-shadow: 0 6px 24px rgba(255, 107, 53, .35)
+        box-shadow: 0 6px 24px rgba(255, 107, 53, .32)
     }
 
     @keyframes discPulse {
-
-        0%,
-        100% {
-            transform: translateY(0);
-            box-shadow: 0 6px 24px rgba(255, 107, 53, .35);
-        }
-
-        50% {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(255, 107, 53, .45);
-        }
+        0%, 100% { transform: translateY(0); box-shadow: 0 6px 24px rgba(255, 107, 53, .32) }
+        50%       { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255, 107, 53, .42) }
     }
 
     .disc-fl {
@@ -121,150 +112,221 @@
         font-size: 12px;
         font-weight: 900;
         color: #d94000;
-        letter-spacing: .05em;
+        letter-spacing: .06em;
+        text-transform: uppercase;
         position: relative;
         z-index: 1;
-        text-transform: uppercase;
-        text-shadow: 0 1px 2px rgba(217, 64, 0, .15)
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px
+    }
+
+    .disc-fl-fire {
+        font-size: 15px;
+        display: inline-block;
+        animation: fireAnim 1s ease-in-out infinite
+    }
+
+    @keyframes fireAnim {
+        0%, 100% { transform: scaleY(1) rotate(-2deg) }
+        50%       { transform: scaleY(1.08) rotate(2deg) }
+    }
+
+    .disc-price-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        position: relative;
+        z-index: 1
     }
 
     .disc-orig {
         font-family: var(--M);
-        font-size: 14px;
-        font-weight: 800;
-        color: #a0a0a8;
+        font-size: 13px;
+        font-weight: 700;
+        color: #7a3a10;
         text-decoration: line-through;
-        position: relative;
-        z-index: 1
+        text-decoration-color: #d94000
     }
 
     .disc-arr {
         color: #d94000;
         font-weight: 900;
-        position: relative;
-        z-index: 1;
-        animation: arrBounce .6s ease-in-out infinite
+        font-size: 13px;
+        animation: arrBounce .7s ease-in-out infinite
     }
 
     @keyframes arrBounce {
-
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-
-        50% {
-            transform: translateX(3px);
-        }
+        0%, 100% { transform: translateX(0) }
+        50%       { transform: translateX(4px) }
     }
 
     .disc-now {
         font-family: var(--M);
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 900;
         color: #d94000;
-        position: relative;
-        z-index: 1;
         letter-spacing: -.02em;
-        text-shadow: 0 2px 4px rgba(217, 64, 0, .2)
+        text-shadow: 0 2px 4px rgba(217, 64, 0, .18)
     }
 
     .disc-badge {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         font-family: var(--M);
-        font-size: 9px;
-        font-weight: 800;
-        letter-spacing: .1em;
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: .06em;
         text-transform: uppercase;
-        background: linear-gradient(135deg, rgba(255, 107, 53, .2), rgba(217, 64, 0, .15));
+        background: linear-gradient(135deg, rgba(255, 107, 53, .18), rgba(217, 64, 0, .13));
         color: #d94000;
         border: 1.5px solid #ff6b35;
-        padding: 4px 10px;
+        padding: 5px 14px;
         border-radius: 100px;
         position: relative;
         z-index: 1;
-        box-shadow: 0 2px 6px rgba(217, 64, 0, .15)
+        box-shadow: 0 2px 6px rgba(217, 64, 0, .12)
     }
 
-    .disc-cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: linear-gradient(135deg, #ff6b35, #ff5320);
-        color: #ffffff;
-        font-family: var(--M);
-        font-size: 12px;
-        font-weight: 900;
-        padding: 10px 18px;
-        border-radius: 8px;
-        text-decoration: none;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        transition: all .3s cubic-bezier(.34, 1.56, .64, 1);
-        white-space: nowrap;
-        letter-spacing: .03em;
-        box-shadow: 0 8px 20px rgba(255, 107, 53, .6);
-        border: none;
-        cursor: pointer;
-        text-transform: uppercase
-    }
-
-    .disc-cta:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 28px rgba(255, 107, 53, .7)
-    }
-
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 28px rgba(255, 107, 53, .65);
-    background: linear-gradient(135deg, #ff5320, #ff3d00)
-    }
-
-    .disc-cta:active {
-        transform: translateY(-1px) scale(1.02)
-    }
-
-    @keyframes btnShimmer {
-        0% {
-            left: -100%
-        }
-
-        60%,
-        100% {
-            left: 160%
-        }
-    }
-
-    .disc-sep {
-        color: rgba(255, 107, 53, .45);
+    .disc-vdiv {
+        width: 1px;
+        height: 26px;
+        background: rgba(255, 107, 53, .25);
+        flex-shrink: 0;
         position: relative;
         z-index: 1
     }
 
     .disc-timer-wrap {
-        font-family: var(--M);
-        font-size: 12px;
-        font-weight: 700;
-        color: #ff6b35;
-        letter-spacing: .06em;
-        position: relative;
-        z-index: 1;
         display: inline-flex;
         align-items: center;
-        gap: 4px
+        gap: 6px;
+        position: relative;
+        z-index: 1
     }
 
-    .disc-timer {
-        font-variant-numeric: tabular-nums
+    .disc-timer-lbl {
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        color: #c43a00;
+        letter-spacing: .07em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px
     }
 
-    .disc-bar.disc-urgent .disc-timer-wrap {
-        color: #e60000;
-        text-shadow: 0 0 10px rgba(230, 0, 0, .4)
+    .disc-timer-lbl::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #e03a00;
+        flex-shrink: 0;
+        animation: timerDot .9s ease-in-out infinite
     }
 
-    .disc-bar.disc-urgent {
-        border-bottom-color: rgba(230, 0, 0, .3)
+    @keyframes timerDot {
+        0%, 100% { opacity: 1; transform: scale(1) }
+        50%       { opacity: .4; transform: scale(.7) }
+    }
+
+    .disc-clock {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px
+    }
+
+    .disc-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px
+    }
+
+    .disc-d {
+        font-family: var(--M);
+        font-size: 17px;
+        font-weight: 900;
+        color: #fff;
+        background: #d94000;
+        padding: 4px 7px;
+        border-radius: 5px;
+        min-width: 32px;
+        text-align: center;
+        line-height: 1.1;
+        letter-spacing: -.01em;
+        font-variant-numeric: tabular-nums;
+        box-shadow: 0 2px 8px rgba(217, 64, 0, .3), inset 0 1px 0 rgba(255,255,255,.18);
+        display: block
+    }
+
+    .disc-d.flip {
+        animation: digitFlip .22s ease-in-out
+    }
+
+    @keyframes digitFlip {
+        0%   { transform: scaleY(1); opacity: 1 }
+        40%  { transform: scaleY(0); opacity: 0 }
+        60%  { transform: scaleY(0); opacity: 0 }
+        100% { transform: scaleY(1); opacity: 1 }
+    }
+
+    .disc-u-lbl {
+        font-family: var(--M);
+        font-size: 7.5px;
+        font-weight: 700;
+        color: #b04000;
+        letter-spacing: .04em;
+        text-transform: uppercase
+    }
+
+    .disc-sep2 {
+        font-family: var(--M);
+        font-size: 18px;
+        font-weight: 900;
+        color: rgba(255, 107, 53, .5);
+        margin: 0 1px;
+        align-self: flex-start;
+        padding-top: 2px;
+        line-height: 1.25
+    }
+
+    .disc-bar.disc-urgent .disc-d {
+        background: #c00000;
+        box-shadow: 0 2px 10px rgba(180, 0, 0, .35);
+        animation: urgentFlash 0.65s ease-in-out infinite
+    }
+
+    @keyframes urgentFlash {
+        0%, 100% { opacity: 1 }
+        50%       { opacity: .7 }
+    }
+
+    .disc-bar.disc-urgent .disc-u-lbl,
+    .disc-bar.disc-urgent .disc-sep2,
+    .disc-bar.disc-urgent .disc-timer-lbl { color: #a00000 }
+
+    @media(max-width:680px) {
+        .disc-fl   { display: none }
+        .disc-vdiv { display: none }
+    }
+    @media(max-width:520px) {
+        .disc-bar { padding: 7px 10px; gap: 7px }
+        .disc-timer-lbl { display: none }
+        .disc-d { font-size: 14px; min-width: 27px; padding: 3px 5px }
+        .disc-sep2 { font-size: 15px }
+        .disc-u-lbl { font-size: 7px }
+        .disc-now { font-size: 18px }
+        .disc-badge { font-size: 10px; padding: 4px 9px }
+    }
+    @media(max-width:400px) {
+        .disc-orig { display: none }
+        .disc-arr  { display: none }
     }
 
     /* ══ ENTRY OVERLAY ══ */
@@ -1747,26 +1809,6 @@
 
     /* ══ MOBILE IMPROVEMENTS ══ */
     @media(max-width:520px) {
-        .disc-bar {
-            padding: 8px 12px;
-            gap: 6px;
-        }
-
-        .disc-fl {
-            display: none;
-        }
-
-        .disc-sep {
-            display: none;
-        }
-
-        .disc-now {
-            font-size: 14px;
-        }
-
-        .disc-timer-wrap {
-            font-size: 11px;
-        }
     }
 
     @media(max-width:480px) {
@@ -1881,13 +1923,23 @@
     <header class="sticky-header">
         <!-- ════ DISCOUNT BAR ════ -->
         <div class="disc-bar" id="discBar">
-            <span class="disc-fl">🔥 <span id="discName">সীমিত সময়ের Offer</span></span>
-            <span class="disc-orig" id="dOrig"></span>
-            <span class="disc-arr">→</span>
-            <span class="disc-now" id="dNow"></span>
+            <span class="disc-fl"><span class="disc-fl-fire">🔥</span><span id="discName">সীমিত সময়ের Offer</span></span>
+            <span class="disc-price-group">
+                <span class="disc-orig" id="dOrig"></span>
+                <span class="disc-arr">→</span>
+                <span class="disc-now" id="dNow"></span>
+            </span>
             <span class="disc-badge" id="dSave"></span>
-            <span class="disc-sep">·</span>
-            <span class="disc-timer-wrap">⏱ <span class="disc-timer" id="discTimer">--:--:--</span></span>
+            <span class="disc-vdiv"></span>
+            <span class="disc-timer-wrap">
+                <span class="disc-clock" id="discClock">
+                    <span class="disc-unit"><span class="disc-d" id="tH">00</span><span class="disc-u-lbl">ঘণ্টা</span></span>
+                    <span class="disc-sep2">:</span>
+                    <span class="disc-unit"><span class="disc-d" id="tM">00</span><span class="disc-u-lbl">মিনিট</span></span>
+                    <span class="disc-sep2">:</span>
+                    <span class="disc-unit"><span class="disc-d" id="tS">00</span><span class="disc-u-lbl">সেকেন্ড</span></span>
+                </span>
+            </span>
         </div>
         <!-- ════ NAVBAR ════ -->
         <nav class="navbar" id="navbar">
@@ -2418,10 +2470,12 @@
     (function() {
         var ORIG = 100;
 
-        /* Date-seeded discount — same % on ALL devices on the same calendar day. Range: 51–63% */
+        /* Date-seeded discount — based on UTC date (Forex Daily Candle = UTC 00:00).
+           Same % on ALL devices for the same Forex trading day. Range: 51–63% */
         function getDailyDiscount() {
             var now = new Date();
-            var seed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+            /* Use UTC date so discount resets exactly at Forex candle open (UTC 00:00 = BD 06:00 AM) */
+            var seed = now.getUTCFullYear() * 10000 + (now.getUTCMonth() + 1) * 100 + now.getUTCDate();
             seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
             seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
             seed = seed ^ (seed >>> 16);
@@ -2439,23 +2493,27 @@
         setTxt('heroPrice', '$' + CURR);
         setTxt('outlinePrice', '$' + CURR + ' One-time');
 
-        /* Day-based discount name */
+        /* Day-based discount name — UTC day (aligns with Forex trading day) */
         var dayNames = ['Weekend Discount', 'Welcome Discount', 'Fortune Discount', 'Fortune Discount', 'Fortune Discount', 'Jumma Discount', 'Weekend Discount'];
-        setTxt('discName', dayNames[new Date().getDay()]);
+        setTxt('discName', dayNames[new Date().getUTCDay()]);
 
-        /* Countdown timer */
+        /* Countdown timer — counts down to UTC 00:00 (Forex Daily Candle open = BD 06:00 AM) */
         function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
+                function animSet(id, val) {
+            var el = document.getElementById(id);
+            if (!el) return;
+            var v = pad(val);
+            if (el.textContent !== v) { el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip'); el.textContent = v; }
+        }
         function tick() {
             var now = new Date();
-            var end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+            var end = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1, 0, 0, 0));
             var diff = Math.max(0, end - now);
-            var h = Math.floor(diff / 3600000);
-            var m = Math.floor((diff % 3600000) / 60000);
-            var s = Math.floor((diff % 60000) / 1000);
-            setTxt('discTimer', pad(h) + ':' + pad(m) + ':' + pad(s));
+            var h = Math.floor(diff / 3600000), m = Math.floor((diff % 3600000) / 60000), s = Math.floor((diff % 60000) / 1000);
+            animSet('tH', h); animSet('tM', m); animSet('tS', s);
             var bar = document.getElementById('discBar');
-            if (bar) bar.classList.toggle('disc-urgent', h < 5);
+            if (bar) bar.classList.toggle('disc-urgent', h < 1);
         }
         tick();
         setInterval(tick, 1000);
