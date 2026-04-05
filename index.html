@@ -2471,7 +2471,7 @@
         var ORIG = 100;
 
         /* Date-seeded discount — based on UTC date (Forex Daily Candle = UTC 00:00).
-           Same % on ALL devices for the same Forex trading day. Range: 51–63% */
+           Same % on ALL devices for the same Forex trading day. Range: 31–41% */
         function getDailyDiscount() {
             var now = new Date();
             /* Use UTC date so discount resets exactly at Forex candle open (UTC 00:00 = BD 06:00 AM) */
@@ -2479,7 +2479,7 @@
             seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
             seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
             seed = seed ^ (seed >>> 16);
-            return 51 + (seed % 13); /* 51 to 63 */
+            return 31 + (seed % 11); /* 31 to 41 */
         }
         var disc = getDailyDiscount();
 
