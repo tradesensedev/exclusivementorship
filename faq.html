@@ -168,12 +168,23 @@
 
     @keyframes btnShimmer {
         0% {
-            left: -100%
+            left: -100%;
+            opacity: 0
         }
 
-        60%,
+        15% {
+            opacity: 1
+        }
+
+        50% {
+            left: 120%;
+            opacity: 1
+        }
+
+        51%,
         100% {
-            left: 160%
+            left: 120%;
+            opacity: 0
         }
     }
 
@@ -372,7 +383,7 @@
     }
 
     .faq-item:hover {
-        border-color: rgba(255, 255, 255, .18)
+        border-color: rgba(255, 107, 53, .22)
     }
 
     .faq-item[data-cat].hidden {
@@ -786,7 +797,6 @@
 
     .sticky a:active {
         transform: scale(.98)
-    }
     }
 
     @media(min-width:769px) {
@@ -1256,29 +1266,6 @@
 
     /* ══ NLT SHARED ANIMATION SYSTEM ══ */
 
-    /* Missing btnShimmer keyframe */
-    @keyframes btnShimmer {
-        0% {
-            left: -100%;
-            opacity: 0
-        }
-
-        15% {
-            opacity: 1
-        }
-
-        50% {
-            left: 120%;
-            opacity: 1
-        }
-
-        51%,
-        100% {
-            left: 120%;
-            opacity: 0
-        }
-    }
-
     /* Page progress indicator */
     .section-progress {
         position: fixed;
@@ -1663,7 +1650,7 @@
                 <a class="cta-btn" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="position:relative;z-index:1;flex-shrink:0">
                         <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg>
-                    <span style="position:relative;z-index:1">Telegram-এ Call করুন</span>
+                    <span style="position:relative;z-index:1">Telegram-এ Message করুন</span>
                 </a>
             </div>
         </div>
@@ -1779,7 +1766,7 @@
         });
     }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
     document.querySelectorAll('.rv').forEach((el, i) => {
-        el.style.transitionDelay = (i % 5) * .07 + 's';
+        el.style.transitionDelay = (i % 6) * .07 + 's';
         ro.observe(el);
     });
     setTimeout(() => document.querySelectorAll('.rv:not(.on)').forEach(el => el.classList.add('on')), 1400);

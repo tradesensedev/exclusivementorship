@@ -44,7 +44,7 @@
         --B: 'DM Sans', sans-serif;
         --M: 'JetBrains Mono', monospace;
         --mw: 960px;
-        --r: 12px;
+        --r: 14px;
     }
 
     html {
@@ -66,6 +66,11 @@
 
     * {
         -webkit-tap-highlight-color: transparent
+    }
+
+    a,
+    button {
+        touch-action: manipulation
     }
 
     /* ═══ STICKY HEADER WRAPPER ═══ */
@@ -159,17 +164,6 @@
 
     .nav-link.active {
         color: var(--amber)
-    }
-
-    @keyframes btnShimmer {
-        0% {
-            left: -100%
-        }
-
-        60%,
-        100% {
-            left: 160%
-        }
     }
 
     .nav-cta {
@@ -643,18 +637,6 @@
         }
     }
 
-    /* ═══ REVEAL ═══ */
-    .rv {
-        opacity: 0;
-        transform: translateY(14px);
-        transition: opacity .5s ease, transform .5s ease
-    }
-
-    .rv.on {
-        opacity: 1;
-        transform: translateY(0)
-    }
-
     /* ═══ STICKY BAR ═══ */
     @media(max-width:768px) {
         .sticky {
@@ -1116,30 +1098,6 @@
 
         .disc-arr {
             display: none
-        }
-    }
-
-    /* ══ MOBILE IMPROVEMENTS ══ */
-    @media(max-width:520px) {
-        .disc-bar {
-            padding: 8px 12px;
-            gap: 6px;
-        }
-
-        .disc-fl {
-            display: none;
-        }
-
-        .disc-sep {
-            display: none;
-        }
-
-        .disc-now {
-            font-size: 14px;
-        }
-
-        .disc-timer-wrap {
-            font-size: 11px;
         }
     }
 
