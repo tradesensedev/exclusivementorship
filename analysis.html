@@ -121,6 +121,8 @@ main{max-width:var(--mw);margin:0 auto;padding:40px 24px 80px}
 .phase-card{background:var(--bg-card);border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .25s,box-shadow .25s}
 .phase-card:hover{border-color:rgba(255,107,53,.2)}
 .phase-card.p6-card{border-color:rgba(255,107,53,.25);background:linear-gradient(135deg,rgba(255,107,53,.02),var(--bg-card))}
+.phase-card.p7-card{border-color:rgba(34,158,217,.2);background:linear-gradient(135deg,rgba(34,158,217,.02),var(--bg-card))}
+.phase-card.p8-card{border-color:rgba(16,185,129,.2);background:linear-gradient(135deg,rgba(16,185,129,.02),var(--bg-card))}
 
 .phase-hdr{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;user-select:none}
 .phase-hdr:hover .phase-chevron{transform:rotate(5deg)}
@@ -134,6 +136,8 @@ main{max-width:var(--mw);margin:0 auto;padding:40px 24px 80px}
 .phase-num.n4{background:rgba(234,88,12,.1);color:#ea580c;border:1px solid rgba(234,88,12,.2)}
 .phase-num.n5{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2)}
 .phase-num.n6{background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(217,64,0,.1));color:#d94000;border:1px solid rgba(255,107,53,.3)}
+.phase-num.n7{background:rgba(34,158,217,.1);color:#229ed9;border:1px solid rgba(34,158,217,.25)}
+.phase-num.n8{background:rgba(16,185,129,.1);color:#059669;border:1px solid rgba(16,185,129,.25)}
 
 .phase-meta{flex:1;min-width:0}
 .phase-title{font-family:var(--H);font-size:14px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
@@ -158,7 +162,7 @@ main{max-width:var(--mw);margin:0 auto;padding:40px 24px 80px}
 .p6-inputs-grid{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
 .p6-input-group label{display:flex;align-items:center;gap:7px;font-family:var(--M);font-size:11px;font-weight:700;color:var(--ink-2);margin-bottom:6px}
 .p6-input-group label .lbl-num{font-family:var(--M);font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px;color:#fff}
-.lbl-n1{background:#0066ff}.lbl-n2{background:#00a86b}.lbl-n3{background:#7c3aed}.lbl-n4{background:#ea580c}.lbl-n5{background:#dc2626}
+.lbl-n1{background:#0066ff}.lbl-n2{background:#00a86b}.lbl-n3{background:#7c3aed}.lbl-n4{background:#ea580c}.lbl-n5{background:#dc2626}.lbl-n6{background:#d94000}
 .p6-textarea{width:100%;height:100px;font-family:var(--M);font-size:11.5px;line-height:1.6;color:var(--ink-2);background:var(--bg-elevated);border:1px solid var(--line);border-radius:9px;padding:10px 13px;resize:vertical;outline:none;transition:border-color .2s,box-shadow .2s}
 .p6-textarea:focus{border-color:var(--amber-b);box-shadow:0 0 0 3px var(--amber-dim)}
 .p6-textarea::placeholder{color:var(--ink-3);font-style:normal}
@@ -273,7 +277,7 @@ main{max-width:var(--mw);margin:0 auto;padding:40px 24px 80px}
   <div class="pg-hdr rv">
     <div class="pg-hdr-badge">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-      Multi AI Pipeline
+      Free Tools
     </div>
     <h1>Fundamental <em>Analysis</em> AI Tool</h1>
     <p>Market select করুন → Phase copy করুন → AI-তে paste করুন। <strong style="color:var(--amber)">Date automatic</strong> — manually select করতে হবে না।</p>
@@ -352,22 +356,23 @@ var MARKETS = [
   { id:'xauusd', icon:'🥇', label:'XAU/USD', file:'prompts/xauusd.json' },
 ];
 
+/* Default PHASES fallback (overridden per-market via JSON _phases) */
 var PHASES = [
-  { key:'phase1',            num:'Phase 01', numClass:'n1', title:'Central Bank Policy',   sub:'Divergence Analysis · Live Web Research',  icon:'🏦' },
-  { key:'phase2',            num:'Phase 02', numClass:'n2', title:'Yield Differentials',   sub:'Bond Spread · Gilt vs Bund',                icon:'📊' },
-  { key:'phase3',            num:'Phase 03', numClass:'n3', title:'Economic Momentum',     sub:'Data Calendar · Surprise Index',            icon:'📈' },
-  { key:'phase4',            num:'Phase 04', numClass:'n4', title:'Sentiment & COT',       sub:'Positioning · IG Retail · FX Options',      icon:'🎯' },
-  { key:'phase5',            num:'Phase 05', numClass:'n5', title:'Macro & Geo Risk',      sub:'Energy · Gold · Equity · Risk Rating',      icon:'⚠️' },
+  { key:'phase1',            num:'Phase 01', numClass:'n1', title:'Phase 01 Research',     sub:'Live Web Research',                          icon:'🏦' },
+  { key:'phase2',            num:'Phase 02', numClass:'n2', title:'Phase 02 Research',     sub:'Live Web Research',                          icon:'📊' },
+  { key:'phase3',            num:'Phase 03', numClass:'n3', title:'Phase 03 Research',     sub:'Live Web Research',                          icon:'📈' },
+  { key:'phase4',            num:'Phase 04', numClass:'n4', title:'Phase 04 Research',     sub:'Live Web Research',                          icon:'🎯' },
+  { key:'phase5',            num:'Phase 05', numClass:'n5', title:'Phase 05 Research',     sub:'Live Web Research',                          icon:'⚠️' },
   { key:'phase6_master_bias',num:'Phase 06', numClass:'n6', title:'Master Bias Synthesis', sub:'Final Bias · Confidence Score · Entry Window',icon:'🔮', isMaster:true },
 ];
 
-/* Phase 6 input labels */
+/* Phase 6 input labels (P1_OUTPUT–P5_OUTPUT) */
 var P6_LABELS = [
-  { key:'P1_OUTPUT', num:'n1', label:'Phase 1 Output', hint:'Policy Divergence (CB Research) paste করুন' },
-  { key:'P2_OUTPUT', num:'n2', label:'Phase 2 Output', hint:'Yield Differentials paste করুন' },
-  { key:'P3_OUTPUT', num:'n3', label:'Phase 3 Output', hint:'Economic Momentum paste করুন' },
-  { key:'P4_OUTPUT', num:'n4', label:'Phase 4 Output', hint:'Sentiment & COT paste করুন' },
-  { key:'P5_OUTPUT', num:'n5', label:'Phase 5 Output', hint:'Macro Risk paste করুন' },
+  { key:'P1_OUTPUT', num:'n1', label:'Phase 1 Output', hint:'Phase 1 এর compressed summary paste করুন' },
+  { key:'P2_OUTPUT', num:'n2', label:'Phase 2 Output', hint:'Phase 2 এর compressed summary paste করুন' },
+  { key:'P3_OUTPUT', num:'n3', label:'Phase 3 Output', hint:'Phase 3 এর compressed summary paste করুন' },
+  { key:'P4_OUTPUT', num:'n4', label:'Phase 4 Output', hint:'Phase 4 এর compressed summary paste করুন' },
+  { key:'P5_OUTPUT', num:'n5', label:'Phase 5 Output', hint:'Phase 5 এর compressed summary paste করুন' },
 ];
 
 /* ══════════════════════════════════
@@ -441,14 +446,27 @@ function renderPhases(data, marketLabel) {
   var wrap = document.getElementById('phasesWrap');
   var html = '';
 
-  PHASES.forEach(function(p, idx) {
+  /* Build the phases config — use per-market _phases from JSON if available */
+  var phaseMeta = data['_phases'] || [];
+  var phases = PHASES.map(function(p, idx) {
+    var meta = phaseMeta[idx];
+    if (meta) {
+      return Object.assign({}, p, { title: meta.title, sub: meta.sub, icon: meta.icon });
+    }
+    return p;
+  });
+
+  phases.forEach(function(p, idx) {
     var raw = data[p.key] || '';
     if (!raw) return;
 
     var isMaster = !!p.isMaster;
     var cardId   = 'pc-' + p.key;
 
-    html += '<div class="phase-card rv' + (isMaster ? ' p6-card' : '') + '" id="' + cardId + '">';
+    var cardClass = 'phase-card rv';
+    if (isMaster) cardClass += ' p6-card';
+
+    html += '<div class="' + cardClass + '" id="' + cardId + '">';
 
     /* ── Header ── */
     html += '<div class="phase-hdr" onclick="togglePhase(\'' + cardId + '\')">';
@@ -462,8 +480,8 @@ function renderPhases(data, marketLabel) {
     html += '<div class="phase-body" id="body-' + p.key + '">';
 
     if (isMaster) {
-      /* Phase 6: P1-P5 inputs */
-      html += '<div class="p6-section-title">Phase 1–5 Outputs Paste করুন <span>Required</span></div>';
+      /* Phase 6: P1–P5 paste inputs */
+      html += '<div class="p6-section-title">Phase 1–5 Compressed Outputs Paste করুন <span>Required</span></div>';
       html += '<div class="p6-inputs-grid">';
       P6_LABELS.forEach(function(pl){
         html += '<div class="p6-input-group">';
@@ -520,19 +538,15 @@ function togglePhase(cardId) {
    ▶ DO COPY
 ══════════════════════════════════ */
 function doCopy(phaseKey, isMaster) {
-  /* Get base prompt text */
   var ptEl = document.getElementById('pt-' + phaseKey);
   if (!ptEl) return;
 
-  /* Start from raw prompt with date already injected */
   var text = ptEl.value;
 
   if (isMaster) {
-    /* Inject P1–P5 outputs */
     P6_LABELS.forEach(function(pl){
       var ta = document.getElementById('inp-' + pl.key);
       var val = ta ? ta.value.trim() : '';
-      /* Replace placeholder */
       var re = new RegExp('\\[' + pl.key + '\\]', 'g');
       text = text.replace(re, val || '[' + pl.key + ' — paste করুন]');
     });
@@ -554,6 +568,26 @@ function updateP6Preview() {
   var text = injectDate(raw);
   P6_LABELS.forEach(function(pl){
     var ta = document.getElementById('inp-' + pl.key);
+    var val = ta ? ta.value.trim() : '';
+    var re = new RegExp('\\[' + pl.key + '\\]', 'g');
+    text = text.replace(re, val || '[' + pl.key + ']');
+  });
+  ptEl.value = text;
+}
+
+/* ══════════════════════════════════
+   ▶ UPDATE PHASE 7 / 8 PREVIEW (live)
+══════════════════════════════════ */
+function updatePostPreview(phaseKey) {
+  var ptEl = document.getElementById('pt-' + phaseKey);
+  if (!ptEl) return;
+  var raw = window._currentData && window._currentData[phaseKey];
+  if (!raw) return;
+  var text = injectDate(raw);
+  var phaseNum = (phaseKey === 'phase7_telegram') ? '7' : '8';
+  var inputPrefix = 'inp' + phaseNum + '-';
+  P7P8_LABELS.forEach(function(pl){
+    var ta = document.getElementById(inputPrefix + pl.key);
     var val = ta ? ta.value.trim() : '';
     var re = new RegExp('\\[' + pl.key + '\\]', 'g');
     text = text.replace(re, val || '[' + pl.key + ']');
