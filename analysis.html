@@ -28,7 +28,6 @@
         margin: 0;
         padding: 0;
       }
-
       :root {
         --bg: #faf8f3;
         --bg-card: #ffffff;
@@ -44,9 +43,6 @@
         --amber-dim: rgba(255, 107, 53, 0.09);
         --amber-b: rgba(255, 107, 53, 0.16);
         --blue: #0066ff;
-        --blue-s: #3385ff;
-        --blue-dim: rgba(0, 102, 255, 0.09);
-        --blue-b: rgba(0, 102, 255, 0.15);
         --green: #00a86b;
         --green-s: #33bb7f;
         --H: "Sora", sans-serif;
@@ -55,11 +51,9 @@
         --mw: 960px;
         --r: 14px;
       }
-
       html {
         scroll-behavior: smooth;
       }
-
       body {
         font-family: var(--B);
         color: var(--ink-2);
@@ -67,22 +61,19 @@
         -webkit-font-smoothing: antialiased;
         overflow-x: hidden;
       }
-
       a {
         color: inherit;
         text-decoration: none;
       }
-
       * {
         -webkit-tap-highlight-color: transparent;
       }
-
       a,
       button {
         touch-action: manipulation;
       }
 
-      /* ══ DISCOUNT BAR ══ */
+      /* DISCOUNT BAR */
       .disc-bar {
         background: linear-gradient(90deg, #ffe8d6, #ffd9c0, #ffe8d6);
         border-bottom: 4px solid #ff6b35;
@@ -97,7 +88,6 @@
         overflow: hidden;
         box-shadow: 0 4px 16px rgba(255, 107, 53, 0.18);
       }
-
       .disc-bar::before {
         content: "";
         position: absolute;
@@ -109,25 +99,21 @@
         );
         pointer-events: none;
       }
-
       .disc-bar.disc-urgent {
         animation: discPulse 1.2s ease-in-out infinite;
         box-shadow: 0 6px 24px rgba(255, 107, 53, 0.32);
       }
-
       @keyframes discPulse {
         0%,
         100% {
           transform: translateY(0);
           box-shadow: 0 6px 24px rgba(255, 107, 53, 0.32);
         }
-
         50% {
           transform: translateY(-2px);
           box-shadow: 0 8px 28px rgba(255, 107, 53, 0.42);
         }
       }
-
       .disc-fl {
         font-family: var(--M);
         font-size: 12px;
@@ -142,24 +128,20 @@
         align-items: center;
         gap: 6px;
       }
-
       .disc-fl-fire {
         font-size: 15px;
         display: inline-block;
         animation: fireAnim 1s ease-in-out infinite;
       }
-
       @keyframes fireAnim {
         0%,
         100% {
           transform: scaleY(1) rotate(-2deg);
         }
-
         50% {
           transform: scaleY(1.08) rotate(2deg);
         }
       }
-
       .disc-price-group {
         display: inline-flex;
         align-items: center;
@@ -167,7 +149,6 @@
         position: relative;
         z-index: 1;
       }
-
       .disc-orig {
         font-family: var(--M);
         font-size: 13px;
@@ -176,25 +157,21 @@
         text-decoration: line-through;
         text-decoration-color: #d94000;
       }
-
       .disc-arr {
         color: #d94000;
         font-weight: 900;
         font-size: 13px;
         animation: arrBounce 0.7s ease-in-out infinite;
       }
-
       @keyframes arrBounce {
         0%,
         100% {
           transform: translateX(0);
         }
-
         50% {
           transform: translateX(4px);
         }
       }
-
       .disc-now {
         font-family: var(--M);
         font-size: 22px;
@@ -203,7 +180,6 @@
         letter-spacing: -0.02em;
         text-shadow: 0 2px 4px rgba(217, 64, 0, 0.18);
       }
-
       .disc-badge {
         display: inline-flex;
         align-items: center;
@@ -226,7 +202,6 @@
         z-index: 1;
         box-shadow: 0 2px 6px rgba(217, 64, 0, 0.12);
       }
-
       .disc-vdiv {
         width: 1px;
         height: 26px;
@@ -235,7 +210,6 @@
         position: relative;
         z-index: 1;
       }
-
       .disc-timer-wrap {
         display: inline-flex;
         align-items: center;
@@ -243,56 +217,17 @@
         position: relative;
         z-index: 1;
       }
-
-      .disc-timer-lbl {
-        font-family: var(--M);
-        font-size: 9px;
-        font-weight: 700;
-        color: #c43a00;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .disc-timer-lbl::before {
-        content: "";
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #e03a00;
-        flex-shrink: 0;
-        animation: timerDot 0.9s ease-in-out infinite;
-      }
-
-      @keyframes timerDot {
-        0%,
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-
-        50% {
-          opacity: 0.4;
-          transform: scale(0.7);
-        }
-      }
-
       .disc-clock {
         display: inline-flex;
         align-items: center;
         gap: 2px;
       }
-
       .disc-unit {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2px;
       }
-
       .disc-d {
         font-family: var(--M);
         font-size: 17px;
@@ -311,33 +246,27 @@
           inset 0 1px 0 rgba(255, 255, 255, 0.18);
         display: block;
       }
-
       .disc-d.flip {
         animation: digitFlip 0.22s ease-in-out;
       }
-
       @keyframes digitFlip {
         0% {
           transform: scaleY(1);
           opacity: 1;
         }
-
         40% {
           transform: scaleY(0);
           opacity: 0;
         }
-
         60% {
           transform: scaleY(0);
           opacity: 0;
         }
-
         100% {
           transform: scaleY(1);
           opacity: 1;
         }
       }
-
       .disc-u-lbl {
         font-family: var(--M);
         font-size: 7.5px;
@@ -346,7 +275,6 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
       }
-
       .disc-sep2 {
         font-family: var(--M);
         font-size: 18px;
@@ -357,60 +285,49 @@
         padding-top: 2px;
         line-height: 1.25;
       }
-
       .disc-bar.disc-urgent .disc-d {
         background: #c00000;
         animation: urgentFlash 0.65s ease-in-out infinite;
       }
-
       @keyframes urgentFlash {
         0%,
         100% {
           opacity: 1;
         }
-
         50% {
           opacity: 0.7;
         }
       }
-
       @media (max-width: 680px) {
         .disc-fl,
         .disc-vdiv {
           display: none;
         }
       }
-
       @media (max-width: 520px) {
         .disc-bar {
           padding: 7px 10px;
           gap: 7px;
         }
-
         .disc-d {
           font-size: 14px;
           min-width: 27px;
           padding: 3px 5px;
         }
-
         .disc-sep2 {
           font-size: 15px;
         }
-
         .disc-u-lbl {
           font-size: 7px;
         }
-
         .disc-now {
           font-size: 18px;
         }
-
         .disc-badge {
           font-size: 10px;
           padding: 4px 9px;
         }
       }
-
       @media (max-width: 400px) {
         .disc-orig,
         .disc-arr {
@@ -418,14 +335,13 @@
         }
       }
 
-      /* ══ STICKY HEADER ══ */
       .sticky-header {
         position: sticky;
         top: 0;
         z-index: 200;
       }
 
-      /* ═══ NAV ═══ */
+      /* NAV */
       .navbar {
         position: relative;
         background: rgba(250, 248, 243, 0.92);
@@ -434,11 +350,9 @@
         border-bottom: 1px solid var(--line);
         transition: box-shadow 0.3s;
       }
-
       .navbar.scrolled {
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
       }
-
       .nav-inner {
         max-width: var(--mw);
         margin: 0 auto;
@@ -449,13 +363,11 @@
         padding: 0 32px;
         gap: 16px;
       }
-
       .nav-logo {
         display: flex;
         align-items: center;
         gap: 10px;
       }
-
       .nav-logo-mark {
         width: 36px;
         height: 36px;
@@ -467,10 +379,9 @@
         font-family: var(--M);
         font-size: 12px;
         font-weight: 700;
-        color: #ffffff;
+        color: #fff;
         flex-shrink: 0;
       }
-
       .nav-logo-name {
         font-family: var(--H);
         font-size: 13px;
@@ -479,20 +390,17 @@
         display: block;
         line-height: 1.3;
       }
-
       .nav-logo-sub {
         font-size: 10px;
         color: var(--ink-3);
         letter-spacing: 0.06em;
         display: block;
       }
-
       .nav-right {
         display: flex;
         align-items: center;
         gap: 6px;
       }
-
       .nav-link {
         font-size: 13px;
         font-weight: 600;
@@ -501,44 +409,37 @@
         border-radius: 8px;
         transition: all 0.2s;
       }
-
       .nav-link:hover {
         background: rgba(15, 20, 25, 0.06);
         color: var(--ink);
       }
-
       .nav-link.active {
         color: var(--amber);
       }
-
       @keyframes btnShimmer {
         0% {
           left: -100%;
           opacity: 0;
         }
-
         15% {
           opacity: 1;
         }
-
         50% {
           left: 120%;
           opacity: 1;
         }
-
         51%,
         100% {
           left: 120%;
           opacity: 0;
         }
       }
-
       .nav-cta {
         display: inline-flex;
         align-items: center;
         gap: 7px;
         background: linear-gradient(135deg, #ff6b35, #ff5320);
-        color: #ffffff;
+        color: #fff;
         font-family: var(--M);
         font-size: 12.5px;
         font-weight: 900;
@@ -553,7 +454,6 @@
         border: none;
         cursor: pointer;
       }
-
       .nav-cta::before {
         content: "";
         position: absolute;
@@ -565,7 +465,6 @@
         );
         pointer-events: none;
       }
-
       .nav-cta::after {
         content: "";
         position: absolute;
@@ -581,24 +480,19 @@
         );
         animation: btnShimmer 3s ease-in-out infinite;
       }
-
       .nav-cta:hover {
         transform: translateY(-2px) scale(1.05);
         box-shadow: 0 8px 24px rgba(255, 107, 53, 0.6);
-        background: linear-gradient(135deg, #ff5320, #ff3d00);
       }
-
       .nav-cta:active {
         transform: translateY(0) scale(1.02);
       }
-
       @media (max-width: 540px) {
         .nav-link:not(.active) {
           display: none;
         }
       }
 
-      /* ══ SECTION PROGRESS ══ */
       .section-progress {
         position: fixed;
         top: 0;
@@ -611,19 +505,17 @@
         box-shadow: 0 0 8px rgba(255, 107, 53, 0.6);
       }
 
-      /* ══ MAIN ══ */
       main {
         max-width: var(--mw);
         margin: 0 auto;
         padding: 40px 24px 80px;
       }
 
-      /* ══ PAGE HEADER ══ */
+      /* PAGE HEADER */
       .pg-hdr {
         padding: 32px 0 36px;
         text-align: center;
       }
-
       .pg-hdr-badge {
         display: inline-flex;
         align-items: center;
@@ -640,7 +532,6 @@
         border-radius: 100px;
         margin-bottom: 16px;
       }
-
       .pg-hdr h1 {
         font-family: var(--H);
         font-size: clamp(24px, 4vw, 36px);
@@ -650,12 +541,10 @@
         line-height: 1.2;
         margin-bottom: 10px;
       }
-
       .pg-hdr h1 em {
         color: var(--amber);
         font-style: normal;
       }
-
       .pg-hdr p {
         font-size: 15px;
         color: var(--ink-3);
@@ -664,7 +553,7 @@
         line-height: 1.6;
       }
 
-      /* ══ DATE DISPLAY ══ */
+      /* DATE */
       .date-bar {
         display: flex;
         align-items: center;
@@ -672,7 +561,6 @@
         gap: 8px;
         margin-bottom: 28px;
       }
-
       .date-pill {
         display: inline-flex;
         align-items: center;
@@ -687,7 +575,6 @@
         border-radius: 100px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
       }
-
       .date-dot {
         width: 7px;
         height: 7px;
@@ -697,132 +584,297 @@
         flex-shrink: 0;
         animation: liveDot 1.5s ease-in-out infinite;
       }
-
       @keyframes liveDot {
         0%,
         100% {
           opacity: 1;
         }
-
         50% {
           opacity: 0.4;
         }
       }
 
-      /* ══ MARKET TABS ══ */
+      /* ══ MARKET SECTION — REDESIGNED ══ */
       .mkt-bar {
         margin-bottom: 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
       }
 
-      .mkt-bar-lbl {
+      .mkt-section-hdr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .mkt-section-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .mkt-section-title {
+        font-family: var(--H);
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .mkt-section-title::before {
+        content: "";
+        width: 4px;
+        height: 18px;
+        background: linear-gradient(180deg, var(--amber), var(--amber-s));
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .mkt-count-badge {
         font-family: var(--M);
         font-size: 10px;
         font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
         color: var(--ink-3);
-        margin-bottom: 0;
+        background: var(--bg-elevated);
+        border: 1px solid var(--line);
+        padding: 3px 9px;
+        border-radius: 100px;
       }
 
-      .mkt-tabs {
+      /* Category filter pills */
+      .mkt-cats {
         display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        padding: 6px 2px 8px;
-        scroll-snap-type: x proximity;
-        scroll-padding-inline: 6px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        gap: 7px;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
       }
-
-      .mkt-tabs::-webkit-scrollbar {
-        display: none;
-      }
-
-      .mkt-tab {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 46px;
-        padding: 11px 17px;
-        border-radius: 999px;
-        border: 1.5px solid var(--line-s);
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0.98),
-          var(--bg-card)
-        );
-        color: var(--ink-2);
-        cursor: pointer;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s,
-          border-color 0.2s,
-          background 0.2s,
-          color 0.2s;
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        font-family: var(--H);
-        font-size: 13px;
+      .mkt-cat-btn {
+        font-family: var(--M);
+        font-size: 10px;
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        padding: 5px 14px;
+        border-radius: 100px;
+        border: 1.5px solid var(--line-s);
+        background: var(--bg-card);
+        color: var(--ink-3);
+        cursor: pointer;
+        transition: all 0.18s;
         white-space: nowrap;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
       }
-
-      .mkt-tab:hover {
-        transform: translateY(-1px);
+      .mkt-cat-btn:hover {
         border-color: var(--amber-b);
-        background: rgba(255, 241, 234, 0.85);
-        color: var(--ink);
+        color: var(--amber);
+        background: var(--amber-dim);
       }
-
-      .mkt-tab.active {
+      .mkt-cat-btn.active {
         background: linear-gradient(135deg, var(--amber), var(--amber-s));
         border-color: var(--amber);
         color: #fff;
-        box-shadow: 0 8px 24px rgba(255, 107, 53, 0.28);
-        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);
       }
 
-      .mkt-tab:focus-visible {
-        outline: 3px solid rgba(255, 107, 53, 0.22);
-        outline-offset: 2px;
+      /* Market card grid */
+      .mkt-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 9px;
       }
-
-      .mkt-selection {
-        display: inline-flex;
+      .mkt-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 8px;
-        width: fit-content;
-        max-width: 100%;
-        padding: 9px 14px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.82);
-        border: 1px solid var(--line);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
-        font-family: var(--B);
-        font-size: 12px;
+        justify-content: center;
+        gap: 5px;
+        padding: 13px 8px 10px;
+        border: 1.5px solid var(--line);
+        border-radius: 13px;
+        background: var(--bg-card);
+        cursor: pointer;
+        user-select: none;
+        text-align: center;
+        transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      }
+      .mkt-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(255, 107, 53, 0.3);
+        box-shadow: 0 8px 20px rgba(255, 107, 53, 0.12);
+      }
+      .mkt-card.active {
+        border-color: var(--amber);
+        background: linear-gradient(
+          135deg,
+          rgba(255, 107, 53, 0.08),
+          rgba(255, 133, 85, 0.04)
+        );
+        box-shadow: 0 6px 22px rgba(255, 107, 53, 0.22);
+        transform: translateY(-3px);
+      }
+      .mkt-card.active::after {
+        content: "✓";
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 900;
+        color: var(--amber);
+        opacity: 0.85;
+      }
+      .mkt-card.hidden {
+        display: none;
+      }
+
+      .mkt-card-icon {
+        font-size: 20px;
+        line-height: 1;
+        transition: transform 0.2s;
+      }
+      .mkt-card:hover .mkt-card-icon,
+      .mkt-card.active .mkt-card-icon {
+        transform: scale(1.15);
+      }
+      .mkt-card-label {
+        font-family: var(--H);
+        font-size: 11.5px;
+        font-weight: 700;
+        color: var(--ink-2);
+        letter-spacing: 0.01em;
+        line-height: 1.2;
+        transition: color 0.2s;
+      }
+      .mkt-card.active .mkt-card-label {
+        color: var(--amber);
+      }
+      .mkt-card-type {
+        font-family: var(--M);
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        margin-top: 1px;
+        transition: color 0.2s;
+      }
+      .mkt-card.active .mkt-card-type {
+        color: rgba(255, 107, 53, 0.55);
+      }
+
+      /* Active indicator strip */
+      .mkt-active-strip {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 13px;
+        padding: 10px 16px;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 107, 53, 0.06),
+          rgba(255, 133, 85, 0.03)
+        );
+        border: 1px solid var(--amber-b);
+        border-radius: 11px;
+        transition: all 0.3s;
+        overflow: hidden;
+      }
+      .mkt-active-icon {
+        font-size: 17px;
+        flex-shrink: 0;
+      }
+      .mkt-active-text {
+        font-size: 12.5px;
         color: var(--ink-3);
       }
-
-      .mkt-selection strong {
-        color: var(--ink);
+      .mkt-active-name {
+        font-family: var(--H);
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--amber);
+        letter-spacing: -0.01em;
+      }
+      .mkt-active-right {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .mkt-active-cat {
+        font-family: var(--M);
+        font-size: 9px;
         font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        background: var(--bg-elevated);
+        border: 1px solid var(--line);
+        padding: 3px 9px;
+        border-radius: 6px;
+      }
+      .mkt-active-live {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-family: var(--M);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--green);
+      }
+      .mkt-active-live::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--green);
+        flex-shrink: 0;
+        animation: liveDot 1.2s ease-in-out infinite;
       }
 
-      /* ══ PHASE CONTAINER ══ */
+      @media (max-width: 640px) {
+        .mkt-grid {
+          grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+          gap: 7px;
+        }
+        .mkt-card {
+          padding: 11px 6px 9px;
+        }
+        .mkt-card-icon {
+          font-size: 18px;
+        }
+        .mkt-card-label {
+          font-size: 10.5px;
+        }
+        main {
+          padding: 28px 16px 60px;
+        }
+        .pg-hdr {
+          padding: 20px 0 24px;
+        }
+        .mkt-bar {
+          margin-bottom: 24px;
+        }
+      }
+      @media (max-width: 420px) {
+        .mkt-grid {
+          grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+          gap: 6px;
+        }
+        .mkt-active-right {
+          display: none;
+        }
+      }
+
+      /* PHASES */
       .phases-wrap {
         display: flex;
         flex-direction: column;
         gap: 16px;
       }
-
-      /* ══ PHASE CARD ══ */
       .phase-card {
         background: var(--bg-card);
         border: 1.5px solid var(--line);
@@ -832,11 +884,9 @@
           border-color 0.25s,
           box-shadow 0.25s;
       }
-
       .phase-card:hover {
         border-color: rgba(255, 107, 53, 0.2);
       }
-
       .phase-card.p6-card {
         border-color: rgba(255, 107, 53, 0.25);
         background: linear-gradient(
@@ -845,25 +895,6 @@
           var(--bg-card)
         );
       }
-
-      .phase-card.p7-card {
-        border-color: rgba(34, 158, 217, 0.2);
-        background: linear-gradient(
-          135deg,
-          rgba(34, 158, 217, 0.02),
-          var(--bg-card)
-        );
-      }
-
-      .phase-card.p8-card {
-        border-color: rgba(16, 185, 129, 0.2);
-        background: linear-gradient(
-          135deg,
-          rgba(16, 185, 129, 0.02),
-          var(--bg-card)
-        );
-      }
-
       .phase-hdr {
         display: flex;
         align-items: center;
@@ -872,19 +903,15 @@
         cursor: pointer;
         user-select: none;
       }
-
       .phase-hdr:hover .phase-chevron {
         transform: rotate(5deg);
       }
-
       .phase-card.open .phase-hdr {
         border-bottom: 1px solid var(--line);
       }
-
       .phase-card.open .phase-chevron {
         transform: rotate(180deg) !important;
       }
-
       .phase-num {
         font-family: var(--M);
         font-size: 11px;
@@ -896,37 +923,31 @@
         text-align: center;
         flex-shrink: 0;
       }
-
       .phase-num.n1 {
         background: rgba(0, 102, 255, 0.1);
         color: #0066ff;
         border: 1px solid rgba(0, 102, 255, 0.2);
       }
-
       .phase-num.n2 {
         background: rgba(0, 168, 107, 0.1);
         color: #00a86b;
         border: 1px solid rgba(0, 168, 107, 0.2);
       }
-
       .phase-num.n3 {
         background: rgba(130, 80, 220, 0.1);
         color: #7c3aed;
         border: 1px solid rgba(130, 80, 220, 0.2);
       }
-
       .phase-num.n4 {
         background: rgba(234, 88, 12, 0.1);
         color: #ea580c;
         border: 1px solid rgba(234, 88, 12, 0.2);
       }
-
       .phase-num.n5 {
         background: rgba(220, 38, 38, 0.1);
         color: #dc2626;
         border: 1px solid rgba(220, 38, 38, 0.2);
       }
-
       .phase-num.n6 {
         background: linear-gradient(
           135deg,
@@ -936,24 +957,20 @@
         color: #d94000;
         border: 1px solid rgba(255, 107, 53, 0.3);
       }
-
       .phase-num.n7 {
         background: rgba(34, 158, 217, 0.1);
         color: #229ed9;
         border: 1px solid rgba(34, 158, 217, 0.25);
       }
-
       .phase-num.n8 {
         background: rgba(16, 185, 129, 0.1);
         color: #059669;
         border: 1px solid rgba(16, 185, 129, 0.25);
       }
-
       .phase-meta {
         flex: 1;
         min-width: 0;
       }
-
       .phase-title {
         font-family: var(--H);
         font-size: 14px;
@@ -961,13 +978,11 @@
         color: var(--ink);
         letter-spacing: -0.01em;
       }
-
       .phase-sub {
         font-size: 12px;
         color: var(--ink-3);
         margin-top: 2px;
       }
-
       .phase-chevron {
         width: 20px;
         height: 20px;
@@ -975,30 +990,26 @@
         flex-shrink: 0;
         transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
       }
-
       .phase-body {
         display: none;
         padding: 20px;
       }
-
       .phase-card.open .phase-body {
         display: block;
         animation: bodyIn 0.25s ease;
       }
-
       @keyframes bodyIn {
         from {
           opacity: 0;
           transform: translateY(-6px);
         }
-
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
 
-      /* ══ PROMPT AREA ══ */
+      /* PROMPT */
       .prompt-label {
         font-family: var(--M);
         font-size: 10px;
@@ -1011,7 +1022,6 @@
         align-items: center;
         gap: 6px;
       }
-
       .prompt-label::before {
         content: "";
         width: 3px;
@@ -1019,7 +1029,6 @@
         background: var(--amber);
         border-radius: 2px;
       }
-
       .prompt-text {
         width: 100%;
         min-height: 180px;
@@ -1039,16 +1048,11 @@
         word-break: break-word;
         transition: border-color 0.2s;
       }
-
       .prompt-text:focus {
         border-color: var(--amber-b);
       }
 
-      .prompt-text::selection {
-        background: rgba(255, 107, 53, 0.2);
-      }
-
-      /* ══ PHASE 6 INPUTS ══ */
+      /* PHASE 6 */
       .p6-section-title {
         font-family: var(--H);
         font-size: 13px;
@@ -1059,7 +1063,6 @@
         align-items: center;
         gap: 8px;
       }
-
       .p6-section-title span {
         font-family: var(--M);
         font-size: 10px;
@@ -1071,14 +1074,12 @@
         padding: 3px 8px;
         border-radius: 5px;
       }
-
       .p6-inputs-grid {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin-bottom: 20px;
       }
-
       .p6-input-group label {
         display: flex;
         align-items: center;
@@ -1089,7 +1090,6 @@
         color: var(--ink-2);
         margin-bottom: 6px;
       }
-
       .p6-input-group label .lbl-num {
         font-family: var(--M);
         font-size: 10px;
@@ -1098,31 +1098,21 @@
         border-radius: 5px;
         color: #fff;
       }
-
       .lbl-n1 {
         background: #0066ff;
       }
-
       .lbl-n2 {
         background: #00a86b;
       }
-
       .lbl-n3 {
         background: #7c3aed;
       }
-
       .lbl-n4 {
         background: #ea580c;
       }
-
       .lbl-n5 {
         background: #dc2626;
       }
-
-      .lbl-n6 {
-        background: #d94000;
-      }
-
       .p6-textarea {
         width: 100%;
         height: 100px;
@@ -1140,24 +1130,20 @@
           border-color 0.2s,
           box-shadow 0.2s;
       }
-
       .p6-textarea:focus {
         border-color: var(--amber-b);
         box-shadow: 0 0 0 3px var(--amber-dim);
       }
-
       .p6-textarea::placeholder {
         color: var(--ink-3);
-        font-style: normal;
       }
-
       .p6-divider {
         height: 1px;
         background: var(--line);
         margin: 20px 0;
       }
 
-      /* ══ COPY BUTTON ══ */
+      /* COPY */
       .copy-row {
         display: flex;
         align-items: center;
@@ -1166,17 +1152,14 @@
         gap: 10px;
         margin-top: 16px;
       }
-
       .copy-hint {
         font-size: 12px;
         color: var(--ink-3);
       }
-
       .copy-hint strong {
         color: var(--amber);
         font-weight: 600;
       }
-
       .btn-copy {
         display: inline-flex;
         align-items: center;
@@ -1196,31 +1179,19 @@
         box-shadow: 0 3px 12px rgba(255, 107, 53, 0.3);
         flex-shrink: 0;
       }
-
       .btn-copy:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 18px rgba(255, 107, 53, 0.4);
       }
-
       .btn-copy:active {
         transform: translateY(0) scale(0.97);
       }
-
       .btn-copy.copied {
         background: linear-gradient(135deg, var(--green), var(--green-s));
         box-shadow: 0 3px 12px rgba(0, 168, 107, 0.3);
       }
 
-      .btn-copy svg {
-        flex-shrink: 0;
-        transition: transform 0.25s;
-      }
-
-      .btn-copy.copied svg {
-        transform: scale(1.2);
-      }
-
-      /* ══ LOADING STATE ══ */
+      /* LOAD / ERR */
       .load-state {
         display: flex;
         flex-direction: column;
@@ -1230,7 +1201,6 @@
         gap: 14px;
         text-align: center;
       }
-
       .load-spin {
         width: 36px;
         height: 36px;
@@ -1239,19 +1209,15 @@
         border-radius: 50%;
         animation: spin 0.75s linear infinite;
       }
-
       @keyframes spin {
         to {
           transform: rotate(360deg);
         }
       }
-
       .load-txt {
         font-size: 14px;
         color: var(--ink-3);
       }
-
-      /* ══ ERROR STATE ══ */
       .err-state {
         background: rgba(220, 38, 38, 0.05);
         border: 1.5px solid rgba(220, 38, 38, 0.15);
@@ -1259,12 +1225,10 @@
         padding: 28px;
         text-align: center;
       }
-
       .err-icon {
         font-size: 28px;
         margin-bottom: 10px;
       }
-
       .err-title {
         font-family: var(--H);
         font-size: 15px;
@@ -1272,13 +1236,11 @@
         color: #dc2626;
         margin-bottom: 6px;
       }
-
       .err-sub {
         font-size: 13px;
         color: var(--ink-3);
         line-height: 1.5;
       }
-
       .err-code {
         font-family: var(--M);
         font-size: 11px;
@@ -1290,7 +1252,7 @@
         display: inline-block;
       }
 
-      /* ══ TOAST ══ */
+      /* TOAST */
       .toast {
         position: fixed;
         bottom: 24px;
@@ -1311,21 +1273,18 @@
         opacity: 0;
         white-space: nowrap;
       }
-
       .toast.show {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
       }
-
       .toast.success {
         background: linear-gradient(135deg, #00a86b, #00b87c);
       }
-
       .toast.error {
         background: linear-gradient(135deg, #dc2626, #ef4444);
       }
 
-      /* ══ SCROLL REVEAL ══ */
+      /* SCROLL REVEAL */
       .rv {
         opacity: 0;
         transform: translateY(20px) scale(0.99);
@@ -1333,18 +1292,16 @@
           opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
           transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
       }
-
       .rv.on {
         opacity: 1;
         transform: translateY(0) scale(1);
       }
 
-      /* ══ FOOTER ══ */
+      /* FOOTER */
       .ft {
         border-top: 1px solid var(--line);
         padding: 20px 24px;
       }
-
       .ft-bot {
         max-width: var(--mw);
         margin: 0 auto;
@@ -1354,34 +1311,28 @@
         flex-wrap: wrap;
         gap: 10px;
       }
-
       .ft-copy {
         font-size: 12px;
         color: var(--ink-3);
       }
-
       .ft-nav {
         display: flex;
         align-items: center;
         gap: 16px;
       }
-
       .ft-nav a {
         font-size: 12px;
         color: var(--ink-3);
         transition: color 0.2s;
       }
-
       .ft-nav a:hover {
         color: var(--amber);
       }
-
       .ft-disc {
         font-size: 11px;
         color: var(--ink-3);
         opacity: 0.65;
       }
-
       @media (max-width: 640px) {
         .ft-bot {
           flex-direction: column;
@@ -1390,7 +1341,7 @@
         }
       }
 
-      /* ══ BTT ══ */
+      /* BTT */
       .btt {
         position: fixed;
         bottom: 24px;
@@ -1410,71 +1361,26 @@
         transform: translateY(8px);
         transition: all 0.3s;
       }
-
       .btt.on {
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
       }
-
       .btt:hover {
         border-color: var(--amber);
         color: var(--amber);
         background: var(--amber-dim);
       }
 
-      /* ══ RESPONSIVE ══ */
-      @media (max-width: 640px) {
-        main {
-          padding: 28px 16px 60px;
-        }
-
-        .pg-hdr {
-          padding: 20px 0 24px;
-        }
-
-        .mkt-bar {
-          margin-bottom: 24px;
-        }
-
-        .mkt-tabs {
-          gap: 8px;
-          padding: 4px 2px 6px;
-        }
-
-        .mkt-tab {
-          min-height: 42px;
-          padding: 9px 14px;
-          font-size: 12px;
-        }
-
-        .mkt-selection {
-          font-size: 11px;
-          padding: 8px 12px;
-        }
-
-        .phase-body {
-          padding: 14px;
-        }
-
-        .prompt-text {
-          min-height: 140px;
-          font-size: 11px;
-        }
-      }
-
-      /* ══ TG PULSE ══ */
       @keyframes tgPulse {
         0%,
         100% {
           box-shadow: 0 4px 14px rgba(34, 158, 217, 0.3);
         }
-
         50% {
           box-shadow: 0 4px 20px rgba(34, 158, 217, 0.5);
         }
       }
-
       .tg-pulse {
         animation: tgPulse 2s ease-in-out infinite;
       }
@@ -1484,9 +1390,7 @@
   <body>
     <div class="section-progress" id="sectionProgress"></div>
 
-    <!-- ════ STICKY HEADER ════ -->
     <header class="sticky-header">
-      <!-- ════ DISCOUNT BAR ════ -->
       <div class="disc-bar" id="discBar">
         <span class="disc-fl"
           ><span class="disc-fl-fire">🔥</span
@@ -1518,7 +1422,6 @@
           </span>
         </span>
       </div>
-      <!-- ════ NAVBAR ════ -->
       <nav class="navbar" id="navbar">
         <div class="nav-inner">
           <a class="nav-logo" href="index.html">
@@ -1537,7 +1440,8 @@
               href="https://t.me/AskNLT"
               target="_blank"
               rel="noopener noreferrer"
-              ><svg
+            >
+              <svg
                 width="14"
                 height="14"
                 viewBox="0 0 24 24"
@@ -1547,16 +1451,14 @@
                   d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"
                 />
               </svg>
-              Join করুন</a
-            >
+              Join করুন
+            </a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- ════ MAIN ════ -->
     <main>
-      <!-- PAGE HEADER -->
       <div class="pg-hdr rv">
         <div class="pg-hdr-badge">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
@@ -1574,7 +1476,6 @@
         </p>
       </div>
 
-      <!-- DATE BAR -->
       <div class="date-bar rv">
         <div class="date-pill">
           <span class="date-dot"></span>
@@ -1587,18 +1488,33 @@
         </div>
       </div>
 
-      <!-- MARKET TABS -->
+      <!-- MARKET SECTION -->
       <div class="mkt-bar rv">
-        <div class="mkt-bar-lbl">Market Select করুন</div>
-        <div class="mkt-tabs" id="mktTabs">
-          <!-- Generated by JS -->
+        <div class="mkt-section-hdr">
+          <div class="mkt-section-left">
+            <div class="mkt-section-title">Market Select করুন</div>
+            <span class="mkt-count-badge" id="mktCountBadge">20 markets</span>
+          </div>
         </div>
-        <div class="mkt-selection" id="mktSelection">
-          Selected market: <strong>EUR/GBP</strong>
+
+        <!-- Category filter pills -->
+        <div class="mkt-cats" id="mktCats"></div>
+
+        <!-- Market card grid -->
+        <div class="mkt-grid" id="mktGrid"></div>
+
+        <!-- Active market strip -->
+        <div class="mkt-active-strip" id="mktActiveStrip">
+          <span class="mkt-active-icon" id="mktActiveIcon">—</span>
+          <span class="mkt-active-text">Analyzing:</span>
+          <span class="mkt-active-name" id="mktActiveName">—</span>
+          <div class="mkt-active-right">
+            <span class="mkt-active-live">Live</span>
+            <span class="mkt-active-cat" id="mktActiveCat">—</span>
+          </div>
         </div>
       </div>
 
-      <!-- PHASES CONTAINER -->
       <div class="phases-wrap" id="phasesWrap">
         <div class="load-state">
           <div class="load-spin"></div>
@@ -1607,7 +1523,6 @@
       </div>
     </main>
 
-    <!-- ════ FOOTER ════ -->
     <footer class="ft">
       <div class="ft-bot">
         <span class="ft-copy"
@@ -1650,118 +1565,150 @@
     <div class="toast" id="toast"></div>
 
     <script>
-      /* ══════════════════════════════════
-       ▶ CONFIGURATION — Edit here only
-    ══════════════════════════════════ */
+      /* ══ MARKETS with categories ══ */
       var MARKETS = [
         {
           id: "audusd",
           icon: "🇦🇺",
           label: "AUD/USD",
           file: "prompts/audusd.json",
+          cat: "Forex",
         },
         {
           id: "btcusd",
           icon: "₿",
           label: "BTC/USD",
           file: "prompts/btcusd.json",
+          cat: "Crypto",
         },
-        { id: "dxy", icon: "📊", label: "DXY", file: "prompts/dxy.json" },
+        {
+          id: "dxy",
+          icon: "📊",
+          label: "DXY",
+          file: "prompts/dxy.json",
+          cat: "Index",
+        },
         {
           id: "ethusd",
           icon: "Ξ",
           label: "ETH/USD",
           file: "prompts/ethusd.json",
+          cat: "Crypto",
         },
         {
           id: "eurgbp",
-          icon: "🇪🇺/🇬🇧",
+          icon: "🇪🇺",
           label: "EUR/GBP",
           file: "prompts/eurgbp.json",
+          cat: "Forex",
         },
         {
           id: "eurjpy",
-          icon: "🇪🇺/🇯🇵",
+          icon: "🇪🇺",
           label: "EUR/JPY",
           file: "prompts/eurjpy.json",
+          cat: "Forex",
         },
         {
           id: "eurusd",
-          icon: "🇪🇺/🇺🇸",
+          icon: "🇪🇺",
           label: "EUR/USD",
           file: "prompts/eurusd.json",
+          cat: "Forex",
         },
         {
           id: "gbpjpy",
-          icon: "🇬🇧/🇯🇵",
+          icon: "🇬🇧",
           label: "GBP/JPY",
           file: "prompts/gbpjpy.json",
+          cat: "Forex",
         },
         {
           id: "gbpusd",
-          icon: "🇬🇧/🇺🇸",
+          icon: "🇬🇧",
           label: "GBP/USD",
           file: "prompts/gbpusd.json",
+          cat: "Forex",
         },
         {
           id: "nzdusd",
           icon: "🇳🇿",
           label: "NZD/USD",
           file: "prompts/nzdusd.json",
+          cat: "Forex",
         },
         {
           id: "solusd",
           icon: "◎",
           label: "SOL/USD",
           file: "prompts/solusd.json",
+          cat: "Crypto",
         },
         {
           id: "ukoil",
           icon: "🛢️",
           label: "UK OIL",
           file: "prompts/ukoil.json",
+          cat: "Commodity",
         },
-        { id: "us100", icon: "📈", label: "US100", file: "prompts/us100.json" },
-        { id: "us500", icon: "📈", label: "US500", file: "prompts/us500.json" },
+        {
+          id: "us100",
+          icon: "📈",
+          label: "US100",
+          file: "prompts/us100.json",
+          cat: "Index",
+        },
+        {
+          id: "us500",
+          icon: "📈",
+          label: "US500",
+          file: "prompts/us500.json",
+          cat: "Index",
+        },
         {
           id: "usdcad",
           icon: "🇨🇦",
           label: "USD/CAD",
           file: "prompts/usdcad.json",
+          cat: "Forex",
         },
         {
           id: "usdchf",
           icon: "🇨🇭",
           label: "USD/CHF",
           file: "prompts/usdchf.json",
+          cat: "Forex",
         },
         {
           id: "usdjpy",
-          icon: "🇺🇸/🇯🇵",
+          icon: "🇺🇸",
           label: "USD/JPY",
           file: "prompts/usdjpy.json",
+          cat: "Forex",
         },
         {
           id: "usoil",
           icon: "🛢️",
           label: "US OIL",
           file: "prompts/usoil.json",
+          cat: "Commodity",
         },
         {
           id: "xagusd",
-          icon: "🥇",
+          icon: "🥈",
           label: "XAG/USD",
           file: "prompts/xagusd.json",
+          cat: "Commodity",
         },
         {
           id: "xauusd",
           icon: "🥇",
           label: "XAU/USD",
           file: "prompts/xauusd.json",
+          cat: "Commodity",
         },
       ];
 
-      /* Default PHASES fallback (overridden per-market via JSON _phases) */
       var PHASES = [
         {
           key: "phase1",
@@ -1814,7 +1761,6 @@
         },
       ];
 
-      /* Phase 6 input labels (P1_OUTPUT–P5_OUTPUT) */
       var P6_LABELS = [
         {
           key: "P1_OUTPUT",
@@ -1848,37 +1794,36 @@
         },
       ];
 
-      /* ══════════════════════════════════
-       ▶ DATE UTILITY
-    ══════════════════════════════════ */
+      /* DATE */
       function getFormattedDate() {
-        var d = new Date();
-        var months = [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December",
-        ];
-        var day = String(d.getDate()).padStart(2, "0");
-        var month = months[d.getMonth()];
-        var year = d.getFullYear();
-        return month + " " + day + ", " + year;
+        var d = new Date(),
+          months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+        return (
+          months[d.getMonth()] +
+          " " +
+          String(d.getDate()).padStart(2, "0") +
+          ", " +
+          d.getFullYear()
+        );
       }
       function injectDate(txt) {
         return txt.replace(/\[CURRENT_DATE\]/g, getFormattedDate());
       }
 
-      /* ══════════════════════════════════
-       ▶ TOAST
-    ══════════════════════════════════ */
+      /* TOAST */
       var toastTimer;
       function showToast(msg, type) {
         var t = document.getElementById("toast");
@@ -1890,9 +1835,7 @@
         }, 2600);
       }
 
-      /* ══════════════════════════════════
-       ▶ COPY TO CLIPBOARD
-    ══════════════════════════════════ */
+      /* COPY */
       function copyText(text, btn) {
         if (!text.trim()) {
           showToast("Prompt empty!", "error");
@@ -1932,7 +1875,6 @@
             showToast("Copy failed — manually select করুন", "error");
           });
       }
-
       function copyBtnInner(label) {
         return (
           '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> ' +
@@ -1940,40 +1882,28 @@
         );
       }
 
-      /* ══════════════════════════════════
-       ▶ RENDER PHASES
-    ══════════════════════════════════ */
+      /* RENDER PHASES */
       function renderPhases(data, marketLabel) {
-        var wrap = document.getElementById("phasesWrap");
-        var html = "";
-
-        /* Build the phases config — use per-market _phases from JSON if available */
+        var wrap = document.getElementById("phasesWrap"),
+          html = "";
         var phaseMeta = data["_phases"] || [];
         var phases = PHASES.map(function (p, idx) {
           var meta = phaseMeta[idx];
-          if (meta) {
-            return Object.assign({}, p, {
-              title: meta.title,
-              sub: meta.sub,
-              icon: meta.icon,
-            });
-          }
-          return p;
+          return meta
+            ? Object.assign({}, p, {
+                title: meta.title,
+                sub: meta.sub,
+                icon: meta.icon,
+              })
+            : p;
         });
-
-        phases.forEach(function (p, idx) {
+        phases.forEach(function (p) {
           var raw = data[p.key] || "";
           if (!raw) return;
-
-          var isMaster = !!p.isMaster;
-          var cardId = "pc-" + p.key;
-
-          var cardClass = "phase-card rv";
-          if (isMaster) cardClass += " p6-card";
-
+          var isMaster = !!p.isMaster,
+            cardId = "pc-" + p.key;
+          var cardClass = "phase-card rv" + (isMaster ? " p6-card" : "");
           html += '<div class="' + cardClass + '" id="' + cardId + '">';
-
-          /* ── Header ── */
           html +=
             '<div class="phase-hdr" onclick="togglePhase(\'' + cardId + "')\">";
           html +=
@@ -1983,24 +1913,19 @@
             p.icon +
             " " +
             p.title +
-            "</div>";
-          html += '<div class="phase-sub">' + p.sub + "</div></div>";
+            '</div><div class="phase-sub">' +
+            p.sub +
+            "</div></div>";
           html +=
             '<svg class="phase-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>';
           html += "</div>";
-
-          /* ── Body ── */
           html += '<div class="phase-body" id="body-' + p.key + '">';
-
           if (isMaster) {
-            /* Phase 6: P1–P5 paste inputs */
             html +=
-              '<div class="p6-section-title">Phase 1–5 Compressed Outputs Paste করুন <span>Required</span></div>';
-            html += '<div class="p6-inputs-grid">';
+              '<div class="p6-section-title">Phase 1–5 Compressed Outputs Paste করুন <span>Required</span></div><div class="p6-inputs-grid">';
             P6_LABELS.forEach(function (pl) {
-              html += '<div class="p6-input-group">';
               html +=
-                '<label><span class="lbl-num lbl-' +
+                '<div class="p6-input-group"><label><span class="lbl-num lbl-' +
                 pl.num +
                 '">' +
                 pl.label +
@@ -2012,27 +1937,19 @@
                 pl.key +
                 '" placeholder="' +
                 pl.hint +
-                '" oninput="updateP6Preview()"></textarea>';
-              html += "</div>";
+                '" oninput="updateP6Preview()"></textarea></div>';
             });
-            html += "</div>";
-            html += '<div class="p6-divider"></div>';
+            html += '</div><div class="p6-divider"></div>';
           }
-
-          /* Prompt display */
           html += '<div class="prompt-label">Assembled Prompt</div>';
-          var displayText = injectDate(raw);
           html +=
             '<textarea class="prompt-text" id="pt-' +
             p.key +
             '" readonly spellcheck="false">' +
-            escHtml(displayText) +
+            escHtml(injectDate(raw)) +
             "</textarea>";
-
-          /* Copy row */
-          html += '<div class="copy-row">';
           html +=
-            '<div class="copy-hint">📅 Date: <strong>' +
+            '<div class="copy-row"><div class="copy-hint">📅 Date: <strong>' +
             getFormattedDate() +
             "</strong> (auto-injected)</div>";
           html +=
@@ -2042,108 +1959,66 @@
             p.key +
             "'," +
             isMaster +
-            ')">';
-          html += copyBtnInner(
-            isMaster ? "Master Bias Copy করুন" : "Prompt Copy করুন",
-          );
-          html += "</button>";
-          html += "</div>";
-
-          html += "</div>"; /* end phase-body */
-          html += "</div>"; /* end phase-card */
+            ')">' +
+            copyBtnInner(
+              isMaster ? "Master Bias Copy করুন" : "Prompt Copy করুন",
+            ) +
+            "</button></div>";
+          html += "</div></div>";
         });
-
         wrap.innerHTML =
           html ||
           '<div class="err-state"><div class="err-icon">📭</div><div class="err-title">No phases found</div><div class="err-sub">JSON file-এ phase key গুলো সঠিকভাবে আছে কিনা check করুন।</div></div>';
-
-        /* Reveal */
         setTimeout(function () {
           wrap.querySelectorAll(".rv").forEach(function (el, i) {
             el.style.transitionDelay = i * 0.07 + "s";
             el.classList.add("on");
           });
         }, 60);
-
-        /* Auto-open first phase */
         var first = document.getElementById("pc-phase1");
         if (first) togglePhase("pc-phase1");
       }
 
-      /* ══════════════════════════════════
-       ▶ TOGGLE PHASE
-    ══════════════════════════════════ */
       function togglePhase(cardId) {
-        var card = document.getElementById(cardId);
-        if (!card) return;
-        card.classList.toggle("open");
+        var c = document.getElementById(cardId);
+        if (c) c.classList.toggle("open");
       }
 
-      /* ══════════════════════════════════
-       ▶ DO COPY
-    ══════════════════════════════════ */
       function doCopy(phaseKey, isMaster) {
         var ptEl = document.getElementById("pt-" + phaseKey);
         if (!ptEl) return;
-
         var text = ptEl.value;
-
         if (isMaster) {
           P6_LABELS.forEach(function (pl) {
-            var ta = document.getElementById("inp-" + pl.key);
-            var val = ta ? ta.value.trim() : "";
-            var re = new RegExp("\\[" + pl.key + "\\]", "g");
-            text = text.replace(re, val || "[" + pl.key + " — paste করুন]");
+            var ta = document.getElementById("inp-" + pl.key),
+              val = ta ? ta.value.trim() : "";
+            text = text.replace(
+              new RegExp("\\[" + pl.key + "\\]", "g"),
+              val || "[" + pl.key + " — paste করুন]",
+            );
           });
         }
-
-        var btn = document.getElementById("cbtn-" + phaseKey);
-        copyText(text, btn);
+        copyText(text, document.getElementById("cbtn-" + phaseKey));
       }
 
-      /* ══════════════════════════════════
-       ▶ UPDATE PHASE 6 PREVIEW (live)
-    ══════════════════════════════════ */
       function updateP6Preview() {
         var ptEl = document.getElementById("pt-phase6_master_bias");
         if (!ptEl) return;
-        /* Re-get original from stored data */
         var raw =
           window._currentData && window._currentData["phase6_master_bias"];
         if (!raw) return;
         var text = injectDate(raw);
         P6_LABELS.forEach(function (pl) {
-          var ta = document.getElementById("inp-" + pl.key);
-          var val = ta ? ta.value.trim() : "";
-          var re = new RegExp("\\[" + pl.key + "\\]", "g");
-          text = text.replace(re, val || "[" + pl.key + "]");
+          var ta = document.getElementById("inp-" + pl.key),
+            val = ta ? ta.value.trim() : "";
+          text = text.replace(
+            new RegExp("\\[" + pl.key + "\\]", "g"),
+            val || "[" + pl.key + "]",
+          );
         });
         ptEl.value = text;
       }
 
-      /* ══════════════════════════════════
-       ▶ UPDATE PHASE 7 / 8 PREVIEW (live)
-    ══════════════════════════════════ */
-      function updatePostPreview(phaseKey) {
-        var ptEl = document.getElementById("pt-" + phaseKey);
-        if (!ptEl) return;
-        var raw = window._currentData && window._currentData[phaseKey];
-        if (!raw) return;
-        var text = injectDate(raw);
-        var phaseNum = phaseKey === "phase7_telegram" ? "7" : "8";
-        var inputPrefix = "inp" + phaseNum + "-";
-        P7P8_LABELS.forEach(function (pl) {
-          var ta = document.getElementById(inputPrefix + pl.key);
-          var val = ta ? ta.value.trim() : "";
-          var re = new RegExp("\\[" + pl.key + "\\]", "g");
-          text = text.replace(re, val || "[" + pl.key + "]");
-        });
-        ptEl.value = text;
-      }
-
-      /* ══════════════════════════════════
-       ▶ HTML ESCAPE
-    ══════════════════════════════════ */
       function escHtml(s) {
         return s
           .replace(/&/g, "&amp;")
@@ -2151,27 +2026,19 @@
           .replace(/>/g, "&gt;");
       }
 
-      /* ══════════════════════════════════
-       ▶ LOAD MARKET JSON
-    ══════════════════════════════════ */
+      /* LOAD MARKET JSON */
       var _cache = {};
-
       function loadMarket(mkt) {
         var wrap = document.getElementById("phasesWrap");
-
-        /* Show loading */
         wrap.innerHTML =
           '<div class="load-state"><div class="load-spin"></div><div class="load-txt">' +
           mkt.label +
           " prompts লোড হচ্ছে…</div></div>";
-
-        /* Use cache */
         if (_cache[mkt.id]) {
           window._currentData = _cache[mkt.id];
           renderPhases(_cache[mkt.id], mkt.label);
           return;
         }
-
         fetch(mkt.file + "?v=" + Date.now())
           .then(function (r) {
             if (!r.ok) throw new Error("HTTP " + r.status);
@@ -2182,90 +2049,131 @@
             window._currentData = data;
             renderPhases(data, mkt.label);
           })
-          .catch(function (err) {
+          .catch(function () {
             wrap.innerHTML =
-              '<div class="err-state">' +
-              '<div class="err-icon">⚠️</div>' +
-              '<div class="err-title">JSON File লোড হয়নি</div>' +
-              '<div class="err-sub"><strong>' +
+              '<div class="err-state"><div class="err-icon">⚠️</div><div class="err-title">JSON File লোড হয়নি</div><div class="err-sub"><strong>' +
               mkt.label +
               "</strong> এর prompt file পাওয়া যায়নি।<br>Cloudflare-এ <strong>" +
               mkt.file +
-              "</strong> আপলোড করা হয়েছে কিনা নিশ্চিত করুন।</div>" +
-              '<div class="err-code">' +
+              '</strong> আপলোড করা হয়েছে কিনা নিশ্চিত করুন।</div><div class="err-code">' +
               mkt.file +
-              "</div>" +
-              "</div>";
+              "</div></div>";
           });
       }
 
-      /* ══════════════════════════════════
-       ▶ MARKET TABS INIT
-    ══════════════════════════════════ */
-      var _activeMkt = null;
+      /* MARKET GRID INIT */
+      var _activeMkt = null,
+        _activeCat = "All";
+
+      function updateActiveStrip(mkt) {
+        document.getElementById("mktActiveIcon").textContent = mkt.icon;
+        document.getElementById("mktActiveName").textContent = mkt.label;
+        document.getElementById("mktActiveCat").textContent = mkt.cat;
+      }
+
+      function filterMarkets(cat) {
+        _activeCat = cat;
+        document.querySelectorAll(".mkt-cat-btn").forEach(function (b) {
+          b.classList.toggle("active", b.dataset.cat === cat);
+        });
+        var visible = 0;
+        document.querySelectorAll(".mkt-card").forEach(function (c) {
+          var show = cat === "All" || c.dataset.cat === cat;
+          c.classList.toggle("hidden", !show);
+          if (show) visible++;
+        });
+        document.getElementById("mktCountBadge").textContent =
+          visible + " markets";
+      }
 
       function selectMarket(id) {
         if (_activeMkt === id) return;
         _activeMkt = id;
-
         var selected = MARKETS.find(function (m) {
           return m.id === id;
         });
-
-        document.querySelectorAll(".mkt-tab").forEach(function (t) {
-          var isActive = t.dataset.id === id;
-          t.classList.toggle("active", isActive);
-          t.setAttribute("aria-pressed", isActive ? "true" : "false");
+        document.querySelectorAll(".mkt-card").forEach(function (c) {
+          var isActive = c.dataset.id === id;
+          c.classList.toggle("active", isActive);
           if (isActive)
-            t.scrollIntoView({ block: "nearest", inline: "center" });
+            c.scrollIntoView({ block: "nearest", inline: "nearest" });
         });
-
-        var selEl = document.getElementById("mktSelection");
-        if (selEl && selected) {
-          selEl.innerHTML =
-            "Selected market: <strong>" + selected.label + "</strong>";
+        if (selected) {
+          updateActiveStrip(selected);
+          loadMarket(selected);
         }
-
-        if (selected) loadMarket(selected);
       }
 
-      (function initTabs() {
-        var tabsEl = document.getElementById("mktTabs");
+      (function initMarketGrid() {
+        /* Category pills */
+        var cats = ["All"];
         MARKETS.forEach(function (m) {
+          if (cats.indexOf(m.cat) < 0) cats.push(m.cat);
+        });
+        var catIcons = {
+          All: "🌐",
+          Forex: "💱",
+          Crypto: "₿",
+          Index: "📈",
+          Commodity: "🛢️",
+        };
+        var catsEl = document.getElementById("mktCats");
+        cats.forEach(function (cat) {
           var btn = document.createElement("button");
           btn.type = "button";
-          btn.className = "mkt-tab";
-          btn.dataset.id = m.id;
-          btn.textContent = m.label;
-          btn.setAttribute("aria-label", "Select " + m.label);
-          btn.setAttribute("aria-pressed", "false");
+          btn.className = "mkt-cat-btn" + (cat === "All" ? " active" : "");
+          btn.dataset.cat = cat;
+          btn.textContent = (catIcons[cat] || "") + " " + cat;
           btn.onclick = function () {
+            filterMarkets(cat);
+          };
+          catsEl.appendChild(btn);
+        });
+
+        /* Market cards */
+        var gridEl = document.getElementById("mktGrid");
+        MARKETS.forEach(function (m) {
+          var card = document.createElement("div");
+          card.className = "mkt-card";
+          card.dataset.id = m.id;
+          card.dataset.cat = m.cat;
+          card.setAttribute("role", "button");
+          card.setAttribute("aria-label", "Select " + m.label);
+          card.innerHTML =
+            '<span class="mkt-card-icon">' +
+            m.icon +
+            "</span>" +
+            '<span class="mkt-card-label">' +
+            m.label +
+            "</span>" +
+            '<span class="mkt-card-type">' +
+            m.cat +
+            "</span>";
+          card.onclick = function () {
             selectMarket(m.id);
           };
-          tabsEl.appendChild(btn);
+          gridEl.appendChild(card);
         });
 
         if (MARKETS.length) selectMarket(MARKETS[0].id);
       })();
 
-      /* ══════════════════════════════════
-       ▶ DISCOUNT + TIMER
-    ══════════════════════════════════ */
+      /* DISCOUNT + TIMER */
       (function () {
         var ORIG = 100;
         function getDailyDiscount() {
-          var now = new Date();
-          var seed =
-            now.getUTCFullYear() * 10000 +
-            (now.getUTCMonth() + 1) * 100 +
-            now.getUTCDate();
+          var now = new Date(),
+            seed =
+              now.getUTCFullYear() * 10000 +
+              (now.getUTCMonth() + 1) * 100 +
+              now.getUTCDate();
           seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
           seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
           seed = seed ^ (seed >>> 16);
           return 31 + (seed % 11);
         }
-        var disc = getDailyDiscount();
-        var CURR = Math.round(ORIG * (1 - disc / 100));
+        var disc = getDailyDiscount(),
+          CURR = Math.round(ORIG * (1 - disc / 100));
         function setTxt(id, v) {
           var e = document.getElementById(id);
           if (e) e.textContent = v;
@@ -2298,18 +2206,18 @@
           }
         }
         function tick() {
-          var now = new Date();
-          var end = new Date(
-            Date.UTC(
-              now.getUTCFullYear(),
-              now.getUTCMonth(),
-              now.getUTCDate() + 1,
-              0,
-              0,
-              0,
+          var now = new Date(),
+            end = new Date(
+              Date.UTC(
+                now.getUTCFullYear(),
+                now.getUTCMonth(),
+                now.getUTCDate() + 1,
+                0,
+                0,
+                0,
+              ),
             ),
-          );
-          var diff = Math.max(0, end - now);
+            diff = Math.max(0, end - now);
           animSet("tH", Math.floor(diff / 3600000));
           animSet("tM", Math.floor((diff % 3600000) / 60000));
           animSet("tS", Math.floor((diff % 60000) / 1000));
@@ -2321,15 +2229,9 @@
         setInterval(tick, 1000);
       })();
 
-      /* ══════════════════════════════════
-       ▶ DATE DISPLAY
-    ══════════════════════════════════ */
       document.getElementById("liveDateDisplay").textContent =
         getFormattedDate();
 
-      /* ══════════════════════════════════
-       ▶ NAVBAR SCROLL
-    ══════════════════════════════════ */
       var nb = document.getElementById("navbar");
       window.addEventListener(
         "scroll",
@@ -2339,27 +2241,23 @@
         { passive: true },
       );
 
-      /* ══════════════════════════════════
-       ▶ SCROLL PROGRESS
-    ══════════════════════════════════ */
       var prog = document.getElementById("sectionProgress");
-      if (prog) {
+      if (prog)
         window.addEventListener(
           "scroll",
           function () {
-            var s =
-              (document.documentElement.scrollTop /
-                (document.documentElement.scrollHeight - window.innerHeight)) *
-              100;
-            prog.style.width = Math.min(100, s) + "%";
+            prog.style.width =
+              Math.min(
+                100,
+                (document.documentElement.scrollTop /
+                  (document.documentElement.scrollHeight -
+                    window.innerHeight)) *
+                  100,
+              ) + "%";
           },
           { passive: true },
         );
-      }
 
-      /* ══════════════════════════════════
-       ▶ BTT
-    ══════════════════════════════════ */
       (function () {
         var b = document.getElementById("btt");
         if (!b) return;
@@ -2372,9 +2270,6 @@
         );
       })();
 
-      /* ══════════════════════════════════
-       ▶ SCROLL REVEAL
-    ══════════════════════════════════ */
       var ro = new IntersectionObserver(
         function (e) {
           e.forEach(function (x) {
@@ -2396,9 +2291,6 @@
         });
       }, 1400);
 
-      /* ══════════════════════════════════
-       ▶ TG PULSE
-    ══════════════════════════════════ */
       document.querySelectorAll('a[href*="t.me"]').forEach(function (b) {
         b.classList.add("tg-pulse");
       });
