@@ -1,26 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn-BD">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1.0" name="viewport" />
     <meta name="theme-color" content="#faf8f3" />
     <title>FAQ — Exclusive Mentorship by NLT</title>
-    <meta content="NLT Exclusive Mentorship-এর সব প্রশ্নের উত্তর — Payment, Access, Course ও Support।" name="description" />
+    <meta
+      content="NLT Exclusive Mentorship-এর সব প্রশ্নের উত্তর — Payment, Access, Course ও Support।"
+      name="description"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E"
+      rel="icon"
+      type="image/svg+xml"
+    />
     <style>
-    *,
-    *::before,
-    *::after {
+      *,
+      *::before,
+      *::after {
         box-sizing: border-box;
         margin: 0;
-        padding: 0
-    }
+        padding: 0;
+      }
 
-    :root {
+      :root {
         --bg: #faf8f3;
         --bg-card: #ffffff;
         --bg-elevated: #f5f3ee;
@@ -28,73 +37,73 @@
         --ink: #0f1419;
         --ink-2: #3a4450;
         --ink-3: #6b7684;
-        --line: rgba(15, 20, 25, .08);
-        --line-s: rgba(15, 20, 25, .14);
+        --line: rgba(15, 20, 25, 0.08);
+        --line-s: rgba(15, 20, 25, 0.14);
         --amber: #ff6b35;
         --amber-s: #ff8555;
-        --amber-dim: rgba(255, 107, 53, .09);
-        --amber-b: rgba(255, 107, 53, .16);
+        --amber-dim: rgba(255, 107, 53, 0.09);
+        --amber-b: rgba(255, 107, 53, 0.16);
         --blue: #0066ff;
         --blue-s: #3385ff;
-        --blue-dim: rgba(0, 102, 255, .09);
-        --blue-b: rgba(0, 102, 255, .15);
+        --blue-dim: rgba(0, 102, 255, 0.09);
+        --blue-b: rgba(0, 102, 255, 0.15);
         --green: #00a86b;
         --green-s: #33bb7f;
-        --H: 'Sora', sans-serif;
-        --B: 'DM Sans', sans-serif;
-        --M: 'JetBrains Mono', monospace;
+        --H: "Sora", sans-serif;
+        --B: "DM Sans", sans-serif;
+        --M: "JetBrains Mono", monospace;
         --mw: 960px;
         --r: 14px;
-    }
+      }
 
-    html {
-        scroll-behavior: smooth
-    }
+      html {
+        scroll-behavior: smooth;
+      }
 
-    body {
+      body {
         font-family: var(--B);
         color: var(--ink-2);
         background: var(--bg);
         -webkit-font-smoothing: antialiased;
-        overflow-x: hidden
-    }
+        overflow-x: hidden;
+      }
 
-    a {
+      a {
         color: inherit;
-        text-decoration: none
-    }
+        text-decoration: none;
+      }
 
-    * {
-        -webkit-tap-highlight-color: transparent
-    }
+      * {
+        -webkit-tap-highlight-color: transparent;
+      }
 
-    a,
-    button {
-        touch-action: manipulation
-    }
+      a,
+      button {
+        touch-action: manipulation;
+      }
 
-    /* ═══ STICKY HEADER WRAPPER ═══ */
-    .sticky-header {
+      /* ═══ STICKY HEADER WRAPPER ═══ */
+      .sticky-header {
         position: sticky;
         top: 0;
         z-index: 200;
-    }
+      }
 
-    /* ═══ NAV ═══ */
-    .navbar {
+      /* ═══ NAV ═══ */
+      .navbar {
         position: relative;
-        background: rgba(250, 248, 243, .92);
+        background: rgba(250, 248, 243, 0.92);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--line);
-        transition: box-shadow .3s
-    }
+        transition: box-shadow 0.3s;
+      }
 
-    .navbar.scrolled {
-        box-shadow: 0 2px 12px rgba(0, 0, 0, .08)
-    }
+      .navbar.scrolled {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      }
 
-    .nav-inner {
+      .nav-inner {
         max-width: var(--mw);
         margin: 0 auto;
         height: 62px;
@@ -102,16 +111,16 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 32px;
-        gap: 16px
-    }
+        gap: 16px;
+      }
 
-    .nav-logo {
+      .nav-logo {
         display: flex;
         align-items: center;
-        gap: 10px
-    }
+        gap: 10px;
+      }
 
-    .nav-logo-mark {
+      .nav-logo-mark {
         width: 36px;
         height: 36px;
         background: linear-gradient(135deg, #ff6b35, #ff8555);
@@ -123,72 +132,72 @@
         font-size: 12px;
         font-weight: 700;
         color: #ffffff;
-        flex-shrink: 0
-    }
+        flex-shrink: 0;
+      }
 
-    .nav-logo-name {
+      .nav-logo-name {
         font-family: var(--H);
         font-size: 13px;
         font-weight: 700;
         color: var(--ink);
         display: block;
-        line-height: 1.3
-    }
+        line-height: 1.3;
+      }
 
-    .nav-logo-sub {
+      .nav-logo-sub {
         font-size: 10px;
         color: var(--ink-3);
-        letter-spacing: .06em;
-        display: block
-    }
+        letter-spacing: 0.06em;
+        display: block;
+      }
 
-    .nav-right {
+      .nav-right {
         display: flex;
         align-items: center;
-        gap: 6px
-    }
+        gap: 6px;
+      }
 
-    .nav-link {
+      .nav-link {
         font-size: 13px;
         font-weight: 600;
         color: var(--ink-2);
         padding: 7px 13px;
         border-radius: 8px;
-        transition: all .2s
-    }
+        transition: all 0.2s;
+      }
 
-    .nav-link:hover {
-        background: rgba(15, 20, 25, .06);
-        color: var(--ink)
-    }
+      .nav-link:hover {
+        background: rgba(15, 20, 25, 0.06);
+        color: var(--ink);
+      }
 
-    .nav-link.active {
-        color: var(--amber)
-    }
+      .nav-link.active {
+        color: var(--amber);
+      }
 
-    @keyframes btnShimmer {
+      @keyframes btnShimmer {
         0% {
-            left: -100%;
-            opacity: 0
+          left: -100%;
+          opacity: 0;
         }
 
         15% {
-            opacity: 1
+          opacity: 1;
         }
 
         50% {
-            left: 120%;
-            opacity: 1
+          left: 120%;
+          opacity: 1;
         }
 
         51%,
         100% {
-            left: 120%;
-            opacity: 0
+          left: 120%;
+          opacity: 0;
         }
-    }
+      }
 
-    .nav-cta {
+      .nav-cta {
         display: inline-flex;
         align-items: center;
         gap: 7px;
@@ -202,126 +211,139 @@
         text-decoration: none;
         position: relative;
         overflow: hidden;
-        transition: all .25s cubic-bezier(.34, 1.56, .64, 1);
-        box-shadow: 0 4px 14px rgba(255, 107, 53, .45);
-        letter-spacing: .01em;
+        transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        box-shadow: 0 4px 14px rgba(255, 107, 53, 0.45);
+        letter-spacing: 0.01em;
         border: none;
-        cursor: pointer
-    }
+        cursor: pointer;
+      }
 
-    .nav-cta::before {
-        content: '';
+      .nav-cta::before {
+        content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(255, 255, 255, .3), transparent 55%);
-        pointer-events: none
-    }
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.3),
+          transparent 55%
+        );
+        pointer-events: none;
+      }
 
-    .nav-cta::after {
-        content: '';
+      .nav-cta::after {
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
         width: 60%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-        animation: btnShimmer 3s ease-in-out infinite
-    }
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        animation: btnShimmer 3s ease-in-out infinite;
+      }
 
-    .nav-cta:hover {
+      .nav-cta:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 8px 24px rgba(255, 107, 53, .6);
-        background: linear-gradient(135deg, #ff5320, #ff3d00)
-    }
+        box-shadow: 0 8px 24px rgba(255, 107, 53, 0.6);
+        background: linear-gradient(135deg, #ff5320, #ff3d00);
+      }
 
-    .nav-cta:active {
-        transform: translateY(0) scale(1.02)
-    }
+      .nav-cta:active {
+        transform: translateY(0) scale(1.02);
+      }
 
-    @media(max-width:540px) {
+      @media (max-width: 540px) {
         .nav-link:not(.active) {
-            display: none
+          display: none;
         }
-    }
+      }
 
-    /* ═══ PAGE HEADER ═══ */
-    .page-hero {
+      /* ═══ PAGE HEADER ═══ */
+      .page-hero {
         padding: 56px 32px 48px;
         text-align: center;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(170deg, #faf8f3, #fff4ed66, #faf8f3)
-    }
+        background: linear-gradient(170deg, #faf8f3, #fff4ed66, #faf8f3);
+      }
 
-    .page-hero::before {
-        content: '';
+      .page-hero::before {
+        content: "";
         position: absolute;
         inset: 0;
-        background: radial-gradient(ellipse 55% 45% at 50% 0%, rgba(255, 107, 53, .08) 0%, transparent 65%);
-        pointer-events: none
-    }
+        background: radial-gradient(
+          ellipse 55% 45% at 50% 0%,
+          rgba(255, 107, 53, 0.08) 0%,
+          transparent 65%
+        );
+        pointer-events: none;
+      }
 
-    .page-hero-inner {
+      .page-hero-inner {
         position: relative;
         z-index: 1;
         max-width: var(--mw);
-        margin: 0 auto
-    }
+        margin: 0 auto;
+      }
 
-    .page-badge {
+      .page-badge {
         display: inline-block;
         font-family: var(--M);
         font-size: 11px;
         font-weight: 700;
-        letter-spacing: .08em;
+        letter-spacing: 0.08em;
         padding: 7px 16px;
         border-radius: 100px;
         background: var(--amber-dim);
         border: 1px solid var(--amber-b);
         color: var(--amber-s);
-        margin-bottom: 18px
-    }
+        margin-bottom: 18px;
+      }
 
-    .page-title {
+      .page-title {
         font-family: var(--H);
         font-size: clamp(28px, 5vw, 42px);
         font-weight: 800;
         color: var(--ink);
-        letter-spacing: -.04em;
+        letter-spacing: -0.04em;
         line-height: 1.15;
-        margin-bottom: 12px
-    }
+        margin-bottom: 12px;
+      }
 
-    .page-sub {
+      .page-sub {
         font-size: 15.5px;
         color: var(--ink-2);
         line-height: 1.72;
         max-width: 640px;
-        margin: 0 auto
-    }
+        margin: 0 auto;
+      }
 
-    /* ═══ CONTENT WRAP ═══ */
-    .wrap {
+      /* ═══ CONTENT WRAP ═══ */
+      .wrap {
         max-width: var(--mw);
         margin: 0 auto;
-        padding: 48px 32px 64px
-    }
+        padding: 48px 32px 64px;
+      }
 
-    /* ═══ CATEGORY TABS ═══ */
-    .cat-bar {
+      /* ═══ CATEGORY TABS ═══ */
+      .cat-bar {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
         margin-bottom: 36px;
         padding-bottom: 20px;
-        border-bottom: 1px solid var(--line)
-    }
+        border-bottom: 1px solid var(--line);
+      }
 
-    .cat-btn {
+      .cat-btn {
         font-family: var(--M);
         font-size: 11px;
         font-weight: 700;
-        letter-spacing: .06em;
+        letter-spacing: 0.06em;
         color: var(--ink-3);
         background: var(--bg-card);
         border: 1px solid var(--line-s);
@@ -329,68 +351,70 @@
         border-radius: 8px;
         cursor: pointer;
         text-decoration: none;
-        transition: color .2s, border-color .2s
-    }
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+      }
 
-    .cat-btn:hover {
+      .cat-btn:hover {
         color: var(--ink-2);
-        border-color: rgba(255, 255, 255, .2)
-    }
+        border-color: rgba(255, 255, 255, 0.2);
+      }
 
-    .cat-btn.active {
+      .cat-btn.active {
         background: var(--amber-dim);
         border-color: var(--amber-b);
-        color: var(--amber)
-    }
+        color: var(--amber);
+      }
 
-    /* ═══ FAQ GROUP ═══ */
-    .faq-group {
-        margin-bottom: 40px
-    }
+      /* ═══ FAQ GROUP ═══ */
+      .faq-group {
+        margin-bottom: 40px;
+      }
 
-    .faq-group-lbl {
+      .faq-group-lbl {
         font-family: var(--M);
         font-size: 10px;
         font-weight: 700;
-        letter-spacing: .12em;
+        letter-spacing: 0.12em;
         color: var(--amber);
         text-transform: uppercase;
         margin-bottom: 14px;
         display: flex;
         align-items: center;
-        gap: 8px
-    }
+        gap: 8px;
+      }
 
-    .faq-group-lbl::after {
-        content: '';
+      .faq-group-lbl::after {
+        content: "";
         flex: 1;
         height: 1px;
-        background: var(--line-s)
-    }
+        background: var(--line-s);
+      }
 
-    .faq-list {
+      .faq-list {
         display: flex;
         flex-direction: column;
-        gap: 8px
-    }
+        gap: 8px;
+      }
 
-    .faq-item {
+      .faq-item {
         background: var(--bg-card);
         border: 1px solid var(--line-s);
         border-radius: var(--r);
         overflow: hidden;
-        transition: border-color .2s
-    }
+        transition: border-color 0.2s;
+      }
 
-    .faq-item:hover {
-        border-color: rgba(255, 107, 53, .22)
-    }
+      .faq-item:hover {
+        border-color: rgba(255, 107, 53, 0.22);
+      }
 
-    .faq-item[data-cat].hidden {
-        display: none
-    }
+      .faq-item[data-cat].hidden {
+        display: none;
+      }
 
-    .faq-q {
+      .faq-q {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -405,10 +429,10 @@
         font-size: 14px;
         font-weight: 600;
         color: var(--ink);
-        line-height: 1.45
-    }
+        line-height: 1.45;
+      }
 
-    .faq-icon {
+      .faq-icon {
         width: 24px;
         height: 24px;
         flex-shrink: 0;
@@ -420,122 +444,137 @@
         justify-content: center;
         font-size: 14px;
         color: var(--ink-3);
-        transition: all .25s
-    }
+        transition: all 0.25s;
+      }
 
-    .faq-q.open .faq-icon {
+      .faq-q.open .faq-icon {
         background: var(--amber-dim);
         border-color: var(--amber-b);
         color: var(--amber);
-        transform: rotate(45deg)
-    }
+        transform: rotate(45deg);
+      }
 
-    .faq-a {
+      .faq-a {
         max-height: 0;
         overflow: hidden;
         padding: 0 20px;
         font-size: 13.5px;
         color: var(--ink-2);
         line-height: 1.78;
-        transition: max-height .35s cubic-bezier(.4, 0, .2, 1), padding .35s
-    }
+        transition:
+          max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+          padding 0.35s;
+      }
 
-    .faq-q.open+.faq-a {
+      .faq-q.open + .faq-a {
         max-height: 400px;
-        padding-bottom: 16px
-    }
+        padding-bottom: 16px;
+      }
 
-    .faq-a strong {
+      .faq-a strong {
         color: var(--ink);
-        font-weight: 700
-    }
+        font-weight: 700;
+      }
 
-    .faq-a .hl {
+      .faq-a .hl {
         color: var(--amber-s);
-        font-weight: 700
-    }
+        font-weight: 700;
+      }
 
-    .faq-a ul {
+      .faq-a ul {
         margin: 10px 0 0 0;
         padding-left: 0;
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 6px
-    }
+        gap: 6px;
+      }
 
-    .faq-a ul li {
+      .faq-a ul li {
         display: flex;
         align-items: flex-start;
         gap: 8px;
-        font-size: 13px
-    }
+        font-size: 13px;
+      }
 
-    .faq-a ul li::before {
-        content: '·';
+      .faq-a ul li::before {
+        content: "·";
         color: var(--amber);
         flex-shrink: 0;
         margin-top: 1px;
         font-size: 16px;
-        line-height: 1.2
-    }
+        line-height: 1.2;
+      }
 
-    /* ═══ CTA BOX ═══ */
-    .cta-box {
-        background: linear-gradient(135deg, rgba(245, 158, 11, .07) 0%, rgba(245, 158, 11, .02) 100%);
-        border: 1px solid rgba(245, 158, 11, .3);
+      /* ═══ CTA BOX ═══ */
+      .cta-box {
+        background: linear-gradient(
+          135deg,
+          rgba(245, 158, 11, 0.07) 0%,
+          rgba(245, 158, 11, 0.02) 100%
+        );
+        border: 1px solid rgba(245, 158, 11, 0.3);
         border-radius: var(--r);
         padding: 44px 32px;
         text-align: center;
         position: relative;
         overflow: hidden;
-        margin-top: 56px
-    }
+        margin-top: 56px;
+      }
 
-    .cta-box::before {
-        content: '';
+      .cta-box::before {
+        content: "";
         position: absolute;
         inset: 0;
-        background: radial-gradient(ellipse 60% 55% at 50% 0%, rgba(245, 158, 11, .07) 0%, transparent 65%);
-        pointer-events: none
-    }
+        background: radial-gradient(
+          ellipse 60% 55% at 50% 0%,
+          rgba(245, 158, 11, 0.07) 0%,
+          transparent 65%
+        );
+        pointer-events: none;
+      }
 
-    .cta-box::after {
-        content: '';
+      .cta-box::after {
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 1px;
-        background: linear-gradient(90deg, transparent 5%, var(--amber) 50%, transparent 95%);
-        opacity: .35
-    }
+        background: linear-gradient(
+          90deg,
+          transparent 5%,
+          var(--amber) 50%,
+          transparent 95%
+        );
+        opacity: 0.35;
+      }
 
-    .cta-inner {
+      .cta-inner {
         position: relative;
-        z-index: 1
-    }
+        z-index: 1;
+      }
 
-    .cta-title {
+      .cta-title {
         font-family: var(--H);
         font-size: 24px;
         font-weight: 800;
         color: var(--ink);
-        letter-spacing: -.03em;
-        margin-bottom: 10px
-    }
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+      }
 
-    .cta-sub {
+      .cta-sub {
         font-size: 14.5px;
         color: var(--ink-2);
         line-height: 1.72;
         margin-bottom: 28px;
         max-width: 400px;
         margin-left: auto;
-        margin-right: auto
-    }
+        margin-right: auto;
+      }
 
-    .cta-btn {
+      .cta-btn {
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -551,72 +590,90 @@
         text-decoration: none;
         position: relative;
         overflow: hidden;
-        transition: all .3s cubic-bezier(.34, 1.56, .64, 1);
-        box-shadow: 0 8px 28px rgba(255, 107, 53, .5), 0 0 0 1.5px rgba(255, 107, 53, .2);
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        box-shadow:
+          0 8px 28px rgba(255, 107, 53, 0.5),
+          0 0 0 1.5px rgba(255, 107, 53, 0.2);
         white-space: nowrap;
-        letter-spacing: -.01em;
+        letter-spacing: -0.01em;
         border: none;
-        cursor: pointer
-    }
+        cursor: pointer;
+      }
 
-    .cta-btn::before {
-        content: '';
+      .cta-btn::before {
+        content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(255, 255, 255, .3) 0%, transparent 55%);
-        pointer-events: none
-    }
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.3) 0%,
+          transparent 55%
+        );
+        pointer-events: none;
+      }
 
-    .cta-btn::after {
-        content: '';
+      .cta-btn::after {
+        content: "";
         position: absolute;
         top: 0;
         left: -100%;
         width: 60%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-        animation: btnShimmer 2.6s ease-in-out infinite
-    }
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        animation: btnShimmer 2.6s ease-in-out infinite;
+      }
 
-    .cta-btn:hover {
+      .cta-btn:hover {
         transform: translateY(-4px) scale(1.03);
-        box-shadow: 0 14px 48px rgba(255, 107, 53, .65), 0 0 0 2px rgba(255, 107, 53, .3);
-        background: linear-gradient(135deg, #ff5320 0%, #ff3d00 100%)
-    }
+        box-shadow:
+          0 14px 48px rgba(255, 107, 53, 0.65),
+          0 0 0 2px rgba(255, 107, 53, 0.3);
+        background: linear-gradient(135deg, #ff5320 0%, #ff3d00 100%);
+      }
 
-    .cta-btn:active {
-        transform: translateY(-2px) scale(1.01)
-    }
+      .cta-btn:active {
+        transform: translateY(-2px) scale(1.01);
+      }
 
-    .cta-btn small {
+      .cta-btn small {
         font-family: var(--B);
         font-size: 11px;
         font-weight: 500;
-        color: rgba(255, 255, 255, .8)
-    }
+        color: rgba(255, 255, 255, 0.8);
+      }
 
-    /* ═══ FOOTER ═══ */
-    .ft {
+      /* ═══ FOOTER ═══ */
+      .ft {
         background: linear-gradient(180deg, #ffffff 0%, #f9f8f6 100%);
         border-top: 1px solid var(--line);
         padding: 48px 24px 36px;
         position: relative;
         overflow: hidden;
-    }
+      }
 
-    .ft::before {
-        content: '';
+      .ft::before {
+        content: "";
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 300px;
         height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 107, 53, 0.3),
+          transparent
+        );
         pointer-events: none;
-    }
+      }
 
-    .ft-bot {
+      .ft-bot {
         max-width: var(--mw);
         margin: 0 auto;
         position: relative;
@@ -626,40 +683,40 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-    }
+      }
 
-    .ft-copy {
+      .ft-copy {
         font-size: 13px;
         color: var(--ink-2);
         font-weight: 500;
         flex: 1;
         min-width: 200px;
-    }
+      }
 
-    .ft-disc {
+      .ft-disc {
         font-size: 11px;
         color: var(--ink-3);
         letter-spacing: 0.02em;
         font-weight: 500;
-    }
+      }
 
-    .ft-nav {
+      .ft-nav {
         display: flex;
         gap: 20px;
         align-items: center;
-    }
+      }
 
-    .ft-nav a {
+      .ft-nav a {
         font-size: 13px;
         color: var(--ink-2);
         font-weight: 500;
         transition: all 0.3s ease;
         position: relative;
         text-decoration: none;
-    }
+      }
 
-    .ft-nav a::after {
-        content: '';
+      .ft-nav a::after {
+        content: "";
         position: absolute;
         bottom: -4px;
         left: 0;
@@ -667,1202 +724,1571 @@
         height: 2px;
         background: linear-gradient(90deg, #ff6b35, #ff8555);
         transition: width 0.3s ease;
-    }
+      }
 
-    .ft-nav a:hover {
+      .ft-nav a:hover {
         color: var(--amber-s);
-    }
+      }
 
-    .ft-nav a:hover::after {
+      .ft-nav a:hover::after {
         width: 100%;
-    }
+      }
 
-    @media(max-width:640px) {
+      @media (max-width: 640px) {
         .ft {
-            padding: 40px 20px 32px;
+          padding: 40px 20px 32px;
         }
 
         .ft-bot {
-            flex-direction: column;
-            text-align: center;
-            gap: 12px;
+          flex-direction: column;
+          text-align: center;
+          gap: 12px;
         }
 
         .ft-copy {
-            width: 100%;
-            min-width: unset;
-            order: 1;
+          width: 100%;
+          min-width: unset;
+          order: 1;
         }
 
         .ft-nav {
-            order: 2;
-            justify-content: center;
-            width: 100%;
+          order: 2;
+          justify-content: center;
+          width: 100%;
         }
 
         .ft-disc {
-            order: 3;
-            width: 100%;
+          order: 3;
+          width: 100%;
         }
-    }
+      }
 
-    /* ═══ REVEAL ═══ */
-    .rv {
+      /* ═══ REVEAL ═══ */
+      .rv {
         opacity: 0;
         transform: translateY(14px);
-        transition: opacity .5s ease, transform .5s ease
-    }
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
 
-    .rv.on {
+      .rv.on {
         opacity: 1;
-        transform: translateY(0)
-    }
+        transform: translateY(0);
+      }
 
-    /* ═══ STICKY BAR ═══ */
-    @media(max-width:768px) {
+      /* ═══ STICKY BAR ═══ */
+      @media (max-width: 768px) {
         .sticky {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 500;
-            padding: 10px 16px 18px;
-            background: rgba(250, 248, 243, .98);
-            border-top: 2px solid #ff6b35;
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            transform: translateY(100%);
-            transition: transform .35s cubic-bezier(.4, 0, .2, 1)
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 500;
+          padding: 10px 16px 18px;
+          background: rgba(250, 248, 243, 0.98);
+          border-top: 2px solid #ff6b35;
+          backdrop-filter: blur(24px);
+          -webkit-backdrop-filter: blur(24px);
+          transform: translateY(100%);
+          transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .sticky.on {
-            transform: translateY(0)
+          transform: translateY(0);
         }
 
         .sticky a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(135deg, #ff6b35 0%, #ff5320 100%);
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 900;
-            padding: 16px;
-            border-radius: 13px;
-            font-family: 'Sora', sans-serif;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 8px 28px rgba(255, 107, 53, .55);
-            letter-spacing: -.01em;
-            transition: all .3s cubic-bezier(.34, 1.56, .64, 1);
-            border: none;
-            cursor: pointer
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 100%;
+          background: linear-gradient(135deg, #ff6b35 0%, #ff5320 100%);
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 900;
+          padding: 16px;
+          border-radius: 13px;
+          font-family: "Sora", sans-serif;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 8px 28px rgba(255, 107, 53, 0.55);
+          letter-spacing: -0.01em;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+          border: none;
+          cursor: pointer;
         }
 
         .sticky a::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(255, 255, 255, .3), transparent 55%);
-            pointer-events: none
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.3),
+            transparent 55%
+          );
+          pointer-events: none;
         }
 
         .sticky a::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 60%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
-            animation: btnShimmer 2.5s ease-in-out infinite
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent
+          );
+          animation: btnShimmer 2.5s ease-in-out infinite;
         }
 
         .sticky a:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 12px 40px rgba(255, 107, 53, .7);
-            background: linear-gradient(135deg, #ff5320 0%, #ff3d00 100%)
+          transform: translateY(-3px) scale(1.02);
+          box-shadow: 0 12px 40px rgba(255, 107, 53, 0.7);
+          background: linear-gradient(135deg, #ff5320 0%, #ff3d00 100%);
         }
 
         .sticky a:active {
-            transform: translateY(-1px) scale(1.01)
+          transform: translateY(-1px) scale(1.01);
         }
 
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3), transparent);
-        animation: btnShimmer 2.5s ease-in-out infinite
-    }
-
-    .sticky a:active {
-        transform: scale(.98)
-    }
-
-    @media(min-width:769px) {
-        .sticky {
-            display: none !important
+        .sticky a:active {
+          transform: scale(0.98);
         }
-    }
 
-    .btt {
-        position: fixed;
-        bottom: 80px;
-        right: 20px;
-        z-index: 400;
-        width: 40px;
-        height: 40px;
-        background: var(--bg-elevated);
-        border: 1px solid var(--line-s);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        opacity: 0;
-        transform: translateY(10px);
-        transition: all .3s;
-        color: var(--ink-3)
-    }
+        @media (min-width: 769px) {
+          .sticky {
+            display: none !important;
+          }
+        }
 
-    .btt.on {
-        opacity: 1;
-        transform: translateY(0)
-    }
-
-    .btt:hover {
-        border-color: var(--amber-b);
-        color: var(--amber)
-    }
-
-    @media(max-width:768px) {
         .btt {
+          position: fixed;
+          bottom: 80px;
+          right: 20px;
+          z-index: 400;
+          width: 40px;
+          height: 40px;
+          background: var(--bg-elevated);
+          border: 1px solid var(--line-s);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          opacity: 0;
+          transform: translateY(10px);
+          transition: all 0.3s;
+          color: var(--ink-3);
+        }
+
+        .btt.on {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .btt:hover {
+          border-color: var(--amber-b);
+          color: var(--amber);
+        }
+
+        @media (max-width: 768px) {
+          .btt {
             bottom: 86px;
-            right: 14px
-        }
-    }
-
-    /* ══ DISCOUNT BAR ══ */
-    .disc-bar {
-        background: linear-gradient(90deg, #ffe8d6, #ffd9c0, #ffe8d6);
-        border-bottom: 4px solid #ff6b35;
-        border-top: 2px solid rgba(255, 107, 53, .3);
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: wrap;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 4px 16px rgba(255, 107, 53, .18)
-    }
-
-    .disc-bar::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(ellipse 60% 100% at 50%, rgba(255, 107, 53, .12), transparent);
-        pointer-events: none
-    }
-
-    .disc-bar.disc-urgent {
-        animation: discPulse 1.2s ease-in-out infinite;
-        box-shadow: 0 6px 24px rgba(255, 107, 53, .32)
-    }
-
-    @keyframes discPulse {
-
-        0%,
-        100% {
-            transform: translateY(0);
-            box-shadow: 0 6px 24px rgba(255, 107, 53, .32)
+            right: 14px;
+          }
         }
 
-        50% {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(255, 107, 53, .42)
-        }
-    }
-
-    .disc-fl {
-        font-family: var(--M);
-        font-size: 12px;
-        font-weight: 900;
-        color: #d94000;
-        letter-spacing: .06em;
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1;
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px
-    }
-
-    .disc-fl-fire {
-        font-size: 15px;
-        display: inline-block;
-        animation: fireAnim 1s ease-in-out infinite
-    }
-
-    @keyframes fireAnim {
-
-        0%,
-        100% {
-            transform: scaleY(1) rotate(-2deg)
-        }
-
-        50% {
-            transform: scaleY(1.08) rotate(2deg)
-        }
-    }
-
-    .disc-price-group {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        position: relative;
-        z-index: 1
-    }
-
-    .disc-orig {
-        font-family: var(--M);
-        font-size: 13px;
-        font-weight: 700;
-        color: #7a3a10;
-        text-decoration: line-through;
-        text-decoration-color: #d94000
-    }
-
-    .disc-arr {
-        color: #d94000;
-        font-weight: 900;
-        font-size: 13px;
-        animation: arrBounce .7s ease-in-out infinite
-    }
-
-    @keyframes arrBounce {
-
-        0%,
-        100% {
-            transform: translateX(0)
-        }
-
-        50% {
-            transform: translateX(4px)
-        }
-    }
-
-    .disc-now {
-        font-family: var(--M);
-        font-size: 22px;
-        font-weight: 900;
-        color: #d94000;
-        letter-spacing: -.02em;
-        text-shadow: 0 2px 4px rgba(217, 64, 0, .18)
-    }
-
-    .disc-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--M);
-        font-size: 13px;
-        font-weight: 900;
-        letter-spacing: .06em;
-        text-transform: uppercase;
-        background: linear-gradient(135deg, rgba(255, 107, 53, .18), rgba(217, 64, 0, .13));
-        color: #d94000;
-        border: 1.5px solid #ff6b35;
-        padding: 5px 14px;
-        border-radius: 100px;
-        position: relative;
-        z-index: 1;
-        box-shadow: 0 2px 6px rgba(217, 64, 0, .12)
-    }
-
-    .disc-vdiv {
-        width: 1px;
-        height: 26px;
-        background: rgba(255, 107, 53, .25);
-        flex-shrink: 0;
-        position: relative;
-        z-index: 1
-    }
-
-    .disc-timer-wrap {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        position: relative;
-        z-index: 1
-    }
-
-    .disc-timer-lbl {
-        font-family: var(--M);
-        font-size: 9px;
-        font-weight: 700;
-        color: #c43a00;
-        letter-spacing: .07em;
-        text-transform: uppercase;
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px
-    }
-
-    .disc-timer-lbl::before {
-        content: '';
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #e03a00;
-        flex-shrink: 0;
-        animation: timerDot .9s ease-in-out infinite
-    }
-
-    @keyframes timerDot {
-
-        0%,
-        100% {
-            opacity: 1;
-            transform: scale(1)
-        }
-
-        50% {
-            opacity: .4;
-            transform: scale(.7)
-        }
-    }
-
-    .disc-clock {
-        display: inline-flex;
-        align-items: center;
-        gap: 2px
-    }
-
-    .disc-unit {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2px
-    }
-
-    .disc-d {
-        font-family: var(--M);
-        font-size: 17px;
-        font-weight: 900;
-        color: #fff;
-        background: #d94000;
-        padding: 4px 7px;
-        border-radius: 5px;
-        min-width: 32px;
-        text-align: center;
-        line-height: 1.1;
-        letter-spacing: -.01em;
-        font-variant-numeric: tabular-nums;
-        box-shadow: 0 2px 8px rgba(217, 64, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .18);
-        display: block
-    }
-
-    .disc-d.flip {
-        animation: digitFlip .22s ease-in-out
-    }
-
-    @keyframes digitFlip {
-        0% {
-            transform: scaleY(1);
-            opacity: 1
-        }
-
-        40% {
-            transform: scaleY(0);
-            opacity: 0
-        }
-
-        60% {
-            transform: scaleY(0);
-            opacity: 0
-        }
-
-        100% {
-            transform: scaleY(1);
-            opacity: 1
-        }
-    }
-
-    .disc-u-lbl {
-        font-family: var(--M);
-        font-size: 7.5px;
-        font-weight: 700;
-        color: #b04000;
-        letter-spacing: .04em;
-        text-transform: uppercase
-    }
-
-    .disc-sep2 {
-        font-family: var(--M);
-        font-size: 18px;
-        font-weight: 900;
-        color: rgba(255, 107, 53, .5);
-        margin: 0 1px;
-        align-self: flex-start;
-        padding-top: 2px;
-        line-height: 1.25
-    }
-
-    .disc-bar.disc-urgent .disc-d {
-        background: #c00000;
-        box-shadow: 0 2px 10px rgba(180, 0, 0, .35);
-        animation: urgentFlash 0.65s ease-in-out infinite
-    }
-
-    @keyframes urgentFlash {
-
-        0%,
-        100% {
-            opacity: 1
-        }
-
-        50% {
-            opacity: .7
-        }
-    }
-
-    .disc-bar.disc-urgent .disc-u-lbl,
-    .disc-bar.disc-urgent .disc-sep2,
-    .disc-bar.disc-urgent .disc-timer-lbl {
-        color: #a00000
-    }
-
-    @media(max-width:680px) {
-        .disc-fl {
-            display: none
-        }
-
-        .disc-vdiv {
-            display: none
-        }
-    }
-
-    @media(max-width:520px) {
+        /* ══ DISCOUNT BAR ══ */
         .disc-bar {
-            padding: 7px 10px;
-            gap: 7px
+          background: linear-gradient(90deg, #ffe8d6, #ffd9c0, #ffe8d6);
+          border-bottom: 4px solid #ff6b35;
+          border-top: 2px solid rgba(255, 107, 53, 0.3);
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          flex-wrap: wrap;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 4px 16px rgba(255, 107, 53, 0.18);
         }
 
-        .disc-timer-lbl {
-            display: none
+        .disc-bar::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(
+            ellipse 60% 100% at 50%,
+            rgba(255, 107, 53, 0.12),
+            transparent
+          );
+          pointer-events: none;
         }
 
-        .disc-d {
-            font-size: 14px;
-            min-width: 27px;
-            padding: 3px 5px
+        .disc-bar.disc-urgent {
+          animation: discPulse 1.2s ease-in-out infinite;
+          box-shadow: 0 6px 24px rgba(255, 107, 53, 0.32);
         }
 
-        .disc-sep2 {
-            font-size: 15px
+        @keyframes discPulse {
+          0%,
+          100% {
+            transform: translateY(0);
+            box-shadow: 0 6px 24px rgba(255, 107, 53, 0.32);
+          }
+
+          50% {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(255, 107, 53, 0.42);
+          }
         }
 
-        .disc-u-lbl {
-            font-size: 7px
+        .disc-fl {
+          font-family: var(--M);
+          font-size: 12px;
+          font-weight: 900;
+          color: #d94000;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          position: relative;
+          z-index: 1;
+          white-space: nowrap;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
         }
 
-        .disc-now {
-            font-size: 18px
+        .disc-fl-fire {
+          font-size: 15px;
+          display: inline-block;
+          animation: fireAnim 1s ease-in-out infinite;
         }
 
-        .disc-badge {
-            font-size: 10px;
-            padding: 4px 9px
-        }
-    }
+        @keyframes fireAnim {
+          0%,
+          100% {
+            transform: scaleY(1) rotate(-2deg);
+          }
 
-    @media(max-width:400px) {
+          50% {
+            transform: scaleY(1.08) rotate(2deg);
+          }
+        }
+
+        .disc-price-group {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          position: relative;
+          z-index: 1;
+        }
+
         .disc-orig {
-            display: none
+          font-family: var(--M);
+          font-size: 13px;
+          font-weight: 700;
+          color: #7a3a10;
+          text-decoration: line-through;
+          text-decoration-color: #d94000;
         }
 
         .disc-arr {
-            display: none
-        }
-    }
-
-    /* ══ MOBILE IMPROVEMENTS ══ */
-    @media(max-width:520px) {
-        .disc-bar {
-            padding: 8px 12px;
-            gap: 6px;
+          color: #d94000;
+          font-weight: 900;
+          font-size: 13px;
+          animation: arrBounce 0.7s ease-in-out infinite;
         }
 
-        .disc-fl {
-            display: none;
-        }
+        @keyframes arrBounce {
+          0%,
+          100% {
+            transform: translateX(0);
+          }
 
-        .disc-sep {
-            display: none;
+          50% {
+            transform: translateX(4px);
+          }
         }
 
         .disc-now {
-            font-size: 14px;
+          font-family: var(--M);
+          font-size: 22px;
+          font-weight: 900;
+          color: #d94000;
+          letter-spacing: -0.02em;
+          text-shadow: 0 2px 4px rgba(217, 64, 0, 0.18);
+        }
+
+        .disc-badge {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-family: var(--M);
+          font-size: 13px;
+          font-weight: 900;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          background: linear-gradient(
+            135deg,
+            rgba(255, 107, 53, 0.18),
+            rgba(217, 64, 0, 0.13)
+          );
+          color: #d94000;
+          border: 1.5px solid #ff6b35;
+          padding: 5px 14px;
+          border-radius: 100px;
+          position: relative;
+          z-index: 1;
+          box-shadow: 0 2px 6px rgba(217, 64, 0, 0.12);
+        }
+
+        .disc-vdiv {
+          width: 1px;
+          height: 26px;
+          background: rgba(255, 107, 53, 0.25);
+          flex-shrink: 0;
+          position: relative;
+          z-index: 1;
         }
 
         .disc-timer-wrap {
-            font-size: 11px;
-        }
-    }
-
-    @media(max-width:480px) {
-        .page-hero {
-            padding: 40px 20px 36px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          position: relative;
+          z-index: 1;
         }
 
-        .wrap {
-            padding: 36px 16px 52px;
+        .disc-timer-lbl {
+          font-family: var(--M);
+          font-size: 9px;
+          font-weight: 700;
+          color: #c43a00;
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          white-space: nowrap;
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
         }
 
-        .cat-bar {
+        .disc-timer-lbl::before {
+          content: "";
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #e03a00;
+          flex-shrink: 0;
+          animation: timerDot 0.9s ease-in-out infinite;
+        }
+
+        @keyframes timerDot {
+          0%,
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+
+          50% {
+            opacity: 0.4;
+            transform: scale(0.7);
+          }
+        }
+
+        .disc-clock {
+          display: inline-flex;
+          align-items: center;
+          gap: 2px;
+        }
+
+        .disc-unit {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2px;
+        }
+
+        .disc-d {
+          font-family: var(--M);
+          font-size: 17px;
+          font-weight: 900;
+          color: #fff;
+          background: #d94000;
+          padding: 4px 7px;
+          border-radius: 5px;
+          min-width: 32px;
+          text-align: center;
+          line-height: 1.1;
+          letter-spacing: -0.01em;
+          font-variant-numeric: tabular-nums;
+          box-shadow:
+            0 2px 8px rgba(217, 64, 0, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.18);
+          display: block;
+        }
+
+        .disc-d.flip {
+          animation: digitFlip 0.22s ease-in-out;
+        }
+
+        @keyframes digitFlip {
+          0% {
+            transform: scaleY(1);
+            opacity: 1;
+          }
+
+          40% {
+            transform: scaleY(0);
+            opacity: 0;
+          }
+
+          60% {
+            transform: scaleY(0);
+            opacity: 0;
+          }
+
+          100% {
+            transform: scaleY(1);
+            opacity: 1;
+          }
+        }
+
+        .disc-u-lbl {
+          font-family: var(--M);
+          font-size: 7.5px;
+          font-weight: 700;
+          color: #b04000;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        .disc-sep2 {
+          font-family: var(--M);
+          font-size: 18px;
+          font-weight: 900;
+          color: rgba(255, 107, 53, 0.5);
+          margin: 0 1px;
+          align-self: flex-start;
+          padding-top: 2px;
+          line-height: 1.25;
+        }
+
+        .disc-bar.disc-urgent .disc-d {
+          background: #c00000;
+          box-shadow: 0 2px 10px rgba(180, 0, 0, 0.35);
+          animation: urgentFlash 0.65s ease-in-out infinite;
+        }
+
+        @keyframes urgentFlash {
+          0%,
+          100% {
+            opacity: 1;
+          }
+
+          50% {
+            opacity: 0.7;
+          }
+        }
+
+        .disc-bar.disc-urgent .disc-u-lbl,
+        .disc-bar.disc-urgent .disc-sep2,
+        .disc-bar.disc-urgent .disc-timer-lbl {
+          color: #a00000;
+        }
+
+        @media (max-width: 680px) {
+          .disc-fl {
+            display: none;
+          }
+
+          .disc-vdiv {
+            display: none;
+          }
+        }
+
+        @media (max-width: 520px) {
+          .disc-bar {
+            padding: 7px 10px;
+            gap: 7px;
+          }
+
+          .disc-timer-lbl {
+            display: none;
+          }
+
+          .disc-d {
+            font-size: 14px;
+            min-width: 27px;
+            padding: 3px 5px;
+          }
+
+          .disc-sep2 {
+            font-size: 15px;
+          }
+
+          .disc-u-lbl {
+            font-size: 7px;
+          }
+
+          .disc-now {
+            font-size: 18px;
+          }
+
+          .disc-badge {
+            font-size: 10px;
+            padding: 4px 9px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .disc-orig {
+            display: none;
+          }
+
+          .disc-arr {
+            display: none;
+          }
+        }
+
+        /* ══ MOBILE IMPROVEMENTS ══ */
+        @media (max-width: 520px) {
+          .disc-bar {
+            padding: 8px 12px;
             gap: 6px;
+          }
+
+          .disc-fl {
+            display: none;
+          }
+
+          .disc-sep {
+            display: none;
+          }
+
+          .disc-now {
+            font-size: 14px;
+          }
+
+          .disc-timer-wrap {
+            font-size: 11px;
+          }
         }
 
-        .cat-btn {
+        @media (max-width: 480px) {
+          .page-hero {
+            padding: 40px 20px 36px;
+          }
+
+          .wrap {
+            padding: 36px 16px 52px;
+          }
+
+          .cat-bar {
+            gap: 6px;
+          }
+
+          .cat-btn {
             font-size: 10px;
             padding: 6px 11px;
-        }
+          }
 
-        .cta-box {
+          .cta-box {
             padding: 32px 20px;
-        }
+          }
 
-        .ft-bot {
+          .ft-bot {
             flex-direction: column;
             align-items: center;
             text-align: center;
             gap: 10px;
-        }
+          }
 
-        .ft-bot nav {
+          .ft-bot nav {
             flex-wrap: wrap;
             justify-content: center;
+          }
         }
-    }
 
-    @media(max-width:380px) {
-        .nav-logo-sub {
+        @media (max-width: 380px) {
+          .nav-logo-sub {
             display: none;
-        }
+          }
 
-        .nav-cta {
+          .nav-cta {
             padding: 8px 13px;
             font-size: 11.5px;
-        }
-    }
-
-    .faq-q {
-        min-height: 52px;
-    }
-
-    /* ══ NLT SHARED ANIMATION SYSTEM ══ */
-
-    /* Page progress indicator */
-    .section-progress {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 2px;
-        background: linear-gradient(90deg, #ff6b35, #ffb347);
-        z-index: 9999;
-        width: 0%;
-        transition: width .1s linear;
-        box-shadow: 0 0 8px rgba(255, 107, 53, .6);
-    }
-
-    /* Section title underline draw */
-    .s-ttl {
-        position: relative;
-        background-size: 300% auto;
-        animation: titleShine 6s linear infinite;
-    }
-
-    .s-ttl::after {
-        content: '';
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        height: 2px;
-        width: 0;
-        background: linear-gradient(90deg, #ff6b35, #ffb347, #ff6b35);
-        border-radius: 2px;
-        transition: width .8s cubic-bezier(.22, 1, .36, 1);
-    }
-
-    .s-ttl.title-revealed::after {
-        width: 48px;
-    }
-
-    @keyframes titleShine {
-        0% {
-            background-position: 0% center
+          }
         }
 
-        100% {
-            background-position: 300% center
-        }
-    }
-
-    /* Enhanced scroll reveal */
-    .rv {
-        opacity: 0;
-        transform: translateY(18px) scale(.99);
-        transition: opacity .55s cubic-bezier(.22, 1, .36, 1),
-            transform .55s cubic-bezier(.22, 1, .36, 1);
-        will-change: opacity, transform;
-    }
-
-    .rv.on {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-
-    /* FAQ enhanced interactions */
-    .faq-item {
-        transition: border-color .25s, box-shadow .25s, transform .25s;
-    }
-
-    .faq-item:hover {
-        transform: translateX(3px);
-        box-shadow: 0 4px 16px rgba(255, 107, 53, .07);
-    }
-
-    .faq-icon,
-    .faq-ic {
-        transition: transform .3s cubic-bezier(.34, 1.56, .64, 1),
-            background .25s, color .25s !important;
-    }
-
-    .faq-q:hover .faq-icon,
-    .faq-q:hover .faq-ic {
-        transform: rotate(15deg) scale(1.1) !important;
-    }
-
-    .faq-q.open .faq-icon,
-    .faq-q.open .faq-ic {
-        transform: rotate(45deg) scale(1.1) !important;
-    }
-
-    /* Button magnetic press */
-    .btn-primary:active,
-    .btn-ghost:active,
-    .nav-cta:active {
-        transform: translateY(1px) scale(.98) !important;
-    }
-
-    /* Nav link underline draw */
-    .nav-link {
-        position: relative;
-    }
-
-    .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: 2px;
-        left: 10px;
-        right: 10px;
-        height: 1.5px;
-        background: var(--amber, #ff6b35);
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform .25s cubic-bezier(.22, 1, .36, 1);
-    }
-
-    .nav-link:hover::after {
-        transform: scaleX(1);
-    }
-
-    /* Telegram pulse */
-    .tg-pulse {
-        animation: tgPulse 2.5s ease-in-out infinite;
-    }
-
-    @keyframes tgPulse {
-
-        0%,
-        100% {
-            box-shadow: 0 8px 28px rgba(255, 107, 53, .5), 0 0 0 0 rgba(255, 107, 53, .25);
+        .faq-q {
+          min-height: 52px;
         }
 
-        50% {
-            box-shadow: 0 10px 36px rgba(255, 107, 53, .65), 0 0 0 8px rgba(255, 107, 53, 0);
-        }
-    }
+        /* ══ NLT SHARED ANIMATION SYSTEM ══ */
 
-    /* Animated section divider */
-    .section-divider {
-        height: 1px;
-        margin: 0 auto 48px;
-        background: linear-gradient(90deg, transparent 0%, rgba(255, 107, 53, .2) 50%, transparent 100%);
-        background-size: 200% auto;
-        animation: dividerFlow 4s linear infinite;
-    }
-
-    @keyframes dividerFlow {
-        0% {
-            background-position: 0% center
+        /* Page progress indicator */
+        .section-progress {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #ff6b35, #ffb347);
+          z-index: 9999;
+          width: 0%;
+          transition: width 0.1s linear;
+          box-shadow: 0 0 8px rgba(255, 107, 53, 0.6);
         }
 
-        100% {
-            background-position: 200% center
-        }
-    }
-
-    /* Filter buttons hover (FAQ page) */
-    .filter-btn {
-        transition: all .25s cubic-bezier(.22, 1, .36, 1) !important;
-    }
-
-    .filter-btn:hover {
-        transform: translateY(-2px) scale(1.04) !important;
-    }
-
-    .filter-btn.active {
-        animation: filterBtnPop .3s cubic-bezier(.34, 1.56, .64, 1);
-    }
-
-    @keyframes filterBtnPop {
-        from {
-            transform: scale(.92);
+        /* Section title underline draw */
+        .s-ttl {
+          position: relative;
+          background-size: 300% auto;
+          animation: titleShine 6s linear infinite;
         }
 
-        to {
+        .s-ttl::after {
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          height: 2px;
+          width: 0;
+          background: linear-gradient(90deg, #ff6b35, #ffb347, #ff6b35);
+          border-radius: 2px;
+          transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .s-ttl.title-revealed::after {
+          width: 48px;
+        }
+
+        @keyframes titleShine {
+          0% {
+            background-position: 0% center;
+          }
+
+          100% {
+            background-position: 300% center;
+          }
+        }
+
+        /* Enhanced scroll reveal */
+        .rv {
+          opacity: 0;
+          transform: translateY(18px) scale(0.99);
+          transition:
+            opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+            transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+          will-change: opacity, transform;
+        }
+
+        .rv.on {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+
+        /* FAQ enhanced interactions */
+        .faq-item {
+          transition:
+            border-color 0.25s,
+            box-shadow 0.25s,
+            transform 0.25s;
+        }
+
+        .faq-item:hover {
+          transform: translateX(3px);
+          box-shadow: 0 4px 16px rgba(255, 107, 53, 0.07);
+        }
+
+        .faq-icon,
+        .faq-ic {
+          transition:
+            transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+            background 0.25s,
+            color 0.25s !important;
+        }
+
+        .faq-q:hover .faq-icon,
+        .faq-q:hover .faq-ic {
+          transform: rotate(15deg) scale(1.1) !important;
+        }
+
+        .faq-q.open .faq-icon,
+        .faq-q.open .faq-ic {
+          transform: rotate(45deg) scale(1.1) !important;
+        }
+
+        /* Button magnetic press */
+        .btn-primary:active,
+        .btn-ghost:active,
+        .nav-cta:active {
+          transform: translateY(1px) scale(0.98) !important;
+        }
+
+        /* Nav link underline draw */
+        .nav-link {
+          position: relative;
+        }
+
+        .nav-link::after {
+          content: "";
+          position: absolute;
+          bottom: 2px;
+          left: 10px;
+          right: 10px;
+          height: 1.5px;
+          background: var(--amber, #ff6b35);
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .nav-link:hover::after {
+          transform: scaleX(1);
+        }
+
+        /* Telegram pulse */
+        .tg-pulse {
+          animation: tgPulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes tgPulse {
+          0%,
+          100% {
+            box-shadow:
+              0 8px 28px rgba(255, 107, 53, 0.5),
+              0 0 0 0 rgba(255, 107, 53, 0.25);
+          }
+
+          50% {
+            box-shadow:
+              0 10px 36px rgba(255, 107, 53, 0.65),
+              0 0 0 8px rgba(255, 107, 53, 0);
+          }
+        }
+
+        /* Animated section divider */
+        .section-divider {
+          height: 1px;
+          margin: 0 auto 48px;
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255, 107, 53, 0.2) 50%,
+            transparent 100%
+          );
+          background-size: 200% auto;
+          animation: dividerFlow 4s linear infinite;
+        }
+
+        @keyframes dividerFlow {
+          0% {
+            background-position: 0% center;
+          }
+
+          100% {
+            background-position: 200% center;
+          }
+        }
+
+        /* Filter buttons hover (FAQ page) */
+        .filter-btn {
+          transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1) !important;
+        }
+
+        .filter-btn:hover {
+          transform: translateY(-2px) scale(1.04) !important;
+        }
+
+        .filter-btn.active {
+          animation: filterBtnPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes filterBtnPop {
+          from {
+            transform: scale(0.92);
+          }
+
+          to {
             transform: scale(1);
+          }
         }
-    }
 
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce) {
-
-        *,
-        *::before,
-        *::after {
-            animation-duration: .01ms !important;
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+          *,
+          *::before,
+          *::after {
+            animation-duration: 0.01ms !important;
             animation-iteration-count: 1 !important;
-            transition-duration: .01ms !important;
+            transition-duration: 0.01ms !important;
+          }
         }
-    }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="section-progress" id="sectionProgress"></div>
     <!-- ════ STICKY HEADER ════ -->
     <header class="sticky-header">
-        <!-- ════ DISCOUNT BAR ════ -->
-        <div class="disc-bar" id="discBar">
-            <span class="disc-fl"><span class="disc-fl-fire">🔥</span><span id="discName">সীমিত সময়ের Offer</span></span>
-            <span class="disc-price-group">
-                <span class="disc-orig" id="dOrig"></span>
-                <span class="disc-arr">→</span>
-                <span class="disc-now" id="dNow"></span>
-            </span>
-            <span class="disc-badge" id="dSave"></span>
-            <span class="disc-vdiv"></span>
-            <span class="disc-timer-wrap">
-                <span class="disc-clock" id="discClock">
-                    <span class="disc-unit"><span class="disc-d" id="tH">00</span><span class="disc-u-lbl">ঘণ্টা</span></span>
-                    <span class="disc-sep2">:</span>
-                    <span class="disc-unit"><span class="disc-d" id="tM">00</span><span class="disc-u-lbl">মিনিট</span></span>
-                    <span class="disc-sep2">:</span>
-                    <span class="disc-unit"><span class="disc-d" id="tS">00</span><span class="disc-u-lbl">সেকেন্ড</span></span>
-                </span>
-            </span>
-        </div>
-        <!-- ════ NAVBAR ════ -->
-        <nav class="navbar" id="navbar">
-            <div class="nav-inner">
-                <a class="nav-logo" href="index.html">
-                    <div class="nav-logo-mark">NLT</div>
-                    <div>
-                        <span class="nav-logo-name">Exclusive Mentorship</span>
-                        <span class="nav-logo-sub">by NLT · ICT Based Trading</span>
-                    </div>
-                </a>
-                <div class="nav-right">
-                    <a class="nav-link active" href="faq.html">FAQ</a>
-                    <a class="nav-link" href="terms.html">Terms</a>
-                    <a class="nav-link" href="analysis.html">AI Tool</a>
-                    <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Join করুন</a>
-                </div>
+      <!-- ════ DISCOUNT BAR ════ -->
+      <div class="disc-bar" id="discBar">
+        <span class="disc-fl"
+          ><span class="disc-fl-fire">🔥</span
+          ><span id="discName">সীমিত সময়ের Offer</span></span
+        >
+        <span class="disc-price-group">
+          <span class="disc-orig" id="dOrig"></span>
+          <span class="disc-arr">→</span>
+          <span class="disc-now" id="dNow"></span>
+        </span>
+        <span class="disc-badge" id="dSave"></span>
+        <span class="disc-vdiv"></span>
+        <span class="disc-timer-wrap">
+          <span class="disc-clock" id="discClock">
+            <span class="disc-unit"
+              ><span class="disc-d" id="tH">00</span
+              ><span class="disc-u-lbl">ঘণ্টা</span></span
+            >
+            <span class="disc-sep2">:</span>
+            <span class="disc-unit"
+              ><span class="disc-d" id="tM">00</span
+              ><span class="disc-u-lbl">মিনিট</span></span
+            >
+            <span class="disc-sep2">:</span>
+            <span class="disc-unit"
+              ><span class="disc-d" id="tS">00</span
+              ><span class="disc-u-lbl">সেকেন্ড</span></span
+            >
+          </span>
+        </span>
+      </div>
+      <!-- ════ NAVBAR ════ -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+          <a class="nav-logo" href="index.html">
+            <div class="nav-logo-mark">NLT</div>
+            <div>
+              <span class="nav-logo-name">Exclusive Mentorship</span>
+              <span class="nav-logo-sub">by NLT · ICT Based Trading</span>
             </div>
-        </nav>
+          </a>
+          <div class="nav-right">
+            <a class="nav-link active" href="faq.html">FAQ</a>
+            <a class="nav-link" href="terms.html">Terms</a>
+            <a class="nav-link" href="analysis.html">AI Tool</a>
+            <a
+              class="nav-cta"
+              href="https://t.me/AskNLT"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"
+                />
+              </svg>
+              Join করুন</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- ════ PAGE HEADER ════ -->
     <div class="page-hero">
-        <div class="page-hero-inner">
-            <div class="page-badge">Frequently Asked Questions</div>
-            <h1 class="page-title">Most Common Questions</h1>
-            <p class="page-sub">সবচেয়ে বেশি জিজ্ঞেস করা প্রশ্নগুলোর উত্তর এখানে আছে। না পেলে Telegram-এ জিজ্ঞেস করুন।</p>
-        </div>
+      <div class="page-hero-inner">
+        <div class="page-badge">Frequently Asked Questions</div>
+        <h1 class="page-title">Most Common Questions</h1>
+        <p class="page-sub">
+          সবচেয়ে বেশি জিজ্ঞেস করা প্রশ্নগুলোর উত্তর এখানে আছে। না পেলে
+          Telegram-এ জিজ্ঞেস করুন।
+        </p>
+      </div>
     </div>
     <!-- ════ CONTENT ════ -->
     <div class="wrap">
-        <!-- Category tabs -->
-        <div class="cat-bar rv">
-            <button class="cat-btn active" onclick="filterCat('all',this)">সব প্রশ্ন</button>
-            <button class="cat-btn" onclick="filterCat('join',this)">Join করা</button>
-            <button class="cat-btn" onclick="filterCat('payment',this)">Payment</button>
-            <button class="cat-btn" onclick="filterCat('access',this)">Access</button>
-            <button class="cat-btn" onclick="filterCat('course',this)">Course</button>
-            <button class="cat-btn" onclick="filterCat('support',this)">Support</button>
-        </div>
-        <!-- ── JOIN ── -->
-        <div class="faq-group rv" id="grp-join">
-            <div class="faq-group-lbl">🚀 Join করা</div>
-            <div class="faq-list">
-                <div class="faq-item" data-cat="join">
-                    <button class="faq-q" onclick="tFaq(this)">কীভাবে Exclusive Mentorship-এ join করব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের support team সব বিস্তারিত জানাবে — Binance Pay-তে payment করলেই সাথে সাথে access পেয়ে যাবেন। কোনো automatic payment page নেই — সরাসরি মানুষের সাথে কথা বলেই সব হয়।</div>
-                </div>
-                <div class="faq-item" data-cat="join">
-                    <button class="faq-q" onclick="tFaq(this)">Join করার আগে কথা বলা যাবে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">অবশ্যই — এটাই আমাদের মূল process। Telegram-এ <span class="hl">@AskNLT</span>-এ message দিন, আমাদের support team সব প্রশ্নের উত্তর দেবে। সব জেনে-বুঝে নিশ্চিত হয়ে তারপর সিদ্ধান্ত নিন।</div>
-                </div>
-                <div class="faq-item" data-cat="join">
-                    <button class="faq-q" onclick="tFaq(this)">এই Mentorship কি beginners-দের জন্য?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart কীভাবে পড়তে হয়, সব step by step শেখানো হয়। কোনো আগের experience লাগবে না। কিছু না বুঝলে Telegram-এ জিজ্ঞেস করতে পারবেন।</div>
-                </div>
-                <div class="faq-item" data-cat="join">
-                    <button class="faq-q" onclick="tFaq(this)">Mentorship-এ কি শুধু একটাই package আছে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">হ্যাঁ। আমাদের <strong>Exclusive Mentorship</strong> package — একটাই, সম্পূর্ণ। এতে ৫টি module, ৯৯+ recorded class এবং lifetime access সহ সবকিছু আছে। <span id="faqPrice1">$39</span> one-time payment, কোনো hidden cost নেই।</div>
-                </div>
+      <!-- Category tabs -->
+      <div class="cat-bar rv">
+        <button class="cat-btn active" onclick="filterCat('all', this)">
+          সব প্রশ্ন
+        </button>
+        <button class="cat-btn" onclick="filterCat('join', this)">
+          Join করা
+        </button>
+        <button class="cat-btn" onclick="filterCat('payment', this)">
+          Payment
+        </button>
+        <button class="cat-btn" onclick="filterCat('access', this)">
+          Access
+        </button>
+        <button class="cat-btn" onclick="filterCat('course', this)">
+          Course
+        </button>
+        <button class="cat-btn" onclick="filterCat('support', this)">
+          Support
+        </button>
+      </div>
+      <!-- ── JOIN ── -->
+      <div class="faq-group rv" id="grp-join">
+        <div class="faq-group-lbl">🚀 Join করা</div>
+        <div class="faq-list">
+          <div class="faq-item" data-cat="join">
+            <button class="faq-q" onclick="tFaq(this)">
+              কীভাবে Exclusive Mentorship-এ join করব?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের
+              support team সব বিস্তারিত জানাবে — Binance Pay-তে payment করলেই
+              সাথে সাথে access পেয়ে যাবেন। কোনো automatic payment page নেই —
+              সরাসরি মানুষের সাথে কথা বলেই সব হয়।
             </div>
-        </div>
-        <!-- ── PAYMENT ── -->
-        <div class="faq-group rv" id="grp-payment">
-            <div class="faq-group-lbl">💳 Payment</div>
-            <div class="faq-list">
-                <div class="faq-item" data-cat="payment">
-                    <button class="faq-q" onclick="tFaq(this)">কোন কোন payment method accept করা হয়?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>শুধুমাত্র <strong>Binance Pay</strong>-এর মাধ্যমে payment নেওয়া হয়:</p>
-                        <ul>
-                            <li><strong>Binance Pay:</strong> সরাসরি Binance Pay-তে USDT পাঠাতে পারবেন</li>
-                            <li><strong>Binance-Supported Networks:</strong> Binance-এ available যেকোনো crypto network (TRC-20, BEP-20, Polygon, etc.) ব্যবহার করেও পাঠানো যাবে</li>
-                        </ul>
-                        <p style="margin-top:12px">সম্পূর্ণ payment process টা Telegram-এ <span class="hl">@AskNLT</span>-এ যোগাযোগ করে manually করতে হবে।</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-cat="payment">
-                    <button class="faq-q" onclick="tFaq(this)">Payment করার পর কত সময়ের মধ্যে access পাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Payment confirm হওয়ার পর সাধারণত <strong>কয়েক ঘণ্টার মধ্যে</strong> সব module unlock করে দেওয়া হয়। Telegram-এ <span class="hl">@AskNLT</span>-এ payment screenshot পাঠালে process আরও দ্রুত হয়।</div>
-                </div>
-                <div class="faq-item" data-cat="payment">
-                    <button class="faq-q" onclick="tFaq(this)">Payment screenshot কোথায় পাঠাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Payment screenshot পাঠাবেন Telegram-এ <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID, Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।</div>
-                </div>
-                <div class="faq-item" data-cat="payment">
-                    <button class="faq-q" onclick="tFaq(this)">কোনো hidden charge বা monthly fee আছে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a"><strong>একদমই না।</strong> <span class="hl" id="faqPrice2">$39</span> একবার pay করলেই সারাজীবন access। কোনো monthly fee, renewal charge, বা hidden cost নেই।</div>
-                </div>
-                <div class="faq-item" data-cat="payment">
-                    <button class="faq-q" onclick="tFaq(this)">Refund policy কী?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Digital content-এর nature অনুযায়ী, একবার access দেওয়া হলে refund সম্ভব নয়। তাই join করার আগে Telegram-এ কথা বলুন, সব জেনে-বুঝে সিদ্ধান্ত নিন। কোনো technical problem হলে সেটা সবসময় resolve করা হবে।</div>
-                </div>
+          </div>
+          <div class="faq-item" data-cat="join">
+            <button class="faq-q" onclick="tFaq(this)">
+              Join করার আগে কথা বলা যাবে?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              অবশ্যই — এটাই আমাদের মূল process। Telegram-এ
+              <span class="hl">@AskNLT</span>-এ message দিন, আমাদের support team
+              সব প্রশ্নের উত্তর দেবে। সব জেনে-বুঝে নিশ্চিত হয়ে তারপর সিদ্ধান্ত
+              নিন।
             </div>
-        </div>
-        <!-- ── ACCESS ── -->
-        <div class="faq-group rv" id="grp-access">
-            <div class="faq-group-lbl">🔐 Access</div>
-            <div class="faq-list">
-                <div class="faq-item" data-cat="access">
-                    <button class="faq-q" onclick="tFaq(this)">"Lifetime access" মানে ঠিক কতদিন?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">সত্যিকারের lifetime — <strong>platform চালু আছে যতদিন, access থাকবে ততদিন।</strong> কোনো expiry date নেই। আজ থেকে ৫ বছর পরেও দেখতে পারবেন, বারবার revise করতে পারবেন।</div>
-                </div>
-                <div class="faq-item" data-cat="access">
-                    <button class="faq-q" onclick="tFaq(this)">কতটি device থেকে access করতে পারব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">আপনার নিজের device — phone, tablet, laptop — যেকোনো থেকেই access করতে পারবেন। শুধু account sharing বা credentials অন্যকে দেওয়া যাবে না।</div>
-                </div>
-                <div class="faq-item" data-cat="access">
-                    <button class="faq-q" onclick="tFaq(this)">Class কি download করা যাবে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Classes Telegram Channel-এ দেওয়া হয় — device-এ download option নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।</div>
-                </div>
-                <div class="faq-item" data-cat="access">
-                    <button class="faq-q" onclick="tFaq(this)">হঠাৎ access চলে গেলে কী করব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। Payment proof (screenshot বা transaction ID) দিলে দ্রুত restore করে দেওয়া হবে।</div>
-                </div>
+          </div>
+          <div class="faq-item" data-cat="join">
+            <button class="faq-q" onclick="tFaq(this)">
+              এই Mentorship কি beginners-দের জন্য?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              হ্যাঁ, একদম। Module 01 শূন্য থেকে শুরু হয় — Trading কী, Chart
+              কীভাবে পড়তে হয়, সব step by step শেখানো হয়। কোনো আগের experience
+              লাগবে না। কিছু না বুঝলে Telegram-এ জিজ্ঞেস করতে পারবেন।
             </div>
-        </div>
-        <!-- ── COURSE ── -->
-        <div class="faq-group rv" id="grp-course">
-            <div class="faq-group-lbl">📚 Course</div>
-            <div class="faq-list">
-                <div class="faq-item" data-cat="course">
-                    <button class="faq-q" onclick="tFaq(this)">Course-এ কী কী শেখানো হয়?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        মোট ৫টি Module:
-                        <ul>
-                            <li><strong>Module 01:</strong> Basic Foundation — Trading শুরু থেকে, Chart, Broker, Orders</li>
-                            <li><strong>Module 02:</strong> ICT Concept — Liquidity, Order Blocks, Market Profile, Strategies</li>
-                            <li><strong>Module 03:</strong> Fundamental Analysis — Central Banks, News Trading, COT</li>
-                            <li><strong>Module 04:</strong> Psychology Training — Mindset, FOMO, Journaling</li>
-                            <li><strong>Module 05:</strong> Prop Trading — Funded Account পাওয়ার সম্পূর্ণ guide</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="faq-item" data-cat="course">
-                    <button class="faq-q" onclick="tFaq(this)">Absolute beginner হিসেবে কি পারব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">অবশ্যই। Module 01 একদম zero থেকে শুরু হয় — "Trading কী" দিয়ে শুরু করে step by step সবকিছু। কোনো background knowledge লাগবে না।</div>
-                </div>
-                <div class="faq-item" data-cat="course">
-                    <button class="faq-q" onclick="tFaq(this)">কতগুলো class আছে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a"><strong>Total ৯৯+ recorded class</strong> আছে ৫টি module-এ। সব class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।</div>
-                </div>
-                <div class="faq-item" data-cat="course">
-                    <button class="faq-q" onclick="tFaq(this)">Course শেষ করতে কতদিন লাগবে?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">এটা সম্পূর্ণ আপনার নিজের উপর নির্ভর করে। কেউ প্রতিদিন ১-২ ঘণ্টা দিলে ২-৩ মাসে শেষ করতে পারে। Lifetime access থাকায় কোনো তাড়া নেই — নিজের pace-এ শিখুন।</div>
-                </div>
+          </div>
+          <div class="faq-item" data-cat="join">
+            <button class="faq-q" onclick="tFaq(this)">
+              Mentorship-এ কি শুধু একটাই package আছে?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              হ্যাঁ। আমাদের <strong>Exclusive Mentorship</strong> package —
+              একটাই, সম্পূর্ণ। এতে ৫টি module, ৯৯+ recorded class এবং lifetime
+              access সহ সবকিছু আছে। <span id="faqPrice1">$39</span> one-time
+              payment, কোনো hidden cost নেই।
             </div>
+          </div>
         </div>
-        <div class="faq-group rv" id="grp-support">
-            <div class="faq-group-lbl"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg> Support</div>
-            <div class="faq-list">
-                <div class="faq-item" data-cat="support">
-                    <button class="faq-q" onclick="tFaq(this)">Support পেতে কোথায় যাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের team খুব দ্রুত সাড়া দেয়।</div>
-                </div>
-                <div class="faq-item" data-cat="support">
-                    <button class="faq-q" onclick="tFaq(this)">Telegram-এ যোগাযোগ করলে কত দ্রুত সাড়া পাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">সাধারণত কয়েক মিনিটের মধ্যেই। আমাদের trained support team সবসময় active থাকে।</div>
-                </div>
-                <div class="faq-item" data-cat="support">
-                    <button class="faq-q" onclick="tFaq(this)">Course শেখার সময়ও support পাব?<span class="faq-icon">+</span></button>
-                    <div class="faq-a">Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করতে পারবেন।</div>
-                </div>
+      </div>
+      <!-- ── PAYMENT ── -->
+      <div class="faq-group rv" id="grp-payment">
+        <div class="faq-group-lbl">💳 Payment</div>
+        <div class="faq-list">
+          <div class="faq-item" data-cat="payment">
+            <button class="faq-q" onclick="tFaq(this)">
+              কোন কোন payment method accept করা হয়?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              <p>
+                শুধুমাত্র <strong>Binance Pay</strong>-এর মাধ্যমে payment নেওয়া
+                হয়:
+              </p>
+              <ul>
+                <li>
+                  <strong>Binance Pay:</strong> সরাসরি Binance Pay-তে USDT
+                  পাঠাতে পারবেন
+                </li>
+                <li>
+                  <strong>Binance-Supported Networks:</strong> Binance-এ
+                  available যেকোনো crypto network (TRC-20, BEP-20, Polygon,
+                  etc.) ব্যবহার করেও পাঠানো যাবে
+                </li>
+              </ul>
+              <p style="margin-top: 12px">
+                সম্পূর্ণ payment process টা Telegram-এ
+                <span class="hl">@AskNLT</span>-এ যোগাযোগ করে manually করতে হবে।
+              </p>
             </div>
-        </div>
-        <!-- CTA BOX -->
-        <div class="cta-box rv">
-            <div class="cta-inner">
-                <div class="cta-title">এখনও প্রশ্ন আছে?</div>
-                <div class="cta-sub">Telegram-এ @AskNLT-এ message করুন — কয়েক মিনিটেই সাড়া পাবেন।</div>
-                <a class="cta-btn" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="position:relative;z-index:1;flex-shrink:0">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z" /></svg>
-                    <span style="position:relative;z-index:1">Telegram-এ Message করুন</span>
-                </a>
+          </div>
+          <div class="faq-item" data-cat="payment">
+            <button class="faq-q" onclick="tFaq(this)">
+              Payment করার পর কত সময়ের মধ্যে access পাব?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Payment confirm হওয়ার পর সাধারণত
+              <strong>কয়েক ঘণ্টার মধ্যে</strong> সব module unlock করে দেওয়া
+              হয়। Telegram-এ <span class="hl">@AskNLT</span>-এ payment
+              screenshot পাঠালে process আরও দ্রুত হয়।
             </div>
+          </div>
+          <div class="faq-item" data-cat="payment">
+            <button class="faq-q" onclick="tFaq(this)">
+              Payment screenshot কোথায় পাঠাব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Payment screenshot পাঠাবেন Telegram-এ
+              <span class="hl">@AskNLT</span>-এ। Screenshot-এ Transaction ID,
+              Amount এবং Date/Time থাকলে process আরও দ্রুত হবে।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="payment">
+            <button class="faq-q" onclick="tFaq(this)">
+              কোনো hidden charge বা monthly fee আছে?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              <strong>একদমই না।</strong>
+              <span class="hl" id="faqPrice2">$39</span> একবার pay করলেই
+              সারাজীবন access। কোনো monthly fee, renewal charge, বা hidden cost
+              নেই।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="payment">
+            <button class="faq-q" onclick="tFaq(this)">
+              Refund policy কী?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Digital content-এর nature অনুযায়ী, একবার access দেওয়া হলে refund
+              সম্ভব নয়। তাই join করার আগে Telegram-এ কথা বলুন, সব জেনে-বুঝে
+              সিদ্ধান্ত নিন। কোনো technical problem হলে সেটা সবসময় resolve করা
+              হবে।
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- ── ACCESS ── -->
+      <div class="faq-group rv" id="grp-access">
+        <div class="faq-group-lbl">🔐 Access</div>
+        <div class="faq-list">
+          <div class="faq-item" data-cat="access">
+            <button class="faq-q" onclick="tFaq(this)">
+              "Lifetime access" মানে ঠিক কতদিন?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              সত্যিকারের lifetime —
+              <strong>platform চালু আছে যতদিন, access থাকবে ততদিন।</strong> কোনো
+              expiry date নেই। আজ থেকে ৫ বছর পরেও দেখতে পারবেন, বারবার revise
+              করতে পারবেন।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="access">
+            <button class="faq-q" onclick="tFaq(this)">
+              কতটি device থেকে access করতে পারব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              আপনার নিজের device — phone, tablet, laptop — যেকোনো থেকেই access
+              করতে পারবেন। শুধু account sharing বা credentials অন্যকে দেওয়া
+              যাবে না।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="access">
+            <button class="faq-q" onclick="tFaq(this)">
+              Class কি download করা যাবে?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Classes Telegram Channel-এ দেওয়া হয় — device-এ download option
+              নেই। তবে যেকোনো সময়, যতবার খুশি online-এ দেখতে পারবেন।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="access">
+            <button class="faq-q" onclick="tFaq(this)">
+              হঠাৎ access চলে গেলে কী করব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। Payment
+              proof (screenshot বা transaction ID) দিলে দ্রুত restore করে দেওয়া
+              হবে।
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ── COURSE ── -->
+      <div class="faq-group rv" id="grp-course">
+        <div class="faq-group-lbl">📚 Course</div>
+        <div class="faq-list">
+          <div class="faq-item" data-cat="course">
+            <button class="faq-q" onclick="tFaq(this)">
+              Course-এ কী কী শেখানো হয়?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              মোট ৫টি Module:
+              <ul>
+                <li>
+                  <strong>Module 01:</strong> Basic Foundation — Trading শুরু
+                  থেকে, Chart, Broker, Orders
+                </li>
+                <li>
+                  <strong>Module 02:</strong> ICT Concept — Liquidity, Order
+                  Blocks, Market Profile, Strategies
+                </li>
+                <li>
+                  <strong>Module 03:</strong> Fundamental Analysis — Central
+                  Banks, News Trading, COT
+                </li>
+                <li>
+                  <strong>Module 04:</strong> Psychology Training — Mindset,
+                  FOMO, Journaling
+                </li>
+                <li>
+                  <strong>Module 05:</strong> Prop Trading — Funded Account
+                  পাওয়ার সম্পূর্ণ guide
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="faq-item" data-cat="course">
+            <button class="faq-q" onclick="tFaq(this)">
+              Absolute beginner হিসেবে কি পারব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              অবশ্যই। Module 01 একদম zero থেকে শুরু হয় — "Trading কী" দিয়ে
+              শুরু করে step by step সবকিছু। কোনো background knowledge লাগবে না।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="course">
+            <button class="faq-q" onclick="tFaq(this)">
+              কতগুলো class আছে?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <strong>Total ৯৯+ recorded class</strong> আছে ৫টি module-এ। সব
+              class একসাথে unlock হয়ে যায় — নিজের গতিতে শিখতে পারবেন।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="course">
+            <button class="faq-q" onclick="tFaq(this)">
+              Course শেষ করতে কতদিন লাগবে?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              এটা সম্পূর্ণ আপনার নিজের উপর নির্ভর করে। কেউ প্রতিদিন ১-২ ঘণ্টা
+              দিলে ২-৩ মাসে শেষ করতে পারে। Lifetime access থাকায় কোনো তাড়া নেই
+              — নিজের pace-এ শিখুন।
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq-group rv" id="grp-support">
+        <div class="faq-group-lbl">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            style="vertical-align: middle; margin-right: 4px"
+          >
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"
+            />
+          </svg>
+          Support
+        </div>
+        <div class="faq-list">
+          <div class="faq-item" data-cat="support">
+            <button class="faq-q" onclick="tFaq(this)">
+              Support পেতে কোথায় যাব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Telegram-এ <span class="hl">@AskNLT</span>-এ message করুন। আমাদের
+              team খুব দ্রুত সাড়া দেয়।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="support">
+            <button class="faq-q" onclick="tFaq(this)">
+              Telegram-এ যোগাযোগ করলে কত দ্রুত সাড়া পাব?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              সাধারণত কয়েক মিনিটের মধ্যেই। আমাদের trained support team সবসময়
+              active থাকে।
+            </div>
+          </div>
+          <div class="faq-item" data-cat="support">
+            <button class="faq-q" onclick="tFaq(this)">
+              Course শেখার সময়ও support পাব?<span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Telegram-এ যেকোনো প্রশ্ন করতে পারবেন। Course-এর কোনো topic বুঝতে
+              সমস্যা হলে, বা trading-related যেকোনো বিষয়ে — message করতে
+              পারবেন।
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CTA BOX -->
+      <div class="cta-box rv">
+        <div class="cta-inner">
+          <div class="cta-title">এখনও প্রশ্ন আছে?</div>
+          <div class="cta-sub">
+            Telegram-এ @AskNLT-এ message করুন — কয়েক মিনিটেই সাড়া পাবেন।
+          </div>
+          <a
+            class="cta-btn"
+            href="https://t.me/AskNLT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style="position: relative; z-index: 1; flex-shrink: 0"
+            >
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"
+              />
+            </svg>
+            <span style="position: relative; z-index: 1"
+              >Telegram-এ Message করুন</span
+            >
+          </a>
+        </div>
+      </div>
     </div>
     <!-- ════ FOOTER ════ -->
     <footer class="ft">
-        <div class="ft-bot">
-            <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
-            <nav class="ft-nav">
-                <a href="index.html">Home</a>
-                <a href="faq.html">FAQ</a>
-                <a href="terms.html">Terms</a>
-                <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">Telegram</a>
-            </nav>
-            <span class="ft-disc">Trading involves risk · Past performance ≠ future results</span>
-        </div>
+      <div class="ft-bot">
+        <span class="ft-copy"
+          >© 2026 Exclusive Mentorship by NLT. All rights reserved.</span
+        >
+        <nav class="ft-nav">
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a href="terms.html">Terms</a>
+          <a
+            href="https://t.me/AskNLT"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Telegram</a
+          >
+        </nav>
+        <span class="ft-disc"
+          >Trading involves risk · Past performance ≠ future results</span
+        >
+      </div>
     </footer>
-    <button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
-        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16">
-            <path d="M18 15l-6-6-6 6" /></svg>
+    <button
+      class="btt"
+      id="btt"
+      onclick="scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Back to top"
+    >
+      <svg
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="16"
+        height="16"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
     </button>
     <script>
-    /* ══ DISCOUNT + TIMER SYSTEM ══ */
-    (function() {
+      /* ══ DISCOUNT + TIMER SYSTEM ══ */
+      (function () {
         var ORIG = 100;
 
         /* Date-seeded discount — based on UTC date (Forex Daily Candle = UTC 00:00 = BD 06:00 AM). Range: 31–41% */
         function getDailyDiscount() {
-            var now = new Date();
-            var seed = now.getUTCFullYear() * 10000 + (now.getUTCMonth() + 1) * 100 + now.getUTCDate();
-            seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
-            seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
-            seed = seed ^ (seed >>> 16);
-            return 31 + (seed % 11); /* 31 to 41 */
+          var now = new Date();
+          var seed =
+            now.getUTCFullYear() * 10000 +
+            (now.getUTCMonth() + 1) * 100 +
+            now.getUTCDate();
+          seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
+          seed = ((seed ^ (seed >>> 16)) * 0x45d9f3b) >>> 0;
+          seed = seed ^ (seed >>> 16);
+          return 31 + (seed % 11); /* 31 to 41 */
         }
         var disc = getDailyDiscount();
         var CURR = Math.round(ORIG * (1 - disc / 100));
 
-        function setTxt(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
-        setTxt('dOrig', '$' + ORIG);
-        setTxt('dNow', '$' + CURR);
-        setTxt('dSave', disc + '% OFF');
-        setTxt('faqPrice1', '$' + CURR);
-        setTxt('faqPrice2', '$' + CURR);
-        var dayNames = ['Weekend Discount', 'Welcome Discount', 'Fortune Discount', 'Fortune Discount', 'Fortune Discount', 'Jumma Discount', 'Weekend Discount'];
-        setTxt('discName', dayNames[new Date().getUTCDay()]);
+        function setTxt(id, v) {
+          var e = document.getElementById(id);
+          if (e) e.textContent = v;
+        }
+        setTxt("dOrig", "$" + ORIG);
+        setTxt("dNow", "$" + CURR);
+        setTxt("dSave", disc + "% OFF");
+        setTxt("faqPrice1", "$" + CURR);
+        setTxt("faqPrice2", "$" + CURR);
+        var dayNames = [
+          "Weekend Discount",
+          "Welcome Discount",
+          "Fortune Discount",
+          "Fortune Discount",
+          "Fortune Discount",
+          "Jumma Discount",
+          "Weekend Discount",
+        ];
+        setTxt("discName", dayNames[new Date().getUTCDay()]);
 
-        function pad(n) { return n < 10 ? '0' + n : '' + n; }
+        function pad(n) {
+          return n < 10 ? "0" + n : "" + n;
+        }
 
         function animSet(id, val) {
-            var el = document.getElementById(id);
-            if (!el) return;
-            var v = pad(val);
-            if (el.textContent !== v) { el.classList.remove('flip');
-                void el.offsetWidth;
-                el.classList.add('flip');
-                el.textContent = v; }
+          var el = document.getElementById(id);
+          if (!el) return;
+          var v = pad(val);
+          if (el.textContent !== v) {
+            el.classList.remove("flip");
+            void el.offsetWidth;
+            el.classList.add("flip");
+            el.textContent = v;
+          }
         }
 
         function tick() {
-            var now = new Date();
-            var end = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1, 0, 0, 0));
-            var diff = Math.max(0, end - now);
-            var h = Math.floor(diff / 3600000),
-                m = Math.floor((diff % 3600000) / 60000),
-                s = Math.floor((diff % 60000) / 1000);
-            animSet('tH', h);
-            animSet('tM', m);
-            animSet('tS', s);
-            var bar = document.getElementById('discBar');
-            if (bar) bar.classList.toggle('disc-urgent', h < 1);
+          var now = new Date();
+          var end = new Date(
+            Date.UTC(
+              now.getUTCFullYear(),
+              now.getUTCMonth(),
+              now.getUTCDate() + 1,
+              0,
+              0,
+              0,
+            ),
+          );
+          var diff = Math.max(0, end - now);
+          var h = Math.floor(diff / 3600000),
+            m = Math.floor((diff % 3600000) / 60000),
+            s = Math.floor((diff % 60000) / 1000);
+          animSet("tH", h);
+          animSet("tM", m);
+          animSet("tS", s);
+          var bar = document.getElementById("discBar");
+          if (bar) bar.classList.toggle("disc-urgent", h < 1);
         }
         tick();
         setInterval(tick, 1000);
-    })();
+      })();
 
-    /* Navbar */
-    const nb = document.getElementById('navbar');
-    window.addEventListener('scroll', () => nb && nb.classList.toggle('scrolled', scrollY > 20), { passive: true });
+      /* Navbar */
+      const nb = document.getElementById("navbar");
+      window.addEventListener(
+        "scroll",
+        () => nb && nb.classList.toggle("scrolled", scrollY > 20),
+        { passive: true },
+      );
 
-    /* FAQ accordion */
-    function tFaq(btn) {
+      /* FAQ accordion */
+      function tFaq(btn) {
         const a = btn.nextElementSibling,
-            o = btn.classList.contains('open');
-        document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
-        document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+          o = btn.classList.contains("open");
+        document
+          .querySelectorAll(".faq-q")
+          .forEach((x) => x.classList.remove("open"));
+        document
+          .querySelectorAll(".faq-a")
+          .forEach((x) => x.classList.remove("open"));
         if (!o) {
-            btn.classList.add('open');
-            a.classList.add('open');
+          btn.classList.add("open");
+          a.classList.add("open");
         }
-    }
+      }
 
-    /* Category filter */
-    function filterCat(cat, btn) {
-        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelectorAll('.faq-item[data-cat]').forEach(el => {
-            el.classList.toggle('hidden', cat !== 'all' && el.dataset.cat !== cat);
+      /* Category filter */
+      function filterCat(cat, btn) {
+        document
+          .querySelectorAll(".cat-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(".faq-item[data-cat]").forEach((el) => {
+          el.classList.toggle(
+            "hidden",
+            cat !== "all" && el.dataset.cat !== cat,
+          );
         });
-        document.querySelectorAll('.faq-group').forEach(g => {
-            const visible = g.querySelectorAll('.faq-item:not(.hidden)').length;
-            g.style.display = visible === 0 ? 'none' : '';
+        document.querySelectorAll(".faq-group").forEach((g) => {
+          const visible = g.querySelectorAll(".faq-item:not(.hidden)").length;
+          g.style.display = visible === 0 ? "none" : "";
         });
-    }
+      }
 
-    /* Reveal */
-    const ro = new IntersectionObserver(e => {
-        e.forEach(x => {
+      /* Reveal */
+      const ro = new IntersectionObserver(
+        (e) => {
+          e.forEach((x) => {
             if (x.isIntersecting) {
-                x.target.classList.add('on');
-                ro.unobserve(x.target);
+              x.target.classList.add("on");
+              ro.unobserve(x.target);
             }
-        });
-    }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('.rv').forEach((el, i) => {
-        el.style.transitionDelay = (i % 6) * .07 + 's';
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -30px 0px" },
+      );
+      document.querySelectorAll(".rv").forEach((el, i) => {
+        el.style.transitionDelay = (i % 6) * 0.07 + "s";
         ro.observe(el);
-    });
-    setTimeout(() => document.querySelectorAll('.rv:not(.on)').forEach(el => el.classList.add('on')), 1400);
+      });
+      setTimeout(
+        () =>
+          document
+            .querySelectorAll(".rv:not(.on)")
+            .forEach((el) => el.classList.add("on")),
+        1400,
+      );
 
-    /* Sticky */
-    (function() {
-        var b = document.getElementById('sticky');
+      /* Sticky */
+      (function () {
+        var b = document.getElementById("sticky");
         if (!b || window.innerWidth > 768) return;
-        window.addEventListener('scroll', function() { if (scrollY > 300) b.classList.add('on'); }, { passive: true });
-    })();
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (scrollY > 300) b.classList.add("on");
+          },
+          { passive: true },
+        );
+      })();
 
-    /* BTT */
-    (function() {
-        var b = document.getElementById('btt');
+      /* BTT */
+      (function () {
+        var b = document.getElementById("btt");
         if (!b) return;
-        window.addEventListener('scroll', () => b.classList.toggle('on', scrollY > 400), { passive: true });
-    })();
+        window.addEventListener(
+          "scroll",
+          () => b.classList.toggle("on", scrollY > 400),
+          { passive: true },
+        );
+      })();
 
-    /* ══ NLT SHARED ANIMATION ENGINE ══ */
-    (function() {
-        var isMobile = window.matchMedia('(max-width:640px)').matches;
-        var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      /* ══ NLT SHARED ANIMATION ENGINE ══ */
+      (function () {
+        var isMobile = window.matchMedia("(max-width:640px)").matches;
+        var prefersReduced = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
 
         /* Progress bar */
-        var prog = document.getElementById('sectionProgress');
+        var prog = document.getElementById("sectionProgress");
         if (prog) {
-            window.addEventListener('scroll', function() {
-                var scrolled = (document.documentElement.scrollTop /
-                    (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                prog.style.width = Math.min(100, scrolled) + '%';
-            }, { passive: true });
+          window.addEventListener(
+            "scroll",
+            function () {
+              var scrolled =
+                (document.documentElement.scrollTop /
+                  (document.documentElement.scrollHeight -
+                    window.innerHeight)) *
+                100;
+              prog.style.width = Math.min(100, scrolled) + "%";
+            },
+            { passive: true },
+          );
         }
 
         /* Section title reveal */
-        var titleObs = new IntersectionObserver(function(entries) {
-            entries.forEach(function(e) {
-                if (e.isIntersecting) {
-                    e.target.classList.add('title-revealed');
-                    titleObs.unobserve(e.target);
-                }
+        var titleObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("title-revealed");
+                titleObs.unobserve(e.target);
+              }
             });
-        }, { threshold: .25 });
-        document.querySelectorAll('.s-ttl').forEach(function(t) { titleObs.observe(t); });
+          },
+          { threshold: 0.25 },
+        );
+        document.querySelectorAll(".s-ttl").forEach(function (t) {
+          titleObs.observe(t);
+        });
 
         /* Enhanced scroll reveal */
-        var rvObs = new IntersectionObserver(function(entries) {
-            entries.forEach(function(e) {
-                if (e.isIntersecting) { e.target.classList.add('on');
-                    rvObs.unobserve(e.target); }
+        var rvObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add("on");
+                rvObs.unobserve(e.target);
+              }
             });
-        }, { threshold: .08, rootMargin: '0px 0px -20px 0px' });
-        document.querySelectorAll('.rv').forEach(function(el, i) {
-            el.style.transitionDelay = (i % 5) * .07 + 's';
-            rvObs.observe(el);
+          },
+          { threshold: 0.08, rootMargin: "0px 0px -20px 0px" },
+        );
+        document.querySelectorAll(".rv").forEach(function (el, i) {
+          el.style.transitionDelay = (i % 5) * 0.07 + "s";
+          rvObs.observe(el);
         });
-        setTimeout(function() {
-            document.querySelectorAll('.rv:not(.on)').forEach(function(el) { el.classList.add('on'); });
+        setTimeout(function () {
+          document.querySelectorAll(".rv:not(.on)").forEach(function (el) {
+            el.classList.add("on");
+          });
         }, 1800);
 
         /* 3D tilt on FAQ items */
         if (!isMobile && !prefersReduced) {
-            document.querySelectorAll('.faq-item').forEach(function(card) {
-                card.addEventListener('mousemove', function(e) {
-                    var r = card.getBoundingClientRect();
-                    var x = (e.clientX - r.left) / r.width - .5;
-                    var y = (e.clientY - r.top) / r.height - .5;
-                    card.style.transform = 'perspective(700px) rotateX(' + (-y * 3) + 'deg) rotateY(' + (x * 3) + 'deg) translateX(3px)';
-                });
-                card.addEventListener('mouseleave', function() { card.style.transform = ''; });
+          document.querySelectorAll(".faq-item").forEach(function (card) {
+            card.addEventListener("mousemove", function (e) {
+              var r = card.getBoundingClientRect();
+              var x = (e.clientX - r.left) / r.width - 0.5;
+              var y = (e.clientY - r.top) / r.height - 0.5;
+              card.style.transform =
+                "perspective(700px) rotateX(" +
+                -y * 3 +
+                "deg) rotateY(" +
+                x * 3 +
+                "deg) translateX(3px)";
             });
+            card.addEventListener("mouseleave", function () {
+              card.style.transform = "";
+            });
+          });
         }
 
         /* Telegram pulse */
-        document.querySelectorAll('a[href*="t.me"]').forEach(function(btn) {
-            btn.classList.add('tg-pulse');
+        document.querySelectorAll('a[href*="t.me"]').forEach(function (btn) {
+          btn.classList.add("tg-pulse");
         });
 
         /* Magnetic buttons */
         if (!isMobile && !prefersReduced) {
-            document.querySelectorAll('.btn-primary, .btn-ghost, .nav-cta').forEach(function(btn) {
-                btn.addEventListener('mousemove', function(e) {
-                    var r = btn.getBoundingClientRect();
-                    var dx = (e.clientX - r.left - r.width / 2) / r.width * 10;
-                    var dy = (e.clientY - r.top - r.height / 2) / r.height * 8;
-                    btn.style.transform = 'translate(' + dx + 'px,' + dy + 'px) translateY(-3px) scale(1.03)';
-                });
-                btn.addEventListener('mouseleave', function() { btn.style.transform = ''; });
+          document
+            .querySelectorAll(".btn-primary, .btn-ghost, .nav-cta")
+            .forEach(function (btn) {
+              btn.addEventListener("mousemove", function (e) {
+                var r = btn.getBoundingClientRect();
+                var dx = ((e.clientX - r.left - r.width / 2) / r.width) * 10;
+                var dy = ((e.clientY - r.top - r.height / 2) / r.height) * 8;
+                btn.style.transform =
+                  "translate(" +
+                  dx +
+                  "px," +
+                  dy +
+                  "px) translateY(-3px) scale(1.03)";
+              });
+              btn.addEventListener("mouseleave", function () {
+                btn.style.transform = "";
+              });
             });
         }
 
         /* Nav link underline */
-        document.querySelectorAll('.nav-link::after') // CSS handles it
-
-    })();
+        document.querySelectorAll(".nav-link::after"); // CSS handles it
+      })();
     </script>
-</body>
-
+  </body>
 </html>
