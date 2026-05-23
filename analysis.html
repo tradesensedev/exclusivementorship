@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta name="theme-color" content="#faf8f3"/>
+<title>AI Analysis Tool — Exclusive Mentorship by NLT</title>
+<meta content="Fundamental Analysis AI Prompt Tool — Market select করুন, Phase copy করুন।" name="description"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='9' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23d97706'/%3E%3Cstop offset='100%25' stop-color='%23b45309'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='system-ui' font-size='13' font-weight='800' fill='white'%3ENLT%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#faf8f3;--bg-card:#ffffff;--bg-elevated:#f5f3ee;--bg-surface:#f0ebe3;
+  --ink:#0f1419;--ink-2:#3a4450;--ink-3:#6b7684;
+  --line:rgba(15,20,25,.08);--line-s:rgba(15,20,25,.14);
+  --amber:#ff6b35;--amber-s:#ff8555;--amber-dim:rgba(255,107,53,.09);--amber-b:rgba(255,107,53,.16);
+  --blue:#0066ff;--blue-s:#3385ff;--blue-dim:rgba(0,102,255,.09);--blue-b:rgba(0,102,255,.15);
+  --green:#00a86b;--green-s:#33bb7f;
+  --H:'Sora',sans-serif;--B:'DM Sans',sans-serif;--M:'JetBrains Mono',monospace;
+  --mw:960px;--r:14px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--B);color:var(--ink-2);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+*{-webkit-tap-highlight-color:transparent}
+a,button{touch-action:manipulation}
+
+/* ══ DISCOUNT BAR ══ */
+.disc-bar{background:linear-gradient(90deg,#ffe8d6,#ffd9c0,#ffe8d6);border-bottom:4px solid #ff6b35;border-top:2px solid rgba(255,107,53,.3);padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(255,107,53,.18)}
+.disc-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 100% at 50%,rgba(255,107,53,.12),transparent);pointer-events:none}
+.disc-bar.disc-urgent{animation:discPulse 1.2s ease-in-out infinite;box-shadow:0 6px 24px rgba(255,107,53,.32)}
+@keyframes discPulse{0%,100%{transform:translateY(0);box-shadow:0 6px 24px rgba(255,107,53,.32)}50%{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,107,53,.42)}}
+.disc-fl{font-family:var(--M);font-size:12px;font-weight:900;color:#d94000;letter-spacing:.06em;text-transform:uppercase;position:relative;z-index:1;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.disc-fl-fire{font-size:15px;display:inline-block;animation:fireAnim 1s ease-in-out infinite}
+@keyframes fireAnim{0%,100%{transform:scaleY(1) rotate(-2deg)}50%{transform:scaleY(1.08) rotate(2deg)}}
+.disc-price-group{display:inline-flex;align-items:center;gap:6px;position:relative;z-index:1}
+.disc-orig{font-family:var(--M);font-size:13px;font-weight:700;color:#7a3a10;text-decoration:line-through;text-decoration-color:#d94000}
+.disc-arr{color:#d94000;font-weight:900;font-size:13px;animation:arrBounce .7s ease-in-out infinite}
+@keyframes arrBounce{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+.disc-now{font-family:var(--M);font-size:22px;font-weight:900;color:#d94000;letter-spacing:-.02em;text-shadow:0 2px 4px rgba(217,64,0,.18)}
+.disc-badge{display:inline-flex;align-items:center;justify-content:center;font-family:var(--M);font-size:13px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;background:linear-gradient(135deg,rgba(255,107,53,.18),rgba(217,64,0,.13));color:#d94000;border:1.5px solid #ff6b35;padding:5px 14px;border-radius:100px;position:relative;z-index:1;box-shadow:0 2px 6px rgba(217,64,0,.12)}
+.disc-vdiv{width:1px;height:26px;background:rgba(255,107,53,.25);flex-shrink:0;position:relative;z-index:1}
+.disc-timer-wrap{display:inline-flex;align-items:center;gap:6px;position:relative;z-index:1}
+.disc-timer-lbl{font-family:var(--M);font-size:9px;font-weight:700;color:#c43a00;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+.disc-timer-lbl::before{content:'';width:7px;height:7px;border-radius:50%;background:#e03a00;flex-shrink:0;animation:timerDot .9s ease-in-out infinite}
+@keyframes timerDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.disc-clock{display:inline-flex;align-items:center;gap:2px}
+.disc-unit{display:flex;flex-direction:column;align-items:center;gap:2px}
+.disc-d{font-family:var(--M);font-size:17px;font-weight:900;color:#fff;background:#d94000;padding:4px 7px;border-radius:5px;min-width:32px;text-align:center;line-height:1.1;letter-spacing:-.01em;font-variant-numeric:tabular-nums;box-shadow:0 2px 8px rgba(217,64,0,.3),inset 0 1px 0 rgba(255,255,255,.18);display:block}
+.disc-d.flip{animation:digitFlip .22s ease-in-out}
+@keyframes digitFlip{0%{transform:scaleY(1);opacity:1}40%{transform:scaleY(0);opacity:0}60%{transform:scaleY(0);opacity:0}100%{transform:scaleY(1);opacity:1}}
+.disc-u-lbl{font-family:var(--M);font-size:7.5px;font-weight:700;color:#b04000;letter-spacing:.04em;text-transform:uppercase}
+.disc-sep2{font-family:var(--M);font-size:18px;font-weight:900;color:rgba(255,107,53,.5);margin:0 1px;align-self:flex-start;padding-top:2px;line-height:1.25}
+.disc-bar.disc-urgent .disc-d{background:#c00000;animation:urgentFlash 0.65s ease-in-out infinite}
+@keyframes urgentFlash{0%,100%{opacity:1}50%{opacity:.7}}
+@media(max-width:680px){.disc-fl,.disc-vdiv{display:none}}
+@media(max-width:520px){.disc-bar{padding:7px 10px;gap:7px}.disc-d{font-size:14px;min-width:27px;padding:3px 5px}.disc-sep2{font-size:15px}.disc-u-lbl{font-size:7px}.disc-now{font-size:18px}.disc-badge{font-size:10px;padding:4px 9px}}
+@media(max-width:400px){.disc-orig,.disc-arr{display:none}}
+
+/* ══ STICKY HEADER ══ */
+.sticky-header{position:sticky;top:0;z-index:200}
+
+/* ══ NAVBAR ══ */
+.navbar{position:relative;background:rgba(250,248,243,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.navbar.scrolled{box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.nav-inner{max-width:var(--mw);margin:0 auto;height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.nav-logo-mark{font-family:var(--H);font-size:13px;font-weight:800;color:#fff;background:linear-gradient(135deg,#d97706,#b45309);width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;letter-spacing:.04em;box-shadow:0 2px 8px rgba(217,119,6,.3);flex-shrink:0}
+.nav-logo-name{display:block;font-family:var(--H);font-size:14px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.nav-logo-sub{display:block;font-size:10px;color:var(--ink-3);letter-spacing:.02em;margin-top:1px}
+.nav-right{display:flex;align-items:center;gap:4px}
+.nav-link{font-family:var(--B);font-size:13px;font-weight:500;color:var(--ink-3);padding:6px 10px;border-radius:8px;transition:color .2s,background .2s;position:relative}
+.nav-link:hover{color:var(--ink);background:var(--bg-elevated)}
+.nav-link.active{color:var(--amber);font-weight:600}
+.nav-cta{display:inline-flex;align-items:center;gap:7px;font-family:var(--B);font-size:13px;font-weight:600;color:#fff;background:linear-gradient(135deg,#229ed9,#1a7fbf);padding:8px 16px;border-radius:100px;margin-left:4px;transition:transform .2s,box-shadow .2s;box-shadow:0 2px 8px rgba(34,158,217,.3)}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(34,158,217,.4)}
+@media(max-width:520px){.nav-link{display:none}.nav-inner{padding:0 16px}}
+
+/* ══ SECTION PROGRESS ══ */
+.section-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,#ff6b35,#ffb347);z-index:9999;width:0%;transition:width .1s linear;box-shadow:0 0 8px rgba(255,107,53,.6)}
+
+/* ══ MAIN ══ */
+main{max-width:var(--mw);margin:0 auto;padding:40px 24px 80px}
+
+/* ══ PAGE HEADER ══ */
+.pg-hdr{padding:32px 0 36px;text-align:center}
+.pg-hdr-badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--M);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);background:var(--amber-dim);border:1px solid var(--amber-b);padding:5px 14px;border-radius:100px;margin-bottom:16px}
+.pg-hdr h1{font-family:var(--H);font-size:clamp(24px,4vw,36px);font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1.2;margin-bottom:10px}
+.pg-hdr h1 em{color:var(--amber);font-style:normal}
+.pg-hdr p{font-size:15px;color:var(--ink-3);max-width:520px;margin:0 auto;line-height:1.6}
+
+/* ══ DATE DISPLAY ══ */
+.date-bar{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:28px}
+.date-pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--M);font-size:12px;font-weight:600;color:var(--ink-2);background:var(--bg-card);border:1px solid var(--line-s);padding:7px 14px;border-radius:100px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.date-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(0,168,107,.15);flex-shrink:0;animation:liveDot 1.5s ease-in-out infinite}
+@keyframes liveDot{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* ══ MARKET TABS ══ */
+.mkt-bar{margin-bottom:32px}
+.mkt-bar-lbl{font-family:var(--M);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+.mkt-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mkt-tabs::-webkit-scrollbar{display:none}
+.mkt-tab{display:inline-flex;align-items:center;gap:8px;font-family:var(--H);font-size:13px;font-weight:700;white-space:nowrap;padding:10px 18px;border-radius:12px;border:1.5px solid var(--line-s);background:var(--bg-card);color:var(--ink-3);cursor:pointer;transition:all .22s;flex-shrink:0}
+.mkt-tab:hover{border-color:var(--amber-b);color:var(--ink);background:var(--amber-dim)}
+.mkt-tab.active{background:linear-gradient(135deg,var(--amber),var(--amber-s));border-color:var(--amber);color:#fff;box-shadow:0 4px 14px rgba(255,107,53,.3)}
+.mkt-tab-icon{font-size:16px;line-height:1}
+.mkt-tab-pair{letter-spacing:.03em}
+
+/* ══ PHASE CONTAINER ══ */
+.phases-wrap{display:flex;flex-direction:column;gap:16px}
+
+/* ══ PHASE CARD ══ */
+.phase-card{background:var(--bg-card);border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;transition:border-color .25s,box-shadow .25s}
+.phase-card:hover{border-color:rgba(255,107,53,.2)}
+.phase-card.p6-card{border-color:rgba(255,107,53,.25);background:linear-gradient(135deg,rgba(255,107,53,.02),var(--bg-card))}
+
+.phase-hdr{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;user-select:none}
+.phase-hdr:hover .phase-chevron{transform:rotate(5deg)}
+.phase-card.open .phase-hdr{border-bottom:1px solid var(--line)}
+.phase-card.open .phase-chevron{transform:rotate(180deg)!important}
+
+.phase-num{font-family:var(--M);font-size:11px;font-weight:800;letter-spacing:.06em;min-width:72px;padding:6px 12px;border-radius:8px;text-align:center;flex-shrink:0}
+.phase-num.n1{background:rgba(0,102,255,.1);color:#0066ff;border:1px solid rgba(0,102,255,.2)}
+.phase-num.n2{background:rgba(0,168,107,.1);color:#00a86b;border:1px solid rgba(0,168,107,.2)}
+.phase-num.n3{background:rgba(130,80,220,.1);color:#7c3aed;border:1px solid rgba(130,80,220,.2)}
+.phase-num.n4{background:rgba(234,88,12,.1);color:#ea580c;border:1px solid rgba(234,88,12,.2)}
+.phase-num.n5{background:rgba(220,38,38,.1);color:#dc2626;border:1px solid rgba(220,38,38,.2)}
+.phase-num.n6{background:linear-gradient(135deg,rgba(255,107,53,.15),rgba(217,64,0,.1));color:#d94000;border:1px solid rgba(255,107,53,.3)}
+
+.phase-meta{flex:1;min-width:0}
+.phase-title{font-family:var(--H);font-size:14px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.phase-sub{font-size:12px;color:var(--ink-3);margin-top:2px}
+
+.phase-chevron{width:20px;height:20px;color:var(--ink-3);flex-shrink:0;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+
+.phase-body{display:none;padding:20px}
+.phase-card.open .phase-body{display:block;animation:bodyIn .25s ease}
+@keyframes bodyIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══ PROMPT AREA ══ */
+.prompt-label{font-family:var(--M);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.prompt-label::before{content:'';width:3px;height:12px;background:var(--amber);border-radius:2px}
+.prompt-text{width:100%;min-height:180px;max-height:320px;font-family:var(--M);font-size:12px;line-height:1.65;color:var(--ink-2);background:var(--bg-elevated);border:1px solid var(--line);border-radius:10px;padding:14px;resize:vertical;outline:none;overflow-y:auto;white-space:pre-wrap;word-break:break-word;transition:border-color .2s}
+.prompt-text:focus{border-color:var(--amber-b)}
+.prompt-text::selection{background:rgba(255,107,53,.2)}
+
+/* ══ PHASE 6 INPUTS ══ */
+.p6-section-title{font-family:var(--H);font-size:13px;font-weight:700;color:var(--ink);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.p6-section-title span{font-family:var(--M);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);background:var(--amber-dim);padding:3px 8px;border-radius:5px}
+.p6-inputs-grid{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.p6-input-group label{display:flex;align-items:center;gap:7px;font-family:var(--M);font-size:11px;font-weight:700;color:var(--ink-2);margin-bottom:6px}
+.p6-input-group label .lbl-num{font-family:var(--M);font-size:10px;font-weight:800;padding:2px 7px;border-radius:5px;color:#fff}
+.lbl-n1{background:#0066ff}.lbl-n2{background:#00a86b}.lbl-n3{background:#7c3aed}.lbl-n4{background:#ea580c}.lbl-n5{background:#dc2626}
+.p6-textarea{width:100%;height:100px;font-family:var(--M);font-size:11.5px;line-height:1.6;color:var(--ink-2);background:var(--bg-elevated);border:1px solid var(--line);border-radius:9px;padding:10px 13px;resize:vertical;outline:none;transition:border-color .2s,box-shadow .2s;placeholder-color:var(--ink-3)}
+.p6-textarea:focus{border-color:var(--amber-b);box-shadow:0 0 0 3px var(--amber-dim)}
+.p6-textarea::placeholder{color:var(--ink-3);font-style:normal}
+.p6-divider{height:1px;background:var(--line);margin:20px 0}
+
+/* ══ COPY BUTTON ══ */
+.copy-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:16px}
+.copy-hint{font-size:12px;color:var(--ink-3)}
+.copy-hint strong{color:var(--amber);font-weight:600}
+.btn-copy{display:inline-flex;align-items:center;gap:8px;font-family:var(--H);font-size:13px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--amber),var(--amber-s));border:none;padding:11px 22px;border-radius:100px;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 3px 12px rgba(255,107,53,.3);flex-shrink:0}
+.btn-copy:hover{transform:translateY(-2px);box-shadow:0 5px 18px rgba(255,107,53,.4)}
+.btn-copy:active{transform:translateY(0) scale(.97)}
+.btn-copy.copied{background:linear-gradient(135deg,var(--green),var(--green-s));box-shadow:0 3px 12px rgba(0,168,107,.3)}
+.btn-copy svg{flex-shrink:0;transition:transform .25s}
+.btn-copy.copied svg{transform:scale(1.2)}
+
+/* ══ LOADING STATE ══ */
+.load-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:64px 24px;gap:14px;text-align:center}
+.load-spin{width:36px;height:36px;border:3px solid var(--line-s);border-top-color:var(--amber);border-radius:50%;animation:spin .75s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.load-txt{font-size:14px;color:var(--ink-3)}
+
+/* ══ ERROR STATE ══ */
+.err-state{background:rgba(220,38,38,.05);border:1.5px solid rgba(220,38,38,.15);border-radius:var(--r);padding:28px;text-align:center}
+.err-icon{font-size:28px;margin-bottom:10px}
+.err-title{font-family:var(--H);font-size:15px;font-weight:700;color:#dc2626;margin-bottom:6px}
+.err-sub{font-size:13px;color:var(--ink-3);line-height:1.5}
+.err-code{font-family:var(--M);font-size:11px;color:var(--ink-3);background:var(--bg-elevated);padding:4px 10px;border-radius:6px;margin-top:10px;display:inline-block}
+
+/* ══ TOAST ══ */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;font-family:var(--H);font-size:13px;font-weight:600;padding:10px 20px;border-radius:100px;box-shadow:0 4px 20px rgba(0,0,0,.2);z-index:9998;transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .35s;opacity:0;white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.success{background:linear-gradient(135deg,#00a86b,#00b87c)}
+.toast.error{background:linear-gradient(135deg,#dc2626,#ef4444)}
+
+/* ══ SCROLL REVEAL ══ */
+.rv{opacity:0;transform:translateY(20px) scale(.99);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1)}
+.rv.on{opacity:1;transform:translateY(0) scale(1)}
+
+/* ══ FOOTER ══ */
+.ft{border-top:1px solid var(--line);padding:20px 24px}
+.ft-bot{max-width:var(--mw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.ft-copy{font-size:12px;color:var(--ink-3)}
+.ft-nav{display:flex;align-items:center;gap:16px}
+.ft-nav a{font-size:12px;color:var(--ink-3);transition:color .2s}
+.ft-nav a:hover{color:var(--amber)}
+.ft-disc{font-size:11px;color:var(--ink-3);opacity:.65}
+@media(max-width:640px){.ft-bot{flex-direction:column;text-align:center;gap:8px}}
+
+/* ══ BTT ══ */
+.btt{position:fixed;bottom:24px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--bg-card);border:1.5px solid var(--line-s);color:var(--ink-3);cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transform:translateY(8px);transition:all .3s}
+.btt.on{opacity:1;pointer-events:auto;transform:translateY(0)}
+.btt:hover{border-color:var(--amber);color:var(--amber);background:var(--amber-dim)}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:640px){main{padding:28px 16px 60px}.pg-hdr{padding:20px 0 24px}.mkt-tab{padding:8px 14px;font-size:12px}.phase-body{padding:14px}.prompt-text{min-height:140px;font-size:11px}}
+
+/* ══ TG PULSE ══ */
+@keyframes tgPulse{0%,100%{box-shadow:0 4px 14px rgba(34,158,217,.3)}50%{box-shadow:0 4px 20px rgba(34,158,217,.5)}}
+.tg-pulse{animation:tgPulse 2s ease-in-out infinite}
+</style>
+</head>
+<body>
+<div class="section-progress" id="sectionProgress"></div>
+
+<!-- ════ STICKY HEADER ════ -->
+<header class="sticky-header">
+  <!-- DISCOUNT BAR -->
+  <div class="disc-bar" id="discBar">
+    <span class="disc-fl"><span class="disc-fl-fire">🔥</span><span id="discName">সীমিত সময়ের Offer</span></span>
+    <span class="disc-price-group">
+      <span class="disc-orig" id="dOrig"></span>
+      <span class="disc-arr">→</span>
+      <span class="disc-now" id="dNow"></span>
+    </span>
+    <span class="disc-badge" id="dSave"></span>
+    <span class="disc-vdiv"></span>
+    <span class="disc-timer-wrap">
+      <span class="disc-timer-lbl">শেষ হচ্ছে</span>
+      <span class="disc-clock">
+        <span class="disc-unit"><span class="disc-d" id="tH">00</span><span class="disc-u-lbl">ঘণ্টা</span></span>
+        <span class="disc-sep2">:</span>
+        <span class="disc-unit"><span class="disc-d" id="tM">00</span><span class="disc-u-lbl">মিনিট</span></span>
+        <span class="disc-sep2">:</span>
+        <span class="disc-unit"><span class="disc-d" id="tS">00</span><span class="disc-u-lbl">সেকেন্ড</span></span>
+      </span>
+    </span>
+  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-mark">NLT</div>
+        <div><span class="nav-logo-name">Exclusive Mentorship</span><span class="nav-logo-sub">by NLT · ICT Based Trading</span></div>
+      </a>
+      <div class="nav-right">
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link" href="terms.html">Terms</a>
+        <a class="nav-link active" href="analysis.html">AI Tool</a>
+        <a class="nav-cta" href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-2.01 9.456c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12l-6.87 4.326-2.962-.924c-.643-.204-.658-.643.136-.953l11.57-4.461c.537-.194 1.006.131.872.765z"/></svg>
+          Join করুন
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ════ MAIN ════ -->
+<main>
+  <!-- PAGE HEADER -->
+  <div class="pg-hdr rv">
+    <div class="pg-hdr-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+      Members Only Tool
+    </div>
+    <h1>Fundamental <em>Analysis</em> AI Tool</h1>
+    <p>Market select করুন → Phase copy করুন → AI-তে paste করুন। <strong style="color:var(--amber)">Date automatic</strong> — manually select করতে হবে না।</p>
+  </div>
+
+  <!-- DATE BAR -->
+  <div class="date-bar rv">
+    <div class="date-pill">
+      <span class="date-dot"></span>
+      <span>Today's Date (Auto): </span>
+      <strong id="liveDateDisplay" style="color:var(--ink);margin-left:2px">—</strong>
+    </div>
+  </div>
+
+  <!-- MARKET TABS -->
+  <div class="mkt-bar rv">
+    <div class="mkt-bar-lbl">Market Select করুন</div>
+    <div class="mkt-tabs" id="mktTabs">
+      <!-- Generated by JS -->
+    </div>
+  </div>
+
+  <!-- PHASES CONTAINER -->
+  <div class="phases-wrap" id="phasesWrap">
+    <div class="load-state">
+      <div class="load-spin"></div>
+      <div class="load-txt">Market select করুন উপর থেকে…</div>
+    </div>
+  </div>
+</main>
+
+<!-- ════ FOOTER ════ -->
+<footer class="ft">
+  <div class="ft-bot">
+    <span class="ft-copy">© 2026 Exclusive Mentorship by NLT. All rights reserved.</span>
+    <nav class="ft-nav">
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://t.me/AskNLT" target="_blank" rel="noopener noreferrer">Telegram</a>
+    </nav>
+    <span class="ft-disc">Trading involves risk · Past performance ≠ future results</span>
+  </div>
+</footer>
+
+<button class="btt" id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" width="16" height="16"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ══════════════════════════════════
+   ▶ CONFIGURATION — Edit here only
+══════════════════════════════════ */
+var MARKETS = [
+  { id:'eurgbp', label:'EUR/GBP', icon:'🇪🇺/🇬🇧', file:'/prompts/eurgbp.json' },
+  { id:'eurusd', label:'EUR/USD', icon:'🇪🇺/🇺🇸', file:'/prompts/eurusd.json' },
+  { id:'gbpusd', label:'GBP/USD', icon:'🇬🇧/🇺🇸', file:'/prompts/gbpusd.json' },
+  { id:'usdjpy', label:'USD/JPY', icon:'🇺🇸/🇯🇵', file:'/prompts/usdjpy.json' },
+  { id:'xauusd', label:'XAU/USD', icon:'🥇',        file:'/prompts/xauusd.json' },
+  { id:'gbpjpy', label:'GBP/JPY', icon:'🇬🇧/🇯🇵', file:'/prompts/gbpjpy.json' },
+];
+
+var PHASES = [
+  { key:'phase1',            num:'Phase 01', numClass:'n1', title:'Central Bank Policy',   sub:'Divergence Analysis · Live Web Research',  icon:'🏦' },
+  { key:'phase2',            num:'Phase 02', numClass:'n2', title:'Yield Differentials',   sub:'Bond Spread · Gilt vs Bund',                icon:'📊' },
+  { key:'phase3',            num:'Phase 03', numClass:'n3', title:'Economic Momentum',     sub:'Data Calendar · Surprise Index',            icon:'📈' },
+  { key:'phase4',            num:'Phase 04', numClass:'n4', title:'Sentiment & COT',       sub:'Positioning · IG Retail · FX Options',      icon:'🎯' },
+  { key:'phase5',            num:'Phase 05', numClass:'n5', title:'Macro & Geo Risk',      sub:'Energy · Gold · Equity · Risk Rating',      icon:'⚠️' },
+  { key:'phase6_master_bias',num:'Phase 06', numClass:'n6', title:'Master Bias Synthesis', sub:'Final Bias · Confidence Score · Entry Window',icon:'🔮', isMaster:true },
+];
+
+/* Phase 6 input labels */
+var P6_LABELS = [
+  { key:'P1_OUTPUT', num:'n1', label:'Phase 1 Output', hint:'Policy Divergence (CB Research) paste করুন' },
+  { key:'P2_OUTPUT', num:'n2', label:'Phase 2 Output', hint:'Yield Differentials paste করুন' },
+  { key:'P3_OUTPUT', num:'n3', label:'Phase 3 Output', hint:'Economic Momentum paste করুন' },
+  { key:'P4_OUTPUT', num:'n4', label:'Phase 4 Output', hint:'Sentiment & COT paste করুন' },
+  { key:'P5_OUTPUT', num:'n5', label:'Phase 5 Output', hint:'Macro Risk paste করুন' },
+];
+
+/* ══════════════════════════════════
+   ▶ DATE UTILITY
+══════════════════════════════════ */
+function getFormattedDate() {
+  var d = new Date();
+  var months = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+  var day   = String(d.getDate()).padStart(2,'0');
+  var month = months[d.getMonth()];
+  var year  = d.getFullYear();
+  return month + ' ' + day + ', ' + year;
+}
+function injectDate(txt) {
+  return txt.replace(/\[CURRENT_DATE\]/g, getFormattedDate());
+}
+
+/* ══════════════════════════════════
+   ▶ TOAST
+══════════════════════════════════ */
+var toastTimer;
+function showToast(msg, type) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + (type||'success') + ' show';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ t.className = 'toast'; }, 2600);
+}
+
+/* ══════════════════════════════════
+   ▶ COPY TO CLIPBOARD
+══════════════════════════════════ */
+function copyText(text, btn) {
+  if (!text.trim()) { showToast('Prompt empty!','error'); return; }
+  var prom;
+  if (navigator.clipboard && window.isSecureContext) {
+    prom = navigator.clipboard.writeText(text);
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); prom = Promise.resolve(); }
+    catch(e){ prom = Promise.reject(e); }
+    document.body.removeChild(ta);
+  }
+  prom.then(function(){
+    btn.classList.add('copied');
+    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Copied!';
+    showToast('✅ Prompt copied! AI-তে paste করুন।');
+    setTimeout(function(){
+      btn.classList.remove('copied');
+      btn.innerHTML = copyBtnInner('copy');
+    }, 2200);
+  }).catch(function(){
+    showToast('Copy failed — manually select করুন','error');
+  });
+}
+
+function copyBtnInner(label) {
+  return '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> '+(label||'Prompt Copy করুন');
+}
+
+/* ══════════════════════════════════
+   ▶ RENDER PHASES
+══════════════════════════════════ */
+function renderPhases(data, marketLabel) {
+  var wrap = document.getElementById('phasesWrap');
+  var html = '';
+
+  PHASES.forEach(function(p, idx) {
+    var raw = data[p.key] || '';
+    if (!raw) return;
+
+    var isMaster = !!p.isMaster;
+    var cardId   = 'pc-' + p.key;
+
+    html += '<div class="phase-card rv' + (isMaster ? ' p6-card' : '') + '" id="' + cardId + '">';
+
+    /* ── Header ── */
+    html += '<div class="phase-hdr" onclick="togglePhase(\'' + cardId + '\')">';
+    html += '<div class="phase-num ' + p.numClass + '">' + p.num + '</div>';
+    html += '<div class="phase-meta"><div class="phase-title">' + p.icon + ' ' + p.title + '</div>';
+    html += '<div class="phase-sub">' + p.sub + '</div></div>';
+    html += '<svg class="phase-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>';
+    html += '</div>';
+
+    /* ── Body ── */
+    html += '<div class="phase-body" id="body-' + p.key + '">';
+
+    if (isMaster) {
+      /* Phase 6: P1-P5 inputs */
+      html += '<div class="p6-section-title">Phase 1–5 Outputs Paste করুন <span>Required</span></div>';
+      html += '<div class="p6-inputs-grid">';
+      P6_LABELS.forEach(function(pl){
+        html += '<div class="p6-input-group">';
+        html += '<label><span class="lbl-num lbl-' + pl.num + '">' + pl.label + '</span>' + pl.hint + '</label>';
+        html += '<textarea class="p6-textarea" id="inp-' + pl.key + '" placeholder="' + pl.hint + '" oninput="updateP6Preview()"></textarea>';
+        html += '</div>';
+      });
+      html += '</div>';
+      html += '<div class="p6-divider"></div>';
+    }
+
+    /* Prompt display */
+    html += '<div class="prompt-label">Assembled Prompt</div>';
+    var displayText = injectDate(raw);
+    html += '<textarea class="prompt-text" id="pt-' + p.key + '" readonly spellcheck="false">' + escHtml(displayText) + '</textarea>';
+
+    /* Copy row */
+    html += '<div class="copy-row">';
+    html += '<div class="copy-hint">📅 Date: <strong>' + getFormattedDate() + '</strong> (auto-injected)</div>';
+    html += '<button class="btn-copy" id="cbtn-' + p.key + '" onclick="doCopy(\'' + p.key + '\',' + isMaster + ')">';
+    html += copyBtnInner(isMaster ? 'Master Bias Copy করুন' : 'Prompt Copy করুন');
+    html += '</button>';
+    html += '</div>';
+
+    html += '</div>'; /* end phase-body */
+    html += '</div>'; /* end phase-card */
+  });
+
+  wrap.innerHTML = html || '<div class="err-state"><div class="err-icon">📭</div><div class="err-title">No phases found</div><div class="err-sub">JSON file-এ phase key গুলো সঠিকভাবে আছে কিনা check করুন।</div></div>';
+
+  /* Reveal */
+  setTimeout(function(){
+    wrap.querySelectorAll('.rv').forEach(function(el, i){
+      el.style.transitionDelay = (i * .07) + 's';
+      el.classList.add('on');
+    });
+  }, 60);
+
+  /* Auto-open first phase */
+  var first = document.getElementById('pc-phase1');
+  if (first) togglePhase('pc-phase1');
+}
+
+/* ══════════════════════════════════
+   ▶ TOGGLE PHASE
+══════════════════════════════════ */
+function togglePhase(cardId) {
+  var card = document.getElementById(cardId);
+  if (!card) return;
+  card.classList.toggle('open');
+}
+
+/* ══════════════════════════════════
+   ▶ DO COPY
+══════════════════════════════════ */
+function doCopy(phaseKey, isMaster) {
+  /* Get base prompt text */
+  var ptEl = document.getElementById('pt-' + phaseKey);
+  if (!ptEl) return;
+
+  /* Start from raw prompt with date already injected */
+  var text = ptEl.value;
+
+  if (isMaster) {
+    /* Inject P1–P5 outputs */
+    P6_LABELS.forEach(function(pl){
+      var ta = document.getElementById('inp-' + pl.key);
+      var val = ta ? ta.value.trim() : '';
+      /* Replace placeholder */
+      var re = new RegExp('\\[' + pl.key + '\\]', 'g');
+      text = text.replace(re, val || '[' + pl.key + ' — paste করুন]');
+    });
+  }
+
+  var btn = document.getElementById('cbtn-' + phaseKey);
+  copyText(text, btn);
+}
+
+/* ══════════════════════════════════
+   ▶ UPDATE PHASE 6 PREVIEW (live)
+══════════════════════════════════ */
+function updateP6Preview() {
+  var ptEl = document.getElementById('pt-phase6_master_bias');
+  if (!ptEl) return;
+  /* Re-get original from stored data */
+  var raw = window._currentData && window._currentData['phase6_master_bias'];
+  if (!raw) return;
+  var text = injectDate(raw);
+  P6_LABELS.forEach(function(pl){
+    var ta = document.getElementById('inp-' + pl.key);
+    var val = ta ? ta.value.trim() : '';
+    var re = new RegExp('\\[' + pl.key + '\\]', 'g');
+    text = text.replace(re, val || '[' + pl.key + ']');
+  });
+  ptEl.value = text;
+}
+
+/* ══════════════════════════════════
+   ▶ HTML ESCAPE
+══════════════════════════════════ */
+function escHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+/* ══════════════════════════════════
+   ▶ LOAD MARKET JSON
+══════════════════════════════════ */
+var _cache = {};
+
+function loadMarket(mkt) {
+  var wrap = document.getElementById('phasesWrap');
+
+  /* Show loading */
+  wrap.innerHTML = '<div class="load-state"><div class="load-spin"></div><div class="load-txt">' + mkt.label + ' prompts লোড হচ্ছে…</div></div>';
+
+  /* Use cache */
+  if (_cache[mkt.id]) {
+    window._currentData = _cache[mkt.id];
+    renderPhases(_cache[mkt.id], mkt.label);
+    return;
+  }
+
+  fetch(mkt.file + '?v=' + Date.now())
+    .then(function(r){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function(data){
+      _cache[mkt.id] = data;
+      window._currentData = data;
+      renderPhases(data, mkt.label);
+    })
+    .catch(function(err){
+      wrap.innerHTML = '<div class="err-state">'
+        + '<div class="err-icon">⚠️</div>'
+        + '<div class="err-title">JSON File লোড হয়নি</div>'
+        + '<div class="err-sub"><strong>' + mkt.label + '</strong> এর prompt file পাওয়া যায়নি।<br>Cloudflare-এ <strong>' + mkt.file + '</strong> আপলোড করা হয়েছে কিনা নিশ্চিত করুন।</div>'
+        + '<div class="err-code">' + mkt.file + '</div>'
+        + '</div>';
+    });
+}
+
+/* ══════════════════════════════════
+   ▶ MARKET TABS INIT
+══════════════════════════════════ */
+var _activeMkt = null;
+
+function selectMarket(id) {
+  if (_activeMkt === id) return;
+  _activeMkt = id;
+
+  /* Update tab styles */
+  document.querySelectorAll('.mkt-tab').forEach(function(t){
+    t.classList.toggle('active', t.dataset.id === id);
+  });
+
+  var mkt = MARKETS.find(function(m){ return m.id === id; });
+  if (mkt) loadMarket(mkt);
+}
+
+(function initTabs(){
+  var tabsEl = document.getElementById('mktTabs');
+  MARKETS.forEach(function(m){
+    var btn = document.createElement('button');
+    btn.className = 'mkt-tab';
+    btn.dataset.id = m.id;
+    btn.innerHTML = '<span class="mkt-tab-icon">' + m.icon + '</span><span class="mkt-tab-pair">' + m.label + '</span>';
+    btn.onclick = function(){ selectMarket(m.id); };
+    tabsEl.appendChild(btn);
+  });
+
+  /* Auto-select first market */
+  if (MARKETS.length) selectMarket(MARKETS[0].id);
+})();
+
+/* ══════════════════════════════════
+   ▶ DISCOUNT + TIMER
+══════════════════════════════════ */
+(function(){
+  var ORIG = 100;
+  function getDailyDiscount(){
+    var now = new Date();
+    var seed = now.getUTCFullYear()*10000+(now.getUTCMonth()+1)*100+now.getUTCDate();
+    seed = ((seed^(seed>>>16))*0x45d9f3b)>>>0;
+    seed = ((seed^(seed>>>16))*0x45d9f3b)>>>0;
+    seed = seed^(seed>>>16);
+    return 31+(seed%11);
+  }
+  var disc = getDailyDiscount();
+  var CURR = Math.round(ORIG*(1-disc/100));
+  function setTxt(id,v){var e=document.getElementById(id);if(e)e.textContent=v;}
+  setTxt('dOrig','$'+ORIG); setTxt('dNow','$'+CURR); setTxt('dSave',disc+'% OFF');
+  var dayNames=['Weekend Discount','Welcome Discount','Fortune Discount','Fortune Discount','Fortune Discount','Jumma Discount','Weekend Discount'];
+  setTxt('discName',dayNames[new Date().getUTCDay()]);
+  function pad(n){return n<10?'0'+n:''+n;}
+  function animSet(id,val){
+    var el=document.getElementById(id); if(!el)return;
+    var v=pad(val);
+    if(el.textContent!==v){el.classList.remove('flip');void el.offsetWidth;el.classList.add('flip');el.textContent=v;}
+  }
+  function tick(){
+    var now=new Date();
+    var end=new Date(Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1,0,0,0));
+    var diff=Math.max(0,end-now);
+    animSet('tH',Math.floor(diff/3600000));
+    animSet('tM',Math.floor((diff%3600000)/60000));
+    animSet('tS',Math.floor((diff%60000)/1000));
+    var bar=document.getElementById('discBar');
+    if(bar) bar.classList.toggle('disc-urgent',Math.floor(diff/3600000)<1);
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+/* ══════════════════════════════════
+   ▶ DATE DISPLAY
+══════════════════════════════════ */
+document.getElementById('liveDateDisplay').textContent = getFormattedDate();
+
+/* ══════════════════════════════════
+   ▶ NAVBAR SCROLL
+══════════════════════════════════ */
+var nb = document.getElementById('navbar');
+window.addEventListener('scroll', function(){ nb && nb.classList.toggle('scrolled', scrollY>20); }, {passive:true});
+
+/* ══════════════════════════════════
+   ▶ SCROLL PROGRESS
+══════════════════════════════════ */
+var prog = document.getElementById('sectionProgress');
+if(prog){
+  window.addEventListener('scroll',function(){
+    var s=(document.documentElement.scrollTop/(document.documentElement.scrollHeight-window.innerHeight))*100;
+    prog.style.width=Math.min(100,s)+'%';
+  },{passive:true});
+}
+
+/* ══════════════════════════════════
+   ▶ BTT
+══════════════════════════════════ */
+(function(){
+  var b=document.getElementById('btt');
+  if(!b)return;
+  window.addEventListener('scroll',function(){b.classList.toggle('on',scrollY>400);},{passive:true});
+})();
+
+/* ══════════════════════════════════
+   ▶ SCROLL REVEAL
+══════════════════════════════════ */
+var ro=new IntersectionObserver(function(e){
+  e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');ro.unobserve(x.target);}});
+},{threshold:.08,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.rv').forEach(function(el,i){
+  el.style.transitionDelay=(i%5)*.07+'s';
+  ro.observe(el);
+});
+setTimeout(function(){document.querySelectorAll('.rv:not(.on)').forEach(function(el){el.classList.add('on');});},1400);
+
+/* ══════════════════════════════════
+   ▶ TG PULSE
+══════════════════════════════════ */
+document.querySelectorAll('a[href*="t.me"]').forEach(function(b){b.classList.add('tg-pulse');});
+</script>
+</body>
+</html>
